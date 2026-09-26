@@ -1,0 +1,134 @@
+schema: qcl-negf-study-v2
+kind: study
+id: grid-refinement-48
+name: Controlled numerical comparisons at 48 mV and 70 K
+tags:
+- research
+- analytical
+- 70k
+- reference-2019
+purpose: research
+operation: stationary
+configuration:
+  sources:
+  - ../model/reference-2019-70k.yaml
+  - ../policies/analytical-diagnostic.yaml
+  overrides:
+    solver:
+      maximum_scba_iterations: 2048
+      maximum_poisson_iterations: 128
+      self_energy_mixing: 0.2
+    production:
+      checkpoint_every_scba: 32
+axes:
+  temperatures:
+    values:
+    - 70
+    unit: K
+  voltages:
+    values:
+    - 48
+    unit: mV
+policies:
+  scba_to_poisson: adaptive_working
+  voltage:
+    mode: independent
+    invalid_predecessor: stop_branch
+  on_child_failure: continue
+outputs:
+  full_state: true
+  projections: true
+  optical: false
+  intermediate_history: 64
+variants:
+- id: control-energy-078125
+  method_id: control-energy-078125
+  overrides:
+    numerical:
+      energy_nodes: 15361
+  controlled_paths:
+  - numerical.energy_nodes
+  comparison_kind: discretization
+- id: control-energy-15625
+  method_id: control-energy-15625
+  overrides:
+    numerical:
+      energy_nodes: 7681
+  controlled_paths:
+  - numerical.energy_nodes
+  comparison_kind: discretization
+- id: energy-window
+  method_id: energy-window
+  overrides:
+    numerical:
+      energy_min: -0.45 eV
+      energy_max: 1.05 eV
+      energy_nodes: 38401
+  controlled_paths:
+  - numerical.energy_min
+  - numerical.energy_max
+  - numerical.energy_nodes
+  comparison_kind: discretization
+- id: energy-phase
+  method_id: energy-phase
+  overrides:
+    numerical:
+      energy_min: -0.29998046875 eV
+      energy_max: 0.90001953125 eV
+  controlled_paths:
+  - numerical.energy_min
+  - numerical.energy_max
+  comparison_kind: discretization
+- id: k-density
+  method_id: k-density
+  overrides:
+    numerical:
+      momentum_nodes: 21
+  controlled_paths:
+  - numerical.momentum_nodes
+  comparison_kind: discretization
+- id: k-cutoff
+  method_id: k-cutoff
+  overrides:
+    numerical:
+      momentum_max: 0.9 nm^-1
+      momentum_nodes: 16
+      energy_max: 1.2 eV
+      energy_nodes: 38401
+  controlled_paths:
+  - numerical.momentum_max
+  - numerical.momentum_nodes
+  - numerical.energy_max
+  - numerical.energy_nodes
+  comparison_kind: discretization
+- id: z192
+  method_id: z192
+  overrides:
+    numerical:
+      spatial_nodes: 192
+  controlled_paths:
+  - numerical.spatial_nodes
+  comparison_kind: discretization
+- id: basis-states
+  method_id: basis-states
+  overrides:
+    numerical:
+      basis_states: 7
+  controlled_paths:
+  - numerical.basis_states
+  comparison_kind: discretization
+- id: embedding
+  method_id: embedding
+  overrides:
+    algorithms:
+      embedding_periods: 8
+    numerical:
+      energy_min: -0.6 eV
+      energy_max: 1.2 eV
+      energy_nodes: 46081
+  controlled_paths:
+  - algorithms.embedding_periods
+  - numerical.energy_min
+  - numerical.energy_max
+  - numerical.energy_nodes
+  comparison_kind: boundary_model

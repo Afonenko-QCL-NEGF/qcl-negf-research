@@ -1,0 +1,86 @@
+schema: qcl-negf-study-v2
+kind: study
+id: spectrum-reference-2019
+name: Reference structure spectrum and basis
+tags:
+- research
+- analytical
+- 70k
+- reference-2019
+purpose: diagnostic
+operation: structure_spectrum
+configuration:
+  sources:
+  - ../model/reference-2019-70k.yaml
+  - ../policies/analytical-diagnostic.yaml
+  overrides:
+    numerical:
+      basis_states: 5
+      basis_periods: 3
+axes:
+  temperatures:
+    values:
+    - 70
+    unit: K
+  voltages:
+    values:
+    - 0
+    - 48
+    unit: mV
+policies:
+  scba_to_poisson: adaptive_working
+  voltage:
+    mode: independent
+    invalid_predecessor: stop_branch
+  on_child_failure: continue
+outputs:
+  full_state: false
+  projections: false
+  optical: false
+  intermediate_history: 64
+variants:
+- id: baseline
+  method_id: baseline
+  overrides: {}
+  controlled_paths: []
+  comparison_kind: discretization
+- id: basis7
+  method_id: basis7
+  overrides:
+    numerical:
+      basis_states: 7
+  controlled_paths:
+  - numerical.basis_states
+  comparison_kind: discretization
+- id: basis9
+  method_id: basis9
+  overrides:
+    numerical:
+      basis_states: 9
+  controlled_paths:
+  - numerical.basis_states
+  comparison_kind: discretization
+- id: basis-window5
+  method_id: basis-window5
+  overrides:
+    numerical:
+      basis_periods: 5
+  controlled_paths:
+  - numerical.basis_periods
+  comparison_kind: discretization
+- id: basis-window7
+  method_id: basis-window7
+  overrides:
+    numerical:
+      basis_periods: 7
+  controlled_paths:
+  - numerical.basis_periods
+  comparison_kind: discretization
+- id: z192
+  method_id: z192
+  overrides:
+    numerical:
+      spatial_nodes: 192
+  controlled_paths:
+  - numerical.spatial_nodes
+  comparison_kind: discretization

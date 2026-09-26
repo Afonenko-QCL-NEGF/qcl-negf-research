@@ -1,0 +1,30 @@
+run:
+  name: synthetic-one-well
+  description: Synthetic one-well geometry in the common Al0.15GaAs/GaAs model at
+    70 K; a numerical control without experimental provenance.
+physical:
+  layers:
+  - thickness: 2.5 nm
+    material: AlGaAs
+    aluminium_fraction: 0.15
+    conduction_band_edge: 0.120 eV
+    longitudinal_relative_mass: 0.07945
+    transverse_relative_mass: 0.07945
+    relative_permittivity: 12.9
+    doped: true
+  - thickness: 7.5 nm
+    material: GaAs
+    aluminium_fraction: 0.0
+    conduction_band_edge: 0 eV
+    longitudinal_relative_mass: 0.067
+    transverse_relative_mass: 0.067
+    relative_permittivity: 12.9
+    doped: true
+  interfaces:
+  - 0 nm
+  - 2.5 nm
+  donor_sheet_density: 1e+14 m^-2
+  voltage_per_period: 8 mV
+numerical:
+  basis_states: 5
+  basis_periods: 9

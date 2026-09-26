@@ -1,0 +1,12 @@
+schema: qcl-negf-study-v2
+kind: meta
+id: operators
+name: Analytical operator checks
+includes:
+- studies/operator-algebra.yaml
+- studies/operator-metrics.yaml
+- studies/operator-representation.yaml
+- studies/operator-cavity.yaml
+- studies/operator-continuum.yaml
+- studies/operator-lo-equilibrium.yaml
+- studies/operator-spectral-resolution.yaml

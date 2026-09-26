@@ -1,0 +1,7 @@
+schema: qcl-negf-study-v2
+kind: meta
+id: convergence
+name: Independent reference candidate and controlled numerical comparisons
+includes:
+- studies/reference-48.yaml
+- studies/grid-refinement-48.yaml

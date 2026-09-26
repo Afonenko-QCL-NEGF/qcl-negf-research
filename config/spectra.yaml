@@ -1,0 +1,7 @@
+schema: qcl-negf-study-v2
+kind: meta
+id: spectra
+name: Structure and basis comparisons
+includes:
+- studies/spectrum-reference-2019.yaml
+- studies/spectrum-synthetic-one-well.yaml
