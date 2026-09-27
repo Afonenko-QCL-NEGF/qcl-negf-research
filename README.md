@@ -2,10 +2,10 @@
 
 Versioned scientific inputs and literature provenance for quantum cascade laser
 NEGF calculations. The numerical implementation lives in
-[QCLNEGF.jl](https://github.com/AfonenkoA/QCLNEGF.jl), with scientific plans and CLI in
-[QCLNEGFRunner.jl](https://github.com/AfonenkoA/QCLNEGFRunner.jl); execution and
+[QCLNEGF.jl](https://github.com/Afonenko-QCL-NEGF/QCLNEGF.jl), with scientific plans and CLI in
+[QCLNEGFRunner.jl](https://github.com/Afonenko-QCL-NEGF/QCLNEGFRunner.jl); execution and
 provenance on Slurm are provided by
-[qcl-negf-aiida](https://github.com/AfonenkoA/qcl-negf-aiida).
+[qcl-negf-aiida](https://github.com/Afonenko-QCL-NEGF/qcl-negf-aiida).
 
 This repository contains input definitions, not precomputed scientific results.
 Every included study is reachable from one of the three entry points below.
@@ -28,7 +28,7 @@ qcl-negf run-plan plans/operators.json results/operators
 
 The frozen JSON plan contains resolved inputs and a fingerprint. Keep it with the
 results. To submit the same plan to the department cluster, use the
-[AiiDA submission interface](https://github.com/AfonenkoA/qcl-negf-aiida)
+[AiiDA submission interface](https://github.com/Afonenko-QCL-NEGF/qcl-negf-aiida)
 with a registered `qcl-negf` Code and explicit Slurm resources. Configuration files
 contain scientific choices; they do not allocate cluster resources.
 
@@ -41,7 +41,7 @@ solver's recorded scientific status and diagnostics.
 ## Validate inputs
 
 Use the Python 3.14 environment prepared by the
-[qcl-negf superproject](https://github.com/AfonenkoA/qcl-negf). From its root:
+[qcl-negf superproject](https://github.com/Afonenko-QCL-NEGF/qcl-negf). From its root:
 
 ```sh
 deno task prepare
