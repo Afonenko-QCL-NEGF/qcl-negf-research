@@ -20,5 +20,5 @@ its label.
 Submit new results to your research data/provenance system rather than committing
 machine-specific paths, large numerical artifacts, credentials or execution logs
 to this repository. Integrated CI runs from the
-[qcl-negf superproject](https://github.com/AfonenkoA/qcl-negf) on trusted pushes or
+[qcl-negf superproject](https://github.com/Afonenko-QCL-NEGF/qcl-negf) on trusted pushes or
 manual dispatch; run untrusted contributions only on disposable isolated runners.
