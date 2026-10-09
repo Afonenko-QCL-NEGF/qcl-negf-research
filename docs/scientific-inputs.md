@@ -35,6 +35,23 @@ approximations. The spectrum studies vary basis size, basis period window and
 spatial resolution; a failed variant is diagnostic evidence, not a reason to
 silently change the model or weaken a tolerance.
 
+## Equilibrium S01 candidate
+
+`config/equilibrium.yaml` includes only the ordinary stationary
+`equilibrium-0-70` study: one independent point at 0 mV/period, lattice/LO 70 K,
+and one baseline variant. It is separate from the 48 mV/refinement bundle.
+Its sources remain the reference model followed by analytical-diagnostic policy;
+solver caps/mixing, discretization, scattering and archive/recovery/telemetry
+policy are retained from `reference-48`. The explicit physical bias override and
+axis select zero bias; this is the S01 research choice, not a value attributed to
+the geometry publication.
+
+The [S01 brief](equilibrium-s01.md) records the retained composition, typed defaults,
+formula/value/assigning-origin distinction and required evidence. Catalog or
+semantic planning success does not establish equilibrium, convergence,
+discretization accuracy or experimental validation. The LO equilibrium operator
+entry is a distinct toy diagnostic and does not accept this stationary model.
+
 ## Reference candidate and grid comparisons
 
 `reference-48` computes an independent candidate at 48 mV per period and 70 K.

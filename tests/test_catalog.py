@@ -27,7 +27,7 @@ def catalog(tmp_path: Path) -> Path:
 
 def test_catalog_is_closed_and_valid() -> None:
     counts = validator.validate(ROOT)
-    assert counts == {"definitions": 14, "configurations": 29, "literature_files": 2}
+    assert counts == {"definitions": 16, "configurations": 30, "literature_files": 2}
 
 
 def test_unreferenced_fragment_is_an_error(catalog: Path) -> None:

@@ -8,12 +8,13 @@ provenance on Slurm are provided by
 [qcl-negf-aiida](https://github.com/Afonenko-QCL-NEGF/qcl-negf-aiida).
 
 This repository contains input definitions, not precomputed scientific results.
-Every included study is reachable from one of the three entry points below.
+Every included study is reachable from one of the four entry points below.
 
 | Entry point | Scientific purpose | Execution |
 | --- | --- | --- |
 | `config/operators.yaml` | Seven algebraic, metric, representation, continuum, cavity, LO equilibrium and spectral resolution checks | Diagnostic calculations |
 | `config/spectra.yaml` | Structure spectra and basis comparisons for a literature-derived structure and a synthetic well | Diagnostic calculations |
+| `config/equilibrium.yaml` | One independent stationary S01 candidate at 0 mV/period and 70 K | Expensive stationary calculation; see [brief](docs/equilibrium-s01.md) |
 | `config/convergence.yaml` | Independent 48 mV candidate and nine controlled numerical comparisons at 70 K | Expensive stationary calculations |
 
 ## Run a study
@@ -61,6 +62,7 @@ environment on its self-hosted GitHub Actions runner.
 
 ## Scientific interpretation and contributions
 
+- [Thermal equilibrium S01 candidate and open scientific gates](docs/equilibrium-s01.md)
 - [Model assumptions and controlled comparisons](docs/scientific-inputs.md)
 - [Literature data, provenance and comparison limits](literature/README.md)
 - [Contribution checks](CONTRIBUTING.md)
