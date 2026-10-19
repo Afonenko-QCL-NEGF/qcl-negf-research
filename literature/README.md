@@ -4,7 +4,11 @@
 quantum cascade laser operating up to 210 K**, Applied Physics Letters 115,
 010601 (2019), [DOI 10.1063/1.5110305](https://doi.org/10.1063/1.5110305).
 The label names a reference dataset, not an original experiment performed by
-this software project.
+this software project. The
+[model passport](../docs/reference-2019-model-passport.md) records the
+verified author PDF version/hash, the main-text/caption doping-unit
+discrepancy and the preserved sheet interpretation, together with the
+separate material assumptions and configuration assigning origins.
 
 | File | Content |
 | --- | --- |
