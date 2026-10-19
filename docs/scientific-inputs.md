@@ -5,8 +5,13 @@
 `config/model/reference-2019-70k.yaml` describes a two-well GaAs/AlGaAs period
 with 25% Al barriers. Its layer sequence is 3.26 / 7.99 / 1.90 / 8.40 / 2.90 /
 5.16 nm, with the 2.90 nm segment doped and a sheet density of
-4.5 × 10¹⁴ m⁻². Geometry and sheet doping trace to DOI
-[10.1063/1.5110305](https://doi.org/10.1063/1.5110305).
+4.5 × 10¹⁴ m⁻². Geometry traces to DOI
+[10.1063/1.5110305](https://doi.org/10.1063/1.5110305). The declared dose
+preserves the sheet interpretation of the main text; the same author PDF
+has a conflicting volume unit in the Fig. 3(a) caption. The
+[model passport](reference-2019-model-passport.md) records the verified
+version/hash/page locators, donor normalization, value assumptions and
+assigning origins. No physical input is changed by that caveat.
 
 The present model temperature is 70 K. The included digitized publication curve
 is at 200 K. Those are distinct conditions: the curve is provenance and a resource

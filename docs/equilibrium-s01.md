@@ -36,7 +36,7 @@ assignments, не происхождение физических чисел; о
 
 | Группа | Сохранённые inputs | Value/assigning origin и ограничение |
 | --- | --- | --- |
-| Структура/doping | Слои 3.26/7.99/1.90/8.40/2.90/5.16 nm; Al fraction0.25; doped segment2.90 nm; sheet4.5e14 m⁻²; ionization1 | Model и structure CSV/passport связывают с Bosco; primary contents/точный locator ещё не проверены |
+| Структура/doping | Слои 3.26/7.99/1.90/8.40/2.90/5.16 nm; Al fraction0.25; doped segment2.90 nm; sheet4.5e14 m⁻²; ionization1 | Primary geometry и main-text sheet quantity проверены; caption unit конфликтует. [Паспорт](reference-2019-model-passport.md) сохраняет sheet assumption с caveat; ionization1 остаётся model assumption |
 | Условия | Vperiod0 mV; lattice/LO70 K; spin2 | Новый study выбирает bias, axes задают point; model задаёт T/spin; generated assignments — final assigning owners |
 | Материал | Offsets/masses/permittivities; ħωLO36.7 meV; screening0.20 nm⁻¹; IFR0.10 nm/9 nm; acoustic constants без изменения | Явные model assumptions; один DOI о структуре не устанавливает origins всех чисел |
 | Рассеяние | LO/acoustic/impurity/IFR/alloy enabled; alloy potential0.60 eV, cell4.5168e−29 m³; e–e none | Первые четыре — model; alloy — policy; e–e none — typed default |
@@ -74,10 +74,13 @@ Finite-window tails и projected-basis/local-current sensitivity учитыва�
 
 Research passport цитирует Bosco et al., *Thermoelectrically cooled THz quantum
 cascade laser operating up to 210 K*, DOI 10.1063/1.5110305. См.
-[passport](../literature/reference-2019/source.yaml) и
-[literature limits](../literature/README.md). Primary contents с declared hash
-и locators геометрии/дозы отсутствуют в предъявленном Git наборе; material/scattering
-value origins ещё требуют обоснования как источников или явных assumptions.
+[publication metadata](../literature/reference-2019/source.yaml),
+[model passport](reference-2019-model-passport.md) и
+[literature limits](../literature/README.md). Author PDF v1 с declared hash
+проверен: p. 3 main text содержит sheet quantity, p. 4 Fig. 3(a) caption —
+conflicting volume unit. Declared sheet4.5e14 m⁻² сохраняется с caveat.
+Точные material/scattering value origins первично не установлены и явно
+отделены в паспорте от сохранённых model assumptions и assigning origins.
 Included digitized NEGF curve200 K — иные условия, не S01 equilibrium oracle.
 
 Научный бюджет этой source подготовки: **0 attempts, 0 solver CPU-hours**.
