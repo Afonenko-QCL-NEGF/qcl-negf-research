@@ -51,7 +51,7 @@ output:
     enabled: true
     interval_seconds: 1800.0
     retain_generations: 2
-    byte_budget: 8589934592
+    byte_budget: 137438953472
     reserve_bytes: 67108864
   telemetry:
     enabled: true
