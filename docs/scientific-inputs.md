@@ -47,7 +47,8 @@ silently change the model or weaken a tolerance.
 and one baseline variant. It is separate from the 48 mV/refinement bundle.
 Its sources remain the reference model followed by analytical-diagnostic policy;
 solver caps/mixing, discretization, scattering and archive/recovery/telemetry
-policy are retained from `reference-48`. The explicit physical bias override and
+policy are retained from `reference-48`, except for the operational recovery byte
+budget correction from 8 to 128 GiB. The explicit physical bias override and
 axis select zero bias; this is the S01 research choice, not a value attributed to
 the geometry publication.
 

@@ -51,8 +51,10 @@ assignments, не происхождение физических чисел; о
 Относительно `reference-48` единственное intentional physical изменение —
 выбранный bias0; labels/entry identity меняются административно. Full final=true,
 projections=true, optical=false, intermediate history64; recovery enabled,
-1800 s, 2 generations, 8 GiB byte budget/64 MiB reserve; telemetry enabled/buffer256
-сохранены. Recovery bytes не бюджет вычислительного опыта. Raw model preset56 mV
+1800 s, 2 generations, 64 MiB reserve; telemetry enabled/buffer256 сохранены.
+Recovery byte budget увеличен с 8 до 128 GiB как операционное исправление
+storage ceiling; физическая постановка и остальные output policies не меняются.
+Recovery bytes не бюджет вычислительного опыта. Raw model preset56 mV
 не является effective выбранным bias0; physical override, generated study voltage
 и point passport должны согласоваться.
 
