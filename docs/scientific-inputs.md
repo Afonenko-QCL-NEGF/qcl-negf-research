@@ -58,6 +58,44 @@ semantic planning success does not establish equilibrium, convergence,
 discretization accuracy or experimental validation. The LO equilibrium operator
 entry is a distinct toy diagnostic and does not accept this stationary model.
 
+## Configurator catalog
+
+[`config/configurator-catalog.json`](../config/configurator-catalog.json) is the
+small release asset for the Runner configurator. Its
+`qcl-negf-configurator-catalog-v1` object contains only `schema` and `templates`.
+Each template has exactly `id`, `name`, `study`, `model`, `protocol` and
+`description`; `model` and `protocol` each contain only `name` and `path`.
+All paths are relative to the selected Research repository root. Scientific
+values remain in their existing YAML sources, rather than in this catalog.
+
+The only supported template is `equilibrium-0-70`, pointing to
+`config/studies/equilibrium-0-70.yaml`. The study's ordered sources are
+`../model/reference-2019-70k.yaml` followed by
+`../policies/analytical-diagnostic.yaml`; the catalog's model and protocol paths
+identify those same files. This historical independent 0 mV/period, lattice/LO
+70 K candidate retains LO, acoustic, impurity, interface-roughness and alloy
+scattering, with electron-electron mode `none` supplied by the Runner/Core typed
+default described in the [model passport](reference-2019-model-passport.md).
+It uses `adaptive_working` and a 128 GiB recovery byte budget. It is not the exact
+strict active SCI4 preset, and catalog presence does not establish scientific
+acceptance. The existing strict thresholds and physical/numerical inputs remain
+unchanged.
+
+The catalog stores no source ID, revision list, digest or manually maintained
+protocol version. At catalog read, trusted Runner arguments bind the exact
+selected Research release source ID. Runner computes file SHA256 values from the
+selected bytes and supplies `protocol.version` as `sourceID:path`, using the
+catalog protocol path. Those runtime metadata do not add fields to this catalog.
+Publishing the asset does not establish installed planner availability or
+runtime source binding.
+
+Form changes to numerical grids must create an explicit variant with
+`comparison_kind`, `controlled_paths` and overrides, checked by the Runner's
+existing controlled-variant validation. They do not rewrite this template or its
+model/protocol files. The [catalog test](../tests/test_catalog.py) independently
+enumerates the allowed key sets, single template paths, source order and retained
+candidate fields; it is a structural control, not a solver or scientific gate.
+
 ## Reference candidate and grid comparisons
 
 `reference-48` computes an independent candidate at 48 mV per period and 70 K.

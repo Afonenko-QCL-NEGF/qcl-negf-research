@@ -1,0 +1,19 @@
+{
+  "schema": "qcl-negf-configurator-catalog-v1",
+  "templates": [
+    {
+      "id": "equilibrium-0-70",
+      "name": "Independent 0 mV/period, 70 K candidate (adaptive_working)",
+      "study": "config/studies/equilibrium-0-70.yaml",
+      "model": {
+        "name": "Reference 2019 two-well GaAs/AlGaAs at 70 K",
+        "path": "config/model/reference-2019-70k.yaml"
+      },
+      "protocol": {
+        "name": "Analytical diagnostic (adaptive_working)",
+        "path": "config/policies/analytical-diagnostic.yaml"
+      },
+      "description": "Historical independent stationary candidate at 0 mV/period and lattice/LO 70 K, with LO, acoustic, impurity, interface-roughness and alloy scattering; electron-electron mode none is a Runner/Core typed default. Uses adaptive_working and a 128 GiB recovery byte budget. This is not the exact strict active SCI4 preset and has no scientific acceptance."
+    }
+  ]
+}
