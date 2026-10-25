@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import importlib.util
+import json
 from pathlib import Path
 import shutil
 
@@ -28,6 +29,65 @@ def catalog(tmp_path: Path) -> Path:
 def test_catalog_is_closed_and_valid() -> None:
     counts = validator.validate(ROOT)
     assert counts == {"definitions": 16, "configurations": 30, "literature_files": 2}
+
+
+def test_configurator_catalog_preserves_historical_candidate() -> None:
+    # Independent literals: do not derive expected paths or science from the
+    # configurator catalog or the Runner resolver being checked by consumers.
+    catalog = json.loads((ROOT / "config/configurator-catalog.json").read_text())
+    assert set(catalog) == {"schema", "templates"}
+    assert catalog["schema"] == "qcl-negf-configurator-catalog-v1"
+    assert len(catalog["templates"]) == 1
+    template = catalog["templates"][0]
+    assert set(template) == {"id", "name", "study", "model", "protocol", "description"}
+    assert template["id"] == "equilibrium-0-70"
+    assert template["study"] == "config/studies/equilibrium-0-70.yaml"
+    for key, path in (
+        ("model", "config/model/reference-2019-70k.yaml"),
+        ("protocol", "config/policies/analytical-diagnostic.yaml"),
+    ):
+        assert set(template[key]) == {"name", "path"}
+        assert template[key]["path"] == path
+        assert isinstance(template[key]["name"], str) and template[key]["name"].strip()
+        assert (ROOT / path).resolve().is_relative_to(ROOT.resolve())
+        assert (ROOT / path).is_file()
+    for key in ("name", "description"):
+        assert isinstance(template[key], str) and template[key].strip()
+
+    study = yaml.safe_load((ROOT / "config/studies/equilibrium-0-70.yaml").read_text())
+    assert study["configuration"]["sources"] == [
+        "../model/reference-2019-70k.yaml", "../policies/analytical-diagnostic.yaml"
+    ]
+    assert [
+        (ROOT / template["study"]).parent.joinpath(source).resolve()
+        for source in study["configuration"]["sources"]
+    ] == [ROOT / template["model"]["path"], ROOT / template["protocol"]["path"]]
+    assert study["axes"] == {
+        "temperatures": {"values": [70], "unit": "K"},
+        "voltages": {"values": [0], "unit": "mV"},
+    }
+    assert study["configuration"]["overrides"] == {
+        "physical": {"voltage_per_period": "0 mV"},
+        "solver": {"maximum_scba_iterations": 2048, "maximum_poisson_iterations": 128,
+                   "self_energy_mixing": 0.2},
+        "production": {"checkpoint_every_scba": 32},
+    }
+    assert study["variants"] == [{"id": "baseline", "method_id": "configured"}]
+    assert study["policies"] == {
+        "scba_to_poisson": "adaptive_working",
+        "voltage": {"mode": "independent", "invalid_predecessor": "stop_branch"},
+        "on_child_failure": "continue",
+    }
+    assert study["output"]["recovery"]["byte_budget"] == 137438953472
+    model = yaml.safe_load((ROOT / "config/model/reference-2019-70k.yaml").read_text())
+    policy = yaml.safe_load((ROOT / "config/policies/analytical-diagnostic.yaml").read_text())
+    assert model["scattering"] == {
+        "lo_phonon": True, "acoustic_phonon": True, "ionized_impurity": True,
+        "interface_roughness": True, "alloy_disorder": False,
+    }
+    assert policy["scattering"] == {"alloy_disorder": True}
+    assert "tolerances" not in policy["solver"]
+    assert policy["solver"]["convergence"]["mode"] == "adaptive_working"
 
 
 def test_unreferenced_fragment_is_an_error(catalog: Path) -> None:
