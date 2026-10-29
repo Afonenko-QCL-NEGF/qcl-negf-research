@@ -85,13 +85,17 @@ conflicting volume unit. Declared sheet4.5e14 m⁻² сохраняется с c
 отделены в паспорте от сохранённых model assumptions и assigning origins.
 Included digitized NEGF curve200 K — иные условия, не S01 equilibrium oracle.
 
-Научный бюджет этой source подготовки: **0 attempts, 0 solver CPU-hours**.
-Перед compute нужны fresh runtime/resource/calibration/admission/storage facts,
-finite aggregate attempts/CPU-hours, per-job CPU/RAM/wall/output, stop rules и
-конкретное различающее свидетельство. Capacity shortage не разрешает уменьшить
-модель. После accepted baseline выбираются несколько различающих refinements;
+При этой source подготовке solver не запускался: **0 attempts, 0 solver CPU-hours** —
+наблюдение о выполненной работе, не лимит будущей программы. Перед новым compute
+нужны fresh runtime/resource/calibration/admission/storage facts, согласованный
+resource envelope конкретного job, stop rules при нарушении инвариантов и
+различающее свидетельство. Общих campaign quotas по CPU/RAM/времени/attempts этот
+brief не вводит. Capacity shortage не разрешает уменьшить модель.
+После accepted baseline выбираются несколько различающих refinements;
 existing48 variants автоматически не запускаются. Embedding — boundary-model
 sensitivity; k-cutoff variant одновременно меняет energy window.
+[Маршрут исследователя](researcher-guide.md) отделяет planning и synthetic-приёмку
+системы от отдельного будущего научного S01.
 
 ## Ожидаемый будущий результат
 

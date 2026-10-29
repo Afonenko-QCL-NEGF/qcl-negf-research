@@ -1,72 +1,63 @@
 # QCL-NEGF Research
 
-Versioned scientific inputs and literature provenance for quantum cascade laser
-NEGF calculations. The numerical implementation lives in
-[QCLNEGF.jl](https://github.com/Afonenko-QCL-NEGF/QCLNEGF.jl), with scientific plans and CLI in
-[QCLNEGFRunner.jl](https://github.com/Afonenko-QCL-NEGF/QCLNEGFRunner.jl); execution and
-provenance on Slurm are provided by
-[qcl-negf-aiida](https://github.com/Afonenko-QCL-NEGF/qcl-negf-aiida).
+Версионируемые научные inputs и литературные источники для QCL-NEGF. Это репозиторий постановок;
+готовых результатов расчёта здесь нет. Начните с
+[русского руководства исследователя](docs/researcher-guide.md).
 
-This repository contains input definitions, not precomputed scientific results.
-Every included study is reachable from one of the four entry points below.
+Уравнения и вычисления принадлежат [Core](https://github.com/Afonenko-QCL-NEGF/QCLNEGF.jl),
+разрешение конфигурации и CLI — [Runner](https://github.com/Afonenko-QCL-NEGF/QCLNEGFRunner.jl),
+provenance и Slurm workflow — [AiiDA](https://github.com/Afonenko-QCL-NEGF/qcl-negf-aiida). Root
+gitlinks выбирают совместимую композицию компонентов.
 
-| Entry point | Scientific purpose | Execution |
-| --- | --- | --- |
-| `config/operators.yaml` | Seven algebraic, metric, representation, continuum, cavity, LO equilibrium and spectral resolution checks | Diagnostic calculations |
-| `config/spectra.yaml` | Structure spectra and basis comparisons for a literature-derived structure and a synthetic well | Diagnostic calculations |
-| `config/equilibrium.yaml` | One independent stationary S01 candidate at 0 mV/period and 70 K | Expensive stationary calculation; see [brief](docs/equilibrium-s01.md) |
-| `config/convergence.yaml` | Independent 48 mV candidate and nine controlled numerical comparisons at 70 K | Expensive stationary calculations |
+| Вход                      | Научная цель                                                                                           | Выполнение                                                                          |
+| ------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| `config/operators.yaml`   | Семь алгебраических, метрических, континуальных, cavity, LO equilibrium и spectral resolution проверок | Диагностические вычисления                                                          |
+| `config/spectra.yaml`     | Спектры структуры и сравнение базиса для литературной структуры и синтетической ямы                    | Диагностические вычисления                                                          |
+| `config/equilibrium.yaml` | Один независимый S01 candidate при 0 mV/period и 70 K                                                  | Дорогой stationary solve; [постановка и открытые критерии](docs/equilibrium-s01.md) |
+| `config/convergence.yaml` | Независимый candidate при 48 mV и девять контролируемых численных сравнений при 70 K                   | Дорогие stationary solves                                                           |
 
-## Run a study
+Все включённые studies достижимы из этих четырёх входов. Convergence bundle содержит 30 721 energy
+nodes для reference candidate и до 46 081 для сравнения; это не smoke test ноутбука.
 
-Install `qcl-negf` from a compatible `QCLNEGFRunner.jl` release. From this repository:
+## Планирование без solve
+
+В подготовленной совместимой установке `qcl-negf`, из этого репозитория:
 
 ```sh
 mkdir -p plans
 qcl-negf plan config/operators.yaml > plans/operators.json
-qcl-negf run-plan plans/operators.json results/operators
 ```
 
-The frozen JSON plan contains resolved inputs and a fingerprint. Keep it with the
-results. To submit the same plan to the department cluster, use the
-[AiiDA submission interface](https://github.com/Afonenko-QCL-NEGF/qcl-negf-aiida)
-with a registered `qcl-negf` Code and explicit Slurm resources. Configuration files
-contain scientific choices; they do not allocate cluster resources.
+`plan` разрешает inputs и создаёт frozen JSON plan с fingerprint. Он не выполняет transport solve.
+Сохраните выбранный plan вместе с будущим run. Проверка planning не доказывает наличие ресурсов,
+сходимость или физическую корректность результата. Новый научный запуск выбирается отдельно после
+инженерной приёмки; команда запуска описана в руководстве, её не выполняют для проверки
+документации.
 
-Start with the diagnostic entry points. The convergence bundle uses 30,721 energy
-nodes for its reference candidate and up to 46,081 for a comparison. It is not a
-laptop smoke test. A technically completed process does not certify convergence,
-operator checks, numerical accuracy or agreement with experiment; inspect the
-solver's recorded scientific status and diagnostics.
+## Структурная проверка inputs
 
-## Validate inputs
-
-Use the Python 3.14 environment prepared by the
-[qcl-negf superproject](https://github.com/Afonenko-QCL-NEGF/qcl-negf). From its root:
+Используйте Python 3.14 и зависимости, заранее подготовленные для выбранной Root-композиции. Из Root
+checkout:
 
 ```sh
-deno task prepare
-uv run --locked python components/qcl-negf-research/tools/validate.py
-uv run --locked pytest components/qcl-negf-research/tests
+uv run --locked --no-sync python components/qcl-negf-research/tools/validate.py
+uv run --locked --no-sync pytest components/qcl-negf-research/tests
 ```
 
-Validation checks the study graph, every merged configuration variant against
-the shared JSON schemas, duplicate YAML keys, missing or escaping source paths,
-unreachable configuration files and literature data checksums. This is structural
-validation; `qcl-negf plan` additionally applies the solver's semantic checks.
-Neither procedure runs the physical convergence experiment.
+`--no-sync` требует уже подготовленное окружение. Его установку выполняют отдельным шагом по
+текущему Root runbook. Validator проверяет граф studies, merged variants по общим schemas, duplicate
+YAML keys, missing/escaping paths, недостижимые fragments и контрольные суммы литературных данных.
+Он не запускает solver. Семантическая проверка `qcl-negf plan` — отдельная проверка Runner.
 
-The superproject Git tree fixes the contracts revision and its generated
-`uv.lock` fixes external dependencies. Integrated catalog checks run in this same
-environment on its self-hosted GitHub Actions runner.
+## Интерпретация и изменение постановки
 
-## Scientific interpretation and contributions
+- [Руководство: цель, inputs, used values, run и чтение](docs/researcher-guide.md)
+- [S01: thermal equilibrium candidate и открытые научные gates](docs/equilibrium-s01.md)
+- [Model assumptions и контролируемые сравнения](docs/scientific-inputs.md)
+- [Литература, provenance и пределы сравнения](literature/README.md)
+- [Правила вклада и проверки](CONTRIBUTING.md)
 
-- [Thermal equilibrium S01 candidate and open scientific gates](docs/equilibrium-s01.md)
-- [Model assumptions and controlled comparisons](docs/scientific-inputs.md)
-- [Literature data, provenance and comparison limits](literature/README.md)
-- [Contribution checks](CONTRIBUTING.md)
-
-Code and project documentation use the [MIT license](LICENSE). Publication
-metadata and digitized numerical data retain their source attribution in
-`literature/reference-2019/source.yaml`; the source article is not redistributed.
+Код и документация используют [MIT license](LICENSE). Метаданные публикации и оцифрованные данные
+сохраняют атрибуцию в
+[literature/reference-2019/source.yaml](literature/reference-2019/source.yaml); статья не
+распространяется в этом репозитории.
