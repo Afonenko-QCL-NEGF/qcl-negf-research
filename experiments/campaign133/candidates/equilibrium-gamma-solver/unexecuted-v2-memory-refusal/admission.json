@@ -1,0 +1,8 @@
+{
+  "actual_S01_calls": 0,
+  "MemAvailable_bytes": 14617665536,
+  "requested_memory_max_bytes": 13287555072,
+  "OS_reserve_bytes": 1468006400,
+  "required_total_bytes": 14755561472,
+  "outcome": "refused before process launch"
+}

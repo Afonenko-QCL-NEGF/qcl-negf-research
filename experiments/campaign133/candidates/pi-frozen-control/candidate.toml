@@ -1,0 +1,15 @@
+status = "write_only_ready_for_static_review"
+runtime = "not_measured"
+core_head = "2a500740a82dfd5b44f6be966ef63dd54010d097"
+source_state_sha256 = "e6fffb997f36397f877aee1e2c98b1dbad7d97417d45458a042b5f074ce57a6d"
+source_input_sha256 = "0fa0d0bc2fc27602fa99b8fe0797071eae99c66ab2661dfde05bd00ebe19b86e"
+script_sha256 = "daa23694c74081359010595155d67ee588bd136831cdeed5be645f7d65c26344"
+protocol_sha256 = "2c426d0a192aa8e7ff4a514e4f8bad4cdf990435815ed565d5712aadcf946076"
+source_mu_eV = 0.008495393439818052
+memory_cap_bytes_proposed = 6442450944
+timeout_seconds_proposed = 300
+Julia_threads = 4
+BLAS_threads = 1
+CPU_quota_percent_proposed = 400
+maximum_output_bytes = 33554432
+scope = "Retarded-only frozen local Gamma from 5 source scattering families, no embedding in Gamma; native fresh cavity4 and Dyson; no SCBA/Keldysh/Poisson/normalization/fit"

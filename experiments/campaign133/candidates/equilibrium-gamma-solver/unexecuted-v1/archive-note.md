@@ -1,0 +1,1 @@
+V1 сохранена до V2 edits. Root small unit execution: ParseError checks.jl:86, exit1, 21.98s, peak1029512KiB, actual S01 maps=0. Source log: .build/campaign133/environment/accepted/gamma-small-checks.log; точная копия рядом. Исходный SHA256SUMS сохранён без правки (его paths указывают original location V1). SHA256SUMS.archive содержит archive-relative hashes.

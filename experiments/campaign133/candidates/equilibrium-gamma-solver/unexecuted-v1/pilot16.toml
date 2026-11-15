@@ -1,0 +1,46 @@
+identity = "campaign133-S01-m939-equilibrium-Gamma-PI-AAII-m3-pilot16-v1"
+expected_julia_version = "1.13.3"
+# Accepted integrated Core; no silent fallback to a different retarded closure.
+expected_core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+expected_core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+runtime_authorized = false
+NE = 30704
+energy_min_eV = -0.3
+energy_max_eV = 0.9000001064962726
+Nz = 96
+Nb = 5
+basis_periods = 3
+Nk = 11
+kmax_per_nm = 0.6
+Nphi = 32
+Nqz = 81
+qzmax_per_nm = 10.0
+temperature_K = 70.0
+trust_margin_meV = 80.0
+seed_halfwidth_meV = 1.25
+workers = 4
+memory_max_bytes = 13287555072
+memory_high_bytes = 12348030976
+heap_hint = "8G"
+cpu_quota = "400%"
+swap_max_bytes = 0
+pi_calls_total = 16
+precheck_actual_calls = 6
+precheck_seconds = 180.0
+pilot_seconds = 600.0
+native_max_maps = 32
+native_seconds = 900.0
+overall_seconds = 1800.0
+single_file_max_bytes = 5368709120
+data_max_bytes = 6442450944
+history_differences = 3
+aa_beta = 1.0
+linear_alpha = 0.2
+qr_condition_max = 1.0e8
+affine_l1_max = 10.0
+trigger_relative = 1.0e-9
+trigger_passes = 3
+arithmetic_relative = 1.0e-10
+# No absolute convergence floor. Absolute residuals in scaled E0 and physical eV
+# are recorded; relative zero/zero=0, nonzero/zero=Inf. Zero Gamma is infeasible.
+checkpoint_call = 8
