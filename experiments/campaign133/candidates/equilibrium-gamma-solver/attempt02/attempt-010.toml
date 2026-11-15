@@ -1,0 +1,14 @@
+elapsed_seconds = 70.62604999542236
+kind = "convex_fallback"
+reason = "accepted"
+call = 7
+
+[AA]
+rank = 1
+l1 = 8.689670584300494
+kind = "AAII"
+R_diagonal = [0.025335207985510602]
+condition = 1.0
+firstpair = 1
+initial_scales = [0.025335207985510602]
+coefficients = [-3.844835292150247]
