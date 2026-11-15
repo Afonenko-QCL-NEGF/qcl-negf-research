@@ -1,0 +1,125 @@
+# Public projection; original SHA-256: 1765c19d847a18bfae366bad74a2c1709b786e89faa2dbbeef36abf6474bf9e4; scope: ifr.
+qK = 0.0019883546138492096
+source_field_sha256 = "cfd144796094dacb28a42cbae5a834db173b1fc3e62c9923d9d841305bcfe50b"
+structured_type = "QCLNEGF.QCLNumerics._SeparableIFRProductionKernel"
+warm_structured_seconds = 0.36374062
+source_file_hash_seconds = 9.176192045211792
+workers = 4
+elapsed_seconds = 17.390442848205566
+warm_dense_seconds = 0.49610795
+finish_utc = "2026-11-15T21:39:22.299"
+source_field_sha256_after = "cfd144796094dacb28a42cbae5a834db173b1fc3e62c9923d9d841305bcfe50b"
+project_sha256 = "f2846c9d1f56d1a0c0c0fe21b2b5d9c1bfa552e6a23f68e4ab0ba55b61f7996f"
+core_implementation_diff_sha256 = "00e2e7fad176b9411794b8c756f39406b850281b870ec801d83d01658593f751"
+script_sha256 = "3fff2d7ae9505e9ca35fdc86cf638dec66202c1f42ed1d842bdf9bd3ff319a26"
+dense_output_sha256 = "fd76bbab839da48125387250427431b9b9a4b5351c252153a367939738967a66"
+model_note = "IFR independent of energy; canonical NE17 builder checked bitwise against source basis/K/qK/wk; full preserved GR has NE30721"
+source_field_bytes = 135172400
+source_kernel_sha256 = "614fd7a69eb34afba6213b6cdbe11963a66cca354a3e439c85aff7f1920cacba"
+core_base = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+dense_operator_bytes = 1210000
+source_dataset = "GR"
+julia_version = "1.13.3"
+source_state_sha256 = "e6fffb997f36397f877aee1e2c98b1dbad7d97417d45458a042b5f074ce57a6d"
+structured_operator_bytes = 5136
+operator_median_speedup = 2.1961180031336522
+chunk = 64
+start_utc = "2026-11-15T21:39:04.908"
+timing_scope = "in-place apply including bounded scratch allocation/packing; excludes source hashing/read/model/cache construction/warmup; alternating pair order, GC before each pair"
+structured_output_sha256 = "1432a93ef97958127f151ba22912790aa3bc5513308e3ba9afc18ced706c5bf6"
+end_to_end_SCBA_speedup = "not_measured"
+dense_type = "DenseProductionKernel"
+model_NE = 17
+phase = "complete"
+scope = "IFR operator-only on preserved real full GR; no SCBA/LO/physics change; no full-field outputs"
+manifest_sha256 = "ad9a7e873c9ddd6b31688e9f74a6a39865a8b90f6f2fdc6e591fdfd633b45c13"
+source_weight_k_sha256 = "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d"
+input_sha256 = "7c398acbd127069b2d4f08dddf0334d89ea5a0256ae6af0911af708dc964adf7"
+Julia_threads = 4
+field_shape = [30721, 11, 5, 5]
+BLAS_threads = 1
+status = "completed"
+core_patch_sha256 = "8b47d71a2beedee65dfd7cb1620ebc8baa704870db3d9b1fb16d98d6d7cf2d7e"
+source_input_sha256 = "0fa0d0bc2fc27602fa99b8fe0797071eae99c66ab2661dfde05bd00ebe19b86e"
+
+[structured]
+median_seconds = 0.0364431
+allocated_bytes_maximum = 1490144
+minimum_seconds = 0.035215603
+allocated_bytes_minimum = 1490144
+
+[[samples]]
+seconds = 0.08158571
+repetition = 1
+GC_seconds = 0.0
+allocated_bytes = 2261856
+operator = "dense"
+[[samples]]
+seconds = 0.03701043
+repetition = 1
+GC_seconds = 0.0
+allocated_bytes = 1490144
+operator = "structured"
+[[samples]]
+seconds = 0.037111629
+repetition = 2
+GC_seconds = 0.0
+allocated_bytes = 1490144
+operator = "structured"
+[[samples]]
+seconds = 0.080186433
+repetition = 2
+GC_seconds = 0.0
+allocated_bytes = 2261856
+operator = "dense"
+[[samples]]
+seconds = 0.079872273
+repetition = 3
+GC_seconds = 0.0
+allocated_bytes = 2261856
+operator = "dense"
+[[samples]]
+seconds = 0.035215603
+repetition = 3
+GC_seconds = 0.0
+allocated_bytes = 1490144
+operator = "structured"
+[[samples]]
+seconds = 0.036199491
+repetition = 4
+GC_seconds = 0.0
+allocated_bytes = 1490144
+operator = "structured"
+[[samples]]
+seconds = 0.07997835
+repetition = 4
+GC_seconds = 0.0
+allocated_bytes = 2261856
+operator = "dense"
+[[samples]]
+seconds = 0.080033348
+repetition = 5
+GC_seconds = 0.0
+allocated_bytes = 2261856
+operator = "dense"
+[[samples]]
+seconds = 0.0364431
+repetition = 5
+GC_seconds = 0.0
+allocated_bytes = 1490144
+operator = "structured"
+
+[dense]
+median_seconds = 0.080033348
+allocated_bytes_maximum = 2261856
+minimum_seconds = 0.079872273
+allocated_bytes_minimum = 2261856
+
+[all_complex_entry_comparison]
+reference_Frobenius = 0.7511503947801508
+absolute_Frobenius = 4.1501837181654613e-16
+relative_Frobenius = 5.525103557164675e-16
+maximum_reference_entry = 0.005936808968139032
+worst_linear_index = 8895
+maximum_entry_scaled_error = 1.3922588953915046e-15
+maximum_absolute_entry_error = 8.265575096131627e-18

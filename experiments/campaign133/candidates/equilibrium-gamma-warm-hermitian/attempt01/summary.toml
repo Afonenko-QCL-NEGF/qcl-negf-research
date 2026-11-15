@@ -1,0 +1,116 @@
+data_bytes = 1976932470
+precheck_actual_calls = 3
+scientific_acceptance = false
+pi_calls = 16
+elapsed_seconds = 151.13618302345276
+execution = "complete"
+small_checks = "pass"
+
+[native]
+reason = "no reduced trigger"
+not_measured = true
+
+[native_accounting]
+meaning = "materialization/audit counted before call; solver observations count completed maps only; an interrupted solver map is bounded by reserved max30, not observed as completed"
+started_lower_bound = 0
+started_upper_bound = 0
+solver_reserved_cap = 30
+completed_lower_bound = 0
+structural_cap = 32
+
+    [native_accounting.events]
+    audit_report_written = 0
+    audit_started = 0
+    solver_entered = 0
+    materialization_started = 0
+    solver_observed_completed = 0
+    materialization_completed = 0
+    audit_map_completed = 0
+
+[reduced]
+precheck_actual_calls = 3
+pi_calls = 16
+best_relative = 0.0006837267126878922
+status = "pilot_call_cap"
+
+    [reduced.last_map]
+    residual_definition = "RAW Phi-Gamma; raw Phi norm denominator; handoff trigger and best score"
+    seconds = 6.5522918701171875
+    minimum_Dyson_scale = 1.466766334526532
+    fermi_pair_sum_error = 2.220446049250313e-16
+    maximum_Dyson_condition = 1280.5790379187263
+    raw_phi_hermitization_absolute = 1.6184632464652002e-15
+    trigger = false
+    roundoff = 3.499815121396598e-16
+    call = 16
+    absolute_E0_eV = 0.1
+    green_pair_A_identity_absolute = 7.083222978805215e-13
+
+        [reduced.last_map.AA_working_residual]
+        scale = 17.31163689886608
+        weighted_relative = 0.000625088410241566
+        weighted_absolute = 0.00010176277473932665
+        weighted_scale = 0.16279741084945143
+        absolute = 0.011836428588108128
+        relative = 0.0006837267126878926
+
+        [reduced.last_map.map_cone]
+        block_frobenius_scale = 7.589217706771043e-19
+        backward_error = 7.105427357601002e-14
+        minimum_margin = 7.105375876773259e-14
+        hermiticity_absolute = 1.0970025062967537e-16
+        minimum_eigenvalue = -5.148082774290772e-19
+        energy_index = 5219
+        k_index = 1
+
+        [reduced.last_map.residual]
+        scale = 17.31163689886608
+        weighted_relative = 0.0006250884102415654
+        weighted_absolute = 0.00010176277473932657
+        weighted_scale = 0.16279741084945143
+        absolute = 0.01183642858810812
+        relative = 0.0006837267126878922
+
+        [reduced.last_map.representation_conversion]
+        scale = 17.31163689886608
+        weighted_relative = 9.049637069877149e-17
+        weighted_absolute = 1.473257484103216e-17
+        weighted_scale = 0.16279741084945143
+        absolute = 1.6184632464652002e-15
+        relative = 9.348990253898002e-17
+
+        [reduced.last_map.channel_Gamma_norms]
+        alloy = 0.1677042846396887
+        IFR = 1.0791008457404254
+        acoustic = 0.32858886433480117
+        LO = 16.513706318664955
+        impurity = 1.3129184847315978
+
+        [reduced.last_map.A_cone]
+        block_frobenius_scale = 5.429218859572615e-12
+        backward_error = 7.105427357601002e-14
+        minimum_margin = 6.868488947944222e-14
+        hermiticity_absolute = 0.0
+        minimum_eigenvalue = -2.3693840965677955e-15
+        energy_index = 8039
+        k_index = 1
+
+        [reduced.last_map.mu]
+        number_relative_error = 2.2667053419430275e-14
+        number = 0.045000000000001025
+        iterations = 50
+        derivative = 0.646900006276577
+        capacity = 28.643210915033226
+        mu_condition = 0.06956252830945346
+        bracket_width = 3.2029934260435766e-14
+        mu = 0.08460093396311258
+        target = 0.045000000000000005
+
+        [reduced.last_map.input_cone]
+        block_frobenius_scale = 1.7260841803135044e-18
+        backward_error = 7.105427357601002e-14
+        minimum_margin = 7.105375950184951e-14
+        hermiticity_absolute = 0.0
+        minimum_eigenvalue = -5.140741605031009e-19
+        energy_index = 6159
+        k_index = 1

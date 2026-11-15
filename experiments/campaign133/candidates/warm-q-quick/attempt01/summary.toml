@@ -1,0 +1,57 @@
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+selected_energy_indices = [104, 4145, 7894, 30703, 30704]
+selected_lambda_antihermiticity = 1.0938115412105397e-17
+scope = "one native finite4 R/K spectral probe; no mu fit/scattering/Phi/SCBA"
+script_sha256 = "971e832d6840ac8cae54a3579076c5c89e90a3751692bd3a3af2612987e0ac82"
+worst_energy_index = 4145
+PI_roundoff = 3.4934751395431113e-16
+input_sha256 = "8ff4ed457e44ce4bb71dc9b728083454d39948cea7300090d4ce61b7ca4cd822"
+maximum_product_imaginary_trace = 1.9606538614880265e-13
+raw_minus_physical_L1_over_target = 2.997348560487733e-13
+elapsed_seconds = 14.650838136672974
+raw_minus_effective_L1_over_target = 1.2246740291913287e-13
+maximum_condition = 1275.3744543964024
+worst_energy_eV = -0.1380353567625133
+execution = "complete"
+started_utc = "2026-11-15T22:05:30.382"
+selected_h_antihermiticity = 1.047382306668854e-15
+effective_minus_physical_L1_over_target = 2.791184372441824e-13
+
+[raw]
+negative_mass_over_target = 1.3646889559799733e-18
+negative_count = 1429
+all_finite = true
+minimum = -6.691988744922967e-22
+negative_absolute_mass = 6.141100301909881e-20
+maximum = 0.01466589270328286
+capacity = 28.64390674770757
+zero_count = 0
+
+[same_G_effective_broadening]
+negative_mass_over_target = 1.3646889559799733e-18
+negative_count = 1429
+all_finite = true
+minimum = -6.6919887449229585e-22
+negative_absolute_mass = 6.141100301909881e-20
+maximum = 0.014665892703282866
+capacity = 28.64390674770757
+zero_count = 0
+
+[same_G_physical_sources]
+negative_mass_over_target = -0.0
+negative_count = 0
+all_finite = true
+minimum = 4.58669789570931e-32
+negative_absolute_mass = -0.0
+maximum = 0.014665892703282873
+capacity = 28.64390674770757
+zero_count = 0
+
+[subtraction_A_cone]
+block_frobenius_scale = 4.144918563693699e-12
+backward_error = 7.105427357601002e-14
+minimum_margin = 6.994747109085956e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = -1.1068024851504625e-15
+energy_index = 8037
+k_index = 1

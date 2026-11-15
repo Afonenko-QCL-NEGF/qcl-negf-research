@@ -1,0 +1,80 @@
+residual_definition = "RAW Phi-Gamma; raw Phi norm denominator; handoff trigger and best score"
+seconds = 6.367370128631592
+minimum_Dyson_scale = 1.466766203499158
+fermi_pair_sum_error = 2.220446049250313e-16
+maximum_Dyson_condition = 1280.4696885469791
+raw_phi_hermitization_absolute = 1.618084996481278e-15
+trigger = false
+roundoff = 3.492794065237993e-16
+call = 14
+absolute_E0_eV = 0.1
+green_pair_A_identity_absolute = 6.972381504824614e-13
+
+[AA_working_residual]
+scale = 17.31172127796218
+weighted_relative = 0.0008327684617363633
+weighted_absolute = 0.0001355731356300584
+weighted_scale = 0.16279811479337453
+absolute = 0.015604389292339904
+relative = 0.0009013771098662667
+
+[map_cone]
+block_frobenius_scale = 1.5911113023321154e-18
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.10537661655965e-14
+hermiticity_absolute = 1.2005256790025205e-16
+minimum_eigenvalue = -5.07410413522733e-19
+energy_index = 6159
+k_index = 1
+
+[residual]
+scale = 17.31172127796218
+weighted_relative = 0.000832768461736363
+weighted_absolute = 0.00013557313563005834
+weighted_scale = 0.16279811479337453
+absolute = 0.015604389292339907
+relative = 0.0009013771098662669
+
+[representation_conversion]
+scale = 17.31172127796218
+weighted_relative = 9.039320576930204e-17
+weighted_absolute = 1.4715843489371957e-17
+weighted_scale = 0.16279811479337453
+absolute = 1.618084996481278e-15
+relative = 9.346759750234079e-17
+
+[channel_Gamma_norms]
+alloy = 0.1677044443501504
+IFR = 1.079103592909973
+acoustic = 0.32858991912005864
+LO = 16.513792211158652
+impurity = 1.3129313110031067
+
+[A_cone]
+block_frobenius_scale = 3.858681273038402e-12
+backward_error = 7.105427357601002e-14
+minimum_margin = 6.844574338230067e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = -2.6085301937093583e-15
+energy_index = 8037
+k_index = 1
+
+[mu]
+number_relative_error = 3.9782991715734774e-14
+number = 0.045000000000001796
+iterations = 47
+derivative = 0.6468996695353448
+capacity = 28.643166096760677
+mu_condition = 0.06956256451997048
+bracket_width = 2.5625335187129394e-13
+mu = 0.08460133680277296
+target = 0.045000000000000005
+
+[input_cone]
+block_frobenius_scale = 1.870247856749927e-18
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105374116650881e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = -5.324095012072408e-19
+energy_index = 6157
+k_index = 1

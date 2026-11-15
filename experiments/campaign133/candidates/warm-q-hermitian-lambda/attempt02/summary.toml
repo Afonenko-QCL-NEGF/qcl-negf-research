@@ -1,0 +1,66 @@
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+selected_energy_indices = [7894, 30704]
+selected_lambda_antihermiticity = 7.359695984108541e-29
+scope = "one native finite4 R/K spectral probe; no mu fit/scattering/Phi/SCBA"
+script_sha256 = "c6f024415b60332a84eed9fbd8474a295f5a1210000a0dd3babb7a39d20c7b72"
+worst_energy_index = 30704
+PI_roundoff = 3.4934751395431113e-16
+input_sha256 = "63d40386808b20d5daac30fbc44d11b9248b3c8dd49f0a70d79a88638a97a175"
+maximum_product_imaginary_trace = 2.1033738986653283e-13
+raw_minus_physical_L1_over_target = 2.7981893356896137e-13
+elapsed_seconds = 14.934573888778687
+raw_minus_effective_L1_over_target = 1.2306565588889418e-13
+maximum_condition = 1275.374454395114
+worst_energy_eV = 0.9000001064962726
+execution = "complete"
+variant = "local_hilbert_hermitian_only; h and native cavity unchanged; no clipping or eta"
+started_utc = "2026-11-15T22:15:47.659"
+selected_h_antihermiticity = 1.047382306668854e-15
+effective_minus_physical_L1_over_target = 2.529769314763744e-13
+
+[raw]
+negative_mass_over_target = -0.0
+negative_count = 0
+all_finite = true
+minimum = 4.5867212781094893e-32
+negative_absolute_mass = -0.0
+maximum = 0.014665892703282852
+capacity = 28.64390674770757
+zero_count = 0
+
+[same_G_effective_broadening]
+negative_mass_over_target = -0.0
+negative_count = 0
+all_finite = true
+minimum = 4.5867221542543174e-32
+negative_absolute_mass = -0.0
+maximum = 0.014665892703282855
+capacity = 28.64390674770757
+zero_count = 0
+
+[same_G_physical_sources]
+negative_mass_over_target = -0.0
+negative_count = 0
+all_finite = true
+minimum = 4.58669789570931e-32
+negative_absolute_mass = -0.0
+maximum = 0.014665892703282864
+capacity = 28.64390674770757
+zero_count = 0
+
+[subtraction_A_cone]
+block_frobenius_scale = 4.1187577852567815e-12
+backward_error = 7.105427357601002e-14
+minimum_margin = 6.99420172453458e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = -1.1122563306642196e-15
+energy_index = 8037
+k_index = 1
+
+[Lambda_symmetry_correction]
+scale = 8.414363232764352
+weighted_relative = 2.5072152586232977e-16
+weighted_absolute = 1.9843139247941355e-17
+weighted_scale = 0.07914413881972443
+absolute = 2.109713738755405e-15
+relative = 2.5072767604570185e-16

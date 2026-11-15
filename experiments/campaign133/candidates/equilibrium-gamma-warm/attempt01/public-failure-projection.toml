@@ -1,0 +1,22 @@
+# Public projection; original SHA-256: d9ee1abfa5ffe353f458e3954660cc3d753260eb47dd1833fbf672f84f9e1f08; scope: failure.
+error_headline = "nonpositive/nonfinite raw spectral weights"
+precheck_actual_calls = 1
+scientific_acceptance = false
+pi_calls = 1
+execution = "stopped"
+[native_accounting]
+meaning = "materialization/audit counted before call; solver observations count completed maps only; an interrupted solver map is bounded by reserved max30, not observed as completed"
+started_lower_bound = 0
+started_upper_bound = 0
+solver_reserved_cap = 30
+completed_lower_bound = 0
+structural_cap = 32
+
+    [native_accounting.events]
+    audit_report_written = 0
+    audit_started = 0
+    solver_entered = 0
+    materialization_started = 0
+    solver_observed_completed = 0
+    materialization_completed = 0
+    audit_map_completed = 0
