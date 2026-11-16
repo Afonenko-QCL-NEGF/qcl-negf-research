@@ -1,0 +1,152 @@
+{
+  "summary_sha256": "b9397bf71b7e483bfc3062c0c002a78612c9e896ad1ee5a0b1c443e55113131e",
+  "checks": {
+    "runtime_only_auth_delta": true,
+    "input_sha": true,
+    "copied_source_hashes": true,
+    "source_frame": true,
+    "execution_counts": true,
+    "scope_flags": true,
+    "32_map_records": true,
+    "last_summary_matches": true,
+    "zero_iterations_11_to_16": true,
+    "all_map_causality_and_Dyson": true,
+    "native_all5_tiny_contractions": true,
+    "conditional_CP_ratio": true,
+    "pole_refinement": true,
+    "wired_refinement": true,
+    "request_bounds": true,
+    "N128_latest_binary_Sigma_Phi_equal": true,
+    "N128_number_recomputed": true,
+    "N128_Hermitian_rho": true,
+    "N128_omega_grid": true,
+    "N256_latest_binary_Sigma_Phi_equal": true,
+    "N256_number_recomputed": true,
+    "N256_Hermitian_rho": true,
+    "N256_omega_grid": true,
+    "transient_negative_rho_raw_confirmed": true,
+    "cutoff_comparison_from_raw": true,
+    "cost_scope": true
+  },
+  "transient_pauli_negative_records": [
+    {
+      "N": 128,
+      "iteration": 1,
+      "pauli_min": -9.604301948477334e-15
+    },
+    {
+      "N": 128,
+      "iteration": 2,
+      "pauli_min": -3.191154307277137e-09
+    },
+    {
+      "N": 256,
+      "iteration": 1,
+      "pauli_min": -9.745933436201424e-15
+    }
+  ],
+  "independent_raw": {
+    "128": {
+      "Sigma_Phi_bitwise_equal": true,
+      "raw_difference_norm": 0.0,
+      "number": 0.045003687922660796,
+      "rho_hermiticity_max": 6.938893903907228e-18,
+      "rho_and_IminusRho_floating_LDL_minpivot": 3.135763334917644e-08,
+      "successorSigma_15_raw_residual_replays": [
+        1.0,
+        0.003304227735548265,
+        3.481584601349435e-05,
+        3.386169994344878e-07,
+        3.9603929309467994e-09,
+        4.38822358299036e-11,
+        4.514954223469473e-13,
+        5.590068355293046e-15,
+        7.360875486673752e-17,
+        7.083599486061089e-18,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "256": {
+      "Sigma_Phi_bitwise_equal": true,
+      "raw_difference_norm": 0.0,
+      "number": 0.04500486199389256,
+      "rho_hermiticity_max": 3.469446951953614e-18,
+      "rho_and_IminusRho_floating_LDL_minpivot": 1.2344418156816087e-07,
+      "successorSigma_15_raw_residual_replays": [
+        1.0,
+        0.0032843086580246817,
+        3.46059575446237e-05,
+        3.3657562924049096e-07,
+        3.936517573698079e-09,
+        4.3617722060741227e-11,
+        4.487632810379508e-13,
+        5.596519011754295e-15,
+        6.000886010536137e-17,
+        3.2558288288739717e-18,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "weight_k_binary_sha256": "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d",
+  "transient_independent_rho_witness": {
+    "k_index": 11,
+    "negative_LDL_pivot": -1.4586503392725073e-08,
+    "normalized_Rayleigh_real": -2.9378378645433084e-09,
+    "Rayleigh_imag": 6.594259499114017e-34,
+    "vector": [
+      [
+        1.505684496237026,
+        1.2090916689152337e-10
+      ],
+      [
+        -1.2063971491273064,
+        7.439992140187845e-11
+      ],
+      [
+        0.2851110096635015,
+        -6.776905617621739e-12
+      ],
+      [
+        -0.40159548852291815,
+        4.147230991679201e-12
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "independent_cutoff": {
+    "G_absolute": 2.4584285254535753e-12,
+    "G_relative": 1.5166459534983262e-13,
+    "S_absolute": 7.626196292914793e-12,
+    "S_relative": 8.053484047706052e-11,
+    "rho_absolute": 3.156267158674883e-07,
+    "number_difference": -1.174071231763163e-06
+  },
+  "density": {
+    "N128": 0.045003687922660796,
+    "N256": 0.04500486199389256,
+    "cutoff_diff_over_target": 2.609047181695918e-05,
+    "N128_target_relative": 8.195383690660456e-05,
+    "N256_target_relative": 0.00010804430872356373
+  },
+  "cost": {
+    "process_seconds": 25.12,
+    "script_seconds": 24.940048933029175,
+    "MaxRSS_KiB": 888616,
+    "MaxRSS_bytes": 909942784,
+    "swap0": true,
+    "exit0": true,
+    "output_bytes": 60325650
+  },
+  "all_pass": true
+}

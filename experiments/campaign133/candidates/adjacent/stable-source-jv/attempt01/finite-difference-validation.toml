@@ -1,0 +1,25 @@
+empirical_consistency = true
+qualification = "empirical epsilon-halving consistency, not rigorous derivative-error enclosure"
+
+[central_difference]
+scale = 14.832863967797534
+weighted_relative = 3.5674628861478877e-6
+weighted_absolute = 4.862716559075738e-7
+weighted_scale = 0.13630741830439763
+absolute = 5.229638635935235e-5
+relative = 3.5257106431292654e-6
+
+[[comparisons]]
+scale = 14.832876964165571
+weighted_relative = 4.756628823540782e-6
+weighted_absolute = 6.483643486394542e-7
+weighted_scale = 0.13630753474617743
+absolute = 6.972872118166107e-5
+relative = 4.700957295750325e-6
+[[comparisons]]
+scale = 14.832876964165571
+weighted_relative = 1.189168985819738e-6
+weighted_absolute = 1.6209269285370051e-7
+weighted_scale = 0.13630753474617743
+absolute = 1.743233483491352e-5
+relative = 1.1752497426512688e-6

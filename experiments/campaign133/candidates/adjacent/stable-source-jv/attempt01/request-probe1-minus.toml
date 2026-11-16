@@ -1,0 +1,8 @@
+meaning = "pre-call structural bounds; hard-kill need not execute finally; not a completed map claim"
+elapsed_seconds = 31.86639404296875
+Jv_entered_lower = 0
+Phi_entered_upper = 3
+Phi_completed = 2
+Jv_completed = 0
+Jv_entered_upper = 0
+Phi_entered_lower = 2

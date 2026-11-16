@@ -1,0 +1,15 @@
+# Derived whitelist from private logs; original logs unchanged.
+prepare_log_sha256 = "ee3e42b2c2f6302f843fc0945c1aa53a28dd11964665ad315a306730d8bace5c"
+check_log_sha256 = "8d7be398a18e664a39ab43fc3062cdd3ddd8812ecd8306253342e130021f4efd"
+prepare_exit_status = 0
+prepare_elapsed_s = 7.83
+prepare_max_rss_kib = 515124
+check_exit_status = 0
+check_elapsed_s = 45.86
+check_max_rss_kib = 903096
+swaps = 0
+julia_version = "1.13.3"
+fixed_u_status = "max_iterations"
+converged = false
+iterations = 2
+final_pair_checks_ok = true

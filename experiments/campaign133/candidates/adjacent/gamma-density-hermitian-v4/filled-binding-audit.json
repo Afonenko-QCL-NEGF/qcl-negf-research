@@ -1,0 +1,33 @@
+{
+  "status": "metadata_binding_checks_passed_execution_false",
+  "input_sha256": "ab77e333726eec4cf258a74ea2572b3aa2336ae642c01b55181f412660b2db7b",
+  "template_sha256": "916a191a11c704c2a9329985f1f4054545c6170a0cbe8107b7b7d086ae589ff4",
+  "digest_sha256": "b121f71d58cbf909cd4087e6ddae4b0216883a375529e5a179a562d2b381ef40",
+  "PD_certificate_sha256": "a703ec4c3e2feda1ae9571ab3d1d20b69dd9de48898f3d620ada008da2583335",
+  "proof_input_sha256": "27da5a97ab61e9f290f5f8c7a2979d5873ec55e81f45e6b336fba99c495711d4",
+  "source_bindings_checked": {
+    "gamma": "checkpoint",
+    "model": "model_h5",
+    "input": "source_input",
+    "identity": "source_identity",
+    "operator": "source_writer",
+    "spectral": "spectral_writer",
+    "ledger": "source_ledger",
+    "summary": "source_summary",
+    "map": "map_summary"
+  },
+  "counts": {
+    "nonhermitian": 0,
+    "nonpositive": 0,
+    "pd": 337744,
+    "nonfinite": 0
+  },
+  "checked_blocks": 337744,
+  "divrem_components": 20264640,
+  "logical_arrays": 13,
+  "A_slices": 11,
+  "checkpoint_terminal_exact_entries": 8443600,
+  "execution_authorized": false,
+  "preparing_agent_Julia_or_HDF5_reads": "none",
+  "small_metadata_checks": "PASS: map64/source input/Core/h-policy/units/mu/target/dimensions; no HDF5/JULIA"
+}

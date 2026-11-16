@@ -1,0 +1,35 @@
+scientific_acceptance = false
+elapsed_seconds_including_imports = 24.940048933029175
+inner_requested = 32
+density_normalized = false
+inner_completed = 32
+maxrss_bytes = 0x363ca000
+status_N128 = "iteration_budget"
+completed_N = [128, 256]
+status_N256 = "iteration_budget"
+native_pass = false
+execution = "complete_bounded_diagnostic"
+variant = "fixedμ/all5/direct-static-C/full-line-LO/reference-tail/finite45central-repeat/hH-all9"
+source_Gamma_used = false
+current_N = 256
+finish_utc = "2026-11-16T02:34:56.814"
+
+[last_record]
+raw_sigma_relative = 0.0
+iteration = 16
+number = 0.045004861993892566
+pauli_max = 0.2175201826613404
+dyson_backward = 3.713188645880294e-17
+sigma_causality_max = -5.636538989565329e-5
+pauli_min = 6.361936393373626e-8
+raw_sigma_absolute = 0.0
+G_causality_max = -0.008732928535078056
+
+[cutoff_comparison]
+S_absolute = 7.626196292914793e-12
+S_relative = 8.053484047706058e-11
+G_absolute = 2.4584285254535757e-12
+G_relative = 1.5166459534983244e-13
+low = 32
+rho_absolute = 3.156267158674883e-7
+number_difference = -1.174071231765911e-6

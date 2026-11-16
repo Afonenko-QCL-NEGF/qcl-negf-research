@@ -1,0 +1,662 @@
+SCBA_accepted = false
+PI_FFT_controls_outside_Pi = 2
+stage = "complete"
+cgroup = "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/qcl133-fine2x-m1.scope"
+strict_reduced_streak = 0
+manifest_sha256 = "da0780fbe150c0e16e9fedf3566a1971095642f14f57f32524b52f430a4adb65"
+maxrss_bytes = 0x0191b7d000
+history = 1
+input_sha256 = "844b092393b4c300d29259d550cee522eb76f8b09682ada1df9b1f438d0c8061"
+code_sha256 = "8f73ba2feb07d1a2ea15900745e85e338a897fc1ad81cf6b0597c6c258e611c5"
+ghost_taper_change_bound_native = 1.9711958900739292e-28
+seconds = 206.73649787902832
+AA_trial_PSD_projected = false
+status = "completed_bounded_fine_progress_no_native_exit"
+
+[coarse_terminal]
+seconds = 5.085628986358643
+pair_A_error = 7.076935288311477e-13
+maximum_condition = 1280.093061401383
+FD_pair_error = 2.220446049250313e-16
+minimum_scale = 1.4667653854663245
+tag = "coarse_terminal_001"
+
+    [coarse_terminal.channel_norms]
+    alloy = 0.16769908768270844
+    IFR = 1.079062526604299
+    acoustic = 0.32858340530533736
+    LO = 16.51363366344166
+    impurity = 1.3129258740699397
+
+    [coarse_terminal.spectral_ledger]
+    spectral_difference_weighted_absolute = 7.261636501367206e-14
+    native_acceptance_override = false
+    source_greater_storage = "exact-zero scalar adapter"
+    source_difference_weighted_relative = 3.8942438961120744e-13
+    scalar_reduction = "per-worker ordered blocks; may differ from parent full-field norm reduction in last bits"
+    roundoff = 3.508794785987209e-16
+    operator = "stream_native_covariance_exact_plan_hlocal_all9"
+    q_negative_count = 0
+    spectral_difference_weighted_relative = 9.657580160967453e-16
+    spectral_difference_relative = 1.1091531868890522e-15
+    workers = 4
+    source_difference_absolute = 1.0226274433302624e-9
+    q_minimum = 1.328291490702697e-43
+    source_difference_weighted_absolute = 1.1490780446300588e-11
+    spectral_difference_absolute = 8.761345961841374e-12
+    q_capacity = 28.643884350075766
+    cavity_plan_bytes = 27527920
+    source_difference_relative = 3.6845873823471325e-13
+
+        [coarse_terminal.spectral_ledger.h_correction]
+        scale = 16.48036513826891
+        absolute = 1.6335753826937261e-15
+        relative = 9.912252362057291e-17
+
+        [coarse_terminal.spectral_ledger.Lambda_projection]
+        scale = 8.427737283037267
+        weighted_relative = 2.5287833768615597e-16
+        weighted_absolute = 2.004545087541022e-17
+        weighted_scale = 0.07926914997475334
+        absolute = 2.1210582681407023e-15
+        relative = 2.5167588842734966e-16
+
+    [coarse_terminal.residual]
+    scale = 17.311577906033946
+    weighted_relative = 0.0024576399735306916
+    weighted_absolute = 0.00040009422857183624
+    weighted_scale = 0.16279611044780223
+    absolute = 0.042300936020706184
+    relative = 0.002443505511185217
+
+    [coarse_terminal.map_cone]
+    block_frobenius_scale = 2.617292120509912e-39
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 7.105427357601002e-14
+    hermiticity_absolute = 3.4746032730924196e-16
+    minimum_eigenvalue = 1.029228854403377e-40
+    energy_index = 382
+    k_index = 11
+
+    [coarse_terminal.representation_conversion]
+    scale = 17.311577906033946
+    weighted_relative = 1.5635311911999058e-16
+    weighted_absolute = 2.5453679649116364e-17
+    weighted_scale = 0.16279611044780223
+    absolute = 2.8438559839258996e-15
+    relative = 1.6427479917556645e-16
+
+    [coarse_terminal.A_cone]
+    block_frobenius_scale = 9.315373753143786e-41
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 7.105427357601002e-14
+    hermiticity_absolute = 4.957712803704645e-13
+    minimum_eigenvalue = 2.5191643328795727e-42
+    energy_index = 382
+    k_index = 11
+
+    [coarse_terminal.mu]
+    number_relative_error = -1.4880072482823277e-13
+    number = 0.04499999999999331
+    iterations = 49
+    derivative = 0.6469132393607376
+    capacity = 28.643884350075766
+    mu_condition = 0.06956110535698388
+    bracket_width = 6.405986852087153e-14
+    mu = 0.08459574562208788
+    target = 0.045000000000000005
+
+    [coarse_terminal.working_residual]
+    scale = 17.311577906033946
+    weighted_relative = 0.0024576399735306916
+    weighted_absolute = 0.00040009422857183624
+    weighted_scale = 0.16279611044780223
+    absolute = 0.0423009360207062
+    relative = 0.0024435055111852177
+
+    [coarse_terminal.input_cone]
+    block_frobenius_scale = 2.617634708200793e-39
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 7.105427357601002e-14
+    hermiticity_absolute = 0.0
+    minimum_eigenvalue = 1.0293282039410823e-40
+    energy_index = 382
+    k_index = 11
+
+[coarse_cache_equal]
+exact_value_equality = true
+native_roundoff = 3.4982122613568972e-16
+private_roundoff = 3.4982122613568972e-16
+
+[counts]
+fine_successful = 12
+coarse_initial_successful = 1
+coarse_terminal_entered_Pi = 1
+coarse_terminal_completed_Phi = 1
+fine_attempts = 12
+coarse_initial_attempts = 1
+coarse_initial_entered_Pi = 1
+fine_entered_Pi = 12
+fine_completed_Phi = 12
+coarse_initial_completed_Phi = 1
+coarse_terminal_successful = 1
+coarse_terminal_attempts = 1
+
+[fine_last]
+seconds = 12.158657789230347
+pair_A_error = 9.943558361976633e-13
+maximum_condition = 1282.001106848231
+FD_pair_error = 2.220446049250313e-16
+minimum_scale = 1.4667670733536704
+tag = "fine_012"
+
+    [fine_last.channel_norms]
+    alloy = 0.2371737982282631
+    IFR = 1.5260654400511287
+    acoustic = 0.4646957264337211
+    LO = 23.353530097931152
+    impurity = 1.856642798035304
+
+    [fine_last.spectral_ledger]
+    spectral_difference_weighted_absolute = 7.223383877105794e-14
+    native_acceptance_override = false
+    source_greater_storage = "exact-zero scalar adapter"
+    source_difference_weighted_relative = 3.8890247324112034e-13
+    scalar_reduction = "per-worker ordered blocks; may differ from parent full-field norm reduction in last bits"
+    roundoff = 3.39286572540859e-16
+    operator = "stream_native_covariance_exact_plan_hlocal_all9"
+    q_negative_count = 0
+    spectral_difference_weighted_relative = 9.606765876963294e-16
+    spectral_difference_relative = 1.0877147194048903e-15
+    workers = 4
+    source_difference_absolute = 1.4324802648612142e-9
+    q_minimum = 6.641458279908521e-44
+    source_difference_weighted_absolute = 1.1233860254785001e-11
+    spectral_difference_absolute = 1.2150519883923962e-11
+    q_capacity = 28.64672043982682
+    cavity_plan_bytes = 55041648
+    source_difference_relative = 3.7008209439505555e-13
+
+        [fine_last.spectral_ledger.h_correction]
+        scale = 16.48036513826891
+        absolute = 1.6335753826937261e-15
+        relative = 9.912252362057291e-17
+
+        [fine_last.spectral_ledger.Lambda_projection]
+        scale = 11.919824471139721
+        weighted_relative = 2.2529831039736e-16
+        weighted_absolute = 1.7860959002732495e-17
+        weighted_scale = 0.07927693275298432
+        absolute = 2.686997982430326e-15
+        relative = 2.2542261330576515e-16
+
+    [fine_last.residual]
+    scale = 24.482021282468274
+    weighted_relative = 0.00028729850816288933
+    weighted_absolute = 4.677107219087703e-5
+    weighted_scale = 0.16279608442783589
+    absolute = 0.007887594954043503
+    relative = 0.0003221790743108233
+
+    [fine_last.map_cone]
+    block_frobenius_scale = 2.6172925529700083e-39
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 7.105427357601002e-14
+    hermiticity_absolute = 2.649654351442597e-16
+    minimum_eigenvalue = 1.0292289623341756e-40
+    energy_index = 763
+    k_index = 11
+
+    [fine_last.representation_conversion]
+    scale = 24.482021282468274
+    weighted_relative = 1.5372870127718373e-16
+    weighted_absolute = 2.5026430632101962e-17
+    weighted_scale = 0.16279608442783589
+    absolute = 3.944883430593619e-15
+    relative = 1.611338943414192e-16
+
+    [fine_last.A_cone]
+    block_frobenius_scale = 9.315374174630128e-41
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 7.105427357601002e-14
+    hermiticity_absolute = 5.014290116229674e-13
+    minimum_eigenvalue = 2.519164339687918e-42
+    energy_index = 763
+    k_index = 11
+
+    [fine_last.mu]
+    number_relative_error = -1.410908427127803e-13
+    number = 0.044999999999993656
+    iterations = 49
+    derivative = 0.6469114515751634
+    capacity = 28.64672043982682
+    mu_condition = 0.06956129759402094
+    bracket_width = 6.405986852087153e-14
+    mu = 0.08459052366007466
+    target = 0.045000000000000005
+
+    [fine_last.working_residual]
+    scale = 24.48202128246827
+    weighted_relative = 0.0002872985081628896
+    weighted_absolute = 4.677107219087707e-5
+    weighted_scale = 0.16279608442783589
+    absolute = 0.007887594954043496
+    relative = 0.00032217907431082303
+
+    [fine_last.input_cone]
+    block_frobenius_scale = 2.617634708200793e-39
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 7.105427357601002e-14
+    hermiticity_absolute = 0.0
+    minimum_eigenvalue = 1.0293282039410823e-40
+    energy_index = 763
+    k_index = 11
+
+[coarse_replay]
+scale = 17.311508690248573
+weighted_relative = 0.0
+weighted_absolute = 0.0
+weighted_scale = 0.16279641957200722
+maximum_block_absolute = 0.0
+absolute = 0.0
+energy_index = 0
+relative = 0.0
+k_index = 0
+
+[terminal_restriction]
+scale = 17.311577906033946
+weighted_relative = 0.0025160812758229833
+weighted_absolute = 0.00040960824527452557
+weighted_scale = 0.16279611044780223
+absolute = 0.04362585285970193
+relative = 0.0025200390800018376
+
+[model_binding]
+qK_acoustic = "29316ab4983debc8aeecf6f77c72949a01fb7366af40aa5b10d90ef35ad92946"
+grid_trusted_energy = "47b8bc93b1c8cf57456f04b89a9dff70344c796522038edb90209e6571736a32"
+"grid_ε" = "1ad8a0d3d0da96d2778cbb1e8c1dfe51989dc19f43bb9233cb81e4e2402ebca9"
+"grid_wᑫᶻ" = "36b2bf8317ba6206f5f95bcb3d670e0c012b9f6ba16464ca624d14236e9d80c2"
+kernel_IFR = "614fd7a69eb34afba6213b6cdbe11963a66cca354a3e439c85aff7f1920cacba"
+"grid_wˣ" = "8f516d0ba7ce8473ab50b7f19d264a00657be79cebefe565c2a5002e4ec1e80f"
+qK_alloy = "66c8add85be09f2732348de1b5c7e02acce794566a028b3ae25d5aaa1c28cc88"
+"basis_T₋" = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+kernel_impurity = "1a29392d417729ead7457791eb4306a05ab752097c5079b2b15f61f3a116e09b"
+"basis_H₀" = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+"profile_m_parallelᵣ" = "740dca46bd9f435bf9c74c1483e25674467ed8aacba8d6edfbfbd5f1f45761f1"
+basis_Z = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+"profile_Eᶜ" = "197ccd2621e8594a71bf0bdd6d0b7690476da721681bfcf54a67d228a0920c51"
+qK_LO = "335aa74b8e7336202ffd87f9e66601d5d0916f93e826ff8895510728cfb2ba32"
+"basis_χ" = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+kernel_acoustic = "821b361080884796b54cf22bc42b7889847807a86fdc54c16a787cd6a6f72df6"
+"profile_Nᴰ" = "9a0e49df98a1654391c79c8e06d812ed271384f364b1feb987cb8bcd62dd10ce"
+"basis_Φ" = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+grid_x = "206c384d0f12e89208cb383d5edc8ce6d66355802e1159c1fa6fd1500d8e3d2d"
+"grid_wᴱ" = "2015e27dd4d76f805c541c1ae1a8eb9e36bae5d98ce4180a63c2285ff10ac25b"
+"grid_qᶻ" = "23118a3649c16e9130624adafe35e8812b52cc43c2cd82bdc0a56b7cf28fb3b5"
+h_fixedU0 = "8cde8ea024d9e690bf0396428574496734d7bad5962fc00617b9b380ae1194a7"
+kernel_alloy = "6a532b2562775becd473f91ee6f760aa1db8b3e3271e77d424a304cf912e7e01"
+profile_layer_index = "50e80cdde9062e231d1068b0b8250bcb0287ff8d3d1afaa0b5632e1c0be35959"
+"basis_T₊" = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+"profile_εᵣ" = "523ab6da25845a02d436612eca8062e44e935a5420eda892aebc0a2cc40df15f"
+"grid_κ" = "7815e5a3e3faf1673363855e6bc76e56be584032eded7440c9e6bd4ddbcd1e6f"
+profile_x_Al = "356bb98155094e2bb6153b484396334dde424bb68bb43e5e7e2bf36f99da9e23"
+kernel_LO = "dce410e43f29b71eb4aa1bc64a4d235578d75e164ba5fe9add511f52474bf3fd"
+"grid_φ" = "6d25e94d38926fa48f1c5750d9413fb168fa5f17e53173a434a373defe2c8970"
+"profile_mᶻᵣ" = "740dca46bd9f435bf9c74c1483e25674467ed8aacba8d6edfbfbd5f1f45761f1"
+"basis_M⁻¹" = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+qK_impurity = "2f5528507263d4cc631f4a965177e262a042e423678611240dfae6ee9f3b4d84"
+"grid_wᵏ" = "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d"
+qK_IFR = "9f0e740565ea35edc6239259f9b3b24ffe41bbcbb603c7984ac8d02faf6ae083"
+
+[[events]]
+kind = "linear"
+attempt = 2
+streak = 0
+
+    [events.AA]
+    rank = 0
+    l1 = 1.0
+    kind = "linear"
+    R_diagonal = []
+    condition = 1.0
+    firstpair = 0
+    initial_scales = []
+    suffix_decisions = []
+    coefficients = []
+[[events]]
+kind = "AAII"
+attempt = 3
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 6.799459595266737
+    kind = "AAII"
+    R_diagonal = [8.79008419601964e-5]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [8.79008419601964e-5]
+    coefficients = [-2.8997297976333685]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 6.799459595266737
+        R_diagonal = [8.79008419601964e-5]
+        condition_measured = true
+        affine_coefficients = [-2.8997297976333685, 3.8997297976333685]
+        coefficients = [-2.8997297976333685]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [8.79008419601964e-5]
+        m1_d = 8.79008419601964e-5
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 4
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.0
+    kind = "AAII"
+    R_diagonal = [0.0003677998918742084]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [0.0003677998918742084]
+    coefficients = [0.16014371961212154]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.0
+        R_diagonal = [0.0003677998918742084]
+        condition_measured = true
+        affine_coefficients = [0.16014371961212154, 0.8398562803878784]
+        coefficients = [0.16014371961212154]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [0.0003677998918742084]
+        m1_d = 0.0003677998918742084
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 5
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.605506479069108
+    kind = "AAII"
+    R_diagonal = [0.00011378153371180289]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [0.00011378153371180289]
+    coefficients = [-0.3027532395345539]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.605506479069108
+        R_diagonal = [0.00011378153371180289]
+        condition_measured = true
+        affine_coefficients = [-0.3027532395345539, 1.302753239534554]
+        coefficients = [-0.3027532395345539]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [0.00011378153371180289]
+        m1_d = 0.00011378153371180289
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 6
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.0
+    kind = "AAII"
+    R_diagonal = [0.00010474499953797425]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [0.00010474499953797425]
+    coefficients = [0.1300617868951413]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.0
+        R_diagonal = [0.00010474499953797425]
+        condition_measured = true
+        affine_coefficients = [0.1300617868951413, 0.8699382131048587]
+        coefficients = [0.1300617868951413]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [0.00010474499953797425]
+        m1_d = 0.00010474499953797425
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 7
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.0
+    kind = "AAII"
+    R_diagonal = [7.077490469418146e-5]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [7.077490469418146e-5]
+    coefficients = [0.06558333355081662]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.0
+        R_diagonal = [7.077490469418146e-5]
+        condition_measured = true
+        affine_coefficients = [0.06558333355081662, 0.9344166664491834]
+        coefficients = [0.06558333355081662]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [7.077490469418146e-5]
+        m1_d = 7.077490469418146e-5
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 8
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.0
+    kind = "AAII"
+    R_diagonal = [5.199209911959804e-5]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [5.199209911959804e-5]
+    coefficients = [0.1283196342294747]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.0
+        R_diagonal = [5.199209911959804e-5]
+        condition_measured = true
+        affine_coefficients = [0.1283196342294747, 0.8716803657705253]
+        coefficients = [0.1283196342294747]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [5.199209911959804e-5]
+        m1_d = 5.199209911959804e-5
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 9
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.0684716016767246
+    kind = "AAII"
+    R_diagonal = [3.845524262726868e-5]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [3.845524262726868e-5]
+    coefficients = [-0.0342358008383622]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.0684716016767246
+        R_diagonal = [3.845524262726868e-5]
+        condition_measured = true
+        affine_coefficients = [-0.0342358008383622, 1.0342358008383623]
+        coefficients = [-0.0342358008383622]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [3.845524262726868e-5]
+        m1_d = 3.845524262726868e-5
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 10
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.0337427886971717
+    kind = "AAII"
+    R_diagonal = [3.466100747533614e-5]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [3.466100747533614e-5]
+    coefficients = [-0.016871394348585887]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.0337427886971717
+        R_diagonal = [3.466100747533614e-5]
+        condition_measured = true
+        affine_coefficients = [-0.016871394348585887, 1.0168713943485859]
+        coefficients = [-0.016871394348585887]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [3.466100747533614e-5]
+        m1_d = 3.466100747533614e-5
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 11
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.2645929313819275
+    kind = "AAII"
+    R_diagonal = [3.110839539720342e-5]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [3.110839539720342e-5]
+    coefficients = [-0.13229646569096384]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.2645929313819275
+        R_diagonal = [3.110839539720342e-5]
+        condition_measured = true
+        affine_coefficients = [-0.13229646569096384, 1.1322964656909638]
+        coefficients = [-0.13229646569096384]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [3.110839539720342e-5]
+        m1_d = 3.110839539720342e-5
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+[[events]]
+kind = "AAII"
+attempt = 12
+streak = 0
+
+    [events.AA]
+    rank = 1
+    l1 = 1.0137730039918713
+    kind = "AAII"
+    R_diagonal = [3.0676133797001665e-5]
+    condition = 1.0
+    firstpair = 1
+    initial_scales = [3.0676133797001665e-5]
+    coefficients = [-0.006886501995935666]
+
+        [[events.AA.suffix_decisions]]
+        coefficients_finite = true
+        actual_affine_l1 = 1.0137730039918713
+        R_diagonal = [3.0676133797001665e-5]
+        condition_measured = true
+        affine_coefficients = [-0.006886501995935666, 1.0068865019959357]
+        coefficients = [-0.006886501995935666]
+        condition = 1.0
+        reason = "accepted"
+        affine_l1_limit = 4096.0
+        initial_scales = [3.0676133797001665e-5]
+        m1_d = 3.0676133797001665e-5
+        differences = 1
+        normalized_rank = 1
+        firstpair = 1
+        coefficients_measured = true
+
+[fine_admission]
+fine_weight_sha256 = "0be34468b4402e9cfa8fd38d4b6b76e8cd8c888f9d2db7d51fc1880c7164d091"
+scope = "Gamma-only two-map; no native exit"
+nominal_LO_intervals = 1878
+history_fields = 0
+cache_payload_bytes = 22159600
+native_full_peak_bytes = 25860597424
+fine_energy_sha256 = "7496917b179e34669b428d00b9965cf0eee358a699fc7c8d75d9592ef8ae0a82"
+stage_history1_envelope_bytes = 11597140272
+Gamma_envelope_bytes = 9705804672
+PI_workers = 1
+cap_bytes = 13019119616
+full_field_bytes = 270190800
+native_guard_unchanged = true
+source_energy_sha256 = "1ad8a0d3d0da96d2778cbb1e8c1dfe51989dc19f43bb9233cb81e4e2402ebca9"
+public_native_cache_builder_refused_before_allocation = true
+cavity_plan_bytes = 55041648
+
+[source_sha256]
+"identity.toml" = "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b"
+"map-064.toml" = "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88"
+"Gamma-last.h5" = "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55"
+"model.h5" = "700ae17684d9ae52623ca6cfb7e07432ab1f43eb5151748061da53681b686540"
+"input.toml" = "8d5c1eb56b4cf88edf4b986cbc93ce05aede8ef1c4b12f8de8eac107402d5d49"
+"summary.toml" = "760c3828b6fe861b5ae67e86342c9613bff1f7c4fd6bb8ead43f4911e3f9894e"
+"reduced-terminal.h5" = "6eb3ca27efac788b4e1de14322251361452f0863c5d8350afeaa1c6204bfa9da"

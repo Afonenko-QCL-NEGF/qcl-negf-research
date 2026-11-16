@@ -1,0 +1,32 @@
+identity = "stableA-cont64-Gamma-last-fine2x-m1878-stream-AA1-v1"
+runtime_authorized = true
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+memory_max_bytes = 13019119616
+memory_high_bytes = 12348030976
+swap_max_bytes = 0
+soft_seconds = 840
+external_seconds = 900
+fine_loop_seconds = 750
+single_file_max_bytes = 2147483648
+data_max_bytes = 4294967296
+workers = 4
+BLAS_threads = 1
+history_differences = 1
+affine_l1_max = 4096.0
+linear_alpha = 0.2
+aa_beta = 1.0
+qr_condition_max = 1.0e8
+project_AA_trial = false
+trigger_relative = 1.0e-9
+trigger_passes = 3
+qualifier_summary_path = "../streaming-spectral/qualified-attempt01/qualifier-summary.toml"
+qualifier_summary_sha256 = "c48d6e4ff1d1259356933d44702d74db353615eb7c78e57adc1e5cc4b8c65562"
+
+[source_sha256]
+"Gamma-last.h5" = "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55"
+"model.h5" = "700ae17684d9ae52623ca6cfb7e07432ab1f43eb5151748061da53681b686540"
+"reduced-terminal.h5" = "6eb3ca27efac788b4e1de14322251361452f0863c5d8350afeaa1c6204bfa9da"
+"input.toml" = "8d5c1eb56b4cf88edf4b986cbc93ce05aede8ef1c4b12f8de8eac107402d5d49"
+"identity.toml" = "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b"
+"map-064.toml" = "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88"
+"summary.toml" = "760c3828b6fe861b5ae67e86342c9613bff1f7c4fd6bb8ead43f4911e3f9894e"
