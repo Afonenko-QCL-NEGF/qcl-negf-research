@@ -1,0 +1,12 @@
+identity = "campaign133-positive-source-operator-only-v1"
+runtime_authorized = true
+source_input_path = "../equilibrium-gamma-affine4096/attempt01/input.toml"
+source_input_sha256 = "4a13d4253687ba4165cf51adf04e2c7d6bdcf10aeae450abff698b9feeae2103"
+positive_seed_path = "../equilibrium-gamma-warm/seed/gamma-seed.h5"
+positive_seed_sha256 = "4142e06db48b20772d99332f277baf3ecb71bb3d79f8bdfc5951c98f807e42e8"
+model_path = "../equilibrium-gamma-solver/attempt02/model.h5"
+model_sha256 = "6b41f93e29f2482a814f82a9db69ad8c8ff3bf7d9eb99ccfed4a510244e364b7"
+wall_seconds = 300.0
+memory_max_bytes = 13019119616
+memory_high_bytes = 12348030976
+output_max_bytes = 33554432

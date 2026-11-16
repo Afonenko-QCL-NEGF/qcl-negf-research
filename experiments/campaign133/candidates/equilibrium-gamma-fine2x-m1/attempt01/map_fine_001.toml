@@ -1,0 +1,108 @@
+seconds = 11.305100202560425
+pair_A_error = 1.008118508116024e-12
+maximum_condition = 1280.6156128939833
+FD_pair_error = 2.220446049250313e-16
+minimum_scale = 1.466766343634372
+tag = "fine_001"
+
+[channel_norms]
+alloy = 0.23717707958605022
+IFR = 1.526099011444099
+acoustic = 0.46470364782023205
+LO = 23.354052374733012
+impurity = 1.8566904099941202
+
+[spectral_ledger]
+spectral_difference_weighted_absolute = 7.133327834529087e-14
+native_acceptance_override = false
+source_greater_storage = "exact-zero scalar adapter"
+source_difference_weighted_relative = 3.3488984145812063e-13
+scalar_reduction = "per-worker ordered blocks; may differ from parent full-field norm reduction in last bits"
+roundoff = 3.4207815750513964e-16
+operator = "stream_native_covariance_exact_plan_hlocal_all9"
+q_negative_count = 0
+spectral_difference_weighted_relative = 9.486739064763039e-16
+spectral_difference_relative = 1.0816646497586208e-15
+workers = 4
+source_difference_absolute = 1.2284555669671713e-9
+q_minimum = 6.642010219576314e-44
+source_difference_weighted_absolute = 9.68858393370964e-12
+spectral_difference_absolute = 1.2083326827691137e-11
+q_capacity = 28.646825565138368
+cavity_plan_bytes = 55041648
+source_difference_relative = 3.1709114991405377e-13
+
+    [spectral_ledger.h_correction]
+    scale = 16.48036513826891
+    absolute = 1.6335753826937261e-15
+    relative = 9.912252362057291e-17
+
+    [spectral_ledger.Lambda_projection]
+    scale = 11.918784399130763
+    weighted_relative = 2.246630280259337e-16
+    weighted_absolute = 1.7808977191665974e-17
+    weighted_scale = 0.07926972830442852
+    absolute = 2.69252674904922e-15
+    relative = 2.2590615442675397e-16
+
+[residual]
+scale = 24.482530597348816
+weighted_relative = 0.0026609013682162247
+weighted_absolute = 0.0004331928869557013
+weighted_scale = 0.162799302570955
+absolute = 0.06427353935715996
+relative = 0.0026252816922495772
+
+[map_cone]
+block_frobenius_scale = 2.6177354158712596e-39
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 2.7123182389204633e-16
+minimum_eigenvalue = 1.0292056088519476e-40
+energy_index = 763
+k_index = 11
+
+[representation_conversion]
+scale = 24.482530597348816
+weighted_relative = 1.5373340808378546e-16
+weighted_absolute = 2.502769161789629e-17
+weighted_scale = 0.162799302570955
+absolute = 3.936806793781479e-15
+relative = 1.6080064836956808e-16
+
+[A_cone]
+block_frobenius_scale = 9.316221251519142e-41
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 4.1531474734251046e-13
+minimum_eigenvalue = 2.5190859179431897e-42
+energy_index = 763
+k_index = 11
+
+[mu]
+number_relative_error = 4.024558464266192e-14
+number = 0.045000000000001816
+iterations = 49
+derivative = 0.6469120328249587
+capacity = 28.646825565138368
+mu_condition = 0.06956123509326669
+bracket_width = 6.407374630867935e-14
+mu = 0.08459119199877549
+target = 0.045000000000000005
+
+[working_residual]
+scale = 24.482530597348816
+weighted_relative = 0.002660901368216225
+weighted_absolute = 0.00043319288695570137
+weighted_scale = 0.162799302570955
+absolute = 0.06427353935715999
+relative = 0.0026252816922495785
+
+[input_cone]
+block_frobenius_scale = 2.6178724408495048e-39
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = 1.0292548686730134e-40
+energy_index = 763
+k_index = 11

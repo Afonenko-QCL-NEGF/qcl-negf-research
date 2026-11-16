@@ -1,0 +1,26 @@
+identity = "cont128-frozen-uniform2x-collocation-defect-v1"
+runtime_authorized = true
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+memory_max_bytes = 13019119616
+memory_high_bytes = 12348030976
+swap_max_bytes = 0
+soft_seconds = 840.0
+external_seconds = 900
+single_file_max_bytes = 2147483648
+data_max_bytes = 3221225472
+anchor_indices = [9785]
+# Γ only, no AA/mixing trajectory; coarse and fine each start at most one Π.
+history = 0
+Pi_start_cap = 2
+workers = 1
+BLAS_threads = 1
+fine_NE = 61407
+fine_LO_intervals = 1878
+
+[source_sha256]
+"input.toml" = "fddde931d6f13c5a76ee8f84e12da77c606844c5ee189c3140ea3ae55e41b812"
+"identity.toml" = "c63682ba6ba338342f4cfdf4e59f5e0d2b7ca33bea22e44f4164673152c7a860"
+"model.h5" = "47682acc1b60483e96d67de2c24dbdf4927b7f14dd6cbf25f6e93f002a7c614e"
+"reduced-terminal.h5" = "fb7cea34dcd0a660e3d4ddea1324728bde0f7b82be8a077fc138a1cda4f5fdf2"
+"map-128.toml" = "8a34e3ac5217942302564576b7c00880d4334e463225a34208e55693fe155a8b"
+"gamma_functions.jl" = "57f2c277255ae1f8265659e65176cc88f97d5a40cbf8d6e32b7ea9257ccfb032"

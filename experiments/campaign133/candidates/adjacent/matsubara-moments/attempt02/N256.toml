@@ -1,0 +1,38 @@
+correction_absolute = 4.548637941661879e-8
+note = "conditional linear moment-equation bound only; no finite-N physical remainder certificate"
+eta = 8.584664991052837e-10
+classic_M1_number = 0.04493896223967687
+linear_residual_relative = 1.2640098253870086e-16
+linear_weighted_scale = 0.05006583640356483
+linear_condition = 1.0000000007304437
+N = 256
+conditional_linear_error_bound = 2.2841951364920365e-17
+linear_weighted_absolute = 7.182792852590843e-18
+M3_number = 0.045005031033066606
+feedback_absolute = 5.947314414233909e-17
+bare_number = 0.045004861993892566
+oneshot_number = 0.045005031033066724
+linear_weighted_relative = 1.434669500913283e-16
+linear_residual_absolute = 3.5756308916405536e-17
+linear_residual_scale = 0.28287999189767243
+
+[bare_pauli]
+hermitian_defect = 5.5628130280818104e-18
+minimum = 6.361936393373626e-8
+maximum = 0.2175201826613404
+
+[t]
+t4 = 1.1615910879252379e-7
+t4_integral_upper = 1.1683268700411988e-7
+t2 = 0.003280641787378203
+t4_integral_lower = 1.1548202010233814e-7
+
+[M3_pauli]
+hermitian_defect = 2.7651437947911527e-17
+minimum = 7.154778794513954e-8
+maximum = 0.21752018484679275
+
+[oneshot_pauli]
+hermitian_defect = 5.562813028081811e-18
+minimum = 7.154778794846986e-8
+maximum = 0.21752018484679264

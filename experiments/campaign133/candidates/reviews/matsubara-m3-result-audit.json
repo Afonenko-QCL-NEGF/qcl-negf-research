@@ -1,0 +1,90 @@
+{
+  "scope": "small saved densities and exact-source literal six-index K moment audit; no physical Phi/Dyson/new N",
+  "source_hashes_verified": {
+    "N128-latest.h5": "61cebaa7178a734ee62254c8802b64a8aa34a4e19e38be669beeb10f6b150e02",
+    "N256-latest.h5": "fd4752c12f21226835cae2d812e72ad49a185f301dc3f370f89cdf442c2b31ee",
+    "summary.toml": "b9397bf71b7e483bfc3062c0c002a78612c9e896ad1ee5a0b1c443e55113131e",
+    "input.toml": "748d609307ee9b9d0700ca1f4f6a588b7453fc7696c661cfb3092565d55c4529",
+    "source-binding.toml": "799519e4ce10f17e310afab8e7e1191f41ba38149fe9b448cfefe77406a6d1f7",
+    "N128-i16.toml": "373f6765dc750890dcf2cabc298625a1fb2138a10e76fa157b8894fd9eca226d",
+    "N256-i16.toml": "699f70df20ffed37b7e716991a85389187cde37b1a7c6fd9e52239714e9798fb",
+    "identity.toml": "55e3336b9fdc1c57b2ae41c4029fe0710412ba53e44ff584ea380e85f243ded5"
+  },
+  "kernel_logical_hashes_verified": {
+    "acoustic": "821b361080884796b54cf22bc42b7889847807a86fdc54c16a787cd6a6f72df6",
+    "impurity": "1a29392d417729ead7457791eb4306a05ab752097c5079b2b15f61f3a116e09b",
+    "IFR": "614fd7a69eb34afba6213b6cdbe11963a66cca354a3e439c85aff7f1920cacba",
+    "alloy": "6a532b2562775becd473f91ee6f760aa1db8b3e3271e77d424a304cf912e7e01",
+    "LO": "dce410e43f29b71eb4aa1bc64a4d235578d75e164ba5fe9add511f52474bf3fd"
+  },
+  "N": {
+    "128": {
+      "numbers": {
+        "bare": 0.04500368792266079,
+        "classic_M1": 0.044478062146586096,
+        "oneshot": 0.045005040205109544,
+        "M3": 0.045005040205103
+      },
+      "correction_Frobenius": 3.6388270702010155e-07,
+      "feedback_Frobenius": 1.9133003569528955e-15,
+      "stored_feedback_difference_Frobenius": 0.0,
+      "oneshot_independent_literal_difference_Frobenius": 5.689754951007449e-42,
+      "S0_independent_literal_relative": 2.2877388927006366e-16,
+      "B0_independent_literal_relative": 2.690093739350819e-16,
+      "linear_literal_residual_absolute": 2.5856914026972358e-17,
+      "linear_literal_residual_relative": 9.140594864424314e-17,
+      "linear_literal_weighted_absolute": 4.913903011475119e-18,
+      "linear_literal_weighted_relative": 9.814882483455597e-17,
+      "M3_Hermiticity_defect": 1.943979011309684e-17,
+      "t4": 9.292516022296138e-07,
+      "eta": 6.867574812224933e-09,
+      "condition": 1.0000000058434149
+    },
+    "256": {
+      "numbers": {
+        "bare": 0.04500486199389256,
+        "classic_M1": 0.04493896223967686,
+        "oneshot": 0.04500503103306671,
+        "M3": 0.04500503103306661
+      },
+      "correction_Frobenius": 4.548637941661879e-08,
+      "feedback_Frobenius": 5.947314414233909e-17,
+      "stored_feedback_difference_Frobenius": 0.0,
+      "oneshot_independent_literal_difference_Frobenius": 5.230579984410913e-43,
+      "S0_independent_literal_relative": 2.2877388927006366e-16,
+      "B0_independent_literal_relative": 2.690093739350819e-16,
+      "linear_literal_residual_absolute": 3.575630891522232e-17,
+      "linear_literal_residual_relative": 1.264009825345181e-16,
+      "linear_literal_weighted_absolute": 7.18279285235002e-18,
+      "linear_literal_weighted_relative": 1.4346695008651817e-16,
+      "M3_Hermiticity_defect": 2.7651437947911527e-17,
+      "t4": 1.1615910879252379e-07,
+      "eta": 8.584664991052837e-10,
+      "condition": 1.0000000007304437
+    }
+  },
+  "cutoff": {
+    "bare": {
+      "number_difference": 1.1740712317701019e-06,
+      "Frobenius_difference": 3.156267158674883e-07
+    },
+    "classic_M1": {
+      "number_difference": 0.00046090009309076446,
+      "Frobenius_difference": 0.00017345899224598474
+    },
+    "oneshot": {
+      "number_difference": -9.172042833571759e-09,
+      "Frobenius_difference": 3.173631068875791e-09
+    },
+    "M3": {
+      "number_difference": -9.172036387339322e-09,
+      "Frobenius_difference": 3.1736296592236398e-09
+    }
+  },
+  "improvement_absolute_number_cutoff": 128.00551395442986,
+  "M3_cutoff_relative_to_target": 2.0382303082976273e-07,
+  "M3_N256_excess_over_target_relative": 0.00011180073481365577,
+  "V1_N128_reported_number_equal_V2": true,
+  "elapsed_seconds": 1.0162195779848844,
+  "peak_KiB": 41204
+}

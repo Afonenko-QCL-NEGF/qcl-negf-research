@@ -1,0 +1,80 @@
+relative_allowance = 5.684341886080802e-14
+all_nine_scalars_bitwise_equal = true
+zero_policy = "zero/zero exact; no additive norm floor"
+new_call = 1
+parent_call = 64
+passed = true
+
+[raw_Phi_field_replay]
+scale = 17.311508690248573
+weighted_relative = 0.0
+weighted_absolute = 0.0
+weighted_scale = 0.16279641957200722
+maximum_block_absolute = 0.0
+absolute = 0.0
+energy_index = 0
+relative = 0.0
+k_index = 0
+
+[fields."residual.scale"]
+parent = 17.311508690234913
+absolute_difference = 0.0
+passed = true
+current = 17.311508690234913
+bitwise_equal = true
+
+[fields."mu.number"]
+parent = 0.04499999999999402
+absolute_difference = 0.0
+passed = true
+current = 0.04499999999999402
+bitwise_equal = true
+
+[fields."mu.mu"]
+parent = 0.08459614262982018
+absolute_difference = 0.0
+passed = true
+current = 0.08459614262982018
+bitwise_equal = true
+
+[fields."residual.relative"]
+parent = 4.125583337831235e-6
+absolute_difference = 0.0
+passed = true
+current = 4.125583337831235e-6
+bitwise_equal = true
+
+[fields."mu.derivative"]
+parent = 0.6469060727691234
+absolute_difference = 0.0
+passed = true
+current = 0.6469060727691234
+bitwise_equal = true
+
+[fields."residual.absolute"]
+parent = 7.142007180515379e-5
+absolute_difference = 0.0
+passed = true
+current = 7.142007180515379e-5
+bitwise_equal = true
+
+[fields."residual.weighted_relative"]
+parent = 3.412502855963494e-6
+absolute_difference = 0.0
+passed = true
+current = 3.412502855963494e-6
+bitwise_equal = true
+
+[fields."residual.weighted_absolute"]
+parent = 5.555432467297159e-7
+absolute_difference = 0.0
+passed = true
+current = 5.555432467297159e-7
+bitwise_equal = true
+
+[fields."residual.weighted_scale"]
+parent = 0.16279641957189295
+absolute_difference = 0.0
+passed = true
+current = 0.16279641957189295
+bitwise_equal = true

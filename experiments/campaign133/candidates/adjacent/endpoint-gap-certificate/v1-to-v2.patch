@@ -1,0 +1,35 @@
+--- v1/endpoint_certificate.jl
++++ v2/endpoint_certificate.jl
+@@ -91,7 +91,10 @@
+     all(k=="execution_authorized" || (haskey(o,k) && isequal(o[k],v)) for (k,v) in frozen) || error("frozen option changed")
+     o["execution_authorized"]===true || error("write-only/HOLD")
+     Threads.nthreads()==1 && !get_zero_subnormals() && rounding(Float64)==RoundNearest || error("IEEE/J1 domain")
+-    BLAS.set_num_threads(1);ispath(output) && error("output exists")
++    blas_before=BLAS.get_num_threads();BLAS.set_num_threads(1);blas_after=BLAS.get_num_threads()
++    println("BLAS_threads_before_setter=",blas_before," after_setter=",blas_after);flush(stdout)
++    blas_after==1 || error("BLAS setter did not establish one thread")
++    ispath(output) && error("output exists")
+     member=only(filter(s->startswith(s,"0::"),readlines("/proc/self/cgroup")))
+     cg=joinpath("/sys/fs/cgroup",lstrip(split(member,':';limit=3)[3],'/'))
+     strip(read(joinpath(cg,"memory.max"),String))=="2147483648" && strip(read(joinpath(cg,"memory.swap.max"),String))=="0" || error("2GiB/Swap0")
+@@ -105,7 +108,8 @@
+     mkpath(output);cp(config,joinpath(output,"input.toml"));cp(@__FILE__,joinpath(output,"endpoint_certificate.jl"))
+     cp(V4PATH,joinpath(output,"V4-matsubara_oracle.jl"));cp(cfg,joinpath(output,"V4-input.toml"));cp(summarypath,joinpath(output,"V4-summary.toml"))
+     report=Dict{String,Any}("status"=>"running","scientific_acceptance"=>false,"scope"=>"same V4 dyadic-centre hats; IEEE outward enclosures, not hardware formal verification",
+-        "input_sha256"=>V4.sha_file(config),"script_sha256"=>V4.sha_file(@__FILE__),"V4_input_sha256"=>o["V4_input_sha256"],"V4_summary_sha256"=>o["V4_summary_sha256"])
++        "input_sha256"=>V4.sha_file(config),"script_sha256"=>V4.sha_file(@__FILE__),"V4_input_sha256"=>o["V4_input_sha256"],"V4_summary_sha256"=>o["V4_summary_sha256"],
++        "BLAS_threads_before_setter"=>blas_before,"BLAS_threads_after_setter"=>blas_after,"Julia_threads"=>Threads.nthreads())
+     checkstage(s)=(time()-START<120 || error("120s cap"))
+     try
+         f=V4.source_frame(paths,c,TOML.parsefile(paths["source_input"]),TOML.parsefile(paths["map_summary"]),checkstage)
+--- v1/tiny_checks.jl
++++ v2/tiny_checks.jl
+@@ -2,6 +2,8 @@
+ using Test,LinearAlgebra
+ include("endpoint_certificate.jl")
+ function tiny_checks()
++    before=BLAS.get_num_threads();BLAS.set_num_threads(1)
++    println("tiny_BLAS_threads_before_setter=",before," after_setter=",BLAS.get_num_threads());@test BLAS.get_num_threads()==1
+     @testset "outward basic operations and exact rational constants" begin
+         for a in (0.0,-0.0,1.2,-2.7,1e-300),b in (.3,-1.7,0.0)
+             x=iadd(point(a),point(b));@test Q(x[1])<=Q(a)+Q(b)<=Q(x[2])

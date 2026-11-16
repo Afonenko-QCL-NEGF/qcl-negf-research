@@ -1,0 +1,68 @@
+elapsed_seconds = 244.70809984207153
+kind = "AAII"
+reason = "accepted"
+call = 27
+
+[AA]
+rank = 3
+l1 = 1.0527481207353475
+kind = "AAII"
+R_diagonal = [1.5638435249046508e-6, 1.2466134264165814e-6, 9.67942277768667e-7]
+condition = 1.6998300465133607
+firstpair = 1
+initial_scales = [1.5638435249046508e-6, 1.2669701693840803e-6, 9.84426234549288e-7]
+coefficients = [-0.012624152022543423, -0.02637406036767377, 0.06778318987559906]
+
+    [AA.projection]
+    input_antihermitian_norm = 0.0
+    scale = 17.31150477340167
+    trace_before = 7732.713734449502
+    weighted_absolute = 0.0
+    trace_after = 7732.713734449502
+    changed_blocks = 0
+    unchanged_field_identity = true
+    distance_formula_relative_defect = 0.0
+    expected_orthogonal_distance = 0.0
+    distance_formula_absolute_defect = 0.0
+    operator = "P_PSD(Herm AAtrial), eigenvalue floor exactly zero"
+    minimum_input_eigenvalue = 0.0
+    weighted_relative = 0.0
+    eigen_backward_location = [13382, 5]
+    trace_change = 0.0
+    unchanged_exact_feasible_blocks = 337744
+    next_pi_call = 27
+    maximum_eigen_backward_relative = 1.6936854209335693e-15
+    eigen_backward_absolute_at_maximum = 1.4316721947865497e-16
+    maximum_eigenvector_orthogonality_defect = 3.782036597251891e-15
+    seconds = 0.3601369857788086
+    maximum_change_location = [0, 0]
+    weighted_scale = 0.16279639310740812
+    negative_input_eigenvalues = 0
+    zero_input_eigenvalues = 275
+    weighted_trace_change = 0.0
+    projection_attempt = 25
+    arithmetic_scope = "eigen/reconstruction rounding is measured, not a strict computed-PSD certificate; actual trial is guarded by original cone and fresh Pi domain"
+    relative = 0.0
+    orthogonality_location = [14395, 7]
+    maximum_block_change = 0.0
+    minimum_input_location = [381, 1]
+    eigen_backward_scale_at_maximum = 0.08452999459589158
+    absolute = 0.0
+    output_positive_rank_counts = [55, 0, 0, 0, 0, 337689]
+    full_pair_preserved = false
+
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 1.0527481207353475
+    R_diagonal = [1.5638435249046508e-6, 1.2466134264165814e-6, 9.67942277768667e-7]
+    condition_measured = true
+    affine_coefficients = [-0.012624152022543423, -0.013749908345130348, 0.09415725024327283, 0.9322168101244009]
+    coefficients = [-0.012624152022543423, -0.02637406036767377, 0.06778318987559906]
+    condition = 1.6998300465133607
+    reason = "accepted"
+    affine_l1_limit = 4096.0
+    initial_scales = [1.5638435249046508e-6, 1.2669701693840803e-6, 9.84426234549288e-7]
+    differences = 3
+    normalized_rank = 3
+    firstpair = 1
+    coefficients_measured = true

@@ -1,0 +1,93 @@
+audit_allocated_bytes = 1229971656
+audit_gc_seconds = 0.067000474
+audit_seconds = 1.102011042
+identity_residual_relative_to_delta_unweighted = 3.4458505289288847e-14
+delta_R_relative_to_old_unweighted = 0.009600536643839256
+
+[GammaR_minus_GammaK_minus_K_AminusB]
+unweighted_Frobenius = 9.724154568688446e-17
+trusted_weighted_L2 = 5.533569757610675e-19
+maximum_block_k_index = 1
+full_weighted_L2 = 5.533589134806407e-19
+maximum_block_Frobenius = 3.002681557253328e-18
+maximum_block_energy_index = 12847
+
+[antiHermitian_delta_R]
+unweighted_Frobenius = 1.2584286798668795e-16
+trusted_weighted_L2 = 7.144268674942554e-19
+maximum_block_k_index = 1
+full_weighted_L2 = 7.161161067354963e-19
+maximum_block_Frobenius = 3.718109874605032e-18
+maximum_block_energy_index = 11978
+
+[old_R_scale]
+unweighted_Frobenius = 0.22822001816887008
+trusted_weighted_L2 = 0.0012954162851989831
+maximum_block_k_index = 1
+full_weighted_L2 = 0.001298699181617276
+maximum_block_Frobenius = 0.0018289913487841004
+maximum_block_energy_index = 9956
+
+[new_R_scale]
+unweighted_Frobenius = 0.22900712726771932
+trusted_weighted_L2 = 0.0012998854797190956
+maximum_block_k_index = 1
+full_weighted_L2 = 0.001303178271661809
+maximum_block_Frobenius = 0.0018341168988461115
+maximum_block_energy_index = 9956
+
+[full_discrete_delta_identity_residual]
+unweighted_Frobenius = 7.549977898258515e-17
+trusted_weighted_L2 = 4.216225236538637e-19
+maximum_block_k_index = 1
+full_weighted_L2 = 4.296350168497088e-19
+maximum_block_Frobenius = 1.610883227796098e-18
+maximum_block_energy_index = 12847
+
+[delta_R]
+unweighted_Frobenius = 0.002191034647287898
+trusted_weighted_L2 = 1.2464458142425298e-5
+maximum_block_k_index = 1
+full_weighted_L2 = 1.2468214788349378e-5
+maximum_block_Frobenius = 8.548659477672951e-5
+maximum_block_energy_index = 17827
+
+[K_input_identity_defect]
+unweighted_Frobenius = 2.322127689263377e-16
+trusted_weighted_L2 = 1.3214208462664936e-18
+maximum_block_k_index = 1
+full_weighted_L2 = 1.321420846425997e-18
+maximum_block_Frobenius = 6.57273528990779e-18
+maximum_block_energy_index = 9559
+
+[H_K_input_identity_defect]
+unweighted_Frobenius = 8.834910649573901e-17
+trusted_weighted_L2 = 5.021914876937296e-19
+maximum_block_k_index = 1
+full_weighted_L2 = 5.027558330258942e-19
+maximum_block_Frobenius = 2.2388176885260096e-18
+maximum_block_energy_index = 12047
+
+[GammaR_minus_GammaK]
+unweighted_Frobenius = 2.535412648230946e-16
+trusted_weighted_L2 = 1.4427912025148558e-18
+maximum_block_k_index = 1
+full_weighted_L2 = 1.4427919458400244e-18
+maximum_block_Frobenius = 7.004600206089531e-18
+maximum_block_energy_index = 11978
+
+[K_HermGR_minus_HA]
+unweighted_Frobenius = 0.0021910346472879096
+trusted_weighted_L2 = 1.2464458142425359e-5
+maximum_block_k_index = 1
+full_weighted_L2 = 1.246821478834944e-5
+maximum_block_Frobenius = 8.548659477672942e-5
+maximum_block_energy_index = 17827
+
+[Hermitian_delta_R]
+unweighted_Frobenius = 0.002191034647287898
+trusted_weighted_L2 = 1.2464458142425298e-5
+maximum_block_k_index = 1
+full_weighted_L2 = 1.246821478834938e-5
+maximum_block_Frobenius = 8.548659477672951e-5
+maximum_block_energy_index = 17827

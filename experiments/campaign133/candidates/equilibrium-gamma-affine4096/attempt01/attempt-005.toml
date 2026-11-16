@@ -1,0 +1,63 @@
+elapsed_seconds = 66.25170183181763
+kind = "AAII"
+reason = "accepted"
+call = 5
+
+[AA]
+rank = 1
+l1 = 5.198829851195005
+kind = "AAII"
+R_diagonal = [1.5077057009232628e-8]
+condition = 1.0
+firstpair = 3
+initial_scales = [1.5077057009232628e-8]
+coefficients = [-2.0994149255975025]
+
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 11446.619074749706
+    R_diagonal = [8.872789738052004e-9, 1.4191532199443238e-9, 1.2334976139472576e-10]
+    condition_measured = true
+    affine_coefficients = [-3980.4228227363596, 4785.297199281687, 938.5123380931661, -1742.3867146384935]
+    coefficients = [-3980.4228227363596, 804.8743765453273, 1743.3867146384935]
+    condition = 901.6420986228471
+    reason = "affine_l1_limit"
+    affine_l1_limit = 4096.0
+    initial_scales = [8.872789738052004e-9, 7.657871891008978e-8, 1.5077057009232628e-8]
+    differences = 3
+    normalized_rank = 3
+    firstpair = 1
+    coefficients_measured = true
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 8751.810114391556
+    R_diagonal = [7.657871891008978e-8, 1.8623154693518953e-10]
+    condition_measured = true
+    affine_coefficients = [862.1193858735077, 3514.28567132227, -4375.405057195778]
+    coefficients = [862.1193858735077, 4376.405057195778]
+    condition = 427.13870032748355
+    reason = "affine_l1_limit"
+    affine_l1_limit = 4096.0
+    initial_scales = [7.657871891008978e-8, 1.5077057009232628e-8]
+    differences = 2
+    normalized_rank = 2
+    firstpair = 2
+    coefficients_measured = true
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 5.198829851195005
+    R_diagonal = [1.5077057009232628e-8]
+    condition_measured = true
+    affine_coefficients = [-2.0994149255975025, 3.0994149255975025]
+    coefficients = [-2.0994149255975025]
+    m1_b_cached_working_norm = 9.709543419401034e-7
+    condition = 1.0
+    m1_a_cached_working_norm = 9.70345581923297e-7
+    reason = "accepted"
+    affine_l1_limit = 4096.0
+    initial_scales = [1.5077057009232628e-8]
+    m1_d = 1.5077057009232628e-8
+    differences = 1
+    normalized_rank = 1
+    firstpair = 3
+    coefficients_measured = true

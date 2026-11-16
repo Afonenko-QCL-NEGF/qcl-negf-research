@@ -1,0 +1,11 @@
+source_state = "raw/B0-alpha02-attempt02/state.h5"
+source_input = "raw/B0-alpha02-attempt02/input.toml"
+core_head = "a487b607743428a43aeb02158f9d2f5c8f3bc182"
+trusted_min_eV = -0.22
+trusted_max_eV = 0.82
+commensurate_steps = 128
+physical_change = "none: fixed actual B0 A; fixed LO=36.7meV, T=70K and fitted mu"
+variant_scope = "original; same-A linear resampling at half-step; same-A commensurate LO/128"
+memory_limit_bytes = 2147483648
+cpu_quota_percent = 100
+wall_limit_seconds = 300

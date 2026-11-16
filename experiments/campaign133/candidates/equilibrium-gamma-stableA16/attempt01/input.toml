@@ -1,0 +1,59 @@
+identity = "campaign133-S01-m939-Gamma-stableA-hH-AA4096-warmFD128-ghost0-pilot16"
+expected_julia_version = "1.13.3"
+# Accepted integrated Core; no silent fallback to a different retarded closure.
+expected_core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+expected_core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+runtime_authorized = true
+NE = 30704
+energy_min_eV = -0.3
+energy_max_eV = 0.9000001064962726
+Nz = 96
+Nb = 5
+basis_periods = 3
+Nk = 11
+kmax_per_nm = 0.6
+Nphi = 32
+Nqz = 81
+qzmax_per_nm = 10.0
+temperature_K = 70.0
+trust_margin_meV = 80.0
+seed_halfwidth_meV = 1.25
+workers = 4
+memory_max_bytes = 13019119616
+memory_high_bytes = 12348030976
+heap_hint = "8G"
+cpu_quota = "400%"
+swap_max_bytes = 0
+pi_calls_total = 16
+precheck_actual_calls = 6
+precheck_seconds = 180.0
+pilot_seconds = 600.0
+native_max_maps = 32
+native_seconds = 900.0
+overall_seconds = 1800.0
+single_file_max_bytes = 5368709120
+data_max_bytes = 8589934592
+history_differences = 3
+aa_beta = 1.0
+linear_alpha = 0.2
+qr_condition_max = 1.0e8
+affine_l1_max = 4096.0
+trigger_relative = 1.0e-9
+trigger_passes = 3
+arithmetic_relative = 1.0e-10
+# No absolute convergence floor. Absolute residuals in scaled E0 and physical eV
+# are recorded; relative zero/zero=0, nonzero/zero=Inf. Zero Gamma is infeasible.
+checkpoint_call = 8
+
+initialization = "warm_source_GammaK_ghost0"
+seed_manifest_path = "../equilibrium-gamma-warm/seed/seed-manifest.toml"
+expected_seed_manifest_sha256 = "18439792c37a85685831ee5037d624760b764b3ec9babf42b3c5811a0155a0be"
+expected_source_state_sha256 = "a690ba56918d4c9803d70d759f2c228f4e9133fdc7f4bcede132f19229c0042f"
+target_model_path = "../equilibrium-gamma-solver/attempt02/model.h5"
+target_model_sha256 = "6b41f93e29f2482a814f82a9db69ad8c8ff3bf7d9eb99ccfed4a510244e364b7"
+
+retarded_real_symmetry = "hermitian_projection"
+spectral_operator = "native_covariance_exact_plan_hlocal_all9"
+project_AA_trial = false
+qualifier_summary_path = "../positive-source-preflight/attempt01/summary.toml"
+qualifier_summary_sha256 = "06d6fa46c058187a8368663c9d19ef3f3edf3ab3582a5cf629286a2b9e231367"

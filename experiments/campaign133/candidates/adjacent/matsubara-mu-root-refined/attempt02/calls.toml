@@ -1,0 +1,1186 @@
+maps_completed_callbacks = 112
+reserved_maps = 112
+
+[[calls]]
+S0 = "zero"
+inner_qualified = true
+mu_native = 0.08359614262982018
+alpha = 1.0
+N = 512
+status = "iteration_budget"
+reserved_maps = 16
+
+    [[calls.history]]
+    G_causality_max = -0.005154989839236638
+    iteration = 1
+    number = 0.03694203450940368
+    pauli_max = 0.18743893420191346
+    dyson_backward = 3.9004766095752897e-17
+    sigma_causality_max = -2.8176685592333474e-5
+    pauli_min = -9.761679052077822e-15
+    raw_sigma_absolute = 0.09913437648796815
+    raw_sigma_relative = 1.0
+    [[calls.history]]
+    G_causality_max = -0.005154989045545154
+    iteration = 2
+    number = 0.044242470030985
+    pauli_max = 0.2147585447932913
+    dyson_backward = 3.9006677527489706e-17
+    sigma_causality_max = -2.8176681520729614e-5
+    pauli_min = 5.832698918798155e-8
+    raw_sigma_absolute = 0.0003231533058238683
+    raw_sigma_relative = 0.0032593672258493015
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 3
+    number = 0.0443583306582228
+    pauli_max = 0.21477751011024176
+    dyson_backward = 3.6312431959816936e-17
+    sigma_causality_max = -2.8176681519558093e-5
+    pauli_min = 6.929164942978045e-8
+    raw_sigma_absolute = 3.410583575162494e-6
+    raw_sigma_relative = 3.440011410408256e-5
+    [[calls.history]]
+    G_causality_max = -0.00515498904554525
+    iteration = 4
+    number = 0.04435790733400827
+    pauli_max = 0.21477360325510567
+    dyson_backward = 3.9419736124605505e-17
+    sigma_causality_max = -2.8176681519541376e-5
+    pauli_min = 6.946376233234765e-8
+    raw_sigma_absolute = 3.2754804900040654e-8
+    raw_sigma_relative = 3.3037424816719146e-7
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 5
+    number = 0.0443578958357522
+    pauli_max = 0.21477360977979157
+    dyson_backward = 3.9063995468553563e-17
+    sigma_causality_max = -2.8176681519541518e-5
+    pauli_min = 6.946404791730974e-8
+    raw_sigma_absolute = 3.8755883845497763e-10
+    raw_sigma_relative = 3.909028310968704e-9
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 6
+    number = 0.04435789592167579
+    pauli_max = 0.21477361024164912
+    dyson_backward = 3.9063871450291506e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404467095393e-8
+    raw_sigma_absolute = 4.21015458235905e-12
+    raw_sigma_relative = 4.246481262497975e-11
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 7
+    number = 0.0443578959229005
+    pauli_max = 0.21477361023972197
+    dyson_backward = 4.03961490173955e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477436474e-8
+    raw_sigma_absolute = 4.4132948181853993e-14
+    raw_sigma_relative = 4.45137426303381e-13
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 8
+    number = 0.044357895922887004
+    pauli_max = 0.2147736102396706
+    dyson_backward = 4.039663639309919e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477785359e-8
+    raw_sigma_absolute = 5.391442685502802e-16
+    raw_sigma_relative = 5.4379619308407665e-15
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 9
+    number = 0.044357895922886956
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 7.895040064923638e-18
+    raw_sigma_relative = 7.963161220457909e-17
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 10
+    number = 0.04435789592288695
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 5.492933697794868e-19
+    raw_sigma_relative = 5.540328642936358e-18
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 11
+    number = 0.04435789592288695
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 2.5774095765549963e-19
+    raw_sigma_relative = 2.5996483640970734e-18
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 12
+    number = 0.04435789592288695
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 13
+    number = 0.04435789592288695
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 14
+    number = 0.04435789592288695
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 15
+    number = 0.04435789592288695
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154989045545252
+    iteration = 16
+    number = 0.04435789592288695
+    pauli_max = 0.21477361023967073
+    dyson_backward = 4.03966380170554e-17
+    sigma_causality_max = -2.8176681519541497e-5
+    pauli_min = 6.946404477782979e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+[[calls]]
+S0 = "zero"
+inner_qualified = true
+mu_native = 0.08559614262982018
+alpha = 1.0
+N = 512
+status = "iteration_budget"
+reserved_maps = 16
+
+    [[calls.history]]
+    G_causality_max = -0.005154992493887938
+    iteration = 1
+    number = 0.03806305182428452
+    pauli_max = 0.19253691173226473
+    dyson_backward = 3.694114970707342e-17
+    sigma_causality_max = -2.8176693898641345e-5
+    pauli_min = -9.783463604264888e-15
+    raw_sigma_absolute = 0.0991901795463925
+    raw_sigma_relative = 1.0
+    [[calls.history]]
+    G_causality_max = -0.00515499170019379
+    iteration = 2
+    number = 0.04554446966818268
+    pauli_max = 0.22028760894699417
+    dyson_backward = 3.969414079779454e-17
+    sigma_causality_max = -2.817668982674202e-5
+    pauli_min = 6.01762945281927e-8
+    raw_sigma_absolute = 0.0003263412351420751
+    raw_sigma_relative = 0.003289733308248915
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 3
+    number = 0.045660810382948114
+    pauli_max = 0.2202952186116617
+    dyson_backward = 3.894673566652198e-17
+    sigma_causality_max = -2.8176689825528303e-5
+    pauli_min = 7.143853968609584e-8
+    raw_sigma_absolute = 3.4322566912421043e-6
+    raw_sigma_relative = 3.459991559941404e-5
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 4
+    number = 0.04566033636721776
+    pauli_max = 0.22029123028270767
+    dyson_backward = 3.749894641739484e-17
+    sigma_causality_max = -2.817668982551164e-5
+    pauli_min = 7.161320300940645e-8
+    raw_sigma_absolute = 3.3809980712553255e-8
+    raw_sigma_relative = 3.4083185892200297e-7
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 5
+    number = 0.0456603249759197
+    pauli_max = 0.22029123959820762
+    dyson_backward = 3.8530492022020874e-17
+    sigma_causality_max = -2.8176689825511775e-5
+    pauli_min = 7.161347084099623e-8
+    raw_sigma_absolute = 3.907835279302194e-10
+    raw_sigma_relative = 3.9394129557364e-9
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 6
+    number = 0.045660325072081585
+    pauli_max = 0.22029124006566334
+    dyson_backward = 3.853047967425068e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346794978439e-8
+    raw_sigma_absolute = 4.41612051148042e-12
+    raw_sigma_relative = 4.4518054405575585e-11
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 7
+    number = 0.04566032507325583
+    pauli_max = 0.22029124006323283
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346804732168e-8
+    raw_sigma_absolute = 4.4610578533035985e-14
+    raw_sigma_relative = 4.497105903327061e-13
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 8
+    number = 0.04566032507324118
+    pauli_max = 0.22029124006318246
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805118173e-8
+    raw_sigma_absolute = 5.660134731728328e-16
+    raw_sigma_relative = 5.705872049346333e-15
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 9
+    number = 0.04566032507324107
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 6.412542175633519e-18
+    raw_sigma_relative = 6.464359401216812e-17
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 10
+    number = 0.045660325073241075
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 8.55956598714503e-19
+    raw_sigma_relative = 8.628732465821196e-18
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 11
+    number = 0.045660325073241075
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 5.882206147963764e-20
+    raw_sigma_relative = 5.929737937158797e-19
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 12
+    number = 0.045660325073241075
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 13
+    number = 0.045660325073241075
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 14
+    number = 0.045660325073241075
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 15
+    number = 0.045660325073241075
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154991700193887
+    iteration = 16
+    number = 0.045660325073241075
+    pauli_max = 0.22029124006318287
+    dyson_backward = 3.853047967425067e-17
+    sigma_causality_max = -2.817668982551177e-5
+    pauli_min = 7.161346805122523e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+[[calls]]
+S0 = "zero"
+inner_qualified = true
+mu_native = 0.0845821201730559
+alpha = 1.0
+N = 512
+status = "iteration_budget"
+reserved_maps = 16
+
+    [[calls.history]]
+    G_causality_max = -0.005154991148086628
+    iteration = 1
+    number = 0.03749091933771423
+    pauli_max = 0.1899391102207368
+    dyson_backward = 3.780454020194783e-17
+    sigma_causality_max = -2.8176689687997054e-5
+    pauli_min = -9.755387002670504e-15
+    raw_sigma_absolute = 0.09916191235471623
+    raw_sigma_relative = 1.0
+    [[calls.history]]
+    G_causality_max = -0.005154990354393832
+    iteration = 2
+    number = 0.04488022833824405
+    pauli_max = 0.21747200802430064
+    dyson_backward = 3.656738543438296e-17
+    sigma_causality_max = -2.817668561625071e-5
+    pauli_min = 5.923209173157342e-8
+    raw_sigma_absolute = 0.00032471662262942037
+    raw_sigma_relative = 0.0032742568328221313
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 3
+    number = 0.04499633850707168
+    pauli_max = 0.21748544119492283
+    dyson_backward = 3.737560908953463e-17
+    sigma_causality_max = -2.8176685615058487e-5
+    pauli_min = 7.034267439334879e-8
+    raw_sigma_absolute = 3.421491509725642e-6
+    raw_sigma_relative = 3.450088266107458e-5
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 4
+    number = 0.04499589032027225
+    pauli_max = 0.21748149316961865
+    dyson_backward = 3.882824051534768e-17
+    sigma_causality_max = -2.817668561504179e-5
+    pauli_min = 7.051604822126333e-8
+    raw_sigma_absolute = 3.3271318473881466e-8
+    raw_sigma_relative = 3.35493981327667e-7
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 5
+    number = 0.04499587886861027
+    pauli_max = 0.21748150105224576
+    dyson_backward = 3.882756222087132e-17
+    sigma_causality_max = -2.8176685615041926e-5
+    pauli_min = 7.051632501082046e-8
+    raw_sigma_absolute = 3.8919824834554047e-10
+    raw_sigma_relative = 3.9245114305043664e-9
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 6
+    number = 0.04499587895956508
+    pauli_max = 0.21748150151722098
+    dyson_backward = 3.882755340374398e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.051632195683876e-8
+    raw_sigma_absolute = 4.311229958639823e-12
+    raw_sigma_relative = 4.347262950001219e-11
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 7
+    number = 0.04499587896076665
+    pauli_max = 0.2174815015150485
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.051632206548707e-8
+    raw_sigma_absolute = 4.437105704007337e-14
+    raw_sigma_relative = 4.474190757005953e-13
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 8
+    number = 0.04499587896075244
+    pauli_max = 0.2174815015149975
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.051632206651329e-8
+    raw_sigma_absolute = 5.524968126437761e-16
+    raw_sigma_relative = 5.571145465778476e-15
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 9
+    number = 0.04499587896075236
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 6.147757020236731e-18
+    raw_sigma_relative = 6.199139590345923e-17
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 10
+    number = 0.044995878960752356
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 1.4426408719803225e-18
+    raw_sigma_relative = 1.4546983744975672e-17
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 11
+    number = 0.044995878960752356
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 12
+    number = 0.044995878960752356
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 13
+    number = 0.044995878960752356
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 14
+    number = 0.044995878960752356
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 15
+    number = 0.044995878960752356
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990354393928
+    iteration = 16
+    number = 0.044995878960752356
+    pauli_max = 0.217481501514998
+    dyson_backward = 3.8827553403744756e-17
+    sigma_causality_max = -2.817668561504192e-5
+    pauli_min = 7.05163220656619e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+[[calls]]
+S0 = "zero"
+inner_qualified = true
+mu_native = 0.08458837711379376
+alpha = 1.0
+N = 512
+status = "iteration_budget"
+reserved_maps = 16
+
+    [[calls.history]]
+    G_causality_max = -0.005154991156391645
+    iteration = 1
+    number = 0.03749442581287874
+    pauli_max = 0.18995505725603476
+    dyson_backward = 3.774409252974852e-17
+    sigma_causality_max = -2.8176689713983205e-5
+    pauli_min = -9.7551157054917e-15
+    raw_sigma_absolute = 0.09916208693741914
+    raw_sigma_relative = 1.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362698839
+    iteration = 2
+    number = 0.04488430096909102
+    pauli_max = 0.21748930390591853
+    dyson_backward = 4.005482766018512e-17
+    sigma_causality_max = -2.8176685642235932e-5
+    pauli_min = 5.923787620401252e-8
+    raw_sigma_absolute = 0.00032472659489683785
+    raw_sigma_relative = 0.003274351821875197
+    [[calls.history]]
+    G_causality_max = -0.005154990362698939
+    iteration = 3
+    number = 0.045000412642234665
+    pauli_max = 0.2175027015593858
+    dyson_backward = 3.7252461733511136e-17
+    sigma_causality_max = -2.8176685641043574e-5
+    pauli_min = 7.034938971575394e-8
+    raw_sigma_absolute = 3.4215593472170543e-6
+    raw_sigma_relative = 3.450150807276484e-5
+    [[calls.history]]
+    G_causality_max = -0.005154990362698939
+    iteration = 4
+    number = 0.0449999642968502
+    pauli_max = 0.2174987532789482
+    dyson_backward = 3.762086524112184e-17
+    sigma_causality_max = -2.817668564102689e-5
+    pauli_min = 7.052277153145696e-8
+    raw_sigma_absolute = 3.3274619519605565e-8
+    raw_sigma_relative = 3.355266974717462e-7
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 5
+    number = 0.0449999528455215
+    pauli_max = 0.21749876117030495
+    dyson_backward = 3.785009224785582e-17
+    sigma_causality_max = -2.8176685641027013e-5
+    pauli_min = 7.052304826684368e-8
+    raw_sigma_absolute = 3.89208338724451e-10
+    raw_sigma_relative = 3.924606507948525e-9
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 6
+    number = 0.04499995293650859
+    pauli_max = 0.21749876163529777
+    dyson_backward = 3.8887759753862965e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304520133096e-8
+    raw_sigma_absolute = 4.311877918097449e-12
+    raw_sigma_relative = 4.3479089359876395e-11
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 7
+    number = 0.04499995293770994
+    pauli_max = 0.21749876163312384
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530103262e-8
+    raw_sigma_absolute = 4.4372709289500254e-14
+    raw_sigma_relative = 4.4743497589319394e-13
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 8
+    number = 0.044999952937695764
+    pauli_max = 0.21749876163307275
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530161239e-8
+    raw_sigma_absolute = 5.535190336596665e-16
+    raw_sigma_relative = 5.581443627120155e-15
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 9
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 8.478838601594047e-18
+    raw_sigma_relative = 8.54968967649718e-17
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 10
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 4.193134029777995e-19
+    raw_sigma_relative = 4.2281727971354515e-18
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 11
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 12
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 13
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 14
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 15
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362698938
+    iteration = 16
+    number = 0.04499995293769564
+    pauli_max = 0.21749876163307302
+    dyson_backward = 3.762064766534281e-17
+    sigma_causality_max = -2.8176685641027006e-5
+    pauli_min = 7.052304530159775e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+[[calls]]
+S0 = "zero"
+inner_qualified = true
+mu_native = 0.08458841668782063
+alpha = 1.0
+N = 512
+status = "iteration_budget"
+reserved_maps = 16
+
+    [[calls.history]]
+    G_causality_max = -0.005154991156444176
+    iteration = 1
+    number = 0.03749444799164254
+    pauli_max = 0.18995515812142763
+    dyson_backward = 3.743934573460456e-17
+    sigma_causality_max = -2.8176689714147563e-5
+    pauli_min = -9.800521503699902e-15
+    raw_sigma_absolute = 0.09916208804161702
+    raw_sigma_relative = 1.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362751368
+    iteration = 2
+    number = 0.044884326728775056
+    pauli_max = 0.21748941330233143
+    dyson_backward = 3.8418762523636755e-17
+    sigma_causality_max = -2.8176685642400283e-5
+    pauli_min = 5.923791274663701e-8
+    raw_sigma_absolute = 0.00032472665797170886
+    raw_sigma_relative = 0.0032743524226839966
+    [[calls.history]]
+    G_causality_max = -0.005154990362751467
+    iteration = 3
+    number = 0.04500043841142982
+    pauli_max = 0.21750281073114242
+    dyson_backward = 3.749879803115486e-17
+    sigma_causality_max = -2.8176685641207925e-5
+    pauli_min = 7.034943215766717e-8
+    raw_sigma_absolute = 3.421559776221772e-6
+    raw_sigma_relative = 3.4501512027820365e-5
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 4
+    number = 0.04499999006504243
+    pauli_max = 0.21749886244909122
+    dyson_backward = 3.901185408725177e-17
+    sigma_causality_max = -2.817668564119123e-5
+    pauli_min = 7.052281401902108e-8
+    raw_sigma_absolute = 3.3274640402349176e-8
+    raw_sigma_relative = 3.355269044377286e-7
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 5
+    number = 0.04499997861371607
+    pauli_max = 0.21749887034050316
+    dyson_backward = 3.891023233690026e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052309076849188e-8
+    raw_sigma_absolute = 3.8920840084633455e-10
+    raw_sigma_relative = 3.9246070921741584e-9
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 6
+    number = 0.04499997870470316
+    pauli_max = 0.21749887080549624
+    dyson_backward = 3.829378621603689e-17
+    sigma_causality_max = -2.8176685641191344e-5
+    pauli_min = 7.052308769579967e-8
+    raw_sigma_absolute = 4.3118793742195244e-12
+    raw_sigma_relative = 4.3479103575432103e-11
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 7
+    number = 0.04499997870590456
+    pauli_max = 0.21749887080332234
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308780820767e-8
+    raw_sigma_absolute = 4.4372286319516747e-14
+    raw_sigma_relative = 4.4743070603976137e-13
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 8
+    number = 0.0449999787058904
+    pauli_max = 0.21749887080327138
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781463112e-8
+    raw_sigma_absolute = 5.525464383587535e-16
+    raw_sigma_relative = 5.571636341981142e-15
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 9
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 7.325587193706935e-18
+    raw_sigma_relative = 7.386801362080049e-17
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 10
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 3.3800107855362277e-19
+    raw_sigma_relative = 3.4082548762633847e-18
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 11
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 1.5845634443015807e-19
+    raw_sigma_relative = 1.59780439426402e-18
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 12
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 1.5831138727864743e-19
+    raw_sigma_relative = 1.596342709820291e-18
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 13
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 1.5831138727864743e-19
+    raw_sigma_relative = 1.596342709820291e-18
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 14
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 1.5831138727864743e-19
+    raw_sigma_relative = 1.596342709820291e-18
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 15
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 1.5831138727864743e-19
+    raw_sigma_relative = 1.596342709820291e-18
+    [[calls.history]]
+    G_causality_max = -0.005154990362751465
+    iteration = 16
+    number = 0.044999978705890245
+    pauli_max = 0.2174988708032714
+    dyson_backward = 3.82937862160772e-17
+    sigma_causality_max = -2.817668564119135e-5
+    pauli_min = 7.052308781451481e-8
+    raw_sigma_absolute = 1.5831138727864743e-19
+    raw_sigma_relative = 1.596342709820291e-18
+[[calls]]
+S0 = "zero"
+inner_qualified = true
+mu_native = 0.08458841693811386
+alpha = 1.0
+N = 512
+status = "iteration_budget"
+reserved_maps = 16
+
+    [[calls.history]]
+    G_causality_max = -0.005154991156444507
+    iteration = 1
+    number = 0.03749444813191632
+    pauli_max = 0.18995515875936947
+    dyson_backward = 3.669080377995553e-17
+    sigma_causality_max = -2.8176689714148607e-5
+    pauli_min = -9.770621345470125e-15
+    raw_sigma_absolute = 0.09916208804860073
+    raw_sigma_relative = 1.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362751699
+    iteration = 2
+    number = 0.044884326891696746
+    pauli_max = 0.21748941399422922
+    dyson_backward = 3.7189523522208716e-17
+    sigma_causality_max = -2.817668564240132e-5
+    pauli_min = 5.923791296948218e-8
+    raw_sigma_absolute = 0.0003247266583706375
+    raw_sigma_relative = 0.0032743524264839223
+    [[calls.history]]
+    G_causality_max = -0.005154990362751798
+    iteration = 3
+    number = 0.045000438574411536
+    pauli_max = 0.21750281142161945
+    dyson_backward = 3.7621931622635125e-17
+    sigma_causality_max = -2.8176685641208962e-5
+    pauli_min = 7.034943241672378e-8
+    raw_sigma_absolute = 3.421559778933145e-6
+    raw_sigma_relative = 3.450151205281521e-5
+    [[calls.history]]
+    G_causality_max = -0.005154990362751798
+    iteration = 4
+    number = 0.044999990228018
+    pauli_max = 0.21749886313955807
+    dyson_backward = 3.888891316688206e-17
+    sigma_causality_max = -2.817668564119228e-5
+    pauli_min = 7.052281426407303e-8
+    raw_sigma_absolute = 3.3274640531877435e-8
+    raw_sigma_relative = 3.3552690572102513e-7
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 5
+    number = 0.04499997877669158
+    pauli_max = 0.21749887103097032
+    dyson_backward = 3.959411787516266e-17
+    sigma_causality_max = -2.8176685641192394e-5
+    pauli_min = 7.052309100879232e-8
+    raw_sigma_absolute = 3.8920840046130436e-10
+    raw_sigma_relative = 3.92460708802488e-9
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 6
+    number = 0.044999978867678626
+    pauli_max = 0.21749887149596348
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308796953875e-8
+    raw_sigma_absolute = 4.311878648842344e-12
+    raw_sigma_relative = 4.347909625809045e-11
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 7
+    number = 0.04499997886888007
+    pauli_max = 0.21749887149378955
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807906273e-8
+    raw_sigma_absolute = 4.437363461707814e-14
+    raw_sigma_relative = 4.4744430165157587e-13
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 8
+    number = 0.04499997886886586
+    pauli_max = 0.2174988714937385
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807629713e-8
+    raw_sigma_absolute = 5.533778227256026e-16
+    raw_sigma_relative = 5.580019657520461e-15
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 9
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 5.8982419532553755e-18
+    raw_sigma_relative = 5.947528920091317e-17
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 10
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 6.651298893107122e-20
+    raw_sigma_relative = 6.706878564229221e-19
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 11
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 12
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 13
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 14
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 15
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.005154990362751796
+    iteration = 16
+    number = 0.0449999788688657
+    pauli_max = 0.21749887149373867
+    dyson_backward = 3.9594320911232594e-17
+    sigma_causality_max = -2.8176685641192387e-5
+    pauli_min = 7.052308807563927e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+[[calls]]
+S0 = "zero"
+inner_qualified = true
+mu_native = 0.08458841693811386
+alpha = 1.0
+N = 1024
+status = "iteration_budget"
+reserved_maps = 16
+
+    [[calls.history]]
+    G_causality_max = -0.0025774633272396545
+    iteration = 1
+    number = 0.03749444813191625
+    pauli_max = 0.18995515875936947
+    dyson_backward = 3.8348725347998394e-17
+    sigma_causality_max = -1.4084145770787118e-5
+    pauli_min = -9.806072929373908e-15
+    raw_sigma_absolute = 0.0993103708057961
+    raw_sigma_relative = 1.0
+    [[calls.history]]
+    G_causality_max = -0.002577463227937351
+    iteration = 2
+    number = 0.0448843453721686
+    pauli_max = 0.21748941423341991
+    dyson_backward = 4.0851565700398896e-17
+    sigma_causality_max = -1.4084145264759783e-5
+    pauli_min = 6.010300384218594e-8
+    raw_sigma_absolute = 0.00032472665853286724
+    raw_sigma_relative = 0.0032694644658913564
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 3
+    number = 0.04500045705421982
+    pauli_max = 0.21750281166063146
+    dyson_backward = 3.894540169375859e-17
+    sigma_causality_max = -1.408414526461083e-5
+    pauli_min = 7.12143512518482e-8
+    raw_sigma_absolute = 3.4215597814741696e-6
+    raw_sigma_relative = 3.445000658458424e-5
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 4
+    number = 0.04500000870781652
+    pauli_max = 0.2174988633785683
+    dyson_backward = 3.8888561026566256e-17
+    sigma_causality_max = -1.4084145264608742e-5
+    pauli_min = 7.138777483359562e-8
+    raw_sigma_absolute = 3.327464054392117e-8
+    raw_sigma_relative = 3.3502601540133316e-7
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 5
+    number = 0.04499999725649012
+    pauli_max = 0.21749887126998063
+    dyson_backward = 3.959348089381092e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805368659935e-8
+    raw_sigma_absolute = 3.892084013595623e-10
+    raw_sigma_relative = 3.9187482579260515e-9
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 6
+    number = 0.044999997347477234
+    pauli_max = 0.21749887173497362
+    dyson_backward = 3.9593711464639435e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805066786175e-8
+    raw_sigma_absolute = 4.31187826998072e-12
+    raw_sigma_relative = 4.341418479153013e-11
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 7
+    number = 0.044999997348678634
+    pauli_max = 0.2174988717327997
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805078106339e-8
+    raw_sigma_absolute = 4.437333991320121e-14
+    raw_sigma_relative = 4.4677336839985466e-13
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 8
+    number = 0.044999997348664424
+    pauli_max = 0.2174988717327488
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077419231e-8
+    raw_sigma_absolute = 5.52637238075785e-16
+    raw_sigma_relative = 5.564232957025077e-15
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 9
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274912
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 8.401889211202034e-18
+    raw_sigma_relative = 8.459449640603624e-17
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 10
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274918
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 3.06096280071609e-19
+    raw_sigma_relative = 3.0819331240282092e-18
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 11
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274918
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 12
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274918
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 13
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274918
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 14
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274918
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 15
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274918
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0
+    [[calls.history]]
+    G_causality_max = -0.0025774632279373546
+    iteration = 16
+    number = 0.044999997348664215
+    pauli_max = 0.21749887173274918
+    dyson_backward = 3.95937114647079e-17
+    sigma_causality_max = -1.4084145264608755e-5
+    pauli_min = 7.138805077434996e-8
+    raw_sigma_absolute = 0.0
+    raw_sigma_relative = 0.0

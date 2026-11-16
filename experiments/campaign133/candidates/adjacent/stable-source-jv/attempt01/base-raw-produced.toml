@@ -1,0 +1,55 @@
+pairerror = 2.220446049250313e-16
+Phi_entered = 1
+Phi_completed = 1
+completed_scope = "raw contraction produced; cone/return/extra-PI not yet admitted"
+
+[channel_norms]
+alloy = 0.16770418464061151
+IFR = 1.0790985096983212
+acoustic = 0.32858733765782294
+LO = 16.513575798350995
+impurity = 1.3128871744702255
+
+[spectral]
+spectral_difference_weighted_absolute = 6.99090852361526e-14
+native_acceptance_override = false
+source_greater_storage = "exact-zero scalar adapter"
+source_difference_weighted_relative = 2.667796865904051e-13
+scalar_reduction = "per-worker ordered blocks; may differ from parent full-field norm reduction in last bits"
+operator = "stream_native_covariance_exact_plan_hlocal_all9"
+roundoff = 3.4982122613568972e-16
+q_negative_count = 0
+spectral_difference_weighted_relative = 9.297459408613627e-16
+spectral_difference_relative = 1.0675009588438008e-15
+workers = 4
+source_difference_absolute = 7.067987408824535e-10
+q_minimum = 1.3284020439152628e-43
+source_difference_weighted_absolute = 7.866730018403478e-12
+spectral_difference_absolute = 8.432277177118324e-12
+q_capacity = 28.643308967036983
+cavity_plan_bytes = 27527920
+source_difference_relative = 2.5477514485420183e-13
+
+    [spectral.h_correction]
+    scale = 16.48036513826891
+    absolute = 1.6335753826937261e-15
+    relative = 9.912252362057291e-17
+
+    [spectral.Lambda_projection]
+    scale = 8.427737460383371
+    weighted_relative = 2.505843629487617e-16
+    weighted_absolute = 1.9863479479785032e-17
+    weighted_scale = 0.07926863131458295
+    absolute = 2.109266877112788e-15
+    relative = 2.5027676609860116e-16
+
+[mu]
+number_relative_error = -1.330725653127097e-13
+number = 0.04499999999999402
+iterations = 48
+derivative = 0.6469060727691234
+capacity = 28.643308967036983
+mu_condition = 0.0695618759727739
+bracket_width = 1.2811973704174306e-13
+mu = 0.08459614262982018
+target = 0.045000000000000005

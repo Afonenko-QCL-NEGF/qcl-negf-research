@@ -1,0 +1,18 @@
+{
+  "execution": "timed_out_exit124",
+  "external_seconds": 120,
+  "process_seconds": 120.12,
+  "maxrss_KiB": 755012,
+  "swaps": 0,
+  "process_cpu_percent": 187,
+  "completed_postprocess_N": [
+    128
+  ],
+  "N256": "in_progress_linear_operator_basis_when_SIGINT",
+  "BLAS_threads": "not recorded; OPENBLAS_NUM_THREADS env1 alone is insufficient on this installed OpenMP OpenBLAS",
+  "new_inner_maps": 0,
+  "mu_fits": 0,
+  "N128_TOML_sha256": "945a920e32bf0095a2e0d8405443be8b7932231c7e6c04e388ea16fbc1b98ed8",
+  "log_sha256": "56c2b3dfe508f3890b930a910d684f79444daf012053bb236eb04171773a31ae",
+  "note": "External timeout during pre-finally return left no summary; do not claim complete or accepted128/256 pair. All partial sources/results preserved."
+}

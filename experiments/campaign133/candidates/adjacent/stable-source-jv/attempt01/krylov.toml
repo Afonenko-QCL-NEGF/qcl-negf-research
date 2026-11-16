@@ -1,0 +1,107 @@
+restricted_B_singular_values = [1.5727097412394002, 0.8786367634782114, 0.08693523191499287]
+qualification = "local projected evidence only; no spectral-radius or full-sigma-min certificate"
+Ritz_real = [-0.11283234571582056, 0.08006907307230383, 1.0001480550734432]
+Ritz_residual = [0.7819393533035109, 0.7581753382331292, 0.11684933319922323]
+seed_norm = 5.555432467297161e-7
+gmres_coordinates = [6.93225434128786e-7, 5.9280987262700326e-8, -8.789983318409034e-10]
+near_null_coordinates = [-0.9800292544169571, -0.1810850005159817, -0.08216375767374717]
+gmres_predicted_residual = 5.467025195624652e-7
+Ritz_imag = [0.0, 0.0, 0.0]
+
+[Hbar]
+shape = [4, 3]
+format = "matrix-rows-v1"
+rows = [[0.9678766051659679, 0.08109274506262362, 0.09018180112015214], [0.20118451308069474, 0.09677029750718345, 0.020832620779427418], [0.0, 0.7488156410775164, -0.09726212024322638], [0.0, 0.0, 0.7847250455553474]]
+
+[[records]]
+    [records.representation]
+    scale = 126.85237969109892
+    weighted_relative = 1.567327249452362e-16
+    weighted_absolute = 1.5494045229930723e-16
+    weighted_scale = 0.9885647834773803
+    absolute = 1.9986274907074896e-14
+    relative = 1.5755538016507002e-16
+
+    [records.number]
+    dN = -3.2179005303828275e-15
+    dN_relative = 1.362045357370233e-14
+    dmu = -0.01023273687886782
+    number_numerator = 0.006619619627984928
+    dN_scale = 0.23625501992061293
+    chi = 0.6469060727688077
+
+    [records.spectral]
+    primal_A_relative = 5.357500578858921e-15
+    PI_roundoff = 4.822626021337362e-16
+    primal_GR_relative = 5.4149247428365434e-15
+
+    [records.channels]
+    alloy = 0.5489668247285455
+    IFR = 9.44739471798772
+    acoustic = 1.5561870810490248
+    LO = 123.10275903236138
+    impurity = 11.200540595253791
+[[records]]
+    [records.representation]
+    scale = 96.75625075904426
+    weighted_relative = 2.140149107764045e-16
+    weighted_absolute = 1.6251968622930232e-16
+    weighted_scale = 0.7593848748188268
+    absolute = 2.058147743505176e-14
+    relative = 2.1271470601218923e-16
+
+    [records.number]
+    dN = 7.489406017259258e-16
+    dN_relative = 1.7343142292027776e-15
+    dmu = 0.002355351888881449
+    number_numerator = -0.0015236914404248912
+    dN_scale = 0.4318367393377126
+    chi = 0.6469060727688077
+
+    [records.spectral]
+    primal_A_relative = 5.357500578858921e-15
+    PI_roundoff = 4.1178632605774553e-16
+    primal_GR_relative = 5.4149247428365434e-15
+
+    [records.channels]
+    alloy = 0.20472664251345193
+    IFR = 3.306196860461663
+    acoustic = 1.1892114398639615
+    LO = 94.40040151375754
+    impurity = 14.738848487179478
+[[records]]
+    [records.representation]
+    scale = 99.03245465833879
+    weighted_relative = 1.9984397058039426e-16
+    weighted_absolute = 1.5910141576727536e-16
+    weighted_scale = 0.7961281759224815
+    absolute = 1.9940257177554152e-14
+    relative = 2.0135073139757958e-16
+
+    [records.number]
+    dN = 1.0706114097950918e-15
+    dN_relative = 2.479196898356486e-15
+    dmu = 0.0035949220926644807
+    number_numerator = -0.002325576932875403
+    dN_scale = 0.4318379917725872
+    chi = 0.6469060727688077
+
+    [records.spectral]
+    primal_A_relative = 5.357500578858921e-15
+    PI_roundoff = 4.2691747071202063e-16
+    primal_GR_relative = 5.4149247428365434e-15
+
+    [records.channels]
+    alloy = 0.19658235832494672
+    IFR = 3.0209932086820883
+    acoustic = 1.2574020637970755
+    LO = 96.8880281737144
+    impurity = 14.385486503102909
+
+[seed_conversion]
+scale = 7.142007180515379e-5
+weighted_relative = 4.324986298937835e-11
+weighted_absolute = 2.4027169305734626e-17
+weighted_scale = 5.555432467297159e-7
+absolute = 2.6722306568401785e-15
+relative = 3.741568146459559e-11

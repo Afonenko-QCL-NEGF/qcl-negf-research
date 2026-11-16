@@ -1,0 +1,256 @@
+# Public projection; original SHA-256: 20ae721f53e1cf1d3942cccb902f7e3d602c5512ed19a6b1b9972ed1a0d3fc39; scope: big.
+native_coupling_contract = "accepted Core production_operators.jl:370,384 finite_chain uses left adjoint(Tplus), right Tplus; basis Tminus is recorded only as diagnostic"
+global_q_negative_count = 1429
+scope = "selected exact-double 45-chain oracles only; no retarded full pass/mu/Phi/SCBA"
+precision_bits = 192
+cold_model_sha256 = "6b41f93e29f2482a814f82a9db69ad8c8ff3bf7d9eb99ccfed4a510244e364b7"
+script_sha256 = "08e29ff1fc3be2c31345cb5795bea80c0602bd6afab883eb025010d842fbe602"
+global_q_min = -6.691988744922967e-22
+selected_sha256 = "45fa3f6859802aa25ef19b7d16ccfae3e90c297463e3f374ca57ba85b3ca918d"
+global_negative_absolute_mass = 6.141100301909898e-20
+Tminus_minus_Tplus_adjoint_F = 0.0
+elapsed_seconds = 6.572021961212158
+precision_scope = "signed q uses192bit trace strings and192bit weighted sums; matrices in HDF areFloat64 downcasts;384repeat only strongest negative k at worst q energy, other nodes have192bit LU/identity residual evidence, not per-node precision convergence"
+execution = "complete"
+global_signed_mass = 28.64390674770757
+global_absolute_mass = 28.64390674770757
+
+[selected_q_aggregates.e104_HermBoth]
+scope = "all k: whole q at selected E"
+energy_index = 104
+native_whole_q_raw = -1.6917395504285576e-23
+q_downcast_matrix_effective = 8.121370423465879e-30
+native_whole_q_physical = 8.121370423465879e-30
+q_downcast_matrix_A = 8.121370423465879e-30
+k_count = 11
+q_192_effective = "8.1213704234658801121753429677036084613344165347629656951987e-30"
+q_192_A = "8.1213704234658801121753429677036084613344165347630256429345e-30"
+variant = "HermBoth"
+q_downcast_matrix_physical = 8.121370423465879e-30
+q_192_physical = "8.1213704234658801121753429677036084613344165347629656951987e-30"
+native_whole_q_eff = -1.6917395504285617e-23
+
+[selected_q_aggregates.e4145_raw]
+scope = "all k: whole q at selected E"
+energy_index = 4145
+native_whole_q_raw = -6.691988744922967e-22
+q_downcast_matrix_effective = -6.6919887449229585e-22
+native_whole_q_physical = 3.1766164747129994e-26
+q_downcast_matrix_A = -6.6919887449229585e-22
+k_count = 11
+q_192_effective = "-6.6919887449229597440270669881543912760624569713118299177734e-22"
+q_192_A = "-6.6919887449229597440270669881543912760624569713118299177895e-22"
+variant = "raw"
+q_downcast_matrix_physical = 3.176616474713e-26
+q_192_physical = "3.1766164747129995248438109222950105868450270709614498977634e-26"
+native_whole_q_eff = -6.6919887449229585e-22
+
+[selected_q_aggregates.e30704_HermBoth]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 30704
+native_whole_q_raw = 4.363678180646807e-24
+q_downcast_matrix_effective = 5.0760252034839606e-33
+native_whole_q_physical = 4.58669789570931e-32
+q_downcast_matrix_A = 5.0760252034839606e-33
+k_count = 1
+q_192_effective = "5.0760252034839603186223759750660939563278849496465198575483e-33"
+q_192_A = "5.076025203483960318622375975066093956327884949643775569818e-33"
+variant = "HermBoth"
+q_downcast_matrix_physical = 5.0760252034839606e-33
+q_192_physical = "5.0760252034839603186223759750660939563278849496465198575483e-33"
+native_whole_q_eff = 4.363678180646798e-24
+
+[selected_q_aggregates.e104_HermH]
+scope = "all k: whole q at selected E"
+energy_index = 104
+native_whole_q_raw = -1.6917395504285576e-23
+q_downcast_matrix_effective = -1.6917395504285858e-23
+native_whole_q_physical = 8.121370423465879e-30
+q_downcast_matrix_A = -1.6917395504285858e-23
+k_count = 11
+q_192_effective = "-1.6917395504285859548824122192367548697595018168848573885708e-23"
+q_192_A = "-1.69173955042858595488241221923675486975950181688485738857e-23"
+variant = "HermH"
+q_downcast_matrix_physical = 8.121370423465879e-30
+q_192_physical = "8.1213704234658801121786471494723954982347719236778438245648e-30"
+native_whole_q_eff = -1.6917395504285617e-23
+
+[selected_q_aggregates.e4145_HermBoth]
+scope = "all k: whole q at selected E"
+energy_index = 4145
+native_whole_q_raw = -6.691988744922967e-22
+q_downcast_matrix_effective = 3.176616474713e-26
+native_whole_q_physical = 3.1766164747129994e-26
+q_downcast_matrix_A = 3.176616474713e-26
+k_count = 11
+q_192_effective = "3.1766164747129995258224389449101345762751964215682731570891e-26"
+q_192_A = "3.1766164747129995258224389449101345762751964215682730229503e-26"
+variant = "HermBoth"
+q_downcast_matrix_physical = 3.176616474713e-26
+q_192_physical = "3.1766164747129995258224389449101345762751964215682731570891e-26"
+native_whole_q_eff = -6.6919887449229585e-22
+
+[selected_q_aggregates.e7894_raw]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 7894
+native_whole_q_raw = 1.2765387652172753e-14
+q_downcast_matrix_effective = 8.821971718444923e-16
+native_whole_q_physical = 1.2765379392242996e-14
+q_downcast_matrix_A = 8.821971718444923e-16
+k_count = 1
+q_192_effective = "8.8219717184449240852205271551076435310410128505826375150974e-16"
+q_192_A = "8.8219717184449240852205271551076435310410128505826375151003e-16"
+variant = "raw"
+q_downcast_matrix_physical = 8.821970535396642e-16
+q_192_physical = "8.8219705353966422185386057795169080152064618020210181407432e-16"
+native_whole_q_eff = 1.2765387652172754e-14
+
+[selected_q_aggregates.e30704_raw]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 30704
+native_whole_q_raw = 4.363678180646807e-24
+q_downcast_matrix_effective = 2.5039911017352388e-25
+native_whole_q_physical = 4.58669789570931e-32
+q_downcast_matrix_A = 2.5039911017352388e-25
+k_count = 1
+q_192_effective = "2.5039911017352383745322308774014682273764426372000235844628e-25"
+q_192_A = "2.5039911017352383745322308774014682273764426372000235843416e-25"
+variant = "raw"
+q_downcast_matrix_physical = 5.0760252034839606e-33
+q_192_physical = "5.0760252034839602955742080064487537238590521449736293847757e-33"
+native_whole_q_eff = 4.363678180646798e-24
+
+[selected_q_aggregates.e4145_HermLambda]
+scope = "all k: whole q at selected E"
+energy_index = 4145
+native_whole_q_raw = -6.691988744922967e-22
+q_downcast_matrix_effective = 3.176616474168005e-26
+native_whole_q_physical = 3.1766164747129994e-26
+q_downcast_matrix_A = 3.176616474168005e-26
+k_count = 11
+q_192_effective = "3.1766164741680055296742840547029515684904088565000051306673e-26"
+q_192_A = "3.1766164741680055296742840547029515684904088565000051013286e-26"
+variant = "HermLambda"
+q_downcast_matrix_physical = 3.176616474713e-26
+q_192_physical = "3.1766164747129995248543607652702187799687420004991251845189e-26"
+native_whole_q_eff = -6.6919887449229585e-22
+
+[selected_q_aggregates.e4145_HermH]
+scope = "all k: whole q at selected E"
+energy_index = 4145
+native_whole_q_raw = -6.691988744922967e-22
+q_downcast_matrix_effective = -6.691988744922904e-22
+native_whole_q_physical = 3.1766164747129994e-26
+q_downcast_matrix_A = -6.691988744922904e-22
+k_count = 11
+q_192_effective = "-6.6919887449229052392703908351293076025684248532645641524577e-22"
+q_192_A = "-6.6919887449229052392703908351293076025684248532645641524523e-22"
+variant = "HermH"
+q_downcast_matrix_physical = 3.176616474713e-26
+q_192_physical = "3.1766164747129995258118891019349263820069117067767755425323e-26"
+native_whole_q_eff = -6.6919887449229585e-22
+
+[selected_q_aggregates.e30704_HermLambda]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 30704
+native_whole_q_raw = 4.363678180646807e-24
+q_downcast_matrix_effective = 5.0760626430321754e-33
+native_whole_q_physical = 4.58669789570931e-32
+q_downcast_matrix_A = 5.0760626430321754e-33
+k_count = 1
+q_192_effective = "5.0760626430321758985005981643193752539654042225843491089623e-33"
+q_192_A = "5.0760626430321758985005981643193752539654042225813242935346e-33"
+variant = "HermLambda"
+q_downcast_matrix_physical = 5.0760252034839606e-33
+q_192_physical = "5.0760252034839602955749126952655062636631366539806039700373e-33"
+native_whole_q_eff = 4.363678180646798e-24
+
+[selected_q_aggregates.e7894_HermH]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 7894
+native_whole_q_raw = 1.2765387652172753e-14
+q_downcast_matrix_effective = 8.821971718444921e-16
+native_whole_q_physical = 1.2765379392242996e-14
+q_downcast_matrix_A = 8.821971718444921e-16
+k_count = 1
+q_192_effective = "8.8219717184449219637237722621795476255752439356120135420635e-16"
+q_192_A = "8.8219717184449219637237722621795476255752439356120135420578e-16"
+variant = "HermH"
+q_downcast_matrix_physical = 8.82197053539664e-16
+q_192_physical = "8.8219705353966403296829930680308824048420438286606489399662e-16"
+native_whole_q_eff = 1.2765387652172754e-14
+
+[selected_q_aggregates.e104_raw]
+scope = "all k: whole q at selected E"
+energy_index = 104
+native_whole_q_raw = -1.6917395504285576e-23
+q_downcast_matrix_effective = -1.6917395504285584e-23
+native_whole_q_physical = 8.121370423465879e-30
+q_downcast_matrix_A = -1.6917395504285584e-23
+k_count = 11
+q_192_effective = "-1.6917395504285588872867551970095918840993589248106122347488e-23"
+q_192_A = "-1.6917395504285588872867551970095918840993589248106122347699e-23"
+variant = "raw"
+q_downcast_matrix_physical = 8.121370423465879e-30
+q_192_physical = "8.1213704234658801152847513179746753315263035081156297148492e-30"
+native_whole_q_eff = -1.6917395504285617e-23
+
+[selected_q_aggregates.e30704_HermH]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 30704
+native_whole_q_raw = 4.363678180646807e-24
+q_downcast_matrix_effective = 2.5039911017348654e-25
+native_whole_q_physical = 4.58669789570931e-32
+q_downcast_matrix_A = 2.5039911017348654e-25
+k_count = 1
+q_192_effective = "2.5039911017348639942496313735978330999125432742200613553634e-25"
+q_192_A = "2.5039911017348639942496313735978330999125432742200613552085e-25"
+variant = "HermH"
+q_downcast_matrix_physical = 5.0760252034839606e-33
+q_192_physical = "5.0760252034839603186216712862493414113587130394119552691355e-33"
+native_whole_q_eff = 4.363678180646798e-24
+
+[selected_q_aggregates.e104_HermLambda]
+scope = "all k: whole q at selected E"
+energy_index = 104
+native_whole_q_raw = -1.6917395504285576e-23
+q_downcast_matrix_effective = 8.121370694178743e-30
+native_whole_q_physical = 8.121370423465879e-30
+q_downcast_matrix_A = 8.121370694178743e-30
+k_count = 11
+q_192_effective = "8.1213706941787415540214960665898444735566976460975744546692e-30"
+q_192_A = "8.1213706941787415540214960665898444735566976460976132129246e-30"
+variant = "HermLambda"
+q_downcast_matrix_physical = 8.121370423465879e-30
+q_192_physical = "8.1213704234658801152814471362058882961107047973176622122181e-30"
+native_whole_q_eff = -1.6917395504285617e-23
+
+[selected_q_aggregates.e7894_HermBoth]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 7894
+native_whole_q_raw = 1.2765387652172753e-14
+q_downcast_matrix_effective = 8.82197053539664e-16
+native_whole_q_physical = 1.2765379392242996e-14
+q_downcast_matrix_A = 8.82197053539664e-16
+k_count = 1
+q_192_effective = "8.8219705353966403299123876295700899881344152078024363293385e-16"
+q_192_A = "8.8219705353966403299123876295700899881344152078024363293414e-16"
+variant = "HermBoth"
+q_downcast_matrix_physical = 8.82197053539664e-16
+q_192_physical = "8.8219705353966403299123876295700899881344152078024363293385e-16"
+native_whole_q_eff = 1.2765387652172754e-14
+
+[selected_q_aggregates.e7894_HermLambda]
+scope = "selected k only: partial mass, not whole q"
+energy_index = 7894
+native_whole_q_raw = 1.2765387652172753e-14
+q_downcast_matrix_effective = 8.82197053539664e-16
+native_whole_q_physical = 1.2765379392242996e-14
+q_downcast_matrix_A = 8.82197053539664e-16
+k_count = 1
+q_192_effective = "8.8219705353966424514089608524158289568802152725416312011142e-16"
+q_192_A = "8.8219705353966424514089608524158289568802152725416312011086e-16"
+variant = "HermLambda"
+q_downcast_matrix_physical = 8.821970535396642e-16
+q_192_physical = "8.8219705353966422187680003410561306956542098152700852074188e-16"
+native_whole_q_eff = 1.2765387652172754e-14

@@ -1,0 +1,27 @@
+identity = "campaign133-affine4096-selected-rejected-trial-exact-Rayleigh-v1"
+runtime_authorized = true
+expected_julia_version = "1.13.3"
+parent_input_path = "../equilibrium-gamma-affine4096/attempt01/input.toml"
+parent_input_sha256 = "4a13d4253687ba4165cf51adf04e2c7d6bdcf10aeae450abff698b9feeae2103"
+expected_parent_identity = "campaign133-S01-m939-Gamma-PI-HermLambda-AAII-m3-GammaLast128-affine4096-pilot32"
+# Root streams and freezes both whole-file SHAs in an authorized COPY before
+# runtime. The diagnostic recomputes these hashes before opening HDF5 fields.
+[[blocks]]
+name = "trial5_e5090_k1"
+source_path = "../equilibrium-gamma-affine4096/attempt01/rejected-trial-5.h5"
+source_sha256 = "f84fb7ef842dbddc88019c7df494e5b2191ec0abe5a18491fce0dab3b33204d4"
+attempt_path = "../equilibrium-gamma-affine4096/attempt01/attempt-006.toml"
+attempt_sha256 = "1906e63de47e1d7260aafdf256502d9f268452ed98a4810b4be3d441f1cc9fbe"
+call = 5
+energy_index = 5090
+k_index = 1
+
+[[blocks]]
+name = "trial16_e9771_k1"
+source_path = "../equilibrium-gamma-affine4096/attempt01/rejected-trial-16.h5"
+source_sha256 = "34ef61d7c6921271cc2e04823fac2c13e21241a4fefaa62169ccb8e52e9ee6b9"
+attempt_path = "../equilibrium-gamma-affine4096/attempt01/attempt-020.toml"
+attempt_sha256 = "8c1c86da213b621764ae415e0500c6d1d63069ff519d9d50dde4e42a85ce5a4d"
+call = 16
+energy_index = 9771
+k_index = 1

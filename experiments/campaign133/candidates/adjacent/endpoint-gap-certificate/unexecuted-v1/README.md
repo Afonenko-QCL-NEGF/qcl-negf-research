@@ -1,0 +1,1 @@
+Frozen V1 e031d0c7 сохранён до execution-only BLAS getter/assert/record V2. Автор Julia/Pkg/H5 не запускал; источник и interval formulas здесь исходные. Прежний SHA256SUMS сохранён побайтно; archive-local manifest проверяет архивные копии.

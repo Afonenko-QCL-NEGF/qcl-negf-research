@@ -1,0 +1,15 @@
+elapsed_seconds = 158.55445384979248
+kind = "linear"
+reason = "accepted"
+call = 18
+
+[AA]
+rank = 0
+l1 = 1.0
+kind = "linear"
+R_diagonal = []
+condition = 1.0
+firstpair = 0
+initial_scales = []
+suffix_decisions = []
+coefficients = []

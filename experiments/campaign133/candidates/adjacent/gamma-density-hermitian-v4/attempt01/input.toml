@@ -1,0 +1,104 @@
+id = "campaign133-stableA64-frozen-PD-Hermitian-all9-Matsubara-v4"
+status = "binding_complete_PD_ALL_validated_execution_false_pending_compat_review"
+terminal_h5 = "../../equilibrium-gamma-stableA-cont64/attempt01/reduced-terminal.h5"
+terminal_h5_sha256 = "6eb3ca27efac788b4e1de14322251361452f0863c5d8350afeaa1c6204bfa9da"
+model_h5 = "../../equilibrium-gamma-stableA-cont64/attempt01/model.h5"
+model_h5_sha256 = "700ae17684d9ae52623ca6cfb7e07432ab1f43eb5151748061da53681b686540"
+source_input = "../../equilibrium-gamma-stableA-cont64/attempt01/input.toml"
+source_input_sha256 = "8d5c1eb56b4cf88edf4b986cbc93ce05aede8ef1c4b12f8de8eac107402d5d49"
+source_identity = "../../equilibrium-gamma-stableA-cont64/attempt01/identity.toml"
+source_identity_sha256 = "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b"
+source_writer = "../../equilibrium-gamma-stableA-cont64/attempt01/gamma_functions.jl"
+source_writer_sha256 = "50bcfaaeb3c399baaaa2a4b9b9e023167e97b4d87c6af95d83353cb453072211"
+map_summary = "../../equilibrium-gamma-stableA-cont64/attempt01/map-064.toml"
+map_summary_sha256 = "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88"
+source_core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+source_core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+numerical_parent = "../contour-oracle/matsubara_oracle.jl"
+numerical_parent_sha256 = "5249e38a95ebed2b4e487af586251bdda9b4ba0d6060fb5c1bdb96fc10880449"
+oracle_script = "matsubara_oracle.jl"
+oracle_script_sha256 = "814dff509cef6cdb1e0e1d1a762cabbd885a761c2a5b4964f80373df2b01b21a"
+project_sha256 = "791aec47f34e0884b8bd36af07f514934cc08c418940650d464920d6a2aeb067"
+manifest_sha256 = "da0780fbe150c0e16e9fedf3566a1971095642f14f57f32524b52f430a4adb65"
+logical_axes = ["energy", "momentum", "orbital_row", "orbital_column"]
+local_names = ["IFR", "LO", "acoustic", "alloy", "impurity"]
+mu_dimensionless = 0.08459614262982018
+PI_origin_dimensionless = -2.9999999999999996
+PI_spacing_dimensionless = 0.00039084132055378063
+voltage_mV = 0.0
+temperature_K = 70.0
+periods_each_side = 4
+expected_NE = 30704
+expected_Nk = 11
+expected_Nb = 5
+frequency_chunk = 32
+checkpoints = [512, 1024]
+time_limit_seconds = 160
+maximum_output_bytes = 67108864
+memory_cap_bytes_proposed = 2147483648
+CPU_quota_percent_proposed = 200
+Julia_threads = 1
+BLAS_threads = 1
+control_absolute_Frobenius_tolerance = 1.0e-8
+selected_estimator = "rho_M3_N1024"
+refinement_witness = "rho_M3_N1024_minus_N512; not formal tail error bound"
+
+execution_authorized = true
+
+h_policy = "saved_binary_Hermitian_h_H_all9"
+h_raw_sha256 = "8cde8ea024d9e690bf0396428574496734d7bad5962fc00617b9b380ae1194a7"
+checkpoint = "../../equilibrium-gamma-stableA-cont64/attempt01/Gamma-last.h5"
+checkpoint_sha256 = "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55"
+spectral_selected = "../../equilibrium-gamma-stableA-cont64/attempt01/spectral-selected-064.h5"
+spectral_selected_sha256 = "42fe0a38608355613ded9fbc865401ef02a2ff5bb21788e54fc1a595699cb04d"
+spectral_writer = "../../equilibrium-gamma-stableA-cont64/attempt01/stable_spectral.jl"
+spectral_writer_sha256 = "eeca1f29710d9bb60bf6ce70ce0ebd1620fb86d4c77314b4bd8ffa9a5bcd5aa5"
+source_ledger = "../../equilibrium-gamma-stableA-cont64/attempt01/spectral-ledger-064.toml"
+source_ledger_sha256 = "4dffb4b1ff2730c4f40a6ebb0005d0a5453e85aae933309e5851b45df475db1c"
+source_summary = "../../equilibrium-gamma-stableA-cont64/attempt01/summary.toml"
+source_summary_sha256 = "760c3828b6fe861b5ae67e86342c9613bff1f7c4fd6bb8ead43f4911e3f9894e"
+pd_certificate = "../../global-gamma-exact-pd/all-attempt01/summary.toml"
+pd_certificate_sha256 = "a703ec4c3e2feda1ae9571ab3d1d20b69dd9de48898f3d620ada008da2583335"
+pd_certificate_input = "../../global-gamma-exact-pd/all-run.toml"
+pd_certificate_input_sha256 = "27da5a97ab61e9f290f5f8c7a2979d5873ec55e81f45e6b336fba99c495711d4"
+pd_runner_sha256 = "d2395572bd724f9493be4d5c5cfb92fe9859e609719cafa0bced68f7de02934f"
+pd_math_sha256 = "c6b14339d05720f4d55152b35edd9d43dca910507bfd16c8e750a41cdf02b6a9"
+proof_scope = "exact frozen GammaLast64 Cauchy hats + saved Hermitian all9 h_H imply no upper-half-plane poles; not SCBA convergence or floating total error certificate"
+
+freeze_digest = "frozen-io01/digest.toml"
+freeze_digest_sha256 = "b121f71d58cbf909cd4087e6ddae4b0216883a375529e5a179a562d2b381ef40"
+source_template_sha256 = "916a191a11c704c2a9329985f1f4054545c6170a0cbe8107b7b7d086ae589ff4"
+
+[units]
+E0_eV = 0.1
+L0_m = 1.0e-8
+spin_degeneracy = 2.0
+target_dimensionless = 0.045000000000000005
+
+[array_sha256]
+energy = "1ad8a0d3d0da96d2778cbb1e8c1dfe51989dc19f43bb9233cb81e4e2402ebca9"
+weight_energy = "2015e27dd4d76f805c541c1ae1a8eb9e36bae5d98ce4180a63c2285ff10ac25b"
+momentum = "7815e5a3e3faf1673363855e6bc76e56be584032eded7440c9e6bd4ddbcd1e6f"
+weight_momentum = "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d"
+hcell = "9748cff3766957a7add78a58d06db1d9bff8fb8738066267d57f9ddd539c15b4"
+Gamma = "f5a3778b8960704da6d7bd58e22176d3a2e7698695fd2e9a3871fc50cbd04653"
+Phi = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+chi = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+H0 = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+Z = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+Minv = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+Tplus = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+Tminus = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+
+[reference_A_k_sha256]
+"1" = "77a350eb60cf8cd5a528a1838d23dc0226920bd8954a77bca4ab6253d2ea5c59"
+"2" = "3e9f021edccc18f351015fb89071bf3533971ea01d02aae5905d686652d6b371"
+"3" = "63f5f068019b90f64e34320241d6beff4d2c91e7d238fefa1c9038441be2d190"
+"4" = "2ac046ee2f4100fab26f3e6e8095f8b02a74c283af2cd1f5c28c3c062e2f7be0"
+"5" = "d2795c2cf2a255e9961c94d8cb52647ef8c87f5f7001e08903f6ad954422bb1d"
+"6" = "c4b92afe8c629da589eb16d6365be997e3477c855c27f4c50811a2917c6b709b"
+"7" = "fa642bda8b70534c6b9a6819587b45f352672170b3a8adf92ca5b02cff7b98de"
+"8" = "7d84abd206b622b70df560601cab04e00c2691ccc297b9083ed4fa9cac0148ae"
+"9" = "1c079937c3e8d42705ad982b08d278e3647efc3ae87e5913d34ef3411f525550"
+"10" = "0f31e4792d72f044a099e51806fab25eef9f05c9c95c5a7159ce02bc45305f3f"
+"11" = "4781bca4318e8ce3533502a20bd02e78408286ab488c63598d875062d8958572"

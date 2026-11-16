@@ -1,0 +1,35 @@
+identity = "campaign133-Mats-ALL5-M3-postprocess-oneshot-and-selfconsistent-v1"
+runtime_authorized = true
+actual_directory = "../matsubara-all5/attempt01"
+old_adapter = "../matsubara-all5/run_matsubara.jl"
+moment_module = "moment_tail.jl"
+adapter = "run_moments.jl"
+tiny_checks = "tiny_checks.jl"
+mu_native = 0.08459614262982018
+wall_seconds = 120.0
+memory_max_bytes = 2147483648
+memory_high_bytes = 1879048192
+swap_max_bytes = 0
+cpu_quota_percent = 200
+workers = 1
+BLAS_threads = 1
+single_file_max_bytes = 33554432
+data_max_bytes = 33554432
+new_inner_maps = 0
+mu_fits = 0
+
+[text_sha256]
+old_adapter = "94c6f2d48851e9b894ce25f6a353d66accbc34e2ebb269ee05b040f4cd717c1e"
+moment_module = "9182ae802fd26c41e6105bdcf2979bb9d2406d0174bd35b31b5ccfee793b80ca"
+adapter = "7edebecad9df0327894dab5e374b78be79fc0d687c5f328092340ea2a651bdf8"
+tiny_checks = "4c76270df6fed02a57cf53ebefc865b6c91765a9d6ecf926c934b02a4d268c4e"
+
+[source_sha256]
+"N128-latest.h5" = "61cebaa7178a734ee62254c8802b64a8aa34a4e19e38be669beeb10f6b150e02"
+"N256-latest.h5" = "fd4752c12f21226835cae2d812e72ad49a185f301dc3f370f89cdf442c2b31ee"
+"summary.toml" = "b9397bf71b7e483bfc3062c0c002a78612c9e896ad1ee5a0b1c443e55113131e"
+"input.toml" = "748d609307ee9b9d0700ca1f4f6a588b7453fc7696c661cfb3092565d55c4529"
+"source-binding.toml" = "799519e4ce10f17e310afab8e7e1191f41ba38149fe9b448cfefe77406a6d1f7"
+"N128-i16.toml" = "373f6765dc750890dcf2cabc298625a1fb2138a10e76fa157b8894fd9eca226d"
+"N256-i16.toml" = "699f70df20ffed37b7e716991a85389187cde37b1a7c6fd9e52239714e9798fb"
+"identity.toml" = "55e3336b9fdc1c57b2ae41c4029fe0710412ba53e44ff584ea380e85f243ded5"

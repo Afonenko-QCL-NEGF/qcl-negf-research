@@ -1,0 +1,456 @@
+diff --git a/docs/src/theory/19_production.md b/docs/src/theory/19_production.md
+index 2ca9252..297e981 100644
+--- a/docs/src/theory/19_production.md
++++ b/docs/src/theory/19_production.md
+@@ -207,6 +207,26 @@ i=(m,a,b),\qquad j=(m',c,d)
+ сначала сумма по ``m'``, затем матрица ``N_b^2\times N_b^2``. Для LO,
+ примесей и IFR локальность или диагональность не предполагается.
+ 
++### Точная структура канонического IFR
++
++Для общей радиальной корреляции ``S`` интерфейсная вершина IFR имеет ранг не выше одного:
++``D_j=d_j u_j u_j^\dagger``, где ``u_j=\overline{\chi(z_j)}``; вещественный ``d_j`` содержит скачок зоны и масштабы ядра.
++Для полного ядра ``q^K\widehat K`` та же свёртка последовательно вычисляет
++
++```math
++q_{ejm'}=u_j^\dagger G_{em'}u_j,\qquad
++r_{ejm}=\sum_{m'}w^k_{m'}S_{mm'}q_{ejm'},\qquad
++\Sigma_{em}=\sum_j d_j^2 r_{ejm}u_j u_j^\dagger.
++```
++При ``w^k,S\ge0`` это сумма отображений ``D_j G D_j^\dagger`` с неотрицательными весами, сохраняющая положительность; три стадии используют пакетные BLAS-произведения.
++Исходный тензор сохраняется и проверяется по канонической формуле; ``q^K`` и ``w^k`` учитываются ровно один раз.
++Для пользовательского ядра или несовпадения остаётся общий путь; при малом ``N_b`` также требуется, чтобы память оператора и рабочих буферов не превышала плотную оценку, иначе используется прежний путь.
++
++```julia
++Σ = production_static_contraction(cache.kernels[:IFR], G, problem.grids.wᵏ,
++                                  problem.kernels.qᴷ[:IFR]; energy_chunk=64)
++```
++
+ ### FFT как та же сумма главного значения
+ 
+ На равномерной энергетической сетке прямая формула
+diff --git a/src/numerics/optimized/kernels.jl b/src/numerics/optimized/kernels.jl
+index d804bc8..b0794a7 100644
+--- a/src/numerics/optimized/kernels.jl
++++ b/src/numerics/optimized/kernels.jl
+@@ -455,7 +455,7 @@ once, while the Gaussian spectrum is averaged as a scalar for every `(k,k')`
+ pair.  This is algebraically identical to `interface_roughness_kernel` for the
+ same `grids.φ`; no continuum-angle or Bessel-function approximation is used.
+ """
+-function _interface_roughness_kernel_separable(
++function _interface_roughness_kernel_data(
+     p::PhysicalParameters,
+     s::ScaleSystem,
+     grids::ModelGrids,
+@@ -466,17 +466,21 @@ function _interface_roughness_kernel_separable(
+     Λ = _metres(p.Λᴵᶠᴿ)
+     L0 = s.L₀_m
+     covariance = zeros(ComplexF64, Nb^2, Nb^2)
+-    for zint in p.interfaces
++    interface_vectors = Matrix{ComplexF64}(undef, Nb, length(p.interfaces))
++    band_coefficients = Vector{Float64}(undef, length(p.interfaces))
++    for (j, zint) in pairs(p.interfaces)
+         xint = _metres(zint) / L0
+         χint = [_interface_value(view(basis.χ, :, a), grids.x, xint) for a = 1:Nb]
+         ΔEc = Float64(ustrip(u"J", _band_jump(p, zint)))
++        interface_vectors[:, j] .= conj.(χint)
++        band_coefficients[j] = ΔEc/L0
+         D = [ΔEc * conj(χint[a]) * χint[c] / L0 for a = 1:Nb, c = 1:Nb]
+         vector = reshape(D, Nb^2)
+         covariance .+= vector * adjoint(vector)
+     end
+     block = _pair_covariance_to_block(covariance, Nb) ./ _K₀(s)
+     Nk = length(grids.κ)
+-    K = zeros(ComplexF64, Nk, Nk, Nb, Nb, Nb, Nb)
++    radial = zeros(Float64, Nk, Nk)
+     ratio2 = (Λ / L0)^2
+     amplitude = π * Δ^2 * Λ^2
+     Base.Threads.@threads :static for linear = 1:(Nk*Nk)
+@@ -489,7 +493,18 @@ function _interface_roughness_kernel_separable(
+             angular_factor += exp(-ratio2 * qbar2 / 4)
+         end
+         angular_factor *= amplitude / length(grids.φ)
+-        view(K, m, mp, :, :, :, :) .= angular_factor .* block
++        radial[m, mp] = angular_factor
++    end
++    return (; block, radial, interface_vectors, band_coefficients, amplitude)
++end
++
++function _interface_roughness_kernel_separable(p, s, grids, basis)
++    data = _interface_roughness_kernel_data(p, s, grids, basis)
++    Nk, Nb = length(grids.κ), size(basis.χ, 2)
++    K = zeros(ComplexF64, Nk, Nk, Nb, Nb, Nb, Nb)
++    Base.Threads.@threads :static for linear = 1:(Nk*Nk)
++        m, mp = (linear-1)%Nk+1, (linear-1)÷Nk+1
++        view(K, m, mp, :, :, :, :) .= data.radial[m, mp] .* data.block
+     end
+     return K
+ end
+diff --git a/src/numerics/optimized/production_cache.jl b/src/numerics/optimized/production_cache.jl
+index c200acd..84cb82f 100644
+--- a/src/numerics/optimized/production_cache.jl
++++ b/src/numerics/optimized/production_cache.jl
+@@ -407,12 +407,55 @@ function _production_kernel(
+     return DenseProductionKernel(matrix, Nk, Nb)
+ end
+ 
++# No rank inference or tolerance-based projection: the complete source tensor
++# must match the canonical independent-interface builder, including its exact
++# finite angular grid and normalization. Custom/modified tensors fail closed.
++function _canonical_ifr_production_kernel(problem::NEGFProblem)
++    K, q = problem.kernels.K[:IFR], problem.kernels.qᴷ[:IFR]
++    Nk, Nb = problem.numerical.N_k, problem.numerical.N_b
++    size(K) == (Nk, Nk, Nb, Nb, Nb, Nb) || return nothing
++    # Preserve the already cheaper reduced path, including radial factors
++    # which round to momentum independence on the actual source grid.
++    _is_momentum_independent(K) && return nothing
++    count = length(problem.physical.interfaces)
++    count > 0 && 2big(count) <= big(Nb)^2 || return nothing
++    2big(Nb)^2*count + big(Nk)^2 <= big(Nk)^2*big(Nb)^4 || return nothing
++    data = try
++        _interface_roughness_kernel_data(problem.physical, problem.scales,
++                                        problem.grids, problem.basis)
++    catch error
++        (error isa ArgumentError || error isa DimensionMismatch) || rethrow()
++        return nothing
++    end
++    q > 0 && isfinite(q) && data.amplitude > 0 || return nothing
++    for b = 1:Nb, d = 1:Nb, c = 1:Nb, a = 1:Nb, mp = 1:Nk, m = 1:Nk
++        K[m,mp,a,c,d,b] == data.radial[m,mp]*data.block[a,c,d,b]/q || return nothing
++    end
++    left, right = zeros(ComplexF64,Nb^2,count), zeros(ComplexF64,count,Nb^2)
++    for j = 1:count
++        coefficient = data.band_coefficients[j]*sqrt(data.amplitude/_K₀(problem.scales))
++        for b = 1:Nb, a = 1:Nb
++            pair = a + Nb*(b-1)
++            value = data.interface_vectors[a,j]*conj(data.interface_vectors[b,j])
++            left[pair,j] = coefficient^2/q*value
++            right[j,pair] = conj(value)
++        end
++    end
++    radial = ComplexF64.(data.radial ./ data.amplitude)
++    all(isfinite,left) && all(isfinite,right) && all(isfinite,radial) || return nothing
++    return _SeparableIFRProductionKernel(left,right,radial,Nk,Nb)
++end
++
+ _kernel_operator_bytes(::LiteralProductionKernel) = 0
+ 
+ function _kernel_operator_bytes(op::DenseProductionKernel)
+     return sizeof(eltype(op.matrix)) * length(op.matrix)
+ end
+ 
++function _kernel_operator_bytes(op::_SeparableIFRProductionKernel)
++    return sizeof(ComplexF64)*(length(op.left)+length(op.right)+length(op.radial))
++end
++
+ function _kernel_operator_bytes(op::MomentumIndependentProductionKernel)
+     return sizeof(eltype(op.block)) * length(op.block)
+ end
+@@ -727,7 +770,10 @@ function build_production_cache(
+     ε = problem.grids.ε
+     kernels = Dict{Symbol,AbstractProductionKernel}()
+     for name in problem.kernels.enabled
+-        kernels[name] = _production_kernel(problem.kernels.K[name], options.algorithms)
++        structured = name === :IFR && options.algorithms.contraction === :dense_blas ?
++            _canonical_ifr_production_kernel(problem) : nothing
++        kernels[name] = structured === nothing ?
++            _production_kernel(problem.kernels.K[name], options.algorithms) : structured
+     end
+     # Report the post-detection estimate (acoustic/alloy are normally reduced).
+     Mdense = count(
+diff --git a/src/numerics/optimized/production_contracts.jl b/src/numerics/optimized/production_contracts.jl
+index 5a4b7fc..3b555dd 100644
+--- a/src/numerics/optimized/production_contracts.jl
++++ b/src/numerics/optimized/production_contracts.jl
+@@ -224,6 +224,17 @@ struct DenseProductionKernel <: AbstractProductionKernel
+     N_b::Int
+ end
+ 
++# Exact rank-one interface vertices and their common finite-angle radial map.
++# Constructed only after matching the canonical IFR source recipe; arbitrary
++# six-index kernels retain the dense implementation.
++struct _SeparableIFRProductionKernel <: AbstractProductionKernel
++    left::Matrix{ComplexF64}
++    right::Matrix{ComplexF64}
++    radial::Matrix{ComplexF64}
++    N_k::Int
++    N_b::Int
++end
++
+ """
+ Exact reduced map for a kernel independent of both radial momenta.
+ 
+diff --git a/src/numerics/optimized/production_operators.jl b/src/numerics/optimized/production_operators.jl
+index 475b144..130fe21 100644
+--- a/src/numerics/optimized/production_operators.jl
++++ b/src/numerics/optimized/production_operators.jl
+@@ -463,6 +463,74 @@ function _production_static_contraction!(
+     return Σ
+ end
+ 
++function _production_static_contraction!(
++    Σ::AbstractArray{ComplexF64,4},
++    op::_SeparableIFRProductionKernel,
++    G::AbstractArray{<:Number,4},
++    wᵏ::AbstractVector{<:Real},
++    qᴷ::Real,
++    energy_chunk::Integer;
++    α::Number = 1,
++    β::Number = 0,
++    parallel_backend::Symbol = :blas,
++    worker_count::Integer = 0,
++)
++    NE, Nk, Nb, Nb2 = size(G)
++    (Nk,Nb)==(op.N_k,op.N_b) && Nb==Nb2 ||
++        throw(DimensionMismatch("Green field and IFR kernel differ"))
++    size(Σ)==size(G) || throw(DimensionMismatch("output shape differs"))
++    length(wᵏ)==Nk || throw(DimensionMismatch("radial weights differ"))
++    energy_chunk>0 || throw(ArgumentError("energy_chunk must be positive"))
++    first_energies = 1:energy_chunk:NE
++    workers = _production_worker_count(parallel_backend,worker_count,length(first_energies))
++    capacity = min(Int(energy_chunk),NE)
++    J = size(op.right,1)
++    factor = α*qᴷ
++    function run_worker(worker)
++        packed = Matrix{ComplexF64}(undef,Nb^2,Nk*capacity)
++        scalars = Matrix{ComplexF64}(undef,J,Nk*capacity)
++        radial_input = Matrix{ComplexF64}(undef,Nk,J*capacity)
++        # Two disjoint intermediate buffers, with aliasing headers only after
++        # their old role is dead. GEMM input and output never overlap.
++        radial_output = reshape(scalars,Nk,J*capacity)
++        final_scalars = reshape(radial_input,J,Nk*capacity)
++        for chunk_index = worker:workers:length(first_energies)
++            first_energy = first_energies[chunk_index]
++            count = min(Int(energy_chunk),NE-first_energy+1)
++            P = view(packed,:,1:Nk*count)
++            T = view(scalars,:,1:Nk*count)
++            X = view(radial_input,:,1:J*count)
++            Y = view(radial_output,:,1:J*count)
++            F = view(final_scalars,:,1:Nk*count)
++            @inbounds for e = 1:count, m = 1:Nk, b = 1:Nb, a = 1:Nb
++                P[a+Nb*(b-1),(e-1)*Nk+m] = G[first_energy+e-1,m,a,b]
++            end
++            mul!(T,op.right,P)
++            @inbounds for e = 1:count, j = 1:J, mp = 1:Nk
++                X[mp,(e-1)*J+j] = wᵏ[mp]*T[j,(e-1)*Nk+mp]
++            end
++            mul!(Y,op.radial,X)
++            @inbounds for e = 1:count, m = 1:Nk, j = 1:J
++                F[j,(e-1)*Nk+m] = Y[m,(e-1)*J+j]
++            end
++            mul!(P,op.left,F)
++            @inbounds for e = 1:count, m = 1:Nk, b = 1:Nb, a = 1:Nb
++                index = first_energy+e-1
++                value = factor*P[a+Nb*(b-1),(e-1)*Nk+m]
++                Σ[index,m,a,b] = iszero(β) ? value : β*Σ[index,m,a,b]+value
++            end
++        end
++    end
++    if workers==1
++        run_worker(1)
++    else
++        Base.Threads.@threads :static for worker = 1:workers
++            run_worker(worker)
++        end
++    end
++    return Σ
++end
++
+ function _production_static_contraction!(
+     Σ::AbstractArray{ComplexF64,4},
+     op::MomentumIndependentProductionKernel,
+diff --git a/test/numerics/exact_ifr_structured_contraction.jl b/test/numerics/exact_ifr_structured_contraction.jl
+new file mode 100644
+index 0000000..1ea3cb9
+--- /dev/null
++++ b/test/numerics/exact_ifr_structured_contraction.jl
+@@ -0,0 +1,189 @@
++module ExactIFRStructuredContraction
++include("../support/common.jl")
++using Random
++const N = QCLNEGF.QCLNumerics
++
++# Independent literal Kraus tensor, with complex phases and signed vertices.
++function manufactured()
++    Nk,Nb,J = 3,3,4
++    u = ComplexF64[1 im 0.3+0.7im -0.2im; 0.2im 1 0.7-0.1im 1; 0.4 0.3im 1 -0.5+0.4im]
++    d = [-0.7,1.1,-0.2,0.5]
++    S = [1.0 0.2 0.3; 0.2 0.8 0.1; 0.3 0.1 1.2]
++    D = [d[j]*u[:,j]*u[:,j]' for j in 1:J]
++    K = zeros(ComplexF64,Nk,Nk,Nb,Nb,Nb,Nb)
++    for m in 1:Nk, mp in 1:Nk, j in 1:J, a in 1:Nb, c in 1:Nb, dd in 1:Nb, b in 1:Nb
++        K[m,mp,a,c,dd,b] += S[m,mp]*D[j][a,c]*conj(D[j][b,dd])
++    end
++    q = maximum(abs,K)
++    L,R = zeros(ComplexF64,Nb^2,J),zeros(ComplexF64,J,Nb^2)
++    for j in 1:J, b in 1:Nb, a in 1:Nb
++        pair = a+Nb*(b-1)
++        L[pair,j] = d[j]^2/q*u[a,j]*conj(u[b,j])
++        R[j,pair] = conj(u[a,j])*u[b,j]
++    end
++    op = N._SeparableIFRProductionKernel(L,R,ComplexF64.(S),Nk,Nb)
++    return op,K./q,q,D,S
++end
++
++function kraus_oracle(G,D,S,w)
++    result = zeros(ComplexF64,size(G))
++    for e in axes(G,1), m in axes(G,2), mp in axes(G,2), V in D
++        result[e,m,:,:] .+= w[mp]*S[m,mp] .* (V*Matrix(view(G,e,mp,:,:))*V')
++    end
++    return result
++end
++
++@testset "Exact IFR complex matrix units, CP and batched apply" begin
++    op,K,q,D,S = manufactured()
++    w = [0.2,0.7,1.1]
++    # Every input matrix unit, not only real/diagonal Hermitian cases.
++    choi = [zeros(ComplexF64,9,9) for m in 1:3, mp in 1:3]
++    for mp in 1:3, c in 1:3, d in 1:3
++        G = zeros(ComplexF64,7,3,3,3)
++        for e in 1:7
++            G[e,mp,c,d] = sin(e/3)+im*cos(e/5)
++        end
++        expected = kraus_oracle(G,D,S,w)
++        literal = QCLNEGF._static_contraction(K,G,w,q)
++        @test literal ≈ expected rtol=2e-13 atol=2e-14
++        for chunk in (1,3,16)
++            actual = production_static_contraction(op,G,w,q;energy_chunk=chunk)
++            @test actual ≈ expected rtol=2e-13 atol=2e-14
++            if chunk==1
++                for m in 1:3, b in 1:3, a in 1:3
++                    choi[m,mp][(c-1)*3+a,(d-1)*3+b] = actual[1,m,a,b]/G[1,mp,c,d]
++                end
++            end
++        end
++    end
++    for C in choi
++        @test norm(C-C') <= 3e-13*max(norm(C),1)
++        @test eigmin(Hermitian((C+C')/2)) >= -3e-13*max(norm(C),1)
++    end
++    Random.seed!(0x1331F)
++    G = randn(ComplexF64,7,3,3,3)
++    for e in 1:7,m in 1:3
++        X = Matrix(view(G,e,m,:,:)); G[e,m,:,:] .= X*X'
++    end
++    expected = kraus_oracle(G,D,S,w)
++    for backend in (:threads,:blas), workers in (1,min(2,Base.Threads.nthreads(:default)))
++        actual = production_static_contraction(op,G,w,q;energy_chunk=3,
++            parallel_backend=backend,worker_count=workers)
++        @test actual ≈ expected rtol=2e-13 atol=2e-14
++        for e in 1:7,m in 1:3
++            B = Matrix(view(actual,e,m,:,:))
++            @test norm(B-B') <= 3e-13*max(norm(B),1)
++            @test eigmin(Hermitian((B+B')/2)) >= -3e-13*max(norm(B),1)
++        end
++    end
++    # Arbitrary retarded real part, with independent positive broadening.
++    H = randn(ComplexF64,size(G))
++    for e in 1:7,m in 1:3
++        P = Matrix(view(H,e,m,:,:)); H[e,m,:,:] .= (P+P')/2
++    end
++    GR = H-0.5im*G
++    SR = production_static_contraction(op,GR,w,q;energy_chunk=3)
++    broadening = im .* (SR .- permutedims(conj.(SR),(1,2,4,3)))
++    @test broadening ≈ expected rtol=3e-13 atol=3e-14
++    before = randn(ComplexF64,size(G)); output = copy(before)
++    N._production_static_contraction!(output,op,GR,w,q,3;α=0.7-0.2im,β=0.3)
++    @test output ≈ (0.7-0.2im)*kraus_oracle(GR,D,S,w)+0.3*before rtol=3e-13 atol=3e-14
++    # Repeated use and a shorter final chunk must not retain old buffer data.
++    second = production_static_contraction(op,2*GR,w,q;energy_chunk=2)
++    @test second ≈ 2*SR rtol=3e-13 atol=3e-14
++end
++
++function canonical_problem(;Nb=3,physical=reference_parameters(),validate_static=true)
++    base = tutorial_numerics()
++    changes = (;N_E=7,N_k=3,N_b=Nb)
++    n = NumericalParameters(;
++        (name=>hasproperty(changes,name) ? getproperty(changes,name) : getfield(base,name)
++         for name in fieldnames(NumericalParameters))...)
++    options = ProductionOptions(algorithms=AlgorithmOptions(hilbert=:direct),worker_count=1)
++    p = build_problem_production(;physical,numerical=n,production_options=options,validate_static,
++        scattering=ScatteringOptions(LO=false,acoustic=false,IFR=true,impurity=false,alloy=false)).problem
++    return p,options
++end
++
++@testset "Canonical IFR recipe, source preservation and conservative fallback" begin
++    p,options = canonical_problem()
++    raw = interface_roughness_kernel(p.physical,p.scales,p.grids,p.basis)
++    source = p.kernels.qᴷ[:IFR] .* p.kernels.K[:IFR]
++    # Independent reference finite-angle construction versus shared production recipe.
++    @test source ≈ raw rtol=3e-13 atol=3e-14*maximum(abs,raw)
++    original = copy(p.kernels.K[:IFR])
++    cache = build_production_cache(p;options)
++    op = cache.kernels[:IFR]
++    generic = QCLNEGF._production_kernel(p.kernels.K[:IFR])
++    @test N._kernel_operator_bytes(op) < N._kernel_operator_bytes(generic)
++    @test p.kernels.K[:IFR] == original
++    @test 2*length(p.physical.interfaces) <= p.numerical.N_b^2
++    G = randn(ComplexF64,7,3,3,3)
++    actual = production_static_contraction(op,G,p.grids.wᵏ,p.kernels.qᴷ[:IFR];energy_chunk=3)
++    @test actual ≈ QCLNEGF._static_contraction(p.kernels.K[:IFR],G,p.grids.wᵏ,p.kernels.qᴷ[:IFR]) rtol=4e-13 atol=4e-14
++    # Exercise the canonical constructor itself with a nontrivial complex
++    # phase frame, rather than only manufacturing its private factor type.
++    U = Diagonal(exp.(im .* [0.2,0.6,-0.7]))
++    fields = Dict{Symbol,Any}(:Φ=>p.basis.Φ*U, :χ=>p.basis.χ*U)
++    for name in (:H₀,:Z,:M⁻¹,:T₊,:T₋)
++        fields[name] = U'*getfield(p.basis,name)*U
++    end
++    phase_basis = BasisData((get(fields,name,getfield(p.basis,name))
++                            for name in fieldnames(BasisData))...)
++    phase_raw = N._interface_roughness_kernel_separable(p.physical,p.scales,p.grids,phase_basis)
++    independent = interface_roughness_kernel(p.physical,p.scales,p.grids,phase_basis)
++    @test phase_raw ≈ independent rtol=3e-13 atol=3e-14*maximum(abs,independent)
++    phase_kernels = N._normalize_production_kernels(Dict(:IFR=>phase_raw),p.kernels.Fᴸᴼ)
++    phase_problem = NEGFProblem(p.physical,p.numerical,p.scattering,p.scales,p.grids,
++        p.profiles,phase_basis,phase_kernels,p.W₊ᴱᵖ,p.W₋ᴱᵖ,p.W₊ᴸᴼ,p.W₋ᴸᴼ,
++        p.energy_shift_discretization,p.models)
++    phase_op = build_production_cache(phase_problem;options).kernels[:IFR]
++    @test N._kernel_operator_bytes(phase_op) < N._kernel_operator_bytes(generic)
++    rotated = similar(G); gauge_expected = similar(G); positive = similar(G)
++    for e in 1:7,m in 1:3
++        X = Matrix(view(G,e,m,:,:))
++        rotated[e,m,:,:] .= U'*X*U
++        gauge_expected[e,m,:,:] .= U'*Matrix(view(actual,e,m,:,:))*U
++        positive[e,m,:,:] .= U'*(X*X')*U
++    end
++    phase_result = production_static_contraction(phase_op,rotated,p.grids.wᵏ,
++        phase_kernels.qᴷ[:IFR];energy_chunk=3)
++    phase_literal = QCLNEGF._static_contraction(phase_kernels.K[:IFR],rotated,
++        p.grids.wᵏ,phase_kernels.qᴷ[:IFR])
++    @test phase_result ≈ phase_literal rtol=4e-13 atol=4e-14
++    @test phase_result ≈ gauge_expected rtol=5e-13 atol=5e-14
++    phase_positive = production_static_contraction(phase_op,positive,p.grids.wᵏ,
++        phase_kernels.qᴷ[:IFR];energy_chunk=3)
++    for e in 1:7,m in 1:3
++        B = Matrix(view(phase_positive,e,m,:,:))
++        @test norm(B-B') <= 4e-13*max(norm(B),1)
++        @test eigmin(Hermitian((B+B')/2)) >= -4e-13*max(norm(B),1)
++    end
++    # A caller-modified tensor is not silently projected onto a nearby recipe.
++    p.kernels.K[:IFR][1,1,1,1,1,1] += 0.01
++    modified = build_production_cache(p;options).kernels[:IFR]
++    expected = QCLNEGF._static_contraction(p.kernels.K[:IFR],G,p.grids.wᵏ,p.kernels.qᴷ[:IFR])
++    @test production_static_contraction(modified,G,p.grids.wᵏ,p.kernels.qᴷ[:IFR]) ≈ expected rtol=3e-13 atol=3e-14
++    @test N._kernel_operator_bytes(modified) == N._kernel_operator_bytes(generic)
++    # Even a single-ulp custom change must not be silently accepted by a
++    # tolerance-based rank/separability test. Preserve the source entry exactly.
++    p.kernels.K[:IFR] .= original
++    changed = nextfloat(real(original[1,1,1,1,1,1]))
++    p.kernels.K[:IFR][1,1,1,1,1,1] = changed
++    one_ulp = build_production_cache(p;options).kernels[:IFR]
++    @test p.kernels.K[:IFR][1,1,1,1,1,1] == changed
++    @test N._kernel_operator_bytes(one_ulp) == N._kernel_operator_bytes(generic)
++    @test production_static_contraction(one_ulp,G,p.grids.wᵏ,p.kernels.qᴷ[:IFR]) ≈
++          QCLNEGF._static_contraction(p.kernels.K[:IFR],G,p.grids.wᵏ,p.kernels.qᴷ[:IFR]) rtol=3e-13 atol=3e-14
++    # This tiny operator-container fixture does not claim basis adequacy.
++    small,small_options = canonical_problem(Nb=1,validate_static=false)
++    small_cache = build_production_cache(small;options=small_options)
++    @test N._kernel_operator_bytes(small_cache.kernels[:IFR]) ==
++          N._kernel_operator_bytes(QCLNEGF._production_kernel(small.kernels.K[:IFR]))
++    # If the actual finite-angle factor rounds to momentum independence, keep
++    # the already cheaper existing reduced map and its smaller memory bound.
++    flat,flat_options = canonical_problem(physical=reference_parameters(Λᴵᶠᴿ=1e-8u"nm"))
++    flat_cache = build_production_cache(flat;options=flat_options)
++    @test N._kernel_operator_bytes(flat_cache.kernels[:IFR]) == flat.numerical.N_b^4*sizeof(ComplexF64)
++end
++end

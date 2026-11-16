@@ -1,0 +1,74 @@
+{
+  "summary_sha256": "c48d6e4ff1d1259356933d44702d74db353615eb7c78e57adc1e5cc4b8c65562",
+  "checks": {
+    "execution": true,
+    "counters": true,
+    "immutable_flags": true,
+    "input_sha": true,
+    "runtime_policy": true,
+    "copied_code_hashes": true,
+    "source_root_bindings": true,
+    "all_15_comparisons_zero": true,
+    "all_30_gates": true,
+    "roundoff": true,
+    "memory_arithmetic": true,
+    "selected_5_fields_independent": true
+  },
+  "selected_independent": {
+    "Gamma": {
+      "binary_equal": true,
+      "scale": 4.771386406489225e-15,
+      "weighted_scale": 3.659205250883362e-17,
+      "norms_match_report": true
+    },
+    "Lambda_raw": {
+      "binary_equal": true,
+      "scale": 0.05520749344368878,
+      "weighted_scale": 0.00046144332933874586,
+      "norms_match_report": true
+    },
+    "Lambda_H_preassembly": {
+      "binary_equal": true,
+      "scale": 0.05520749344368878,
+      "weighted_scale": 0.00046144332933874586,
+      "norms_match_report": true
+    },
+    "GR": {
+      "binary_equal": true,
+      "scale": 86.50690986797645,
+      "weighted_scale": 0.21880855062498744,
+      "norms_match_report": true
+    },
+    "A_cov": {
+      "binary_equal": true,
+      "scale": 1.2058074876412704e-11,
+      "weighted_scale": 2.0969386795286418e-14,
+      "norms_match_report": true
+    }
+  },
+  "all_pass": true,
+  "full_array_scope": "5 full comparisons validated from fixed comparator code/report, not independent full-array reloading; only 5 selected complex fields independently reread",
+  "scope": {
+    "selected_E": [
+      382,
+      525,
+      8040,
+      30704
+    ],
+    "selected_blocks": 44,
+    "responses": 2,
+    "Phi": 0,
+    "mu_fits": 0,
+    "maxrss_bytes_summary": 3156279296,
+    "script_seconds": 20.174175024032593,
+    "output_bytes": 1457053
+  },
+  "process_log": {
+    "exit0": true,
+    "swap0": true,
+    "seconds": 25.1,
+    "rss_KiB": 3082304,
+    "rss_bytes": 3156279296,
+    "agrees_with_summary": true
+  }
+}

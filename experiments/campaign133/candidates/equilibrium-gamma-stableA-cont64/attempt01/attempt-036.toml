@@ -1,0 +1,30 @@
+elapsed_seconds = 284.92452692985535
+kind = "AAII"
+reason = "accepted"
+call = 35
+
+[AA]
+rank = 3
+l1 = 1.5411590799767378
+kind = "AAII"
+R_diagonal = [6.861942691607736e-7, 6.006431380390519e-7, 5.511225580221032e-7]
+condition = 1.4594251681836843
+firstpair = 1
+initial_scales = [6.861942691607736e-7, 6.050148999105621e-7, 5.797487583318064e-7]
+coefficients = [0.11680592187851879, -0.1288033350697778, -0.15377361810985019]
+
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 1.5411590799767378
+    R_diagonal = [6.861942691607736e-7, 6.006431380390519e-7, 5.511225580221032e-7]
+    condition_measured = true
+    affine_coefficients = [0.11680592187851879, -0.2456092569482966, -0.024970283040072372, 1.1537736181098501]
+    coefficients = [0.11680592187851879, -0.1288033350697778, -0.15377361810985019]
+    condition = 1.4594251681836843
+    reason = "accepted"
+    affine_l1_limit = 4096.0
+    initial_scales = [6.861942691607736e-7, 6.050148999105621e-7, 5.797487583318064e-7]
+    differences = 3
+    normalized_rank = 3
+    firstpair = 1
+    coefficients_measured = true

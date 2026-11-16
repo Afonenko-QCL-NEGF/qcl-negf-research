@@ -1,0 +1,108 @@
+[opcheck]
+alloy = 6.015154087147445e-16
+IFR = 1.4325166556911503e-15
+LO = 1.3747644278535086e-15
+acoustic = 9.629454037113792e-16
+impurity = 6.738719494308485e-16
+
+[[pole]]
+n = 0
+M = 256
+absolute = 8.956185775952907e-10
+relative = 2.3149220886098277e-8
+
+    [pole.exact]
+    real = -0.029223689170655175
+    imag = -0.025353683486139648
+
+    [pole.raw]
+    real = -0.029223688959929956
+    imag = -0.025353682615664192
+[[pole]]
+n = 0
+M = 512
+absolute = 1.1195397040306024e-10
+relative = 2.893695212190268e-9
+
+    [pole.exact]
+    real = -0.029223689170655175
+    imag = -0.025353683486139648
+
+    [pole.raw]
+    real = -0.029223689144314332
+    imag = -0.025353683377328566
+[[pole]]
+n = 1
+M = 256
+absolute = 2.6200110462199615e-9
+relative = 7.622203507674604e-8
+
+    [pole.exact]
+    real = -0.01568233187920186
+    imag = -0.030587507034482035
+
+    [pole.raw]
+    real = -0.015682331668465083
+    imag = -0.030587504422959894
+[[pole]]
+n = 1
+M = 512
+absolute = 3.274974280668976e-10
+relative = 9.527639391320136e-9
+
+    [pole.exact]
+    real = -0.01568233187920186
+    imag = -0.030587507034482035
+
+    [pole.raw]
+    real = -0.01568233185286066
+    imag = -0.03058750670804566
+[[pole]]
+n = 7
+M = 256
+absolute = 1.3072236648832102e-8
+relative = 1.3956763684855922e-6
+
+    [pole.exact]
+    real = -0.0010615965000206355
+    imag = -0.009305881039300676
+
+    [pole.raw]
+    real = -0.0010615962889709684
+    imag = -0.009305867968767824
+[[pole]]
+n = 7
+M = 512
+absolute = 1.6327981183420756e-9
+relative = 1.743280671469005e-7
+
+    [pole.exact]
+    real = -0.0010615965000206355
+    imag = -0.009305881039300676
+
+    [pole.raw]
+    real = -0.0010615964736696568
+    imag = -0.009305879406715204
+
+[cp]
+omega0 = 0.18950505608923182
+conditional_L_over_omega0_squared = 0.30529308144788564
+L = 0.010963735906122827
+scope = "infinite Mats causal map only; not a finite-cutoff uniqueness assertion"
+
+[[wired]]
+LO_relative = 4.903844877283214e-8
+LO_absolute = 3.060978389883854e-9
+reference_LO_relative = 0.0
+density_absolute = 2.8706967913905146e-9
+G_relative = 1.5404786869705091e-16
+dyson_backward = 5.551160533894123e-17
+N = 128
+[[wired]]
+LO_relative = 6.400467068472251e-9
+LO_absolute = 4.0053644635717904e-10
+reference_LO_relative = 0.0
+density_absolute = 3.5886058014078515e-10
+G_relative = 1.53984618712273e-16
+dyson_backward = 5.551160533894123e-17
+N = 256

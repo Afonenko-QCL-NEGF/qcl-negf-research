@@ -1,0 +1,14 @@
+elapsed_seconds = 56.93681621551514
+kind = "AAII"
+reason = "accepted"
+call = 4
+
+[AA]
+rank = 2
+l1 = 1.6941294876519646
+kind = "AAII"
+R_diagonal = [1.0525436413909012e-5, 4.7732950624637374e-5]
+condition = 7.878121313345533
+firstpair = 1
+initial_scales = [1.0525436413909012e-5, 6.253827651626921e-5]
+coefficients = [-0.3470647438259823, 0.04541935078815738]

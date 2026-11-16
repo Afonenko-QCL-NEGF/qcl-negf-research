@@ -1,0 +1,14 @@
+elapsed_seconds = 373.6756691932678
+kind = "linear_rank_reset"
+reason = "accepted"
+call = 45
+
+[AA]
+rank = 0
+l1 = 1.0
+kind = "linear_rank_reset"
+R_diagonal = []
+condition = +inf
+firstpair = 0
+initial_scales = []
+coefficients = []

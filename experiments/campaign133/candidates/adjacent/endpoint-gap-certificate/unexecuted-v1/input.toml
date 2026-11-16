@@ -1,0 +1,8 @@
+identity = "campaign133-Gamma64-V4-hH-exterior-and-ghost-outward-Gershgorin-v1"
+execution_authorized = false
+V4_input = "../gamma-density-hermitian-v4/runtime-input.toml"
+V4_input_sha256 = "f6560732368b3ba1a4ccae52004a9a23eac63c18775ff6d614fa6ed6afbeee2b"
+V4_summary = "../gamma-density-hermitian-v4/attempt01/summary.toml"
+V4_summary_sha256 = "323cc1773423a3b5a97c1af383acffff229a7c5fdb3b72c3e211ad1da7047644"
+# All science/data/basis/Γ/unit/PD bindings inherited from this fixed V4 frame.
+# OS envelope: J1/BLAS1/2GiB/Swap0/CPU100%/external120s; internal120s.

@@ -1,0 +1,11 @@
+# V4 stable64: filled binding, actual execution=false
+
+Создан НОВЫЙ `input-stable64-frozen.toml`, SHA **ab77e333726eec4cf258a74ea2572b3aa2336ae642c01b55181f412660b2db7b**. Исходный `input-stable64.toml` SHA916a191a… не изменён. Все source scripts/старый Γ128-HOLD также неизменны.
+
+Binding взят только из completed `frozen-io01/digest.toml` SHAb121f71d…: 13 logical hashes, 11 per-k A hashes, PI origin/spacing и raw-h SHA; проверены точные равенства обоих hash-словарей. IO artifact сообщает terminalΓ==checkpointΓ по всем 8443600 complex entries. Used h_H hash9748cff3… отличается от raw-h8cde8ea0…; h_H — actual saved all11 k, не новая Hermitian projection.
+
+Native certificate `global-gamma-exact-pd/all-attempt01/summary.toml` SHA **a703ec4c3e2feda1ae9571ab3d1d20b69dd9de48898f3d620ada008da2583335** и proof-input `all-run.toml` SHA **27da5a97ab61e9f290f5f8c7a2979d5873ec55e81f45e6b336fba99c495711d4** проверены по малым TOML: mode=all, execution=complete, strictPD=true; expected/requested/checked/PD=337744; nonfinite/nonhermitian/nonpositive=0, failure witnesses empty; divrem=20264640. Все9 SHA связей (checkpoint/model/input/identity/operator/spectral/ledger/summary/map) равны в certificate, proof-input и V4 packet; runner/math SHA и shape30704×11×5×5/call64 также совпали. Это metadata-binding проверка настоящего certificate, не повторный Bareiss-run агентом.
+
+Дополнительно сверены source input/map64/Core identity, clean status, h_H-all9 policy, project_AA_trial=false, μ=0.08459614262982018, E0=0.1eV, T70, target0.045000000000000005 и dimensions. Машинный отчёт — `filled-binding-audit.json`. Автор не запускал Julia и не читал HDF5; root сообщил I/O exit0, wrapper8.97s, RSS702332KiB, swap0 (inside helper7.8099s).
+
+**execution_authorized=false сохранён.** Root запрашивает отдельный compatibility binding review перед будущим actual; сейчас другой heavy run активен. PD относится к exact frozen Γ-last64 и вместе с EXACT Hermitian h_H обосновывает causal Cauchy-hat model, но не SCBA convergence, экспериментальную валидацию, приёмку Γ128 или full floating/tail error certificate. Actual Matsubara evidence пока отсутствует. Выбор M3N1024/N512 и caps2GiB/180s/J1-BLAS1/64MiB сохранены без изменения.

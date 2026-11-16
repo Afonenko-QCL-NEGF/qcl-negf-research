@@ -1,0 +1,14 @@
+elapsed_seconds = 52.271854877471924
+kind = "AAII"
+reason = "negative PSD field at (8355,1): -1.2876533842364425e-6; budget=7.105427357601002e-14"
+call = 4
+
+[AA]
+rank = 1
+l1 = 8.589050475036965
+kind = "AAII"
+R_diagonal = [0.039643117268010127]
+condition = 1.0
+firstpair = 1
+initial_scales = [0.039643117268010127]
+coefficients = [-3.7945252375184824]

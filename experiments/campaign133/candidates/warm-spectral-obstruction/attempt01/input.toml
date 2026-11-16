@@ -1,0 +1,6 @@
+identity = "campaign133-warm-q-selected-45-double-Big192-mixed-onsite-v2"
+runtime_authorized = true
+selected_path = "../warm-q-quick/attempt01/selected.h5"
+selected_sha256 = "45fa3f6859802aa25ef19b7d16ccfae3e90c297463e3f374ca57ba85b3ca918d"
+cold_model_path = "../equilibrium-gamma-solver/attempt02/model.h5"
+cold_model_sha256 = "6b41f93e29f2482a814f82a9db69ad8c8ff3bf7d9eb99ccfed4a510244e364b7"

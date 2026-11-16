@@ -1,0 +1,9 @@
+G_causality_max = -0.008732750804260898
+iteration = 2
+number = 0.044888034231361666
+pauli_max = 0.2175107540454392
+dyson_backward = 3.751683875776489e-17
+sigma_causality_max = -0.00011260454992893455
+pauli_min = -3.191154307277137e-9
+raw_sigma_absolute = 0.0003247389591455459
+raw_sigma_relative = 0.003304227735548265

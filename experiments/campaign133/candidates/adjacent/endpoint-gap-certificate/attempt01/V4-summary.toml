@@ -1,0 +1,352 @@
+tail_status = "M1/M3 and N refinement witnesses; no formal total tail error bound"
+scope = "fixed frozen-PI off-axis density, no SCBA/fit"
+SCBA_convergence = "not_measured"
+h_policy = "actual saved EXACT Hermitian h_H, all nine cells; raw h crosschecked only"
+atom_and_ghost_attribution = "not established by density difference alone"
+script_sha256 = "814dff509cef6cdb1e0e1d1a762cabbd885a761c2a5b4964f80373df2b01b21a"
+completed_checkpoints = [512, 1024]
+maximum_accumulated_Herm_part_defect = 0.0
+maximum_selected_Sigma_positive_imag_eigenvalue = 0.0
+current_stage = "save_density_N1024"
+bare_complex_exact_imaginary_entry_maximum = 0.06407760978178766
+input_sha256 = "f6560732368b3ba1a4ccae52004a9a23eac63c18775ff6d614fa6ed6afbeee2b"
+elapsed_seconds = 24.784630060195923
+series_status = "analytic omitted-series Sigma norm bound excludes Float64 summation/evaluation errors"
+maximum_selected_solve_backward_error = 4.8631938495486703e-17
+finish_utc = "2026-11-16T02:25:57.018"
+minimum_abs_t_lower_bound = 484.86443506209446
+status = "completed"
+started_utc = "2026-11-16T02:25:32.233"
+
+[source_binding_witness]
+number_scope = "unit/input binding, no fit and no quadrature acceptance"
+L0_kmax_absolute_tolerance = 1.7053025658242404e-13
+map_mu_number = 0.04499999999999402
+number_absolute_defect = 5.065392549852277e-16
+source_kmax_per_nm = 0.6
+L0_kmax_absolute_defect = 0.0
+number_comparison_scale = 0.045000000000000005
+saved_A_fA_number = 0.044999999999994524
+model_kappa_max = 6.0
+number_absolute_tolerance = 9.0e-13
+
+[bare_complex_controls.1024]
+M3_absolute_Frobenius = 1.0052291594900522e-14
+M1_absolute_Frobenius = 8.633106609785012e-12
+exact_scale_Frobenius = 1.7391777041153962
+
+[bare_complex_controls.512]
+M3_absolute_Frobenius = 9.96578805300368e-15
+M1_absolute_Frobenius = 6.907183262913602e-11
+exact_scale_Frobenius = 1.7391777041153962
+
+[identity]
+terminal_h5_sha256 = "6eb3ca27efac788b4e1de14322251361452f0863c5d8350afeaa1c6204bfa9da"
+project_sha256 = "791aec47f34e0884b8bd36af07f514934cc08c418940650d464920d6a2aeb067"
+model_h5_sha256 = "700ae17684d9ae52623ca6cfb7e07432ab1f43eb5151748061da53681b686540"
+map_summary_sha256 = "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88"
+source_identity_sha256 = "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b"
+julia_version = "1.13.3"
+source_core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+manifest_sha256 = "da0780fbe150c0e16e9fedf3566a1971095642f14f57f32524b52f430a4adb65"
+kBT_dimensionless = 0.06032133283501625
+source_families = ["IFR", "LO", "acoustic", "alloy", "impurity"]
+hcell_sha256 = "9748cff3766957a7add78a58d06db1d9bff8fb8738066267d57f9ddd539c15b4"
+L0_m = 1.0e-8
+logical_axes = ["energy", "momentum", "orbital_row", "orbital_column"]
+E0_eV = 0.1
+source_core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+source_writer_sha256 = "50bcfaaeb3c399baaaa2a4b9b9e023167e97b4d87c6af95d83353cb453072211"
+canonical_geometry_defect = 1.7763568394002505e-15
+Julia_threads = 1
+origin = -2.9999999999999996
+BLAS_threads = 1
+mu_dimensionless = 0.08459614262982018
+gamma_sha256 = "f5a3778b8960704da6d7bd58e22176d3a2e7698695fd2e9a3871fc50cbd04653"
+spin_degeneracy = 2.0
+mu_eV = 0.008459614262982019
+spacing = 0.00039084132055378063
+excluded = ["embedding", "embedding_plus", "embedding_minus"]
+source_sha256 = "6eb3ca27efac788b4e1de14322251361452f0863c5d8350afeaa1c6204bfa9da"
+owned_terminal_paths = ["Gamma_real", "Gamma_imag", "mu", "green/A_real", "green/A_imag"]
+
+    [identity.basis_and_grid_array_sha256]
+    Tplus = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+    H0 = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+    chi = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+    Z = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+    Gamma = "f5a3778b8960704da6d7bd58e22176d3a2e7698695fd2e9a3871fc50cbd04653"
+    energy = "1ad8a0d3d0da96d2778cbb1e8c1dfe51989dc19f43bb9233cb81e4e2402ebca9"
+    weight_energy = "2015e27dd4d76f805c541c1ae1a8eb9e36bae5d98ce4180a63c2285ff10ac25b"
+    momentum = "7815e5a3e3faf1673363855e6bc76e56be584032eded7440c9e6bd4ddbcd1e6f"
+    weight_momentum = "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d"
+    Phi = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+    hcell = "9748cff3766957a7add78a58d06db1d9bff8fb8738066267d57f9ddd539c15b4"
+    Minv = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+    Tminus = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+
+[ghost_strip_witnesses.k9]
+dL_full_dimensionless = 4.475793943358798
+right_mass_operator_upper_witness = 1.4839764415679379e-37
+FD_density_operator_upper_witness = 6.092071300516436e-34
+Gamma_first_Frobenius = 3.9238693461674264e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 4.202793963682838
+Gamma_last_Frobenius = 8.427768511295446e-32
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 6.092071300516436e-34
+mass_normalized_Frobenius_upper_witness = 6.093555276958004e-34
+
+[ghost_strip_witnesses.k6]
+dL_full_dimensionless = 3.6796832946077593
+right_mass_operator_upper_witness = 1.2491479063517288e-37
+FD_density_operator_upper_witness = 1.2472778770657832e-33
+Gamma_first_Frobenius = 5.429920782208242e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 4.987990984968794
+Gamma_last_Frobenius = 9.992509647021316e-32
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 1.2472778770657832e-33
+mass_normalized_Frobenius_upper_witness = 1.2474027918564184e-33
+
+[ghost_strip_witnesses.k5]
+dL_full_dimensionless = 3.495922128177762
+right_mass_operator_upper_witness = 1.1992820583132977e-37
+FD_density_operator_upper_witness = 1.4970605308153557e-33
+Gamma_first_Frobenius = 5.882639745594348e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 5.169150867335145
+Gamma_last_Frobenius = 1.0303129155668866e-31
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 1.4970605308153557e-33
+mass_normalized_Frobenius_upper_witness = 1.4971804590211871e-33
+
+[ghost_strip_witnesses.k11]
+dL_full_dimensionless = 5.210362759604423
+right_mass_operator_upper_witness = 1.7644393833859213e-37
+FD_density_operator_upper_witness = 3.4276070089337303e-34
+Gamma_first_Frobenius = 2.9918260307308004e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 3.4777429262703583
+Gamma_last_Frobenius = 6.861373910438843e-32
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 3.4276070089337303e-34
+mass_normalized_Frobenius_upper_witness = 3.429371448317116e-34
+
+[ghost_strip_witnesses.k2]
+dL_full_dimensionless = 3.189615897366152
+right_mass_operator_upper_witness = 1.1197962112967015e-37
+FD_density_operator_upper_witness = 2.0675751730894906e-33
+Gamma_first_Frobenius = 6.76312594586488e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 5.471048889049759
+Gamma_last_Frobenius = 1.0776793894286965e-31
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 2.0675751730894906e-33
+mass_normalized_Frobenius_upper_witness = 2.06768715271062e-33
+
+[ghost_strip_witnesses.k4]
+dL_full_dimensionless = 3.352985592434167
+right_mass_operator_upper_witness = 1.1615667660972745e-37
+FD_density_operator_upper_witness = 1.7349887848946324e-33
+Gamma_first_Frobenius = 6.271471289806039e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 5.310042388632506
+Gamma_last_Frobenius = 1.0530513415778691e-31
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 1.7349887848946324e-33
+mass_normalized_Frobenius_upper_witness = 1.735104941571242e-33
+
+[ghost_strip_witnesses.k1]
+dL_full_dimensionless = 3.169191771988415
+right_mass_operator_upper_witness = 1.1146998145726203e-37
+FD_density_operator_upper_witness = 2.114643312971163e-33
+Gamma_first_Frobenius = 6.828786814299304e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 5.491172431643606
+Gamma_last_Frobenius = 1.0806809200590306e-31
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 2.114643312971163e-33
+mass_normalized_Frobenius_upper_witness = 2.11475478295262e-33
+
+[ghost_strip_witnesses.k3]
+dL_full_dimensionless = 3.250881620353441
+right_mass_operator_upper_witness = 1.1352694073059583e-37
+FD_density_operator_upper_witness = 1.9341685499837387e-33
+Gamma_first_Frobenius = 6.572128095312058e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 5.41067320003368
+Gamma_last_Frobenius = 1.0685895783542684e-31
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 1.9341685499837387e-33
+mass_normalized_Frobenius_upper_witness = 1.9342820769244694e-33
+
+[ghost_strip_witnesses.k8]
+dL_full_dimensionless = 4.169634752381767
+right_mass_operator_upper_witness = 1.3894675502902852e-37
+FD_density_operator_upper_witness = 7.923511728692634e-34
+Gamma_first_Frobenius = 4.429177903552951e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 4.504825649703611
+Gamma_last_Frobenius = 9.065959508016295e-32
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 7.923511728692634e-34
+mass_normalized_Frobenius_upper_witness = 7.924901196242924e-34
+
+[ghost_strip_witnesses.k7]
+dL_full_dimensionless = 3.9042586668145254
+right_mass_operator_upper_witness = 1.3120923535494804e-37
+FD_density_operator_upper_witness = 1.0075151901050305e-33
+Gamma_first_Frobenius = 4.93785304440882e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 4.7665531483610275
+Gamma_last_Frobenius = 9.584791640436438e-32
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 1.0075151901050305e-33
+mass_normalized_Frobenius_upper_witness = 1.0076463993403855e-33
+
+[ghost_strip_witnesses.k10]
+dL_full_dimensionless = 4.822712985342919
+right_mass_operator_upper_witness = 1.6026894897003463e-37
+FD_density_operator_upper_witness = 4.5993899571140865e-34
+Gamma_first_Frobenius = 3.4394773796195613e-28
+status = "conditional_floating_witness"
+dR_full_dimensionless = 3.860439664997855
+Gamma_last_Frobenius = 7.6794889420297e-32
+qualification = "floating witness conditional on exact PSD/input/error assumptions; not interval certificate"
+left_mass_operator_upper_witness = 4.5993899571140865e-34
+mass_normalized_Frobenius_upper_witness = 4.600992646603787e-34
+
+[N512]
+tail_T4 = 1.2035519607545038e-7
+M1_N_over_target = 0.9999097140597121
+M3_N_over_target = 1.000093421090491
+tail_T2 = 0.013596536920851617
+N = 512
+M1_minus_M3_absolute_Frobenius = 3.1144918227640116e-6
+
+    [N512.M3_minus_stored_same_Gamma_real_PI_fA]
+    reference_Frobenius = 0.28284287653824347
+    absolute_Frobenius = 3.3468709538200376e-5
+    relative_Frobenius = 0.00011832968872268924
+    signed_delta_N_over_target = 9.34210906127713e-5
+    per_k_absolute_Frobenius = [2.8807350622200074e-5, 1.605831061244676e-5, 5.559710829315741e-6, 1.2266754371681443e-6, 8.066972458570733e-8, 1.0139963699780384e-8, 2.525961514180688e-10, 2.3298720342070236e-10, 3.340177550316452e-10, 4.892871611241235e-10, 7.280694734040064e-10]
+
+[bare_source_k1_controls.1024]
+M3_absolute_Frobenius = 1.8146648955358864e-12
+M1_absolute_Frobenius = 4.712953479309723e-8
+exact_scale_Frobenius = 0.19004245187869956
+
+[bare_source_k1_controls.512]
+M3_absolute_Frobenius = 5.808488655149092e-11
+M1_absolute_Frobenius = 3.7699236715289347e-7
+exact_scale_Frobenius = 0.19004245187869956
+
+[[kernel_controls]]
+coefficient_imag = -0.0003282460390000784
+BigFloat_exact_real_decimal = "1.407476648876106038371431330765983689383280628282345245175540985945061896167786e-75"
+series_truncation_absolute = 9.022328658429966e-22
+Float64_absolute_error = 2.8459627739697163e-21
+t_imag = 484.86443506209446
+BigFloat_exact_imag_decimal = "-0.0003282460390000784199681756162813433950337334269602921141813630986085990123433745"
+coefficient_real = 0.0
+t_real = 0.0
+analytic_remainder_bound = 9.022390915708924e-22
+[[kernel_controls]]
+coefficient_imag = -1.4823920733364262e-7
+BigFloat_exact_real_decimal = "6.974022673445279965517192109760101313113310050542628373498802604487613083333281e-6"
+series_truncation_absolute = 1.7660023573781575e-33
+Float64_absolute_error = 6.371073052226527e-22
+t_imag = 484.86443506209446
+BigFloat_exact_imag_decimal = "-1.482392073336426087284444557451554934779458955108240452284757337302142661349962e-7"
+coefficient_real = 6.974022673445279e-6
+t_real = 22810.804419810895
+analytic_remainder_bound = 1.7660023586616576e-33
+[[kernel_controls]]
+coefficient_imag = -1.4823920733364262e-7
+BigFloat_exact_real_decimal = "-6.974022673445279965517192109760101313113310050542628373498802604488333711377557e-6"
+series_truncation_absolute = 1.7660023573781575e-33
+Float64_absolute_error = 6.371073052226527e-22
+t_imag = 484.86443506209446
+BigFloat_exact_imag_decimal = "-1.482392073336426087284444557451554934779458955108240452284757337304619820251974e-7"
+coefficient_real = -6.974022673445279e-6
+t_real = -22810.804419810895
+analytic_remainder_bound = 1.7660023586616576e-33
+[[kernel_controls]]
+coefficient_imag = -1.591549430918688e-7
+BigFloat_exact_real_decimal = "-2.882512176898265166584691365408734595856958726722243062119507939215486763351625e-72"
+series_truncation_absolute = 5.684105110421296e-45
+Float64_absolute_error = 1.0444247663661567e-23
+t_imag = 1.0e6
+BigFloat_exact_imag_decimal = "-1.591549430918688099450351247602157541945691728286136336638639438505099202765155e-7"
+coefficient_real = 0.0
+t_real = 0.0
+analytic_remainder_bound = 5.684105110430518e-45
+[[kernel_controls]]
+coefficient_imag = -1.751190578774835e-6
+BigFloat_exact_real_decimal = "1.373100836883422011903678912645303041366896627271193259909759945095734915938086e-5"
+series_truncation_absolute = 2.1397499895589198e-31
+Float64_absolute_error = 1.916783349895477e-22
+t_imag = 1454.5933051862835
+BigFloat_exact_imag_decimal = "-1.751190578774834827586760567417082256684130314811972282904289582355460623028002e-6"
+coefficient_real = 1.373100836883422e-5
+t_real = 11405.402209905447
+analytic_remainder_bound = 2.139749995995941e-31
+
+[global_exact_PD_binding]
+certificate_sha256 = "a703ec4c3e2feda1ae9571ab3d1d20b69dd9de48898f3d620ada008da2583335"
+checked_blocks = 337744
+scope = "exact stored binary Gamma nodes only; not SCBA convergence or total forward-error certificate"
+checkpoint_sha256 = "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55"
+
+[N1024]
+tail_T4 = 1.504442103056868e-8
+M1_N_over_target = 1.00007041343683
+M3_N_over_target = 1.000093376848526
+tail_T2 = 0.006798270081257125
+N = 1024
+M1_minus_M3_absolute_Frobenius = 3.893120347588853e-7
+
+    [N1024.M3_minus_stored_same_Gamma_real_PI_fA]
+    reference_Frobenius = 0.28284287653824347
+    absolute_Frobenius = 3.346870940211527e-5
+    relative_Frobenius = 0.00011832968824155602
+    signed_delta_N_over_target = 9.337684864789573e-5
+    per_k_absolute_Frobenius = [2.8807350551084746e-5, 1.6058310535197858e-5, 5.559710712254565e-6, 1.226675347710504e-6, 8.066954810348247e-8, 1.0139027448352892e-8, 1.8934965404034686e-10, 8.986226269587206e-12, 1.0619642521107982e-11, 1.534948711305983e-11, 2.2793901258220193e-11]
+
+    [N1024.M3_minus_previous]
+    reference_Frobenius = 0.2828758961761955
+    absolute_Frobenius = 9.712405597296381e-10
+    relative_Frobenius = 3.433451110039717e-9
+    signed_delta_N_over_target = -4.4241964875574915e-8
+    per_k_absolute_Frobenius = [5.691917266047346e-11, 5.876028682711813e-11, 6.45803381808622e-11, 7.532587306571812e-11, 9.278808728428058e-11, 1.1997181343248366e-10, 1.6170248424210303e-10, 2.2559284761056488e-10, 3.23532327219902e-10, 4.739579321285358e-10, 7.052794300557523e-10]
+
+[scalar_fermi_controls."-0.4".1024]
+M3_absolute_Frobenius = 1.1102230246251565e-16
+M1_absolute_Frobenius = 2.0654589150126412e-10
+exact_scale_Frobenius = 0.9996757197680309
+
+[scalar_fermi_controls."-0.4".512]
+M3_absolute_Frobenius = 6.5503158452884236e-15
+M1_absolute_Frobenius = 1.6523570289805889e-9
+exact_scale_Frobenius = 0.9996757197680309
+
+[scalar_fermi_controls."0.4".1024]
+M3_absolute_Frobenius = 3.903127820947816e-16
+M1_absolute_Frobenius = 5.694746930962058e-11
+exact_scale_Frobenius = 0.005331757928686467
+
+[scalar_fermi_controls."0.4".512]
+M3_absolute_Frobenius = 7.632783294297951e-16
+M1_absolute_Frobenius = 4.55581461444865e-10
+exact_scale_Frobenius = 0.005331757928686467
+
+[scalar_fermi_controls."0.08459614262982018".1024]
+M3_absolute_Frobenius = 0.0
+M1_absolute_Frobenius = 0.0
+exact_scale_Frobenius = 0.5
+
+[scalar_fermi_controls."0.08459614262982018".512]
+M3_absolute_Frobenius = 0.0
+M1_absolute_Frobenius = 0.0
+exact_scale_Frobenius = 0.5

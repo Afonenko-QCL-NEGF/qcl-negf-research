@@ -1,0 +1,658 @@
+# Projection: only private core_import_path omitted; original summary remains unchanged.
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+measure = "source dimensionless wE/(2pi), wk, spin degeneracy; source fixed mu,T; no density normalization"
+independent_finite4_minus_native_A_weighted_relative = 7.425061519762276e-15
+native_c4_max_condition = 1273.976630312709
+nonfinite_diagnostic_nodes = 0
+Tplus_sha256 = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+surface_failed_nodes = 0
+elapsed_seconds = 41.98792099952698
+local_PI_R_sha256 = "bdeb99074ed8764ba8cf32d0eb0c36b6e27be9b13646a3cadfcd895dfadd502b"
+excluded_families = ["embedding", "embedding_plus", "embedding_minus"]
+last_stage = "complete"
+marker_sha256 = "e0fb9a3dcdbc47381171275d3a103aff56171a246bb8c5a189eb59a69eceb455"
+projected_h_sha256 = "8cde8ea024d9e690bf0396428574496734d7bad5962fc00617b9b380ae1194a7"
+all_boundary_integrals_and_sensitivities_finite = true
+finished_utc = "2026-11-15T21:12:56.747"
+project_sha256 = "791aec47f34e0884b8bd36af07f514934cc08c418940650d464920d6a2aeb067"
+identity_sha256 = "142cd2a774c581160723dd793836e7ffabb2e6052a9d11d0dd1dcfee343a0e86"
+scientific_scope = "Frozen retarded-only boundary limit; no SCBA, Poisson, normalization, mu fit, or Core/Runner edits"
+PI_roundoff = 3.534526893064363e-16
+native_c4_max_scale = 740.2680406479376
+source_writer_sha256 = "77dd468dd2f073a7d76d5ed7b3b5220ef3ecd808dbea5a2d790045564932c6d2"
+SCBA_Poisson_discretization_experiment_validation = "not_measured"
+source_sha256 = "e6fffb997f36397f877aee1e2c98b1dbad7d97417d45458a042b5f074ce57a6d"
+infinite_numerical_status = "surface_finite_and_selected_Bloch_witnesses_pass"
+julia_version = "1.13.3"
+alignment_summary_sha256 = "b336c2f4dde87b55744e985db3dd8400eb410baf75c941d345bac63bb0f785fc"
+frozen_gamma_sha256 = "edb8530e9a59944afe1a447d999bf0c6c42d29d726e16144a5d85bdccdaecc55"
+target_dimensionless = 0.045000000000000005
+surface_numerical_status = "surface_witnesses_pass"
+alignment_h5_sha256 = "ab34e09bb639ec7fb63f2d52df3f723ef40bed787e0f251194d0130a122af72d"
+id = "qcl133-FD64-frozen-PI-boundary-limit-v2"
+finite_centre_failed_nodes = 0
+manifest_sha256 = "da0780fbe150c0e16e9fedf3566a1971095642f14f57f32524b52f430a4adb65"
+completed_k_indices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+variant_labels = ["finite4", "finite8", "finite16", "finite32", "infinite_decimation"]
+E0_eV = 0.1
+local_families_summed_once = ["IFR", "LO", "acoustic", "alloy", "impurity"]
+Julia_threads = 4
+BLAS_threads = 1
+mu_eV = 0.008495393439818052
+status = "completed_execution_only"
+started_utc = "2026-11-15T21:12:14.759"
+
+[small_selfchecks.scalar_1]
+all_finite = true
+iterations = 9
+relative_error = 3.244220091973173e-16
+surface_residual_R = 5.551115123125783e-17
+surface_residual_L = 5.551115123125783e-17
+imaginary_energy = 0.08
+
+[small_selfchecks.complex_finite_1]
+full_backward = 4.8419787058303246e-17
+relative_error = 3.1842939636419875e-16
+
+[small_selfchecks.scalar_3]
+all_finite = true
+iterations = 5
+relative_error = 1.2405388045685933e-16
+surface_residual_R = 8.673617379884035e-19
+surface_residual_L = 8.673617379884035e-19
+imaginary_energy = 0.03
+
+[small_selfchecks.scalar_5]
+all_finite = true
+iterations = 5
+relative_error = 2.4795637448016616e-16
+surface_residual_R = 1.1102230246251568e-16
+surface_residual_L = 1.1102230246251568e-16
+imaginary_energy = 1.3e-15
+
+[small_selfchecks.scalar_2]
+all_finite = true
+iterations = 5
+relative_error = 2.4803795253508465e-16
+surface_residual_R = 8.673617379884035e-19
+surface_residual_L = 8.673617379884035e-19
+imaginary_energy = 0.02
+
+[small_selfchecks.complex_finite_4]
+full_backward = 3.662052234443458e-17
+relative_error = 2.450836819991807e-16
+
+[small_selfchecks.weak_rank_one_damping]
+all_finite = true
+iterations = 4
+full_backward = 2.843381129439228e-17
+Bloch_2048_to_4096_relative = 2.9690249335731397e-15
+outside_spectrum_margin = 1.082397235889508
+finite4_full_block_relative = 1.863196035620737e-16
+Bloch_decimation_relative = 1.8470398491175945e-15
+gamma_scale = 3.6e-15
+surface_residual_R = 7.171157711485302e-17
+surface_residual_L = 3.211093249609661e-17
+
+[small_selfchecks.complex_finite_2]
+full_backward = 4.478555646582107e-17
+relative_error = 3.254128907968797e-16
+
+[small_selfchecks.complex_infinite]
+iterations = 8
+beta_not_adjoint_alpha_defect = 4.757103542733994e-24
+surface_residual_R = 1.6133170469776553e-16
+Bloch_relative_error = 1.2384360893883032e-15
+surface_residual_L = 1.3370856776941527e-16
+
+[small_selfchecks.scalar_4]
+all_finite = true
+iterations = 5
+relative_error = 2.4795637448016616e-16
+surface_residual_R = 1.1102230246251568e-16
+surface_residual_L = 1.1102230246251568e-16
+imaginary_energy = 1.3e-15
+
+[selected_oracles.k11]
+finite4_vs_full45_relative = 3.7031020696310537e-16
+energy_index = 7190
+energy_eV = -0.01917968749999997
+full45_condition = 2.3796427867499994
+Bloch_refinement_converged = true
+selection = "argmax_E f(E;fixed source mu,T) Tr A_native_c4(E,k)"
+all_finite = true
+finite_check_pass = true
+decimation_stop_converged = true
+Bloch_decimation_agreement = true
+full45_backward = 2.5665688234373808e-17
+
+    [selected_oracles.k11.theta_levels.4096]
+    all_finite = true
+    decimation_relative = 1.1545813805765302e-15
+    max_condition = 2.3883393128998898
+    refinement_relative = 2.3226745684691203e-15
+    refinement_measured = true
+
+    [selected_oracles.k11.theta_levels.2048]
+    all_finite = true
+    decimation_relative = 1.832236395708815e-15
+    max_condition = 2.3883393128998898
+    refinement_relative = nan
+    refinement_measured = false
+
+[selected_oracles.k1]
+finite4_vs_full45_relative = 1.0007402533530292e-14
+energy_index = 8073
+energy_eV = 0.015312500000000033
+full45_condition = 503.35502608699375
+Bloch_refinement_converged = true
+selection = "argmax_E f(E;fixed source mu,T) Tr A_native_c4(E,k)"
+all_finite = true
+finite_check_pass = true
+decimation_stop_converged = true
+Bloch_decimation_agreement = true
+full45_backward = 1.3653315010206453e-17
+
+    [selected_oracles.k1.theta_levels.4096]
+    all_finite = true
+    decimation_relative = 1.3267271713309332e-14
+    max_condition = 506.66770993244074
+    refinement_relative = 2.277261360389005e-15
+    refinement_measured = true
+
+    [selected_oracles.k1.theta_levels.2048]
+    all_finite = true
+    decimation_relative = 1.37432921862568e-14
+    max_condition = 506.66770993244074
+    refinement_relative = nan
+    refinement_measured = false
+
+[selected_oracles.k6]
+finite4_vs_full45_relative = 6.621569934509683e-15
+energy_index = 9375
+energy_eV = 0.06617187500000003
+full45_condition = 280.54005062267987
+Bloch_refinement_converged = true
+selection = "argmax_E f(E;fixed source mu,T) Tr A_native_c4(E,k)"
+all_finite = true
+finite_check_pass = true
+decimation_stop_converged = true
+Bloch_decimation_agreement = true
+full45_backward = 1.2771787188973767e-17
+
+    [selected_oracles.k6.theta_levels.4096]
+    all_finite = true
+    decimation_relative = 2.4210383013529595e-15
+    max_condition = 281.4580153942473
+    refinement_relative = 3.520514232961535e-15
+    refinement_measured = true
+
+    [selected_oracles.k6.theta_levels.2048]
+    all_finite = true
+    decimation_relative = 2.142960687070577e-15
+    max_condition = 281.4580153942473
+    refinement_relative = nan
+    refinement_measured = false
+
+[per_k_diagnostics.k9]
+surface_min_spectral_scaled = [1.436153700270942e-16, 1.4148769664092794e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [6.915511475302796e-7, 1.305189756205581e-7, 4.61308598782982e-8, 1.6128200224040215e-7, 1.0224816027606253e-6]
+surface_max_backward_energy_indices = [15057, 18970]
+max_bulk_condition_sample = 457.33327882623774
+max_iterations = 15
+surface_max_condition = [5928.76308923132, 1691.9344860275687]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 9
+minimum_A_energy_indices = [19546, 17834, 19174, 19183, 17835]
+iteration_histogram = [0, 0, 3468, 19029, 3761, 1284, 268, 306, 565, 522, 427, 494, 434, 130, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 5.675457000732422
+max_condition_energy_indices = [12054, 17833, 19174, 17754, 17754]
+surface_min_spectral_energy_indices = [30677, 30713]
+surface_max_backward = [2.6823434727777483e-15, 4.4501799231488054e-15]
+maximum_correction_over_threshold = 0.9997603868972901
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [5.158502236377901e-17, 5.0635988443641063e-17]
+max_backward = [1.0906075385292045e-16, 1.1187462896548368e-16, 1.1187462896548368e-16, 1.1187462896548368e-16, 1.0664444484238195e-16]
+max_condition = [272.2568982502451, 520.2291926630519, 327.30537857588774, 323.85374013084055, 323.7605968882264]
+mean_iterations = 4.760261710230787
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k6]
+surface_min_spectral_scaled = [1.5458860618554076e-16, 1.5146798202878813e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [4.3110442383322064e-7, 1.402226541366802e-7, 9.876135249133475e-8, 1.4298803333061845e-7, 9.129973543131621e-7]
+surface_max_backward_energy_indices = [12596, 16935]
+max_bulk_condition_sample = 326.70290038454385
+max_iterations = 16
+surface_max_condition = [2180.98495071229, 872.5849429532456]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 6
+minimum_A_energy_indices = [17960, 16901, 15917, 17838, 17964]
+iteration_histogram = [0, 0, 1543, 21078, 3715, 1192, 430, 333, 290, 581, 630, 653, 129, 84, 42, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 5.610466003417969
+max_condition_energy_indices = [10853, 16901, 15917, 10853, 10853]
+surface_min_spectral_energy_indices = [30716, 30686]
+surface_max_backward = [9.762576895289637e-15, 4.205214553773305e-15]
+maximum_correction_over_threshold = 0.9996680023190027
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.8934388932024513e-17, 4.799202937403195e-17]
+max_backward = [1.073247841932338e-16, 1.202867683732165e-16, 1.202867683732165e-16, 1.202867683732165e-16, 1.202867683732169e-16]
+max_condition = [297.90656261983327, 338.70733587593884, 361.09112278147217, 297.8816263676136, 297.8816263676126]
+mean_iterations = 4.796295693499561
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k5]
+surface_min_spectral_scaled = [1.5643723973436732e-16, 1.563828226078023e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [5.88938788043383e-7, 3.1027264222662593e-7, 1.7515736378200086e-7, 2.2827236099623367e-7, 5.889387878109897e-7]
+surface_max_backward_energy_indices = [15920, 15920]
+max_bulk_condition_sample = 469.19860663053794
+max_iterations = 16
+surface_max_condition = [1527.910465643007, 1248.070051749837]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 5
+minimum_A_energy_indices = [8967, 16438, 15940, 15941, 8967]
+iteration_histogram = [0, 0, 1113, 21521, 3618, 1306, 238, 356, 412, 559, 782, 532, 147, 68, 35, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 6.027225971221924
+max_condition_energy_indices = [9562, 9562, 9562, 9562, 9562]
+surface_min_spectral_energy_indices = [30683, 30712]
+surface_max_backward = [6.730758826024297e-15, 1.690400084663092e-14]
+maximum_correction_over_threshold = 0.999956510840725
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.83230663829074e-17, 4.819370841360759e-17]
+max_backward = [1.140192298907518e-16, 1.2012950391710212e-16, 1.2012950391710212e-16, 1.2012950391710212e-16, 1.2015653009193624e-16]
+max_condition = [469.20888113797156, 469.19864037308884, 469.1986066305804, 469.1986066305322, 469.19860663052225]
+mean_iterations = 4.820123042869699
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k11]
+surface_min_spectral_scaled = [1.1409822387510848e-16, 1.1687473393128992e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [3.649709932415823e-7, 2.3512236770430375e-10, 1.7717348072549926e-9, 6.454091271262705e-10, 6.468154423368989e-8]
+surface_max_backward_energy_indices = [16853, 21230]
+max_bulk_condition_sample = 6466.143540220777
+max_iterations = 20
+surface_max_condition = [224053.43183982366, 629.538908287429]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 11
+minimum_A_energy_indices = [21122, 21177, 21210, 21227, 21230]
+iteration_histogram = [0, 0, 5219, 17047, 4109, 1196, 245, 231, 292, 529, 519, 332, 283, 235, 166, 162, 33, 22, 26, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 6.039366960525513
+max_condition_energy_indices = [16960, 21177, 21210, 21227, 16960]
+surface_min_spectral_energy_indices = [30621, 30664]
+surface_max_backward = [9.60727237184669e-15, 1.0450826751954122e-14]
+maximum_correction_over_threshold = 0.9999374362015825
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.699299595760569e-17, 4.787571075247705e-17]
+max_backward = [1.0814561050469977e-16, 1.1570436882228935e-16, 1.1570436882228935e-16, 1.1570436882228935e-16, 1.1570006355823615e-16]
+max_condition = [1273.9766303124443, 7035.27019558545, 1825.5261948695345, 2175.0000821545846, 1276.7445578713366]
+mean_iterations = 4.80915334787279
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k2]
+surface_min_spectral_scaled = [1.6067484668031706e-16, 1.604342595821726e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [5.310407722703043e-7, 4.530511091360613e-8, 4.4029634663499926e-8, 2.3496657840825637e-8, 1.7343370113887634e-8]
+surface_max_backward_energy_indices = [11657, 14886]
+max_bulk_condition_sample = 705.9385684858858
+max_iterations = 17
+surface_max_condition = [11015.813433694102, 3209.12593425008]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 2
+minimum_A_energy_indices = [8164, 11799, 11801, 11800, 11802]
+iteration_histogram = [0, 0, 381, 22222, 3601, 1290, 256, 336, 516, 442, 688, 543, 202, 151, 91, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 6.030084848403931
+max_condition_energy_indices = [8799, 8799, 8799, 8799, 8799]
+surface_min_spectral_energy_indices = [30672, 30721]
+surface_max_backward = [6.636879313813903e-15, 4.657487335473485e-15]
+maximum_correction_over_threshold = 0.999969252210805
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.7603465596834095e-17, 4.73791893483781e-17]
+max_backward = [1.3546795839201604e-16, 1.1651990407835264e-16, 1.1651990407835264e-16, 1.1651990407835264e-16, 1.1653982211737335e-16]
+max_condition = [706.0063843391671, 705.9387141298753, 705.9385684864596, 705.9385684858179, 705.9385684858477]
+mean_iterations = 4.867745190586244
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k4]
+surface_min_spectral_scaled = [1.5788208372413062e-16, 1.5930295664055584e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [8.890880726257929e-7, 1.618510647587894e-7, 1.6082357914150468e-7, 3.300628400929948e-7, 2.9933581562002705e-7]
+surface_max_backward_energy_indices = [11802, 11802]
+max_bulk_condition_sample = 1507.0083497576065
+max_iterations = 17
+surface_max_condition = [1576.5822654466715, 1548.541943096079]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 4
+minimum_A_energy_indices = [8602, 11657, 16853, 11656, 11797]
+iteration_histogram = [0, 0, 777, 21886, 3575, 1333, 347, 120, 380, 526, 731, 566, 225, 178, 45, 28, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 6.002385854721069
+max_condition_energy_indices = [9204, 14955, 14979, 9204, 9204]
+surface_min_spectral_energy_indices = [30678, 30704]
+surface_max_backward = [4.65848811258374e-14, 1.4718068143639984e-14]
+maximum_correction_over_threshold = 0.9997180521178808
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.7817151774521764e-17, 4.814714738572264e-17]
+max_backward = [1.352586394072757e-16, 1.2970124557633026e-16, 1.091845785784424e-16, 1.091845785784424e-16, 1.0918457857839435e-16]
+max_condition = [322.10566381186686, 453.9433813949431, 330.0700462800244, 322.1277905604367, 322.12779056043536]
+mean_iterations = 4.85850069984701
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k1]
+surface_min_spectral_scaled = [1.606640512844685e-16, 1.591847826839077e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [2.6114888947823906e-7, 4.171732628084013e-7, 4.1717326296123273e-7, 2.492637738887851e-7, 4.171732628657263e-7]
+surface_max_backward_energy_indices = [11459, 16075]
+max_bulk_condition_sample = 700.1337546742844
+max_iterations = 16
+surface_max_condition = [9347.38838247604, 8026.775663666739]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 1
+minimum_A_energy_indices = [15931, 8052, 8052, 15947, 8052]
+iteration_histogram = [0, 0, 330, 22268, 3700, 1207, 247, 311, 477, 427, 759, 553, 220, 136, 85, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 5.999112129211426
+max_condition_energy_indices = [8052, 14423, 14423, 14423, 14423]
+surface_min_spectral_energy_indices = [30653, 30688]
+surface_max_backward = [2.7885935701354012e-15, 4.219043239201782e-15]
+maximum_correction_over_threshold = 0.9995432866706513
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.751763675322493e-17, 4.696408029198623e-17]
+max_backward = [1.277510293174391e-16, 1.1440063493412023e-16, 1.1440063493482057e-16, 1.1440063493482057e-16, 1.1440063493362103e-16]
+max_condition = [387.16108067385755, 600.74218615984, 686.627538008059, 700.0698036689505, 700.1337546743262]
+mean_iterations = 4.870414374532079
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k3]
+surface_min_spectral_scaled = [1.600652668845485e-16, 1.581166946280924e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [3.100762521368196e-7, 3.477589758363028e-8, 5.9478879495331716e-8, 6.478560631412889e-8, 2.9553720041750955e-7]
+surface_max_backward_energy_indices = [11657, 15291]
+max_bulk_condition_sample = 507.4776797284484
+max_iterations = 17
+surface_max_condition = [1211.4925655515108, 849.4837639558352]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 3
+minimum_A_energy_indices = [16857, 16897, 11803, 16890, 11797]
+iteration_histogram = [0, 0, 519, 22167, 3558, 1273, 293, 315, 412, 501, 710, 528, 196, 154, 72, 22, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 5.606292009353638
+max_condition_energy_indices = [8955, 16897, 8955, 8955, 8955]
+surface_min_spectral_energy_indices = [30711, 30709]
+surface_max_backward = [1.0779711480237994e-14, 4.502144659973453e-15]
+maximum_correction_over_threshold = 0.9998751398495607
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.7718034109105666e-17, 4.7113097085237834e-17]
+max_backward = [1.0547975588298192e-16, 1.169715283033222e-16, 1.169715283033222e-16, 1.169715283033222e-16, 1.1697152830020293e-16]
+max_condition = [501.2917349663758, 714.0153437056108, 501.2578579351887, 501.25785793512824, 501.2578579351242]
+mean_iterations = 4.857947332443605
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k8]
+surface_min_spectral_scaled = [1.4881053243628834e-16, 1.4897907141822669e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [3.9059963004816663e-7, 3.222981189427097e-8, 7.3780530938443e-8, 5.264634619303599e-8, 2.0264663074847766e-7]
+surface_max_backward_energy_indices = [18212, 18212]
+max_bulk_condition_sample = 425.6034397484619
+max_iterations = 15
+surface_max_condition = [2875.2376015244777, 950.3811183499797]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 8
+minimum_A_energy_indices = [19201, 19240, 19165, 19244, 19245]
+iteration_histogram = [0, 0, 2732, 19802, 3729, 1285, 294, 392, 266, 715, 632, 438, 336, 79, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 6.033845901489258
+max_condition_energy_indices = [11284, 19240, 19247, 19244, 11284]
+surface_min_spectral_energy_indices = [30586, 30690]
+surface_max_backward = [3.7300257652835895e-15, 6.3593488210700635e-15]
+maximum_correction_over_threshold = 0.9998017084160177
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [5.081405290245718e-17, 5.081760139222206e-17]
+max_backward = [1.1731988265155065e-16, 1.1543588573029756e-16, 1.1180405871970365e-16, 1.0569626956026422e-16, 1.0567796950633276e-16]
+max_condition = [220.98423791993355, 623.3926791973179, 263.37921937604506, 272.9264367729289, 220.9970493500012]
+mean_iterations = 4.76852967025813
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k7]
+surface_min_spectral_scaled = [1.5074611263343015e-16, 1.5165172355716418e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [1.0020323726197283e-6, 4.374624163355723e-8, 3.185918068581853e-8, 4.0671576705834334e-8, 1.0107187553933315e-6]
+surface_max_backward_energy_indices = [17518, 17518]
+max_bulk_condition_sample = 864.317916386756
+max_iterations = 16
+surface_max_condition = [1426.7603772029445, 848.5215971037293]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 7
+minimum_A_energy_indices = [18525, 16890, 16889, 16888, 18579]
+iteration_histogram = [0, 0, 2057, 20511, 3688, 1350, 264, 250, 583, 557, 521, 615, 225, 61, 31, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 6.082592964172363
+max_condition_energy_indices = [10624, 16890, 16889, 16888, 16301]
+surface_min_spectral_energy_indices = [30652, 30692]
+surface_max_backward = [5.754623294096617e-15, 9.407340956377564e-15]
+maximum_correction_over_threshold = 0.9997707056649113
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [4.951989882807643e-17, 4.9653659945957627e-17]
+max_backward = [1.1377847886616662e-16, 1.125140124271896e-16, 1.1360163942168418e-16, 1.1223500408902933e-16, 1.1081771817570205e-16]
+max_condition = [181.9574703252789, 369.4521526700932, 425.1364797579371, 257.69253737867194, 197.75530176730234]
+mean_iterations = 4.781843038963576
+stop_failed_nodes = 0
+
+[per_k_diagnostics.k10]
+surface_min_spectral_scaled = [1.3426344504289604e-16, 1.3416869693694284e-16]
+any_failed_nodes = 0
+finite_centre_failed_nodes = 0
+minimum_A_eigenvalue_scaled = [4.327346478602388e-7, 7.874298127725584e-8, 1.792312084775307e-8, 3.310777504440524e-8, 4.463957294833606e-7]
+surface_max_backward_energy_indices = [15917, 19871]
+max_bulk_condition_sample = 832.0097877919277
+max_iterations = 16
+surface_max_condition = [98128.74273436502, 2928.787700858141]
+nonfinite_diagnostic_nodes = 0
+equation_failed_nodes = 0
+causality_failed_nodes = 0
+k_index = 10
+minimum_A_energy_indices = [20845, 20867, 20235, 20251, 20612]
+iteration_histogram = [0, 0, 4360, 18023, 3998, 1179, 268, 231, 428, 594, 506, 431, 315, 191, 106, 91, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+elapsed_seconds = 6.008859872817993
+max_condition_energy_indices = [16018, 16018, 16018, 16018, 16018]
+surface_min_spectral_energy_indices = [30696, 30711]
+surface_max_backward = [7.614860844534621e-15, 1.2467702148113576e-14]
+maximum_correction_over_threshold = 0.9996500681686266
+first_failed_energy_index = 0
+surface_min_spectral_absolute = [5.1141920368650586e-17, 5.0971001490482094e-17]
+max_backward = [1.0490985787666056e-16, 1.2616868218032465e-16, 1.0657268656227105e-16, 1.0657268656227105e-16, 1.0651628613186197e-16]
+max_condition = [830.853827304168, 832.0085686284707, 832.0097877888087, 832.0097877916488, 832.0097877922477]
+mean_iterations = 4.762377526773217
+stop_failed_nodes = 0
+
+[variants.finite4]
+N_fA_over_target = 1.0043381107227856
+r_sum = 0.000406477751592707
+
+[variants.finite32]
+N_fA_over_target = 1.0043383534063395
+r_sum = 0.006425472394966185
+
+[variants.infinite_decimation]
+N_fA_over_target = 1.0043383534062211
+r_sum = 0.004060506971130963
+
+[variants.finite8]
+N_fA_over_target = 1.0043383517659057
+r_sum = 0.01346446927565627
+
+[variants.finite16]
+N_fA_over_target = 1.0043383534036265
+r_sum = 0.01206119686575382
+
+[code_sha256]
+"algorithm.md" = "843131a7fda9991b27077f60d98585463fda1a02e00c734cdef060bf625a0d56"
+"source.jl" = "d250893eab32e48e0365772a062dfd4718955c29c1963747bb47f8364ed7704b"
+"run_probe.jl" = "b713adc8a5682c953a0654b9fc5d26c5de9a262f924c75c8d4ee719703e8e209"
+"input.toml" = "60cf66758a9ffb4a8565fdca862a24e3f2529c03e341ce0a768c7bc90c42c850"
+"algorithms.jl" = "65e6af6ae0e23c0c80e874d5993ec70eb418a4b201932c10241ae225b0b4bb8b"
+"protocol.md" = "cc9b19a88e0b1231e0693299c5ef0f0521816edafb0858b52a60f61ba3db0fa8"
+
+[sensitivity.finite8_minus_finite4]
+weighted_L2_absolute = 36.676423857951725
+discrete_triangle_N_bound_over_target = 0.00013667965717680146
+delta_N_over_target = 2.410431201860241e-7
+weighted_L2_reference = 75.30779635117015
+occupied_L2_reference = 1.5705628282302229
+occupied_L2_absolute = 0.00022671668883885885
+delta_M_Frobenius = 0.034071969921864585
+delta_F_Frobenius = 1.7395136558810733e-7
+
+[sensitivity.finite32_minus_finite16]
+weighted_L2_absolute = 20.36352832683974
+discrete_triangle_N_bound_over_target = 1.0825611528357575e-9
+delta_N_over_target = 2.712953318785417e-12
+weighted_L2_reference = 73.85035503247396
+occupied_L2_reference = 1.570562817516326
+occupied_L2_absolute = 9.274693473464192e-9
+delta_M_Frobenius = 0.047010165675210096
+delta_F_Frobenius = 9.201875531283891e-13
+
+[sensitivity.finite16_minus_finite4]
+weighted_L2_absolute = 27.680613771462117
+discrete_triangle_N_bound_over_target = 0.00013675387379582932
+delta_N_over_target = 2.426808408549795e-7
+weighted_L2_reference = 75.30779635117015
+occupied_L2_reference = 1.5705628282302229
+occupied_L2_absolute = 0.00022785197723384308
+delta_M_Frobenius = 0.03265476872703797
+delta_F_Frobenius = 1.7298899027593774e-7
+
+[sensitivity.infinite_decimation_minus_finite4]
+weighted_L2_absolute = 22.19691753322169
+discrete_triangle_N_bound_over_target = 0.0001367540218011463
+delta_N_over_target = 2.426834355387066e-7
+weighted_L2_reference = 75.30779635117015
+occupied_L2_reference = 1.5705628282302229
+occupied_L2_absolute = 0.00022785196291719975
+delta_M_Frobenius = 0.009421927023280166
+delta_F_Frobenius = 1.7298858415259866e-7
+
+[sensitivity.infinite_decimation_minus_finite32]
+weighted_L2_absolute = 12.742925440022642
+discrete_triangle_N_bound_over_target = 3.4901344592715134e-11
+delta_N_over_target = -1.1826959165104096e-13
+weighted_L2_reference = 73.19636356660546
+occupied_L2_reference = 1.5705628175163424
+occupied_L2_absolute = 1.0734971745756974e-10
+delta_M_Frobenius = 0.021839680603753815
+delta_F_Frobenius = 5.797790224581869e-13
+
+[sensitivity.finite32_minus_finite4]
+weighted_L2_absolute = 25.663147173449058
+discrete_triangle_N_bound_over_target = 0.0001367540240047691
+delta_N_over_target = 2.4268355380829826e-7
+weighted_L2_reference = 75.30779635117015
+occupied_L2_reference = 1.5705628282302229
+occupied_L2_absolute = 0.00022785196291723062
+delta_M_Frobenius = 0.01936094554985974
+delta_F_Frobenius = 1.7298858431634504e-7
+
+[sensitivity.finite16_minus_finite8]
+weighted_L2_absolute = 33.256162093079055
+discrete_triangle_N_bound_over_target = 1.5175744963558963e-6
+delta_N_over_target = 1.6377206689553878e-9
+weighted_L2_reference = 77.57092549625794
+occupied_L2_reference = 1.570562817434811
+occupied_L2_absolute = 6.577507219669418e-6
+delta_M_Frobenius = 0.04440751905826876
+delta_F_Frobenius = 1.727267911006762e-9
+
+[PI_geometry]
+spacing = 0.000390625
+relative_node_deviation = 4.547473508864641e-12
+max_node_deviation = 1.7763568394002505e-15
+origin = -2.9999999999999996
+
+[native_c4_alignment]
+F_relative = 0.0
+N_over_target_absolute_difference = 0.0
+r_sum_absolute_difference = 0.0
+N_fA_over_target = 1.0043381107227853
+r_sum = 0.0004064777515926557
+M_relative = 0.0
+
+[basis_source_and_rebuild_comparison.Z]
+rebuild_scale_Frobenius = 3.9448691821027713
+source_sha256 = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."Φ"]
+rebuild_scale_Frobenius = 2.23606797749979
+source_sha256 = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."χ"]
+rebuild_scale_Frobenius = 12.732140281584606
+source_sha256 = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."T₋"]
+rebuild_scale_Frobenius = 0.6114042035393955
+source_sha256 = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."T₊"]
+rebuild_scale_Frobenius = 0.6114042035393955
+source_sha256 = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."H₀"]
+rebuild_scale_Frobenius = 3.438044904210544
+source_sha256 = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."M⁻¹"]
+rebuild_scale_Frobenius = 32.770788079020846
+source_sha256 = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+rebuild_absolute_Frobenius = 0.0
+
+[stage_timings_seconds]
+"Bloch k=11 theta=2048" = 0.0073359012603759766
+"Bloch k=11 theta=4096" = 0.05245208740234375
+"Bloch k=1 theta=4096" = 0.07178688049316406
+"selected_oracles k=6" = 0.0012850761413574219
+"Bloch k=1 theta=2048" = 0.03240203857421875
+small_independent_oracles = 0.06112813949584961
+independent_finite_and_decimation_sweep = 19.272212982177734
+identity = 9.39367389678955
+"selected_oracles k=1" = 0.08300113677978516
+native_uniform_PI = 1.4317898750305176
+"Bloch k=6 theta=4096" = 0.014293193817138672
+native_c4_alignment = 4.564570903778076
+complete = 0.04678010940551758
+"selected_oracles k=11" = 0.0011398792266845703
+selected_Bloch_and_full45_oracles = 0.7298269271850586
+"Bloch k=6 theta=2048" = 0.021562814712524414
+source_frame = 6.202666997909546

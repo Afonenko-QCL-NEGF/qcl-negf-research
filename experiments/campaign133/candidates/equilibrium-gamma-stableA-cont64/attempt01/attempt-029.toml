@@ -1,0 +1,30 @@
+elapsed_seconds = 232.08550190925598
+kind = "AAII"
+reason = "negative PSD field at (8832,1): -2.559266616349108e-13; budget=7.105427357601002e-14"
+call = 28
+
+[AA]
+rank = 3
+l1 = 1.9809552743843293
+kind = "AAII"
+R_diagonal = [1.4631618981922833e-6, 1.31534675787479e-6, 1.3921832203180773e-6]
+condition = 1.1921871477169057
+firstpair = 1
+initial_scales = [1.4631618981922833e-6, 1.3242942764200444e-6, 1.397438435254818e-6]
+coefficients = [-0.49047763719216475, -0.3427208494053566, -0.1127506077992291]
+
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 1.9809552743843293
+    R_diagonal = [1.4631618981922833e-6, 1.31534675787479e-6, 1.3921832203180773e-6]
+    condition_measured = true
+    affine_coefficients = [-0.49047763719216475, 0.14775678778680817, 0.22997024160612747, 1.112750607799229]
+    coefficients = [-0.49047763719216475, -0.3427208494053566, -0.1127506077992291]
+    condition = 1.1921871477169057
+    reason = "accepted"
+    affine_l1_limit = 4096.0
+    initial_scales = [1.4631618981922833e-6, 1.3242942764200444e-6, 1.397438435254818e-6]
+    differences = 3
+    normalized_rank = 3
+    firstpair = 1
+    coefficients_measured = true

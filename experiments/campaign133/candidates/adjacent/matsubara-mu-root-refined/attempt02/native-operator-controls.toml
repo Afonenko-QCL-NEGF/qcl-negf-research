@@ -1,0 +1,12 @@
+[ops]
+alloy = 6.015154087147445e-16
+IFR = 1.4325166556911503e-15
+LO = 1.3747644278535086e-15
+acoustic = 9.629454037113792e-16
+impurity = 6.738719494308485e-16
+
+[cp]
+omega0 = 0.18950505608923182
+conditional_L_over_omega0_squared = 0.30529308144788564
+L = 0.010963735906122827
+scope = "infinite Mats causal map only; not a finite-cutoff uniqueness assertion"

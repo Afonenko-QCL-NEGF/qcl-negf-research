@@ -1,0 +1,379 @@
+# Projection: source and core_source absolute paths omitted; original summary remains unchanged.
+core_head = "2a500740a82dfd5b44f6be966ef63dd54010d097"
+archived_A_weighted_L2_scale = 75.10044709922747
+edge_scope = "floating full9cell45block witnesses; no interval error bounds; original window excludes ghost strips; dark interior atoms not excluded; no pole attribution from failed sign"
+core_fft_sha256 = "a0f79d3fc40b31da33744d7ec07d7fd03e2d06786cd2c5a9960404a88a02d6ce"
+fresh_nodal_minus_archived_A_weighted_L2_numerator = 9.202959289862491e-5
+integral_measure = "source positive trapezoid wE/(2pi), source wk; no number normalization or mu refit"
+elapsed_seconds = 28.67657208442688
+marker_sha256 = "e0fb9a3dcdbc47381171275d3a103aff56171a246bb8c5a189eb59a69eceb455"
+PI_full_scientific_peak_estimate_bytes = 12943706288
+finish_utc = "2026-11-15T19:21:08.457"
+frozen_local_gamma_sha256 = "edb8530e9a59944afe1a447d999bf0c6c42d29d726e16144a5d85bdccdaecc55"
+norm_units = "all arrays/weights dimensionless with source E0,L0; unweighted and positive wE*wk L2 sums; occupied norm uses f^2; relative floors eps(Float64) in these scaled norms"
+project_sha256 = "d3fe6e0b86abaae38950b08b24fb1613d450f46ac98482f85642d3be13424db1"
+nodal_full_scientific_peak_estimate_bytes = 12943706288
+identity_sha256 = "142cd2a774c581160723dd793836e7ffabb2e6052a9d11d0dd1dcfee343a0e86"
+script_sha256 = "daa23694c74081359010595155d67ee588bd136831cdeed5be645f7d65c26344"
+PI_minus_nodal_M_absolute_Frobenius = 0.025412945454573246
+PI_roundoff = 3.534526893064363e-16
+source_writer_sha256 = "77dd468dd2f073a7d76d5ed7b3b5220ef3ecd808dbea5a2d790045564932c6d2"
+nodal_plan_explicit_bytes = 15728640
+source_sha256 = "e6fffb997f36397f877aee1e2c98b1dbad7d97417d45458a042b5f074ce57a6d"
+basis_metadata_note = "7 numerical operators from source v3; unpersisted diagnostic metadata from rebuilt basis; no full static/scattering acceptance"
+source_numerical_budget_bytes = 12992276070
+julia_version = "1.13.3"
+current_stage = "complete"
+target_dimensionless = 0.045000000000000005
+families_summed_once = ["IFR", "LO", "acoustic", "alloy", "impurity"]
+h_sha256 = "8cde8ea024d9e690bf0396428574496734d7bad5962fc00617b9b380ae1194a7"
+Keldysh_SCBA_Poisson_status = "not_measured"
+frozen_local_retarded_sha256 = "ca97c26736be40e5368d22cf2853b064d3d5d9e9cbae0d8802ab0710208f8995"
+source_scope = "unconverged FD64 iterate; fresh nodal minus archived includes embedding/history alignment, PI minus fresh nodal is frozen operator sensitivity"
+PI_minus_nodal_N_over_target = 0.004338063340917415
+core_operators_sha256 = "b99a77f85c6992f3bcdc9252f4da07fc972b13b6df40e3b8ecb58e7e726c846d"
+scope = "frozen retarded sensitivity; not SCBA, no Keldysh claim"
+manifest_sha256 = "1bfd4bf229999cdb03d2de9a9ed21af03fcb3cb3e9cc1efced4d8c0db71fe5c3"
+families_excluded = ["embedding", "embedding_plus", "embedding_minus"]
+input_sha256 = "0fa0d0bc2fc27602fa99b8fe0797071eae99c66ab2661dfde05bd00ebe19b86e"
+E0_eV = 0.1
+Tminus_adjoint_defect = 0.0
+Julia_threads = 4
+PI_plan_explicit_bytes = 15728640
+PI_minus_nodal_discrete_N_absolute_bound_over_target = 0.01016981120596595
+BLAS_threads = 1
+nodal_Lambda_Hermiticity = 3.903383445153072e-16
+nodal_roundoff = 3.4573025166981733e-16
+mu_eV = 0.008495393439818052
+status = "completed"
+started_utc = "2026-11-15T19:20:39.780"
+PI_Lambda_Hermiticity = 4.1423849093356124e-16
+
+[edge_left_k5]
+relative_antihermitian = 9.385484885611125e-17
+lambda_max = -3.496320607465602
+eigenvectors_orthogonality = 1.3771392792708285e-13
+eigen_residual = 7.960034420702178e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -6.8280073493993285
+
+[nodal_reconstructed_gamma_minus_frozen]
+reference_Frobenius = 17.28981231290694
+weighted_L2_absolute = 3.15073138217554e-17
+absolute_Frobenius = 3.357591562879243e-15
+relative_Frobenius = 1.941947952999341e-16
+weighted_L2_reference = 0.1625490537597452
+occupied_L2_reference = 0.0018631769925010336
+weighted_L2_relative = 1.9383264985549915e-16
+occupied_L2_absolute = 1.2450856136542597e-17
+occupied_L2_relative = 6.682594400132219e-15
+
+[PI_minus_nodal_A]
+reference_Frobenius = 7892.138578592847
+weighted_L2_absolute = 0.6066179021741226
+absolute_Frobenius = 67.27880151654497
+relative_Frobenius = 0.008524787146925726
+weighted_L2_reference = 75.10044760075668
+occupied_L2_reference = 1.5648483267372097
+weighted_L2_relative = 0.00807742059540016
+occupied_L2_absolute = 0.012052555061446691
+occupied_L2_relative = 0.007702059589747522
+
+[edge_left_k9]
+relative_antihermitian = 7.85852581558952e-17
+lambda_max = -4.476189835757737
+eigenvectors_orthogonality = 1.4993313050082974e-13
+eigen_residual = 7.082836091752695e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -7.794989264748816
+
+[edge_left_k1]
+relative_antihermitian = 1.0066277432932876e-16
+lambda_max = -3.169591165590996
+eigenvectors_orthogonality = 1.957604098325621e-13
+eigen_residual = 8.321436227522887e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -6.50579457850562
+
+[archived_source_A]
+N_fA_over_target = 1.0000000000000075
+r_sum = 0.004922121965664349
+
+[edge_left_k2]
+relative_antihermitian = 1.0020938405690529e-16
+lambda_max = -3.190015234518528
+eigenvectors_orthogonality = 1.623335877439501e-13
+eigen_residual = 9.121844997903949e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -6.525932608934825
+
+[PI_A_PSD]
+block_scale = 69.29594426949426
+minimum_scaled_eigenvalue = 2.611488895235012e-7
+max_relative_antihermitian = 0.0
+witness_eigenvalue = 1.8096558896813586e-5
+energy_index = 21122
+minimum_eigenvalue = 4.713108419390024e-17
+k_index = 11
+eigenvector_residual = 9.08664315366325e-17
+
+[edge_right_k7]
+relative_antihermitian = 6.169696307437344e-17
+lambda_max = 8.092839061833843
+eigenvectors_orthogonality = 1.3219231098493544e-13
+eigen_residual = 6.431869847342845e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 4.766949407341678
+
+[edge_left_k4]
+relative_antihermitian = 9.406314037545393e-17
+lambda_max = -3.353384476629551
+eigenvectors_orthogonality = 1.255692589359581e-13
+eigen_residual = 7.739796175383867e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -6.687033046395115
+
+[edge_right_k8]
+relative_antihermitian = 6.345714060764146e-17
+lambda_max = 7.827680879076338
+eigenvectors_orthogonality = 1.1065042384765407e-13
+eigen_residual = 7.265480990269179e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 4.505221726909471
+
+[edge_left_k6]
+relative_antihermitian = 9.303843687704933e-17
+lambda_max = -3.6800812510576915
+eigenvectors_orthogonality = 1.9828192909237694e-13
+eigen_residual = 8.34305228223294e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -7.009276584769816
+
+[edge_right_k10]
+relative_antihermitian = 6.74090174574908e-17
+lambda_max = 7.175136648932016
+eigenvectors_orthogonality = 1.2492971170645116e-13
+eigen_residual = 6.675473396224897e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 3.860835030113072
+
+[edge_right_k1]
+relative_antihermitian = 5.4853001053732376e-17
+lambda_max = 8.82729982700207
+eigenvectors_orthogonality = 2.4664808135456e-13
+eigen_residual = 7.257370513694291e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 5.4915690461612465
+
+[Gamma_PSD]
+block_scale = 0.0031027629648559957
+minimum_scaled_eigenvalue = 0.0020587808856002755
+max_relative_antihermitian = 0.0
+witness_eigenvalue = 6.387909084593949e-6
+energy_index = 8100
+minimum_eigenvalue = 2.5463857962814626e-15
+k_index = 7
+eigenvector_residual = 1.3542385592812307e-16
+
+[PI_geometry]
+spacing = 0.000390625
+relative_node_deviation = 4.547473508864641e-12
+max_node_deviation = 1.7763568394002505e-15
+origin = -2.9999999999999996
+
+[PI_minus_nodal_Lambda]
+reference_Frobenius = 8.3731741829189
+weighted_L2_absolute = 0.0008677949903282643
+absolute_Frobenius = 0.09276038319365525
+relative_Frobenius = 0.011078281804155524
+weighted_L2_reference = 0.07873833968336248
+occupied_L2_reference = 0.01822032990155527
+weighted_L2_relative = 0.011021250813999963
+occupied_L2_absolute = 9.192825712221084e-6
+occupied_L2_relative = 0.0005045367324241695
+
+[PI_reconstructed_gamma_minus_frozen]
+reference_Frobenius = 17.28981231290694
+weighted_L2_absolute = 3.348758457637013e-17
+absolute_Frobenius = 3.570809694206268e-15
+relative_Frobenius = 2.065268048942694e-16
+weighted_L2_reference = 0.1625490537597452
+occupied_L2_reference = 0.0018631769925010336
+weighted_L2_relative = 2.060152538683263e-16
+occupied_L2_absolute = 1.451906528815816e-17
+occupied_L2_relative = 7.792638781283204e-15
+
+[edge_right_k4]
+relative_antihermitian = 5.458499564924267e-17
+lambda_max = 8.643662113491105
+eigenvectors_orthogonality = 1.1429870249149374e-13
+eigen_residual = 7.397479410129903e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 5.310438939596724
+
+[edge_left_k10]
+relative_antihermitian = 7.190758762946443e-17
+lambda_max = -4.823108156412703
+eigenvectors_orthogonality = 1.0905673668544527e-13
+eigen_residual = 6.689678038263016e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -8.137582326157865
+
+[edge_left_k8]
+relative_antihermitian = 8.346623783966486e-17
+lambda_max = -4.170031378604358
+eigenvectors_orthogonality = 1.534745996764512e-13
+eigen_residual = 7.633351705672487e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -7.492751974977416
+
+[basis_source_and_rebuild_comparison.Z]
+rebuild_scale_Frobenius = 3.9448691821027713
+source_sha256 = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."Φ"]
+rebuild_scale_Frobenius = 2.23606797749979
+source_sha256 = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."χ"]
+rebuild_scale_Frobenius = 12.732140281584606
+source_sha256 = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."T₋"]
+rebuild_scale_Frobenius = 0.6114042035393955
+source_sha256 = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."T₊"]
+rebuild_scale_Frobenius = 0.6114042035393955
+source_sha256 = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."H₀"]
+rebuild_scale_Frobenius = 3.438044904210544
+source_sha256 = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+rebuild_absolute_Frobenius = 0.0
+
+[basis_source_and_rebuild_comparison."M⁻¹"]
+rebuild_scale_Frobenius = 32.770788079020846
+source_sha256 = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+rebuild_absolute_Frobenius = 0.0
+
+[edge_left_k11]
+relative_antihermitian = 7.470080423571785e-17
+lambda_max = -5.210757277614939
+eigenvectors_orthogonality = 1.6819187094593022e-13
+eigen_residual = 7.685601130476386e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -8.520550798335568
+
+[fresh_nodal]
+max_Dyson_scale = 739.5769481535286
+N_fA_over_target = 1.000000047381868
+r_sum = 0.004922122187036845
+max_condition_number = 1263.4677763604845
+
+[fresh_PI]
+max_Dyson_scale = 740.2680406479376
+N_fA_over_target = 1.0043381107227853
+r_sum = 0.0004064777515926557
+max_condition_number = 1273.976630312709
+
+[edge_right_k11]
+relative_antihermitian = 7.923416996672974e-17
+lambda_max = 6.787793906585109
+eigenvectors_orthogonality = 1.2354607077021188e-13
+eigen_residual = 6.722218835951672e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 3.478137704690403
+
+[edge_right_k3]
+relative_antihermitian = 5.5412008051631307e-17
+lambda_max = 8.745681783446376
+eigenvectors_orthogonality = 1.5443406997836884e-13
+eigen_residual = 7.146109241543185e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 5.411069802756564
+
+[edge_left_k3]
+relative_antihermitian = 9.887273870292548e-17
+lambda_max = -3.2512807926666727
+eigenvectors_orthogonality = 1.2868158171459562e-13
+eigen_residual = 8.373392251002093e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -6.586343833766179
+
+[edge_left_k7]
+relative_antihermitian = 8.847586265368835e-17
+lambda_max = -3.9046559822369087
+eigenvectors_orthogonality = 1.187380595321114e-13
+eigen_residual = 8.487719379000516e-16
+energy_dimensionless = -3.0003906249999996
+lambda_min = -7.230853198730427
+
+[PI_minus_nodal_GR]
+reference_Frobenius = 5578.570464153461
+weighted_L2_absolute = 0.41211151712081484
+absolute_Frobenius = 47.155029999378186
+relative_Frobenius = 0.008452887760831373
+weighted_L2_reference = 53.090352609387466
+occupied_L2_reference = 3.010974791611512
+weighted_L2_relative = 0.0077624558298364935
+occupied_L2_absolute = 0.009272919254290652
+occupied_L2_relative = 0.003079706704992926
+
+[edge_right_k9]
+relative_antihermitian = 6.593810386686505e-17
+lambda_max = 7.521773482839603
+eigenvectors_orthogonality = 9.500358429755622e-14
+eigen_residual = 7.058013262382849e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 4.203189755983488
+
+[nodal_A_PSD]
+block_scale = 69.22111226131207
+minimum_scaled_eigenvalue = 2.6143161268076197e-7
+max_relative_antihermitian = 0.0
+witness_eigenvalue = 1.8096587006186254e-5
+energy_index = 21121
+minimum_eigenvalue = 4.687060010643857e-17
+k_index = 11
+eigenvector_residual = 1.7309552886389064e-16
+
+[edge_right_k2]
+relative_antihermitian = 5.499169709806254e-17
+lambda_max = 8.806895522866029
+eigenvectors_orthogonality = 2.0535725715843579e-13
+eigen_residual = 7.644744116252308e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 5.471445504961056
+
+[nodal_rebuild_minus_source_R]
+reference_Frobenius = 12.035133914978752
+weighted_L2_absolute = 2.733962532263027e-17
+absolute_Frobenius = 2.917492119721996e-15
+relative_Frobenius = 2.424145954945236e-16
+weighted_L2_reference = 0.11316039437739157
+occupied_L2_reference = 0.018244129983309133
+weighted_L2_relative = 2.416006543018242e-16
+occupied_L2_absolute = 9.633051355558511e-18
+occupied_L2_relative = 5.280082615269364e-16
+
+[edge_right_k5]
+relative_antihermitian = 5.715887275035798e-17
+lambda_max = 8.500842367342953
+eigenvectors_orthogonality = 1.5127521712910796e-13
+eigen_residual = 6.965320794661111e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 5.169547347876949
+
+[edge_right_k6]
+relative_antihermitian = 6.024774124901108e-17
+lambda_max = 8.31723095269195
+eigenvectors_orthogonality = 8.862771649832918e-14
+eigen_residual = 6.563066417476069e-16
+energy_dimensionless = 9.000390625000001
+lambda_min = 4.988387383752683

@@ -1,0 +1,186 @@
+# Public projection; original SHA-256: 3e8b203ab795b371f527d23758de14fd2c78256ac9cc6a5e0cd8aefc1f9fec94; scope: builder.
+small_checks = "pass"
+target_chunk_started = 29697
+elapsed_seconds = 23.01308012008667
+ghost_right_scaled = 9.000390625
+last_ghost_weight = 0.002726304578575515
+execution = "complete"
+data_bytes = 412207360
+source_chunk_started = 30721
+last_source_weight = 0.9972736954214245
+
+[source_GammaK_vs_GammaR.alloy]
+scale = 0.16748694350271687
+weighted_relative = 3.7681098244824434e-16
+weighted_absolute = 6.365529020326455e-19
+weighted_scale = 0.0016893162133884384
+maximum_block_absolute = 1.7122203860675318e-18
+absolute = 6.311093551544945e-17
+energy_index = 13667
+relative = 3.768110767059625e-16
+k_index = 1
+
+[source_GammaK_vs_GammaR.IFR]
+scale = 1.0780671412504685
+weighted_relative = 4.0782493272122203e-16
+weighted_absolute = 3.903793815530452e-18
+weighted_scale = 0.009572229410993317
+maximum_block_absolute = 3.4583812690676663e-17
+absolute = 4.780758318737651e-16
+energy_index = 9181
+relative = 4.4345645422346954e-16
+k_index = 1
+
+[source_GammaK_vs_GammaR.LO]
+scale = 16.491940604888427
+weighted_relative = 3.815991248055237e-16
+weighted_absolute = 5.891739198143244e-17
+weighted_scale = 0.15439603539829608
+maximum_block_absolute = 2.623438034994096e-16
+absolute = 6.33324321704556e-15
+energy_index = 10121
+relative = 3.8402049636101066e-16
+k_index = 1
+
+[source_GammaK_vs_GammaR.acoustic]
+scale = 0.32821314774714355
+weighted_relative = 4.0118861439647937e-16
+weighted_absolute = 1.3281115904267768e-18
+weighted_scale = 0.003310441878877088
+maximum_block_absolute = 3.783383162138504e-18
+absolute = 1.316754498441753e-16
+energy_index = 10665
+relative = 4.011888333785412e-16
+k_index = 1
+
+[source_GammaK_vs_GammaR.total]
+scale = 17.288893359177866
+weighted_relative = 3.809508463738933e-16
+weighted_absolute = 6.192031587014073e-17
+weighted_scale = 0.16254148391986392
+maximum_block_absolute = 2.651548411863773e-16
+absolute = 6.637497334544755e-15
+energy_index = 10121
+relative = 3.839168416769265e-16
+k_index = 1
+
+[source_GammaK_vs_GammaR.impurity]
+scale = 1.3114667501060475
+weighted_relative = 4.2567145067942076e-16
+weighted_absolute = 5.212178709512386e-18
+weighted_scale = 0.012244604850039031
+maximum_block_absolute = 3.391484428218998e-17
+absolute = 5.621642241378965e-16
+energy_index = 10665
+relative = 4.2865305132016416e-16
+k_index = 8
+
+[target_cones.raw_import]
+block_frobenius_scale = 3.6286535485849075e-27
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601128e-14
+hermiticity_absolute = 3.77754271894158e-16
+minimum_eigenvalue = 1.2585285812028018e-27
+energy_index = 30704
+k_index = 11
+
+[target_cones.working_seed]
+block_frobenius_scale = 3.6286535485849075e-27
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601128e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = 1.2585285812028018e-27
+energy_index = 30704
+k_index = 11
+
+[representation_conversion]
+scale = 17.28219035045938
+weighted_relative = 2.3466415878909515e-16
+weighted_absolute = 3.8138459159889096e-17
+weighted_scale = 0.16252357989686064
+maximum_block_absolute = 1.8887745101619298e-16
+absolute = 4.083558579531286e-15
+energy_index = 10115
+relative = 2.3628709652667035e-16
+k_index = 1
+
+[source_cones.acoustic_GammaK]
+block_frobenius_scale = 9.315682272177757e-29
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601006e-14
+hermiticity_absolute = 6.867533312025933e-18
+minimum_eigenvalue = 3.3355378622016984e-29
+energy_index = 30721
+k_index = 1
+
+[source_cones.impurity_GammaK]
+block_frobenius_scale = 1.885048109202939e-28
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601003e-14
+hermiticity_absolute = 5.877746965037198e-17
+minimum_eigenvalue = 8.066306562094539e-30
+energy_index = 30721
+k_index = 2
+
+[source_cones.IFR_GammaK]
+block_frobenius_scale = 0.011777254627113818
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105317684205125e-14
+hermiticity_absolute = 6.868520227008534e-17
+minimum_eigenvalue = -1.0967339587656892e-18
+energy_index = 9981
+k_index = 2
+
+[source_cones.alloy_GammaK]
+block_frobenius_scale = 5.487733790577673e-29
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 3.3491878079025157e-18
+minimum_eigenvalue = 4.2207266263912234e-36
+energy_index = 30721
+k_index = 1
+
+[source_cones.total_GammaK]
+block_frobenius_scale = 3.638573407926421e-27
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601128e-14
+hermiticity_absolute = 5.271773337679602e-16
+minimum_eigenvalue = 1.261969093319941e-27
+energy_index = 30721
+k_index = 11
+
+[source_cones.LO_GammaK]
+block_frobenius_scale = 3.3027365035497826e-27
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601119e-14
+hermiticity_absolute = 5.215235239244764e-16
+minimum_eigenvalue = 1.1677089426223974e-27
+energy_index = 30721
+k_index = 11
+
+[source_target_fingerprints]
+qK_acoustic = "29316ab4983debc8aeecf6f77c72949a01fb7366af40aa5b10d90ef35ad92946"
+source_energy = "85b2bfe2826b7d3bbc2a57feff14729f41791ea0719576198c73f6aedb90c354"
+kernel_IFR = "614fd7a69eb34afba6213b6cdbe11963a66cca354a3e439c85aff7f1920cacba"
+"grid_wˣ" = "8f516d0ba7ce8473ab50b7f19d264a00657be79cebefe565c2a5002e4ec1e80f"
+qK_alloy = "66c8add85be09f2732348de1b5c7e02acce794566a028b3ae25d5aaa1c28cc88"
+"basis_T₋" = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+"target_grid_ε" = "1ad8a0d3d0da96d2778cbb1e8c1dfe51989dc19f43bb9233cb81e4e2402ebca9"
+kernel_impurity = "1a29392d417729ead7457791eb4306a05ab752097c5079b2b15f61f3a116e09b"
+"basis_H₀" = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+"target_grid_wᴱ" = "2015e27dd4d76f805c541c1ae1a8eb9e36bae5d98ce4180a63c2285ff10ac25b"
+basis_Z = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+qK_LO = "335aa74b8e7336202ffd87f9e66601d5d0916f93e826ff8895510728cfb2ba32"
+"basis_χ" = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+kernel_acoustic = "821b361080884796b54cf22bc42b7889847807a86fdc54c16a787cd6a6f72df6"
+"basis_Φ" = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+source_weight_energy = "80c78bc0bd71323f5384d4a42b6568f1cf0c915e1933de2bd67caa7844000a16"
+grid_x = "206c384d0f12e89208cb383d5edc8ce6d66355802e1159c1fa6fd1500d8e3d2d"
+kernel_alloy = "6a532b2562775becd473f91ee6f760aa1db8b3e3271e77d424a304cf912e7e01"
+"basis_T₊" = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+"grid_κ" = "7815e5a3e3faf1673363855e6bc76e56be584032eded7440c9e6bd4ddbcd1e6f"
+kernel_LO = "dce410e43f29b71eb4aa1bc64a4d235578d75e164ba5fe9add511f52474bf3fd"
+"basis_M⁻¹" = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+qK_impurity = "2f5528507263d4cc631f4a965177e262a042e423678611240dfae6ee9f3b4d84"
+"grid_wᵏ" = "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d"
+qK_IFR = "9f0e740565ea35edc6239259f9b3b24ffe41bbcbb603c7984ac8d02faf6ae083"

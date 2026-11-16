@@ -1,0 +1,19 @@
+# Независимый paired review Hermitian Λ-only probe
+
+**При неизменных Γ/h/cavity/weights явная Hermitian representation local HPIΓ устранила отрицательные q на всех30704 nodes этого frozen warm spectrum.** Вместе с preceding decomposition это поддерживает локализацию препятствия в numerical anti-Hermitian contamination Λ. Это finite controlled result, не universal causality/PSD theorem, не full candidate acceptance и не SCBA outcome.
+
+Primary pair: `warm-q-quick/attempt01` и `warm-q-hermitian-lambda/attempt02`. Новый probeSHA `c6f024415b60332a84eed9fbd8474a295f5a1210000a0dd3babb7a39d20c7b72`, input `63d40386808b20d5daac30fbc44d11b9248b3c8dd49f0a70d79a88638a97a175`, selectedH5 `af8a62bd298ba532d5d21c527e31d8a262c08d49a3440af90a464028eea94f22`. Первоначальный Herm-probe attempt01 с неверным relative metadata path остановлен доR evaluation и сохранён отдельно; он не заменяется успешнымattempt02.
+
+Source diff проверен непосредственно: вместо `local_retarded` вызывается тот же native PI transformΓ, затем `hermLambda=hermitian_copy(rawLambda)` и `localR=hermLambda−iΓ/2`. Далее unchanged cavity соspectralL=iΓ/G0,GR,q/subtraction/effective/physical comparisons. Дополнительны только variant identity иcorrection/selectedΛ witnesses. Φ/μfit/SCBA здесь отсутствуют, Γ/h не clip'ятся иη не вводится. Это explicit representation variant, который сохраняет intended Hermitian output реального линейного Hilbert operator в exact arithmetic; его floating equivalence и applicability кfuturestates не принимаются автоматически по одному spectrum.
+
+Root runexit0,21.00s process wall,14.9346s harness,peak3074516KiB,swap0. Рецензент выполнил только small stdlib+h5dump audit, неJulia/maps/fullsource. Сохранены `reviews/warm_q_hermitian_pair_audit.py` и `warm-q-hermitian-pair-audit.json`: wall.18s,peak32048KiB,команды/datasets вJSON.
+
+Independent read allq vectors подтвердил: raw/effective/physical negativecount0,zero0; minima соответственно4.5867212781e−32,4.5867221543e−32,4.5866978957e−32. В oldpair raw/eff1429negatives,min−6.69199e−22. Capacity осталась≈28.6439067477. All-node rawq old→newL1/target7.49472e−13,maxabsolute8.50015e−17; дваphysicalq vectors также меняются наfloating уровне, посколькуGR пересчитан послеΛsym. Совпадение physicalmin не означает bitwiseidentical всехphysicalq.
+
+Energy/wE/wk иfullh/Tplus bitwise совпали междуsmallH5. Наобщихselectede7894 и30704 длявсех11k Γidentical; directcomplex5×5 reconstruction HermΛ=Herm(rawΛ) иlocalR=HermΛ−iΓ/2 дала0difference. Gamma/fullsource digest общие черезsamewarmloader. Нельзя утверждатьbitwiseidentity двухGR/cavityoutputs: они намеренно пересчитаны при изменённомlocalR; unchanged именноcavityalgorithm/sourceinputs.
+
+Изsummary globalcorrection||rawΛ−HermΛ||F=2.10971374e−15,scale8.41436323,relative2.50727676e−16;weighted2.50721526e−16. СтароеΓ~1e−27 вtails, поэтому малыйglobalrelativecorrection имеет decisive effect наsignмалыхq. Это не оправдывает clippingq: изменение сделано в explicitly trackedoperatorrepresentation, первичныйguard не ослаблен.
+
+Selected||h−h†||≈1.04738e−15 сохранилась. ОтрицательныйminimumeigenvalueA_sub≈−1.11226e−15 наe8037/k1 также остаётся вdeclaredallowance7.1054e−14, хотяaggregateq≥0. Следовательноnonnegativeq не доказывает strictmatrixPSD и не гарантирует устойчивость complexLU/subtraction на будущихstates. Данныйpair не заменяет BigFloat full45/physicalidentityoracle; тем более не доказывает, что HermΛ-only исчерпывает все numerical defects.
+
+Decision: поддерживает **отдельный bounded exploratory candidate** сявной HermΛ-stage иcorrection trace, если frozenimplementation/tinychecks сохраняютΦ/AA/nativegates/caps. Доэтого candidate source review pending; native unconstrainedSCBA result/individualΣ/λ/FDR/causalityaudit иdiscretization/experiment всёещёnot_measured. ИсправлениеCore или scientificacceptance этимprobe неразрешаются.

@@ -1,0 +1,6 @@
+counting = "input cone rejection precedes Pi; retarded/number/Phi/control failures after entry consume Pi"
+elapsed_seconds = 232.08539986610413
+pi_call_consumed = false
+reason = "negative PSD field at (8832,1): -2.559266616349108e-13; budget=7.105427357601002e-14"
+classification = "physical/numerical domain Infeasible"
+pi_call = 28

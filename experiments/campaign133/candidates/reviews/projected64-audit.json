@@ -1,0 +1,818 @@
+{
+  "scope": "read-only small TOML/source + selected 5x5 Gamma H5dump; no full array equality asserted",
+  "control": {
+    "input_sha256": "8d5c1eb56b4cf88edf4b986cbc93ce05aede8ef1c4b12f8de8eac107402d5d49",
+    "identity_sha256": "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b",
+    "summary_sha256": "760c3828b6fe861b5ae67e86342c9613bff1f7c4fd6bb8ead43f4911e3f9894e",
+    "map64_sha256": "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88",
+    "sources_match_identity": {
+      "algorithm.md": true,
+      "gamma_restart.jl": true,
+      "stable_spectral.jl": true,
+      "warm_checks.jl": true,
+      "gamma_functions.jl": true,
+      "stable_checks.jl": true,
+      "run_gamma.jl": true,
+      "aa_reference.jl": true,
+      "warm_seed.jl": true,
+      "restart_checks.jl": true,
+      "checks.jl": true,
+      "hermitian_checks.jl": true,
+      "protocol.md": true
+    },
+    "completed_map_records": 62,
+    "map_calls": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "attempt_count": 65,
+    "attempt_reason_kind_counts": {
+      "accepted | precheck_seed": 1,
+      "accepted | linear": 4,
+      "accepted | AAII": 54,
+      "nonpositive/nonfinite raw spectral weights | AAII": 2,
+      "accepted | convex_fallback": 3,
+      "negative PSD field at (8832,1): -2.559266616349108e-13; budget=7.105427357601002e-14 | AAII": 1
+    },
+    "final_residual": {
+      "scale": 17.311508690234913,
+      "weighted_relative": 3.412502855963494e-06,
+      "weighted_absolute": 5.555432467297159e-07,
+      "weighted_scale": 0.16279641957189295,
+      "absolute": 7.142007180515379e-05,
+      "relative": 4.125583337831235e-06
+    },
+    "best": [
+      4.125583337831235e-06,
+      64
+    ],
+    "mu": {
+      "number_relative_error": -1.330725653127097e-13,
+      "number": 0.04499999999999402,
+      "iterations": 48,
+      "derivative": 0.6469060727691234,
+      "capacity": 28.643308967036983,
+      "mu_condition": 0.0695618759727739,
+      "bracket_width": 1.2811973704174306e-13,
+      "mu": 0.08459614262982018,
+      "target": 0.045000000000000005
+    },
+    "summary_elapsed_seconds": 519.6968159675598,
+    "precheck_actual_calls": 3,
+    "pi_calls": 64,
+    "native": {
+      "reason": "no reduced trigger",
+      "not_measured": true
+    },
+    "native_accounting": {
+      "meaning": "materialization/audit counted before call; solver observations count completed maps only; an interrupted solver map is bounded by reserved max30, not observed as completed",
+      "started_lower_bound": 0,
+      "started_upper_bound": 0,
+      "solver_reserved_cap": 30,
+      "completed_lower_bound": 0,
+      "structural_cap": 32,
+      "events": {
+        "audit_report_written": 0,
+        "audit_started": 0,
+        "solver_entered": 0,
+        "materialization_started": 0,
+        "solver_observed_completed": 0,
+        "materialization_completed": 0,
+        "audit_map_completed": 0
+      }
+    },
+    "trigger_count": 0,
+    "min_computed_input_eigenvalue": 6.201998181779761e-41,
+    "min_computed_rawPhi_eigenvalue": 7.828666239574908e-41,
+    "boundary": {
+      "relative_allowance": 5.684341886080802e-14,
+      "all_nine_scalars_bitwise_equal": true,
+      "zero_policy": "zero/zero exact; no additive norm floor",
+      "new_call": 1,
+      "parent_call": 16,
+      "passed": true,
+      "raw_Phi_field_replay": {
+        "scale": 17.311636898877953,
+        "weighted_relative": 0.0,
+        "weighted_absolute": 0.0,
+        "weighted_scale": 0.16279741084956012,
+        "maximum_block_absolute": 0.0,
+        "absolute": 0.0,
+        "energy_index": 0,
+        "relative": 0.0,
+        "k_index": 0
+      },
+      "fields": {
+        "residual.scale": {
+          "parent": 17.311636898866087,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 17.311636898866087,
+          "bitwise_equal": true
+        },
+        "mu.number": {
+          "parent": 0.04500000000000106,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.04500000000000106,
+          "bitwise_equal": true
+        },
+        "mu.mu": {
+          "parent": 0.08460093396311258,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.08460093396311258,
+          "bitwise_equal": true
+        },
+        "residual.relative": {
+          "parent": 0.0006837267126877212,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.0006837267126877212,
+          "bitwise_equal": true
+        },
+        "mu.derivative": {
+          "parent": 0.6469000062765774,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.6469000062765774,
+          "bitwise_equal": true
+        },
+        "residual.absolute": {
+          "parent": 0.011836428588105167,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.011836428588105167,
+          "bitwise_equal": true
+        },
+        "residual.weighted_relative": {
+          "parent": 0.0006250884102414053,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.0006250884102414053,
+          "bitwise_equal": true
+        },
+        "residual.weighted_absolute": {
+          "parent": 0.0001017627747393005,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.0001017627747393005,
+          "bitwise_equal": true
+        },
+        "residual.weighted_scale": {
+          "parent": 0.16279741084945143,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.16279741084945143,
+          "bitwise_equal": true
+        }
+      }
+    }
+  },
+  "projected": {
+    "input_sha256": "2998d854ff2e734b2a5357f3f6e26f888c9b5fe02d46027d14806d5090596a06",
+    "identity_sha256": "97619fc539b865e5cafbe632a2b0783abc99c89e8ed915c7f6fe10c2cc113671",
+    "summary_sha256": "4c34e7b19a06e545e82acccc8fd40c433e94f1b6e06a93d6cba2e9a70406a6f2",
+    "map64_sha256": "78d3db78abf41fbb37ea5ae7db0e61e980cbe0b243f7634a096b05c845644917",
+    "sources_match_identity": {
+      "algorithm.md": true,
+      "gamma_restart.jl": true,
+      "stable_spectral.jl": true,
+      "warm_checks.jl": true,
+      "gamma_functions.jl": true,
+      "stable_checks.jl": true,
+      "trial_projection.jl": true,
+      "run_gamma.jl": true,
+      "projection_checks.jl": true,
+      "aa_reference.jl": true,
+      "warm_seed.jl": true,
+      "restart_checks.jl": true,
+      "checks.jl": true,
+      "hermitian_checks.jl": true,
+      "protocol.md": true
+    },
+    "completed_map_records": 64,
+    "map_calls": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "attempt_count": 64,
+    "attempt_reason_kind_counts": {
+      "accepted | precheck_seed": 1,
+      "accepted | linear": 1,
+      "accepted | AAII": 62
+    },
+    "final_residual": {
+      "scale": 17.311513925524824,
+      "weighted_relative": 2.042106454929957e-06,
+      "weighted_absolute": 3.324476925370057e-07,
+      "weighted_scale": 0.16279645546118626,
+      "absolute": 4.2898225631428256e-05,
+      "relative": 2.4780169900783377e-06
+    },
+    "best": [
+      2.4780169900783377e-06,
+      64
+    ],
+    "mu": {
+      "number_relative_error": 4.625929269271485e-15,
+      "number": 0.04500000000000021,
+      "iterations": 50,
+      "derivative": 0.6469060629930374,
+      "capacity": 28.643306267440394,
+      "mu_condition": 0.06956187702399744,
+      "bracket_width": 3.2029934260435766e-14,
+      "mu": 0.08459614535936885,
+      "target": 0.045000000000000005
+    },
+    "summary_elapsed_seconds": 547.916100025177,
+    "precheck_actual_calls": 3,
+    "pi_calls": 64,
+    "native": {
+      "reason": "no reduced trigger",
+      "not_measured": true
+    },
+    "native_accounting": {
+      "meaning": "materialization/audit counted before call; solver observations count completed maps only; an interrupted solver map is bounded by reserved max30, not observed as completed",
+      "started_lower_bound": 0,
+      "started_upper_bound": 0,
+      "solver_reserved_cap": 30,
+      "completed_lower_bound": 0,
+      "structural_cap": 32,
+      "events": {
+        "audit_report_written": 0,
+        "audit_started": 0,
+        "solver_entered": 0,
+        "materialization_started": 0,
+        "solver_observed_completed": 0,
+        "materialization_completed": 0,
+        "audit_map_completed": 0
+      }
+    },
+    "trigger_count": 0,
+    "min_computed_input_eigenvalue": -2.068747985148684e-23,
+    "min_computed_rawPhi_eigenvalue": 0.0,
+    "boundary": {
+      "relative_allowance": 5.684341886080802e-14,
+      "all_nine_scalars_bitwise_equal": true,
+      "zero_policy": "zero/zero exact; no additive norm floor",
+      "new_call": 1,
+      "parent_call": 16,
+      "passed": true,
+      "raw_Phi_field_replay": {
+        "scale": 17.311636898877953,
+        "weighted_relative": 0.0,
+        "weighted_absolute": 0.0,
+        "weighted_scale": 0.16279741084956012,
+        "maximum_block_absolute": 0.0,
+        "absolute": 0.0,
+        "energy_index": 0,
+        "relative": 0.0,
+        "k_index": 0
+      },
+      "fields": {
+        "residual.scale": {
+          "parent": 17.311636898866087,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 17.311636898866087,
+          "bitwise_equal": true
+        },
+        "mu.number": {
+          "parent": 0.04500000000000106,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.04500000000000106,
+          "bitwise_equal": true
+        },
+        "mu.mu": {
+          "parent": 0.08460093396311258,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.08460093396311258,
+          "bitwise_equal": true
+        },
+        "residual.relative": {
+          "parent": 0.0006837267126877212,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.0006837267126877212,
+          "bitwise_equal": true
+        },
+        "mu.derivative": {
+          "parent": 0.6469000062765774,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.6469000062765774,
+          "bitwise_equal": true
+        },
+        "residual.absolute": {
+          "parent": 0.011836428588105167,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.011836428588105167,
+          "bitwise_equal": true
+        },
+        "residual.weighted_relative": {
+          "parent": 0.0006250884102414053,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.0006250884102414053,
+          "bitwise_equal": true
+        },
+        "residual.weighted_absolute": {
+          "parent": 0.0001017627747393005,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.0001017627747393005,
+          "bitwise_equal": true
+        },
+        "residual.weighted_scale": {
+          "parent": 0.16279741084945143,
+          "absolute_difference": 0.0,
+          "passed": true,
+          "current": 0.16279741084945143,
+          "bitwise_equal": true
+        }
+      }
+    },
+    "projections": {
+      "count": 62,
+      "changed_count": 12,
+      "changed_next_calls": [
+        5,
+        21,
+        22,
+        23,
+        24,
+        25,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "changed_blocks": [
+        22,
+        11,
+        165,
+        165,
+        165,
+        154,
+        11,
+        22,
+        33,
+        33,
+        33,
+        22
+      ],
+      "max_absolute": 7.136751835583073e-07,
+      "max_relative": 4.122547515804853e-08,
+      "max_weighted_absolute": 7.366941588181813e-09,
+      "max_weighted_relative": 4.52524783493117e-08,
+      "max_antiHerm": 0.0,
+      "max_eigen_backward_relative": 1.984867039277777e-15,
+      "max_eigen_orthogonality": 4.364018698855063e-15,
+      "seconds": 18.861995458602905,
+      "first_changed": {
+        "input_antihermitian_norm": 0.0,
+        "scale": 17.311576703582848,
+        "trace_before": 7732.689416265081,
+        "weighted_absolute": 1.0754497508026106e-34,
+        "trace_after": 7732.689416265081,
+        "changed_blocks": 22,
+        "unchanged_field_identity": false,
+        "distance_formula_relative_defect": 1.1203369524457616e-16,
+        "expected_orthogonal_distance": 1.2214678169632673e-32,
+        "distance_formula_absolute_defect": 1.3684555315672042e-48,
+        "operator": "P_PSD(Herm AAtrial), eigenvalue floor exactly zero",
+        "minimum_input_eigenvalue": -3.964934870853011e-33,
+        "weighted_relative": 6.606081872904665e-34,
+        "eigen_backward_location": [
+          8329,
+          1
+        ],
+        "trace_change": 7.140391675353758e-32,
+        "unchanged_exact_feasible_blocks": 337722,
+        "next_pi_call": 5,
+        "maximum_eigen_backward_relative": 1.7881637321188875e-15,
+        "eigen_backward_absolute_at_maximum": 3.3192049222200574e-17,
+        "maximum_eigenvector_orthogonality_defect": 3.806146180217408e-15,
+        "seconds": 0.26395297050476074,
+        "maximum_change_location": [
+          394,
+          1
+        ],
+        "weighted_scale": 0.16279691525072487,
+        "negative_input_eigenvalues": 77,
+        "zero_input_eigenvalues": 0,
+        "weighted_trace_change": 6.377406240755419e-36,
+        "projection_attempt": 3,
+        "arithmetic_scope": "eigen/reconstruction rounding is measured, not a strict computed-PSD certificate; actual trial is guarded by original cone and fresh Pi domain",
+        "relative": 7.055786066617892e-34,
+        "orthogonality_location": [
+          3310,
+          5
+        ],
+        "maximum_block_change": 4.651357825422804e-33,
+        "minimum_input_location": [
+          394,
+          1
+        ],
+        "eigen_backward_scale_at_maximum": 0.018562086136748562,
+        "absolute": 1.2214678169632674e-32,
+        "output_positive_rank_counts": [
+          11,
+          0,
+          0,
+          11,
+          0,
+          337722
+        ],
+        "full_pair_preserved": true
+      }
+    }
+  },
+  "input_deltas": {
+    "identity": [
+      "campaign133-S01-m939-Gamma-stableA-hH-AA4096-GammaLast16-emptyAA-cont64",
+      "campaign133-S01-m939-Gamma-stableA-hH-AA4096-AAtrialPSD-GammaLast16-emptyAA-projected64"
+    ],
+    "overall_seconds": [
+      1800.0,
+      2100.0
+    ],
+    "pilot_seconds": [
+      600.0,
+      900.0
+    ],
+    "project_AA_trial": [
+      false,
+      true
+    ]
+  },
+  "first_four_scientific_scalar_fields_equal": {
+    "1": {
+      "residual": true,
+      "AA_working_residual": true,
+      "mu": true,
+      "input_cone": true,
+      "map_cone": true,
+      "channel_Gamma_norms": true,
+      "spectral_operator_ledger": true
+    },
+    "2": {
+      "residual": true,
+      "AA_working_residual": true,
+      "mu": true,
+      "input_cone": true,
+      "map_cone": true,
+      "channel_Gamma_norms": true,
+      "spectral_operator_ledger": true
+    },
+    "3": {
+      "residual": true,
+      "AA_working_residual": true,
+      "mu": true,
+      "input_cone": true,
+      "map_cone": true,
+      "channel_Gamma_norms": true,
+      "spectral_operator_ledger": true
+    },
+    "4": {
+      "residual": true,
+      "AA_working_residual": true,
+      "mu": true,
+      "input_cone": true,
+      "map_cone": true,
+      "channel_Gamma_norms": true,
+      "spectral_operator_ledger": true
+    }
+  },
+  "improvement_relative": 0.39935354902296105,
+  "improvement_weighted_relative": 0.40158102685209807,
+  "selected_terminal_alignment": [
+    {
+      "energy_index": 382,
+      "k_index": 11,
+      "datasets": {
+        "Gamma_real": {
+          "selected_bitwise_equal_last_best_terminal": true,
+          "last_bits": [
+            "37a4af8b0a631361",
+            "b738076c54282ba0",
+            "3776d4b3568aa2d1",
+            "378623de6694f00b",
+            "b796388a7c72b6f1",
+            "b738076c54282ba0",
+            "37b070ddace10e44",
+            "3764636dc869618e",
+            "b793c709e8059709",
+            "37960cc83f650559",
+            "3776d4b3568aa2d1",
+            "3764636dc869618e",
+            "37e042397a13fb68",
+            "37bfc5c24699f552",
+            "b7a34ff0bc33bdad",
+            "378623de6694f00b",
+            "b793c709e8059709",
+            "37bfc5c24699f552",
+            "37e5a34e8973c5ec",
+            "37b0ce3f402842d7",
+            "b796388a7c72b6f1",
+            "37960cc83f650559",
+            "b7a34ff0bc33bdad",
+            "37b0ce3f402842d7",
+            "37c50c0c37e3cde0"
+          ]
+        },
+        "Gamma_imag": {
+          "selected_bitwise_equal_last_best_terminal": true,
+          "last_bits": [
+            "0000000000000000",
+            "34178a088129aee6",
+            "b4373cdfeddd729d",
+            "b436bcf283f45a0b",
+            "b4467f2ce9623de5",
+            "b4178a088129aee6",
+            "0000000000000000",
+            "33f22724024ca1ca",
+            "b3f3811608812cd4",
+            "b3f40e94f803499d",
+            "34373cdfeddd729d",
+            "b3f22724024ca1ca",
+            "0000000000000000",
+            "b3f8198a362cefbf",
+            "33e10af55d07b840",
+            "3436bcf283f45a0b",
+            "33f3811608812cd4",
+            "33f8198a362cefbf",
+            "0000000000000000",
+            "b36758cb20547e9f",
+            "34467f2ce9623de5",
+            "33f40e94f803499d",
+            "b3e10af55d07b840",
+            "336758cb20547e9f",
+            "0000000000000000"
+          ]
+        }
+      }
+    },
+    {
+      "energy_index": 5090,
+      "k_index": 1,
+      "datasets": {
+        "Gamma_real": {
+          "selected_bitwise_equal_last_best_terminal": true,
+          "last_bits": [
+            "3d34d92bea0f8694",
+            "3d24da3fc888ee25",
+            "bcc6b4b3775756d4",
+            "3cde5e64c4098daf",
+            "bcd34adf4877aba4",
+            "3d24da3fc888ee25",
+            "3d340772ed2873f5",
+            "bc951c405c80d9f5",
+            "3cd58c5b1c64ef97",
+            "bcb1266d819ff07a",
+            "bcc6b4b3775756d4",
+            "bc951c405c80d9f5",
+            "3d2507321cfe65de",
+            "3d11bf521b798d72",
+            "bcd890ebbc54489a",
+            "3cde5e64c4098daf",
+            "3cd58c5b1c64ef97",
+            "3d11bf521b798d72",
+            "3d2d50c88278ab1c",
+            "3d015994377434e8",
+            "bcd34adf4877aba4",
+            "bcb1266d819ff07a",
+            "bcd890ebbc54489a",
+            "3d015994377434e8",
+            "3d079e55456860ae"
+          ]
+        },
+        "Gamma_imag": {
+          "selected_bitwise_equal_last_best_terminal": true,
+          "last_bits": [
+            "0000000000000000",
+            "39da63980864959e",
+            "b9aa1ddf4bac803e",
+            "39968ab5cd85c616",
+            "b98f5aef66c8550f",
+            "b9da63980864959e",
+            "0000000000000000",
+            "b982fb43f5d61eba",
+            "3982cf4b60b6629f",
+            "b989a3f4d474cbcb",
+            "39aa1ddf4bac803e",
+            "3982fb43f5d61eba",
+            "0000000000000000",
+            "398337eae82a56fb",
+            "b94dd6878166032e",
+            "b9968ab5cd85c616",
+            "b982cf4b60b6629f",
+            "b98337eae82a56fb",
+            "0000000000000000",
+            "b9712cd6e5749cf1",
+            "398f5aef66c8550f",
+            "3989a3f4d474cbcb",
+            "394dd6878166032e",
+            "39712cd6e5749cf1",
+            "0000000000000000"
+          ]
+        }
+      }
+    },
+    {
+      "energy_index": 30704,
+      "k_index": 1,
+      "datasets": {
+        "Gamma_real": {
+          "selected_bitwise_equal_last_best_terminal": true,
+          "last_bits": [
+            "3951d39e5318a01e",
+            "b92f7967d012c7f6",
+            "3924f82a8323dc8e",
+            "b9300a72775c3416",
+            "39594f173381bdff",
+            "b92f7967d012c7f6",
+            "39435c899182be6f",
+            "b913651cc81da8e1",
+            "39167b3599819222",
+            "b9428b06f11b386f",
+            "3924f82a8323dc8e",
+            "b913651cc81da8e1",
+            "39411c0ec243716e",
+            "b9137362140d411b",
+            "39380c123242603e",
+            "b9300a72775c3416",
+            "39167b3599819222",
+            "b9137362140d411b",
+            "3950ca927b33e834",
+            "b942397fa2517736",
+            "39594f173381bdff",
+            "b9428b06f11b386f",
+            "39380c123242603e",
+            "b942397fa2517736",
+            "39805cb000277246"
+          ]
+        },
+        "Gamma_imag": {
+          "selected_bitwise_equal_last_best_terminal": true,
+          "last_bits": [
+            "0000000000000000",
+            "b5e247ad6ab1211d",
+            "35ba4d988fb9c57f",
+            "b5e33f729f992fb3",
+            "3606033a8b68ed55",
+            "35e247ad6ab1211d",
+            "0000000000000000",
+            "35c25b788918c695",
+            "b5bc5d31b5de8db0",
+            "35cde0d490bc5e4b",
+            "b5ba4d988fb9c57f",
+            "b5c25b788918c695",
+            "0000000000000000",
+            "358cea3061998581",
+            "35c6dd8c6f0d1cbd",
+            "35e33f729f992fb3",
+            "35bc5d31b5de8db0",
+            "b58cea3061998581",
+            "0000000000000000",
+            "3593579d98eefa3d",
+            "b606033a8b68ed55",
+            "b5cde0d490bc5e4b",
+            "b5c6dd8c6f0d1cbd",
+            "b593579d98eefa3d",
+            "0000000000000000"
+          ]
+        }
+      }
+    }
+  ],
+  "terminal_mu_bitwise_equal_map64": true
+}
