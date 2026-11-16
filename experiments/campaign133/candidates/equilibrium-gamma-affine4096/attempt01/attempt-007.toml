@@ -1,0 +1,30 @@
+elapsed_seconds = 73.99778485298157
+kind = "convex_fallback"
+reason = "accepted"
+call = 6
+
+[AA]
+rank = 3
+l1 = 2389.171854216751
+kind = "AAII"
+R_diagonal = [7.657871891008978e-8, 1.8623154693518953e-10, 4.041792655902426e-10]
+condition = 876.4179297231394
+firstpair = 1
+initial_scales = [7.657871891008978e-8, 1.5077057009232628e-8, 9.179696347953362e-9]
+coefficients = [-85.30281239327626, 236.47316299813664, 1109.7831147150991]
+
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 2389.171854216751
+    R_diagonal = [7.657871891008978e-8, 1.8623154693518953e-10, 4.041792655902426e-10]
+    condition_measured = true
+    affine_coefficients = [-85.30281239327626, 321.7759753914129, 873.3099517169625, -1108.7831147150991]
+    coefficients = [-85.30281239327626, 236.47316299813664, 1109.7831147150991]
+    condition = 876.4179297231394
+    reason = "accepted"
+    affine_l1_limit = 4096.0
+    initial_scales = [7.657871891008978e-8, 1.5077057009232628e-8, 9.179696347953362e-9]
+    differences = 3
+    normalized_rank = 3
+    firstpair = 1
+    coefficients_measured = true

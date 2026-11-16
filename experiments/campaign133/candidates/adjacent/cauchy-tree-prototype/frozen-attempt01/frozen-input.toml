@@ -1,0 +1,26 @@
+id = "FD64-paneltree-transform-k1-6-11-v1"
+status = "write_only_pending_root_preflight_resource_gap"
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+source = "../../raw/S01-warm-FD64/state.h5"
+source_file_sha256 = "e6fffb997f36397f877aee1e2c98b1dbad7d97417d45458a042b5f074ce57a6d"
+source_input_sha256 = "0fa0d0bc2fc27602fa99b8fe0797071eae99c66ab2661dfde05bd00ebe19b86e"
+aggregate_gamma_reference_sha256 = "edb8530e9a59944afe1a447d999bf0c6c42d29d726e16144a5d85bdccdaecc55"
+prior_summary = "../../pi-frozen-control/attempt01/summary.toml"
+prior_summary_sha256 = "b336c2f4dde87b55744e985db3dd8400eb410baf75c941d345bac63bb0f785fc"
+k_indices = [1, 6, 11]
+source_indices = [1,2,3,1025,4097,7681,7898,8193,12289,15361,20481,24577,28673,30719,30720,30721]
+offgrid_midpoint_indices = [7681,15361]
+# The other two predeclared targets: left ghost-strip midpoint, and mu/E0+i*0.2.
+complex_imag_native = 0.2
+mu_eV = 0.008495393439818052
+tau_far = [1.0e-9, 1.0e-11]
+soft_stop_seconds = 110.0
+timeout_seconds_proposed = 120
+memory_cap_bytes_proposed = 1610612736
+maximum_output_bytes = 33554432
+Julia_threads = 1
+BLAS_threads = 1
+
+[source_sha256]
+"CauchyPanelTree.jl" = "a74ba641e403ddc60fe68a2c9a481b878c7a4d32ba8e3de30ca696b7c805257d"
+"tiny_tests.jl" = "3be8f0d8b1237d025b7976b732cc6d60eededbb6008be86c052a12562c58d62f"

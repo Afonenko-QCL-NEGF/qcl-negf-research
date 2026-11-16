@@ -1,0 +1,117 @@
+scientific_acceptance = false
+affine_source_checks = "pass"
+precheck_actual_calls = 3
+pi_calls = 32
+elapsed_seconds = 260.831955909729
+execution = "complete"
+data_bytes = 3034020864
+physical_104_checks = "reused parent physical104 and restart15 evidence; unchanged bodies, not rerun"
+
+[native]
+reason = "no reduced trigger"
+not_measured = true
+
+[native_accounting]
+meaning = "materialization/audit counted before call; solver observations count completed maps only; an interrupted solver map is bounded by reserved max30, not observed as completed"
+started_lower_bound = 0
+started_upper_bound = 0
+solver_reserved_cap = 30
+completed_lower_bound = 0
+structural_cap = 32
+
+    [native_accounting.events]
+    audit_report_written = 0
+    audit_started = 0
+    solver_entered = 0
+    materialization_started = 0
+    solver_observed_completed = 0
+    materialization_completed = 0
+    audit_map_completed = 0
+
+[reduced]
+precheck_actual_calls = 3
+pi_calls = 32
+best_relative = 5.806348197315973e-6
+status = "pilot_call_cap"
+
+    [reduced.last_map]
+    residual_definition = "RAW Phi-Gamma; raw Phi norm denominator; handoff trigger and best score"
+    seconds = 6.639190912246704
+    minimum_Dyson_scale = 1.466766347230167
+    fermi_pair_sum_error = 2.220446049250313e-16
+    maximum_Dyson_condition = 1280.6156585893152
+    raw_phi_hermitization_absolute = 1.6051167808574054e-15
+    trigger = false
+    roundoff = 3.501377469828371e-16
+    call = 32
+    absolute_E0_eV = 0.1
+    green_pair_A_identity_absolute = 7.118102138807208e-13
+
+        [reduced.last_map.AA_working_residual]
+        scale = 17.311501013148305
+        weighted_relative = 4.837255901553895e-6
+        weighted_absolute = 7.874876854332568e-7
+        weighted_scale = 0.1627963666715024
+        absolute = 0.00010058135898143485
+        relative = 5.81008884816181e-6
+
+        [reduced.last_map.map_cone]
+        block_frobenius_scale = 2.2498164946272e-18
+        backward_error = 7.105427357601002e-14
+        minimum_margin = 7.105289017666677e-14
+        hermiticity_absolute = 1.1882494281541072e-16
+        minimum_eigenvalue = -1.3833993432527875e-18
+        energy_index = 6955
+        k_index = 1
+
+        [reduced.last_map.residual]
+        scale = 17.311501013148305
+        weighted_relative = 4.837255901553927e-6
+        weighted_absolute = 7.874876854332619e-7
+        weighted_scale = 0.16279636667150238
+        absolute = 0.00010058135898143523
+        relative = 5.810088848161832e-6
+
+        [reduced.last_map.representation_conversion]
+        scale = 17.311501013148305
+        weighted_relative = 8.958120918311525e-17
+        weighted_absolute = 1.4583495377050988e-17
+        weighted_scale = 0.16279636667150238
+        absolute = 1.6051167808574054e-15
+        relative = 9.271967691526568e-17
+
+        [reduced.last_map.channel_Gamma_norms]
+        alloy = 0.16770416315453082
+        IFR = 1.0790976902329124
+        acoustic = 0.32858726788423404
+        LO = 16.513568202469592
+        impurity = 1.3128868841473598
+
+        [reduced.last_map.A_cone]
+        block_frobenius_scale = 9.895608341730768e-15
+        backward_error = 7.105427357601002e-14
+        minimum_margin = 6.604180074642146e-14
+        hermiticity_absolute = 0.0
+        minimum_eigenvalue = -5.012472829588557e-15
+        energy_index = 7893
+        k_index = 1
+
+        [reduced.last_map.mu]
+        number_relative_error = 1.5990295507448433e-13
+        number = 0.0450000000000072
+        iterations = 44
+        derivative = 0.6469061078969655
+        capacity = 28.643313137411848
+        mu_condition = 0.06956187219547366
+        bracket_width = 2.0500129371825437e-12
+        mu = 0.08459612206975792
+        target = 0.045000000000000005
+
+        [reduced.last_map.input_cone]
+        block_frobenius_scale = 2.3557999251859454e-18
+        backward_error = 7.105427357601002e-14
+        minimum_margin = 7.10528225457353e-14
+        hermiticity_absolute = 0.0
+        minimum_eigenvalue = -1.4510302747293598e-18
+        energy_index = 6955
+        k_index = 1

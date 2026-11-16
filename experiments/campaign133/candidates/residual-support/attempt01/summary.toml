@@ -1,0 +1,48 @@
+weighted_squared_scale = 0.026502646951897975
+zone_fraction_status = "measured"
+raw_squared_scale = 299.68791175964367
+scientific_scope = "snapshot support only; no Jacobian/linewidth/SCBA convergence inference"
+script_sha256 = "b77dac503c3bf35e9bc7bc927242fbcbdeeafe7dec608e91ab5e0c05fb81edee"
+kBT_dimensionless = 0.06032133283501625
+optional_saved_A_available = true
+optional_saved_condition_available = true
+zones = ["E<mu-5kBT", "abs(E-mu)<=5kBT", "E>mu+5kBT"]
+L0_m = 1.0e-8
+weighted_squared_numerator = 9.406422565804306e-13
+input_sha256 = "46a74dd52a61b81de7d97c994f6ecb76ae2916d07a07208d3a8d31096c5fcc18"
+E0_eV = 0.1
+elapsed_seconds_excluding_SHA = 4.346459150314331
+mu_dimensionless = 0.08459613668783181
+sha_seconds_separate = 2.471951961517334
+raw_squared_numerator = 1.5502632215546157e-8
+status = "completed"
+weighted_numerator_zone_fractions = [3.11868150394842e-7, 0.0046439100406369576, 0.9953557780912127]
+
+[map_raw_norms]
+scale = 17.311496519918023
+weighted_relative = 5.957548913257313e-6
+weighted_absolute = 9.698671334633255e-7
+weighted_scale = 0.16279633580600295
+absolute = 0.00012450956676257567
+relative = 7.192305218634285e-6
+
+[source_hashes]
+model = "47682acc1b60483e96d67de2c24dbdf4927b7f14dd6cbf25f6e93f002a7c614e"
+terminal = "fb7cea34dcd0a660e3d4ddea1324728bde0f7b82be8a077fc138a1cda4f5fdf2"
+source_input = "fddde931d6f13c5a76ee8f84e12da77c606844c5ee189c3140ea3ae55e41b812"
+identity = "c63682ba6ba338342f4cfdf4e59f5e0d2b7ca33bea22e44f4164673152c7a860"
+map = "8a34e3ac5217942302564576b7c00880d4334e463225a34208e55693fe155a8b"
+writer = "57f2c277255ae1f8265659e65176cc88f97d5a40cbf8d6e32b7ea9257ccfb032"
+
+[raw_map_norms]
+scale = 17.31149651993275
+weighted_relative = 5.957548913278676e-6
+weighted_absolute = 9.69867133467482e-7
+weighted_scale = 0.16279633580611688
+absolute = 0.0001245095667631454
+relative = 7.192305218661078e-6
+
+[f2_weighted_diagnostic]
+scale = 0.0018586600475724339
+absolute = 3.4924644934157984e-8
+relative = 1.879022738976528e-5
