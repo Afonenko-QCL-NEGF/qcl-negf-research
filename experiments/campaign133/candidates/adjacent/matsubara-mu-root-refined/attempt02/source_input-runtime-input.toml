@@ -1,0 +1,47 @@
+identity = "campaign133-Mats-ALL5-fixedmu-full-line-C-finite45-v2"
+runtime_authorized = false
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+julia_version = "1.13.3"
+project_sha256 = "791aec47f34e0884b8bd36af07f514934cc08c418940650d464920d6a2aeb067"
+manifest_sha256 = "da0780fbe150c0e16e9fedf3566a1971095642f14f57f32524b52f430a4adb65"
+source_directory = "../../equilibrium-gamma-stableA-cont64/attempt01"
+prototype = "matsubara_all5.jl"
+digest_helper = "../gamma-density-hermitian-v4/frozen-io01/freeze-stable64-io.jl"
+digest_packet = "../gamma-density-hermitian-v4/frozen-io01/digest.toml"
+N_values = [128, 256]
+steps_per_N = 16
+alpha = 1.0
+mu_native = 0.08459614262982018
+wall_seconds = 600.0
+workers = 1
+BLAS_threads = 1
+memory_max_bytes = 2147483648
+memory_high_bytes = 1879048192
+swap_max_bytes = 0
+cpu_quota_percent = 200
+single_file_max_bytes = 33554432
+data_max_bytes = 67108864
+native_public_calls = 0
+Gamma_source_reads = 0
+adapter_sha256 = "94c6f2d48851e9b894ce25f6a353d66accbc34e2ebb269ee05b040f4cd717c1e"
+
+[definition_sha256]
+"gamma_functions.jl" = "50bcfaaeb3c399baaaa2a4b9b9e023167e97b4d87c6af95d83353cb453072211"
+"warm_seed.jl" = "68fd8582334a1ed3f257efcc0b1096a429361dd73aa5be3be415dd79ddcbc157"
+"stable_spectral.jl" = "eeca1f29710d9bb60bf6ce70ce0ebd1620fb86d4c77314b4bd8ffa9a5bcd5aa5"
+"gamma_restart.jl" = "2a805be29aeef33d7a31356850b7fdaa80da7e68506d8f96b980a8108bd56a00"
+
+[text_sha256]
+"prototype" = "1434e86fe452f02c5831eaeb0fc83dc1dc12710dcc3d7e81f7f36cd985a31447"
+"digest_helper" = "192e6f83bd808179db98beecb375642c255480b41a9349d0644ca4c8d32165c6"
+"digest_packet" = "b121f71d58cbf909cd4087e6ddae4b0216883a375529e5a179a562d2b381ef40"
+
+[source_file_sha256]
+"model.h5" = "700ae17684d9ae52623ca6cfb7e07432ab1f43eb5151748061da53681b686540"
+"input.toml" = "8d5c1eb56b4cf88edf4b986cbc93ce05aede8ef1c4b12f8de8eac107402d5d49"
+"identity.toml" = "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b"
+"spectral-selected-064.h5" = "42fe0a38608355613ded9fbc865401ef02a2ff5bb21788e54fc1a595699cb04d"
+"map-064.toml" = "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88"
+"spectral-ledger-064.toml" = "4dffb4b1ff2730c4f40a6ebb0005d0a5453e85aae933309e5851b45df475db1c"
+"summary.toml" = "760c3828b6fe861b5ae67e86342c9613bff1f7c4fd6bb8ead43f4911e3f9894e"

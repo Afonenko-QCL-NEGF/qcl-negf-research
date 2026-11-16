@@ -1,0 +1,119 @@
+elapsed_seconds_including_imports = 16.16686201095581
+inner_maps = 0
+maxrss_bytes = 0x2bee3000
+identity = "savedρbare + leading one-shot and NEW selfconsistent M3 asymptotic closure"
+BLAS_threads_final = 1
+mu_fits = 0
+finite_N_tail_certificate = false
+Julia_threads = 1
+native_pass = false
+execution = "completed_postprocess_only"
+BLAS_threads = 1
+
+[matrix_Frobenius_N256_minus_N128]
+oneshot = 3.173631068875791e-9
+bare = 3.156267158674883e-7
+M3 = 3.1736296592236398e-9
+classic = 0.00017345899224598474
+
+[N256]
+correction_absolute = 4.548637941661879e-8
+note = "conditional linear moment-equation bound only; no finite-N physical remainder certificate"
+eta = 8.584664991052837e-10
+classic_M1_number = 0.04493896223967687
+linear_residual_relative = 1.2640098253870086e-16
+linear_weighted_scale = 0.05006583640356483
+linear_condition = 1.0000000007304437
+N = 256
+conditional_linear_error_bound = 2.2841951364920365e-17
+linear_weighted_absolute = 7.182792852590843e-18
+M3_number = 0.045005031033066606
+feedback_absolute = 5.947314414233909e-17
+bare_number = 0.045004861993892566
+oneshot_number = 0.045005031033066724
+linear_weighted_relative = 1.434669500913283e-16
+linear_residual_absolute = 3.5756308916405536e-17
+linear_residual_scale = 0.28287999189767243
+
+    [N256.bare_pauli]
+    hermitian_defect = 5.5628130280818104e-18
+    minimum = 6.361936393373626e-8
+    maximum = 0.2175201826613404
+
+    [N256.t]
+    t4 = 1.1615910879252379e-7
+    t4_integral_upper = 1.1683268700411988e-7
+    t2 = 0.003280641787378203
+    t4_integral_lower = 1.1548202010233814e-7
+
+    [N256.M3_pauli]
+    hermitian_defect = 2.7651437947911527e-17
+    minimum = 7.154778794513954e-8
+    maximum = 0.21752018484679275
+
+    [N256.oneshot_pauli]
+    hermitian_defect = 5.562813028081811e-18
+    minimum = 7.154778794846986e-8
+    maximum = 0.21752018484679264
+
+[text_sha256]
+old_adapter = "94c6f2d48851e9b894ce25f6a353d66accbc34e2ebb269ee05b040f4cd717c1e"
+adapter = "7edebecad9df0327894dab5e374b78be79fc0d687c5f328092340ea2a651bdf8"
+moment_module = "9182ae802fd26c41e6105bdcf2979bb9d2406d0174bd35b31b5ccfee793b80ca"
+tiny_checks = "4c76270df6fed02a57cf53ebefc865b6c91765a9d6ecf926c934b02a4d268c4e"
+
+[N128]
+correction_absolute = 3.6388270702010155e-7
+note = "conditional linear moment-equation bound only; no finite-N physical remainder certificate"
+eta = 6.867574812224933e-9
+classic_M1_number = 0.044478062146586096
+linear_residual_relative = 9.140594837111588e-17
+linear_weighted_scale = 0.05006583644540027
+linear_condition = 1.0000000058434149
+N = 128
+conditional_linear_error_bound = 1.4849580535860026e-17
+linear_weighted_absolute = 4.913902993095049e-18
+M3_number = 0.045005040205103
+feedback_absolute = 1.9133003569528955e-15
+bare_number = 0.04500368792266079
+oneshot_number = 0.045005040205109544
+linear_weighted_relative = 9.814882446743795e-17
+linear_residual_absolute = 2.5856913949710123e-17
+linear_residual_scale = 0.28287999206275793
+
+    [N128.bare_pauli]
+    hermitian_defect = 1.0143014096012345e-17
+    minimum = 8.25462644154512e-9
+    maximum = 0.21752016739248964
+
+    [N128.t]
+    t4 = 9.292516022296138e-7
+    t4_integral_upper = 9.39917472167747e-7
+    t2 = 0.00656125854608239
+    t4_integral_lower = 9.184744880118288e-7
+
+    [N128.M3_pauli]
+    hermitian_defect = 1.943979011309684e-17
+    minimum = 7.239999938939667e-8
+    maximum = 0.2175201848757079
+
+    [N128.oneshot_pauli]
+    hermitian_defect = 1.0143014096012369e-17
+    minimum = 7.239999960219974e-8
+    maximum = 0.21752018487570796
+
+[source_sha256]
+"source-binding.toml" = "799519e4ce10f17e310afab8e7e1191f41ba38149fe9b448cfefe77406a6d1f7"
+"identity.toml" = "55e3336b9fdc1c57b2ae41c4029fe0710412ba53e44ff584ea380e85f243ded5"
+"N128-latest.h5" = "61cebaa7178a734ee62254c8802b64a8aa34a4e19e38be669beeb10f6b150e02"
+"N128-i16.toml" = "373f6765dc750890dcf2cabc298625a1fb2138a10e76fa157b8894fd9eca226d"
+"input.toml" = "748d609307ee9b9d0700ca1f4f6a588b7453fc7696c661cfb3092565d55c4529"
+"summary.toml" = "b9397bf71b7e483bfc3062c0c002a78612c9e896ad1ee5a0b1c443e55113131e"
+"N256-i16.toml" = "699f70df20ffed37b7e716991a85389187cde37b1a7c6fd9e52239714e9798fb"
+"N256-latest.h5" = "fd4752c12f21226835cae2d812e72ad49a185f301dc3f370f89cdf442c2b31ee"
+
+[N256_minus_N128]
+oneshot = -9.17204281969397e-9
+bare = 1.1740712317770408e-6
+M3 = -9.172036394278216e-9
+classic_M1 = 0.0004609000930907714

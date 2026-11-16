@@ -1,0 +1,35 @@
+number = 0.04499999983598694
+eta = 1.0730892640568637e-10
+scope = "asymptotic linear M3 closure; no infinite-N error certificate"
+linear_residual_relative = 7.940111120669673e-17
+linear_weighted_scale = 0.050060486909235036
+linear_condition = 1.0000000000913056
+linear_minus_oneshot = -6.938893903907228e-18
+mu_native = 0.08458841668782063
+raw_number = 0.044999978705890245
+N = 512
+conditional_linear_error_bound = 1.3966978398162105e-17
+linear_weighted_absolute = 4.7475246002534466e-18
+candidate_accepted = false
+oneshot_number = 0.044999999835986945
+linear_minus_oneshot_Frobenius = 3.905973981580947e-17
+linear_weighted_relative = 9.483576555819786e-17
+target_relative = -3.644734822591841e-9
+linear_residual_absolute = 2.2458704824315214e-17
+linear_residual_scale = 0.28285126597096083
+
+[tails]
+t4 = 1.4519971681781767e-8
+t4_integral_upper = 1.4562289859510657e-8
+t2 = 0.0016403224580125546
+t4_integral_lower = 1.4477543264789935e-8
+
+[oneshot_pauli_final]
+hermitian_defect = 2.891223863274418e-17
+minimum = 7.151255204040231e-8
+maximum = 0.2174988710764585
+
+[pauli_final]
+hermitian_defect = 3.793943550544081e-17
+minimum = 7.151255204034977e-8
+maximum = 0.21749887107645843

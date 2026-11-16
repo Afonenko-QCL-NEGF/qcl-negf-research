@@ -1,0 +1,11 @@
+# Endpoint certificate V2: независимая execution delta review
+
+**Решение: APPROVE tiny и затем bounded actual при успешном tiny/прежнем external admission2GiB/120s/J1BLAS1/CPU100/Swap0/output16MiB.** Математическое одобрение из `endpoint-gap-certificate-static.md` сохраняется; blocker/delta новых научных утверждений не найдено. Рецензент Julia/Pkg/H5/actualΓ не запускал/не читал.
+
+Current mainab7f789e47383d7281182c96c1dedd074be337f902e4de106f1fb8522701922d, tinyf8b03ea62c899a3064cb3ea5e5b5dfa60fb82c4f3119dc0213b9d8e350203730, inputd51663d0… unchanged, delta4e2af30b83c8fb11393955c0a3c557f78687c5f414919be04317d5658a021854. Все7current SHA и7archive-local SHA совпали; V1main e031d0c7… сохранён точно и не имеет actual execution. Audit `endpoint-gap-certificate-v2-static-audit.json`, source-only stdlibPython≤128MiB.
+
+Единственная executable delta main: вокруг **уже существовавшего в V1** BLAS.set_num_threads(1) добавлены getterbefore/getterafter, println/flush и assertafter==1;3 scalars BLASbefore/after/Julia threads добавлены в report. Они выполняются до sourceframe/large arrays. Если setter не установил1, процесс прекращается до расчёта; научного результата/fallback/подмены caps нет. Tiny до interval tests выполняет тот же setter/getter/assert; это закрывает environmental getter128 при OPENBLAS_NUM_THREADS=1 без предположения о том, что один env обязательно управляет выбранным BLAS backend.
+
+Побайтно проверены весь scalar math prefix до main и весь computation от checkstage/source_frame до final output/summary: неизменны. Следовательно interval primitives/Machin/log2/positive-series tails/dyadic centres+ghost areas/PD/provenance/Gershgorin/mass factors/domain errors/120s start и guards — прежние. Input ресурсы/источники/identity не менялись. Extra println/getters не являются изменением физики, geometry или certificate criterion.
+
+No V1 endpoint outcome следует выдумывать: execution-only upgrade превентивно мотивирован отдельным M3 BLAS observation; V1 endpoint не объявляется timeout/failure. Actual certificate по-прежнему conditional IEEE exactinput model, positive gaps нужны по факту, gap≤0 unavailable; не Matsall5/native-density acceptance. После нового tiny ограниченному actual code ничего не препятствует.

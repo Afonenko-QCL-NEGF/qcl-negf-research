@@ -1,0 +1,102 @@
+scientific_acceptance = false
+scope = "same V4 dyadic-centre hats; IEEE outward enclosures, not hardware formal verification"
+BLAS_threads_before_setter = 1
+all_gaps_positive = true
+script_sha256 = "ab7f789e47383d7281182c96c1dedd074be337f902e4de106f1fb8522701922d"
+input_sha256 = "f50486148b6228c3f9a28f5211e27d14275b1baa5ff4fc25dbccbb7bd5e97c15"
+gap_order = ["exterior_left", "exterior_right", "strip_left", "strip_right"]
+ghost_sheet_over_target_upper = 2.3236023691888447e-30
+V4_input_sha256 = "f6560732368b3ba1a4ccae52004a9a23eac63c18775ff6d614fa6ed6afbeee2b"
+elapsed_seconds = 12.153522968292236
+V4_summary_sha256 = "323cc1773423a3b5a97c1af383acffff229a7c5fdb3b72c3e211ad1da7047644"
+Julia_threads = 1
+BLAS_threads_after_setter = 1
+ghost_sheet_number_upper = 1.0456210661349801e-31
+status = "completed"
+
+[PD_binding]
+certificate_sha256 = "a703ec4c3e2feda1ae9571ab3d1d20b69dd9de48898f3d620ada008da2583335"
+checked_blocks = 337744
+scope = "exact stored binary Gamma nodes only; not SCBA convergence or total forward-error certificate"
+checkpoint_sha256 = "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55"
+
+[per_k.11]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [3.8255444118418174, 2.0882383094865777, 3.825153449872619, 2.0878473491521885]
+ghost_mass_operator_upper = 1.0210159077070188e-33
+
+[per_k.3]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [1.8576275529596658, 4.046269326259752, 1.8572364666155925, 4.045878316178689]
+ghost_mass_operator_upper = 9.2719661522029e-33
+
+[per_k.4]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [1.9601316132462479, 3.9442783369402727, 1.9597405356553488, 3.9438873280733606]
+ghost_mass_operator_upper = 7.959829953902346e-33
+
+[per_k.5]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [2.103634487752167, 3.8014924885690453, 2.1032434216900944, 3.801101481598303]
+ghost_mass_operator_upper = 6.496816686834339e-33
+
+[per_k.6]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [2.2881350455095824, 3.617913973812963, 2.2877439933379815, 3.6175229696826374]
+ghost_mass_operator_upper = 5.082478180698172e-33
+
+[per_k.10]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [3.4360854868232034, 2.4757351470051803, 3.435694505584464, 2.4753441722882767]
+ghost_mass_operator_upper = 1.4485838817586038e-33
+
+[per_k.9]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [3.087610222492484, 2.822453570907921, 3.087219222077589, 2.8220625851431684]
+ghost_mass_operator_upper = 2.0382489251146145e-33
+
+[per_k.1]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [1.7756202210506722, 4.127860879620477, 1.7752291269836553, 4.127469868513774]
+ghost_mass_operator_upper = 1.05298615848239e-32
+
+[per_k.2]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [1.7961234144876872, 4.107463902259394, 1.7957323225511048, 4.107072891471206]
+ghost_mass_operator_upper = 1.0195489022640081e-32
+
+[per_k.8]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [2.780124539375648, 3.12839110653172, 2.7797335204351317, 3.128000112499287]
+ghost_mass_operator_upper = 2.8269602823895083e-33
+
+[per_k.7]
+status = "positive_interval_Gershgorin_gaps"
+lower_gaps = [2.5136321583588392, 3.3935456920559353, 2.513241122028254, 3.393154692079084]
+ghost_mass_operator_upper = 3.8418468202434676e-33
+
+[array_sha256]
+Tplus = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+H0 = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+chi = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+Z = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+Gamma = "f5a3778b8960704da6d7bd58e22176d3a2e7698695fd2e9a3871fc50cbd04653"
+energy = "1ad8a0d3d0da96d2778cbb1e8c1dfe51989dc19f43bb9233cb81e4e2402ebca9"
+weight_energy = "2015e27dd4d76f805c541c1ae1a8eb9e36bae5d98ce4180a63c2285ff10ac25b"
+momentum = "7815e5a3e3faf1673363855e6bc76e56be584032eded7440c9e6bd4ddbcd1e6f"
+weight_momentum = "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d"
+Phi = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+hcell = "9748cff3766957a7add78a58d06db1d9bff8fb8738066267d57f9ddd539c15b4"
+Minv = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+Tminus = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+
+[constant_intervals]
+pi = [3.141592653589793, 3.1415926535897936]
+k1_log2_over_pi = [0.22063560015265155, 0.22063560015265166]
+M_upper = 0.31830988618379075
+
+[units]
+target_dimensionless = 0.045000000000000005
+spin_degeneracy = 2.0
+L0_m = 1.0e-8
+E0_eV = 0.1

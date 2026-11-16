@@ -1,0 +1,11 @@
+{
+  "parent_sha256": "1434e86fe452f02c5831eaeb0fc83dc1dc12710dcc3d7e81f7f36cd985a31447",
+  "refined_sha256": "ecf7b1cce70ecebe054905cb0e53be7c5fedd91c3061ed9b2634af4bbbdd1998",
+  "inverse_three_replacements_exact_bytes": true,
+  "allowed_changes": [
+    "module name",
+    "pilot domain comment",
+    "pilot N allowlist 128,256 -> 512,1024"
+  ],
+  "runtime_executed": false
+}

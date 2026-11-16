@@ -1,0 +1,20 @@
+mu_native = 0.08559614262982018
+raw_unweighted_scale = 0.0991999060604042
+N = 512
+
+[weighted_raw]
+scale = 0.04601485143038247
+scope = "wk-weighted diagnostic only; qualification uses unweighted Frobenius"
+absolute = 0.00012199876387787218
+relative = 0.002651291052464844
+
+[raw]
+G_causality_max = -0.00515499170019379
+iteration = 2
+number = 0.04554446966818268
+pauli_max = 0.22028760894699417
+dyson_backward = 3.969414079779454e-17
+sigma_causality_max = -2.817668982674202e-5
+pauli_min = 6.01762945281927e-8
+raw_sigma_absolute = 0.0003263412351420751
+raw_sigma_relative = 0.003289733308248915
