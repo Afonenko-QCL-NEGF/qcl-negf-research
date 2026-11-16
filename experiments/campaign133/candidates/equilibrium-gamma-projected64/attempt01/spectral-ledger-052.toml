@@ -1,0 +1,74 @@
+operator = "native_covariance_exact_plan_hlocal_all9"
+covariance_arithmetic = "generic F64 congruence, not certified Gram factor arithmetic"
+roundoff = 3.4975484993599383e-16
+maximum_GR_magnitude = 88.31295507917902
+native_exit_h_scope = "original raw-h Context; reduced hH policy is not a native gate override"
+
+[h_correction]
+scale = 16.48036513826891
+absolute = 1.6335753826937261e-15
+relative = 9.912252362057291e-17
+
+[Lambda_projection]
+scale = 8.427736618841719
+weighted_relative = 2.502636145208704e-16
+weighted_absolute = 1.983805265535813e-17
+weighted_scale = 0.07926862517884622
+absolute = 2.1083245938837585e-15
+relative = 2.5016498370039475e-16
+
+[q_cov]
+minimum_index = 382
+negative_count = 0
+negative_over_target = -0.0
+all_finite = true
+minimum = 1.328259481581013e-43
+negative_absolute_mass = -0.0
+capacity = 28.643310768243488
+
+[effective_vs_physical_source]
+scale = 2774.2060327405707
+weighted_relative = 2.547236098924933e-13
+weighted_absolute = 7.511223723441656e-12
+weighted_scale = 29.487740561669117
+absolute = 6.915574644963479e-10
+relative = 2.492812200444879e-13
+
+[A_sub_cone]
+block_frobenius_scale = 4.246024552697066e-12
+admissible = true
+backward_error = 7.105427357601002e-14
+minimum_margin = 6.846805933224963e-14
+measured = true
+hermiticity_absolute = 0.0
+minimum_eigenvalue = -2.58621424376038e-15
+energy_index = 8038
+k_index = 1
+
+[same_GR_spectral_difference]
+scale = 7899.0791892034495
+weighted_relative = 9.578421100361415e-16
+weighted_absolute = 7.202166830565967e-14
+weighted_scale = 75.19158695470398
+absolute = 8.678788949059025e-12
+relative = 1.0987089433058593e-15
+
+[q_sub]
+minimum_index = 385
+negative_count = 53
+negative_over_target = 1.2073294794946935e-35
+all_finite = true
+minimum = -5.757622928825069e-38
+negative_absolute_mass = 5.432982657726121e-37
+capacity = 28.643310768243488
+
+[A_cov_cone]
+block_frobenius_scale = 9.315215237200886e-41
+admissible = true
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+measured = true
+hermiticity_absolute = 4.316006699388762e-13
+minimum_eigenvalue = 2.5188402239451958e-42
+energy_index = 382
+k_index = 11

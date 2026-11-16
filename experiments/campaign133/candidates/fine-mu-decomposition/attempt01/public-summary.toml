@@ -1,0 +1,260 @@
+# Public projection: omitted private fields Core_source; original SHA-256: 0632e210cb5ba704b5bfddfb326530e0fccda04302b8468f7bccdff1dfe00545.
+stage = "complete"
+capacity = 28.6468267328745
+LO_started = 2
+manifest_sha256 = "da0780fbe150c0e16e9fedf3566a1971095642f14f57f32524b52f430a4adb65"
+PI_roundoff = 3.3941389080478413e-16
+maxrss_bytes = 0x0110035000
+input_sha256 = "39a67a1ee3c3eca4f948d02b6781772703ce7d603169cd9ccd3b75b6694924e0"
+mu_coarse = 0.08459613668783181
+sources_unchanged_after = true
+seconds = 41.97005295753479
+hash_seconds = 2.1322708129882812
+mu_fine = 0.08459119027608916
+execution = "complete_mu_attribution_only"
+mu_difference = -4.946411742645651e-6
+Pi_calls = 0
+full_Phi_calls = 0
+retarded_started = 1
+
+[fresh_number_replay.coarse]
+absolute_N_error = 0.0
+dN_dmu = 0.6469529070691731
+N = 0.045003199994375624
+expected_N = 0.045003199994375624
+N_error_over_target = 0.0
+mu = 0.08459613668783181
+
+[fresh_number_replay.fine]
+absolute_N_error = 0.0
+dN_dmu = 0.6469120390993993
+N = 0.04499999999999488
+expected_N = 0.04499999999999488
+N_error_over_target = 0.0
+mu = 0.08459119027608916
+
+[decomposition]
+selected_indices = [782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 2660, 2661, 2662, 2663, 2664, 2665, 2666, 2667, 2668, 2669, 2670, 2671, 2672, 2673, 2674, 4538, 4539, 4540, 4541, 4542, 4543, 4544, 4545, 4546, 4547, 4548, 4549, 4550, 4551, 4552, 6416, 6417, 6418, 6419, 6420, 6421, 6422, 6423, 6424, 6425, 6426, 6427, 6428, 6429, 6430, 8294, 8295, 8296, 8297, 8298, 8299, 8300, 8301, 8302, 8303, 8304, 8305, 8306, 8307, 8308, 10172, 10173, 10174, 10175, 10176, 10177, 10178, 10179, 10180, 10181, 10182, 10183, 10184, 10185, 10186, 12050, 12051, 12052, 12053, 12054, 12055, 12056, 12057, 12058, 12059, 12060, 12061, 12062, 12063, 12064, 13928, 13929, 13930, 13931, 13932, 13933, 13934, 13935, 13936, 13937, 13938, 13939, 13940, 13941, 13942, 15806, 15807, 15808, 15809, 15810, 15811, 15812, 15813, 15814, 15815, 15816, 15817, 15818, 15819, 15820, 17684, 17685, 17686, 17687, 17688, 17689, 17690, 17691, 17692, 17693, 17694, 17695, 17696, 17697, 17698, 19562, 19563, 19564, 19565, 19566, 19567, 19568, 19569, 19570, 19571, 19572, 19573, 19574, 19575, 19576, 21440, 21441, 21442, 21443, 21444, 21445, 21446, 21447, 21448, 21449, 21450, 21451, 21452, 21453, 21454, 23318, 23319, 23320, 23321, 23322, 23323, 23324, 23325, 23326, 23327, 23328, 23329, 23330, 23331, 23332, 25196, 25197, 25198, 25199, 25200, 25201, 25202, 25203, 25204, 25205, 25206, 25207, 25208, 25209, 25210, 27074, 27075, 27076, 27077, 27078, 27079, 27080, 27081, 27082, 27083, 27084, 27085, 27086, 27087, 27088, 28952, 28953, 28954, 28955, 28956, 28957, 28958, 28959, 28960, 28961, 28962, 28963, 28964, 28965, 28966, 30830, 30831, 30832, 30833, 30834, 30835, 30836, 30837, 30838, 30839, 30840, 30841, 30842, 30843, 30844, 32708, 32709, 32710, 32711, 32712, 32713, 32714, 32715, 32716, 32717, 32718, 32719, 32720, 32721, 32722, 34586, 34587, 34588, 34589, 34590, 34591, 34592, 34593, 34594, 34595, 34596, 34597, 34598, 34599, 34600, 36464, 36465, 36466, 36467, 36468, 36469, 36470, 36471, 36472, 36473, 36474, 36475, 36476, 36477, 36478, 38342, 38343, 38344, 38345, 38346, 38347, 38348, 38349, 38350, 38351, 38352, 38353, 38354, 38355, 38356, 40220, 40221, 40222, 40223, 40224, 40225, 40226, 40227, 40228, 40229, 40230, 40231, 40232, 40233, 40234, 42098, 42099, 42100, 42101, 42102, 42103, 42104, 42105, 42106, 42107, 42108, 42109, 42110, 42111, 42112, 43976, 43977, 43978, 43979, 43980, 43981, 43982, 43983, 43984, 43985, 43986, 43987, 43988, 43989, 43990, 45854, 45855, 45856, 45857, 45858, 45859, 45860, 45861, 45862, 45863, 45864, 45865, 45866, 45867, 45868, 47732, 47733, 47734, 47735, 47736, 47737, 47738, 47739, 47740, 47741, 47742, 47743, 47744, 47745, 47746, 49610, 49611, 49612, 49613, 49614, 49615, 49616, 49617, 49618, 49619, 49620, 49621, 49622, 49623, 49624, 51488, 51489, 51490, 51491, 51492, 51493, 51494, 51495, 51496, 51497, 51498, 51499, 51500, 51501, 51502, 53366, 53367, 53368, 53369, 53370, 53371, 53372, 53373, 53374, 53375, 53376, 53377, 53378, 53379, 53380, 55244, 55245, 55246, 55247, 55248, 55249, 55250, 55251, 55252, 55253, 55254, 55255, 55256, 55257, 55258, 57122, 57123, 57124, 57125, 57126, 57127, 57128, 57129, 57130, 57131, 57132, 57133, 57134, 57135, 57136, 59000, 59001, 59002, 59003, 59004, 59005, 59006, 59007, 59008, 59009, 59010, 59011, 59012, 59013, 59014, 60878, 60879, 60880, 60881, 60882, 60883, 60884, 60885, 60886, 60887, 60888, 60889, 60890, 60891, 60892]
+definitions = "D=Phi_f(saved,mu_f)-P Phi_c(saved,mu_c); M=LO_f(mu_f)-LO_f(mu_c); F=D-M; R=Phi_f-Gamma_f; no floors/clipping; weights=wE_f*wk"
+
+    [decomposition.moments.old_nodes]
+    D_mu_weighted_inner = 1.6700360239844912e-14
+    fine_residual_fixed_mu_absolute = 0.00012450956676200869
+    mu_projection_coefficient = 0.9999999999852369
+    fine_residual_squared = 1.61555459246521e-8
+    mu_absolute = 2.58073087398335e-5
+    D_weighted_absolute = 1.2922987363651666e-7
+    mu_projection_coefficient_weighted = 0.9999999999841231
+    fine_residual_weighted_relative_to_PPhi = 6.060200875217769e-6
+    fine_residual_fixed_mu_weighted_squared = 4.703211282814262e-13
+    weighted_squared_identity_error = -6.773477810721446e-30
+    fine_residual_fixed_mu_relative_to_PPhi = 7.1923052186010874e-6
+    fine_residual_fixed_mu_squared = 1.55026322152631e-8
+    D_squared = 6.660171844127358e-10
+    D_mu_inner = 6.660171844029033e-10
+    D_absolute = 2.5807308740214193e-5
+    mu_weighted_squared = 1.670036023957933e-14
+    fine_residual_weighted_squared = 4.866685651089736e-13
+    fixed_mu_absolute = 1.3469646473676044e-13
+    fixed_mu_relative_to_PPhi = 7.780752206013783e-15
+    mu_fixed_inner = 9.819246163393588e-21
+    mu_squared = 6.660171843930864e-10
+    fixed_mu_weighted_relative_to_PPhi = 8.14611604955577e-15
+    D_weighted_squared = 1.670036024011006e-14
+    fixed_mu_squared = 1.814313761258135e-26
+    fine_residual_weighted_absolute = 6.976163452134516e-7
+    fixed_mu_weighted_absolute = 9.377352043584737e-16
+    mu_relative_to_PPhi = 1.4907612816800027e-6
+    fine_residual_fixed_mu_weighted_absolute = 6.85799626918407e-7
+    fine_residual_fixed_mu_weighted_relative_to_PPhi = 5.957548913225795e-6
+    reference_squared = 299.68791175917096
+    mu_weighted_relative_to_PPhi = 1.1226213357489932e-6
+    fine_residual_relative_to_PPhi = 7.342199930600728e-6
+    reference_weighted_squared = 0.0132513234759366
+    D_fixed_inner = 9.819264306539359e-21
+    D_fixed_weighted_inner = 2.653687463172255e-25
+    D_weighted_relative_to_PPhi = 1.1226213357668315e-6
+    mu_fixed_weighted_inner = 2.6536786697254477e-25
+    fine_residual_absolute = 0.00012710446854714472
+    D_relative_to_PPhi = 1.4907612817019936e-6
+    fixed_mu_weighted_squared = 8.793473134932285e-31
+    squared_identity_error = 1.085478854267428e-23
+    mu_weighted_absolute = 1.2922987363446322e-7
+
+    [decomposition.moments.midpoints]
+    D_mu_weighted_inner = 1.5083310258240662e-13
+    fine_residual_fixed_mu_absolute = 0.06400139224275558
+    mu_projection_coefficient = 1.3691073952303474e-6
+    fine_residual_squared = 0.00409618875276105
+    mu_absolute = 2.580585173515839e-5
+    D_weighted_absolute = 0.00043201682652930503
+    mu_projection_coefficient_weighted = 8.081562568580906e-7
+    fine_residual_weighted_relative_to_PPhi = 0.0037539127037969737
+    fine_residual_fixed_mu_weighted_squared = 1.8666312142191407e-7
+    weighted_squared_identity_error = -1.1720626233541804e-21
+    fine_residual_fixed_mu_relative_to_PPhi = 0.003697767847519597
+    fine_residual_fixed_mu_squared = 0.004096178209011054
+    D_squared = 0.004095357034536741
+    D_mu_inner = 5.606983602092877e-9
+    D_absolute = 0.06399497663517614
+    mu_weighted_squared = 1.669839340049502e-14
+    fine_residual_weighted_squared = 1.8666340627193712e-7
+    fixed_mu_absolute = 0.06399489422220693
+    fixed_mu_relative_to_PPhi = 0.0036973924155076464
+    mu_fixed_inner = 4.941041618315076e-9
+    mu_squared = 6.659419837769773e-10
+    fixed_mu_weighted_relative_to_PPhi = 0.003753659775998019
+    D_weighted_squared = 1.8663853840445164e-7
+    fixed_mu_squared = 0.004095346486511453
+    fine_residual_weighted_absolute = 0.000432045606703664
+    fixed_mu_weighted_absolute = 0.0004320164967181705
+    mu_relative_to_PPhi = 1.4909683286605018e-6
+    fine_residual_fixed_mu_weighted_absolute = 0.0004320452770508134
+    fine_residual_fixed_mu_weighted_relative_to_PPhi = 0.003753909839543745
+    reference_squared = 299.57085510004725
+    mu_weighted_relative_to_PPhi = 1.1227728954490612e-6
+    fine_residual_relative_to_PPhi = 0.0036977726066282886
+    reference_weighted_squared = 0.013246185988704024
+    D_fixed_inner = 0.004095351427553102
+    D_fixed_weighted_inner = 1.8663838757134896e-7
+    D_weighted_relative_to_PPhi = 0.003753662641626528
+    mu_fixed_weighted_inner = 1.3413470918187519e-13
+    fine_residual_absolute = 0.06400147461395753
+    D_relative_to_PPhi = 0.003697397177029499
+    fixed_mu_weighted_squared = 1.8663825343664106e-7
+    squared_identity_error = 6.693800453843889e-17
+    mu_weighted_absolute = 1.292222635635788e-7
+
+    [decomposition.moments.full]
+    D_mu_weighted_inner = 1.675334628221e-13
+    fine_residual_fixed_mu_absolute = 0.06400151335425971
+    mu_projection_coefficient = 1.531734526056983e-6
+    fine_residual_squared = 0.004096204908299225
+    mu_absolute = 3.649601578485361e-5
+    D_weighted_absolute = 0.00043201684585766263
+    mu_projection_coefficient_weighted = 8.976358755457825e-7
+    fine_residual_weighted_relative_to_PPhi = 0.002654163249606224
+    fine_residual_fixed_mu_weighted_squared = 1.8666359174273983e-7
+    weighted_squared_identity_error = -9.61644425191393e-21
+    fine_residual_fixed_mu_relative_to_PPhi = 0.0026144662813552973
+    fine_residual_fixed_mu_squared = 0.004096193711635485
+    D_squared = 0.00409535770055364
+    D_mu_inner = 6.273000786491346e-9
+    D_absolute = 0.06399498183884139
+    mu_weighted_squared = 3.3398753640013283e-14
+    fine_residual_weighted_squared = 1.8666389294020135e-7
+    fixed_mu_absolute = 0.06399489422220693
+    fixed_mu_relative_to_PPhi = 0.002614195889349595
+    mu_fixed_inner = 4.9410416183248475e-9
+    mu_squared = 1.3319591681682843e-9
+    fixed_mu_weighted_relative_to_PPhi = 0.0026539809600268005
+    D_weighted_squared = 1.8663855510480345e-7
+    fixed_mu_squared = 0.004095346486511453
+    fine_residual_weighted_absolute = 0.0004320461699172918
+    fixed_mu_weighted_absolute = 0.0004320164967181705
+    mu_relative_to_PPhi = 1.4908647885426882e-6
+    fine_residual_fixed_mu_weighted_absolute = 0.0004320458213462315
+    fine_residual_fixed_mu_weighted_relative_to_PPhi = 0.002654161108250595
+    reference_squared = 599.2587668584061
+    mu_weighted_relative_to_PPhi = 1.1226971034634685e-6
+    fine_residual_relative_to_PPhi = 0.002614469854584723
+    reference_weighted_squared = 0.026497509464612348
+    D_fixed_inner = 0.004095351427553102
+    D_fixed_weighted_inner = 1.8663838757134896e-7
+    D_weighted_relative_to_PPhi = 0.002653983104874443
+    mu_fixed_weighted_inner = 1.3413470918213615e-13
+    fine_residual_absolute = 0.06400160082606704
+    D_relative_to_PPhi = 0.0026141994684952194
+    fixed_mu_weighted_squared = 1.8663825343664106e-7
+    squared_identity_error = -2.1757618849090965e-16
+    mu_weighted_absolute = 1.8275325890394756e-7
+
+[definition_sha256]
+"tiny_checks.jl" = "565a8d182372c0d5cfab45f7598df10a0f593c14cfd39445140aa69438e33120"
+"operators.jl" = "7d71dadce03edc17bcd7c68bae2fd5d1057e17cf95aae66432859ce4caa4a4dd"
+"run_control.jl" = "5084c1f1f97e6b90bb8a369e3a212d6e68f94f9930a2aaa467406728d7d484cb"
+
+[code_sha256]
+"protocol.md" = "1c6bf7beb80db7b1fb23846bd8c7a40f629939b640f053f2438f1a5b26310053"
+"tiny_checks.jl" = "a9ac669891f72f613b581df80c0738a6ce6a76629c578dc1f50fcadf441e25db"
+"run_mu.jl" = "68ccd9d03dc6e4861c31798bad714ca6ed0b74a129882d44b2fa5c4d938cb8f6"
+
+[identity]
+Julia = "1.13.3"
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+BLAS_threads = 1
+native_calls = 0
+cgroup = "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/qcl133-fine-mu-attribution.scope"
+Julia_threads = 1
+
+[fine_mu_LO]
+pair_A_error = 1.0053563848355814e-12
+Gamma_norm = 23.354038489546983
+saved_Gamma_norm = 23.354038489546983
+norm_relative_error = 0.0
+mu = 0.08459119027608916
+FD_pair_error = 2.220446049250313e-16
+
+[coarse_mu_LO_on_same_fine_A]
+pair_A_error = 9.982908837830608e-13
+Gamma_norm = 23.354034948912076
+mu = 0.08459613668783181
+FD_pair_error = 2.220446049250313e-16
+
+[fine_cache_admission]
+cap_bytes = 13019119616
+full_field_bytes = 270190800
+cache_payload_bytes = 22159600
+history_fields = 0
+native_full_peak_bytes = 25839982984
+scope = "Gamma-only two-map; no native exit"
+native_guard_unchanged = true
+cavity_plan_summary_bytes = 55041648
+Gamma_envelope_bytes = 9705804672
+native_validation_refused_for_full_budget = true
+
+[model_binding]
+qK_acoustic = "29316ab4983debc8aeecf6f77c72949a01fb7366af40aa5b10d90ef35ad92946"
+grid_trusted_energy = "47b8bc93b1c8cf57456f04b89a9dff70344c796522038edb90209e6571736a32"
+"grid_ε" = "1ad8a0d3d0da96d2778cbb1e8c1dfe51989dc19f43bb9233cb81e4e2402ebca9"
+"grid_wᑫᶻ" = "36b2bf8317ba6206f5f95bcb3d670e0c012b9f6ba16464ca624d14236e9d80c2"
+kernel_IFR = "614fd7a69eb34afba6213b6cdbe11963a66cca354a3e439c85aff7f1920cacba"
+"grid_wˣ" = "8f516d0ba7ce8473ab50b7f19d264a00657be79cebefe565c2a5002e4ec1e80f"
+qK_alloy = "66c8add85be09f2732348de1b5c7e02acce794566a028b3ae25d5aaa1c28cc88"
+"basis_T₋" = "2c1d9cc70f7e63b51438ce0a1bb83ed48e37aeb0ee053cbcd80708e9320f75af"
+kernel_impurity = "1a29392d417729ead7457791eb4306a05ab752097c5079b2b15f61f3a116e09b"
+"basis_H₀" = "504a62f6558d0ee99cdcee664220cb87d4a1a0164c9196099d165584e59ca311"
+"profile_m_parallelᵣ" = "740dca46bd9f435bf9c74c1483e25674467ed8aacba8d6edfbfbd5f1f45761f1"
+basis_Z = "1b7f3bb046c7e7a901bf951c8926130da68ae10c911fa6a628f94ee60713803a"
+"profile_Eᶜ" = "197ccd2621e8594a71bf0bdd6d0b7690476da721681bfcf54a67d228a0920c51"
+qK_LO = "335aa74b8e7336202ffd87f9e66601d5d0916f93e826ff8895510728cfb2ba32"
+"basis_χ" = "3cdf9891a40340844b17fd5030f3f083c1cefd4eaa93a47ca1bda270af0ffe04"
+kernel_acoustic = "821b361080884796b54cf22bc42b7889847807a86fdc54c16a787cd6a6f72df6"
+"profile_Nᴰ" = "9a0e49df98a1654391c79c8e06d812ed271384f364b1feb987cb8bcd62dd10ce"
+"basis_Φ" = "9c3325332776d76214c12596186719cb743a3727d9f39f4c791107934a423400"
+grid_x = "206c384d0f12e89208cb383d5edc8ce6d66355802e1159c1fa6fd1500d8e3d2d"
+"grid_wᴱ" = "2015e27dd4d76f805c541c1ae1a8eb9e36bae5d98ce4180a63c2285ff10ac25b"
+"grid_qᶻ" = "23118a3649c16e9130624adafe35e8812b52cc43c2cd82bdc0a56b7cf28fb3b5"
+h_fixedU0 = "8cde8ea024d9e690bf0396428574496734d7bad5962fc00617b9b380ae1194a7"
+kernel_alloy = "6a532b2562775becd473f91ee6f760aa1db8b3e3271e77d424a304cf912e7e01"
+profile_layer_index = "50e80cdde9062e231d1068b0b8250bcb0287ff8d3d1afaa0b5632e1c0be35959"
+"basis_T₊" = "466b55b5beddcdc0189c9a49d822145ab8b764589526989e479abe695e7dfb75"
+"profile_εᵣ" = "523ab6da25845a02d436612eca8062e44e935a5420eda892aebc0a2cc40df15f"
+"grid_κ" = "7815e5a3e3faf1673363855e6bc76e56be584032eded7440c9e6bd4ddbcd1e6f"
+profile_x_Al = "356bb98155094e2bb6153b484396334dde424bb68bb43e5e7e2bf36f99da9e23"
+kernel_LO = "dce410e43f29b71eb4aa1bc64a4d235578d75e164ba5fe9add511f52474bf3fd"
+"grid_φ" = "6d25e94d38926fa48f1c5750d9413fb168fa5f17e53173a434a373defe2c8970"
+"profile_mᶻᵣ" = "740dca46bd9f435bf9c74c1483e25674467ed8aacba8d6edfbfbd5f1f45761f1"
+"basis_M⁻¹" = "ca3329f599ba249b736f24072fc246528ba310887120b1c70bef1896de0f9fe5"
+qK_impurity = "2f5528507263d4cc631f4a965177e262a042e423678611240dfae6ee9f3b4d84"
+"grid_wᵏ" = "b6de0b9547a8fb3456533fa40aed0f0766a07ef9c0547b3ed40b05b5605d718d"
+qK_IFR = "9f0e740565ea35edc6239259f9b3b24ffe41bbcbb603c7984ac8d02faf6ae083"
+
+[source_sha256]
+"coarse.h5" = "27cefe8bed437b2afbfc4e0df4f2998565230516db11e20a17878ffc72d49a8a"
+"fine-input.h5" = "7917b12d55f49f066f70c21f91295832094b0258f96897bb71f172c11f18ef72"
+"fine.h5" = "87ad129508f6d4f468cec01abb2f2c892d9226f83bea2358073aac6548df8173"
+"summary.toml" = "3135bba16e5867d2d89cb3f8112d7c2191fdc767f5665d1aa64377e3949c1a4f"
+"model.h5" = "47682acc1b60483e96d67de2c24dbdf4927b7f14dd6cbf25f6e93f002a7c614e"
+"parent-input.toml" = "fddde931d6f13c5a76ee8f84e12da77c606844c5ee189c3140ea3ae55e41b812"
+"parent-identity.toml" = "c63682ba6ba338342f4cfdf4e59f5e0d2b7ca33bea22e44f4164673152c7a860"

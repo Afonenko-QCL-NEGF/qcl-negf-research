@@ -1,0 +1,30 @@
+elapsed_seconds = 62.589215993881226
+kind = "AAII"
+reason = "nonpositive/nonfinite raw spectral weights"
+call = 5
+
+[AA]
+rank = 3
+l1 = 1.4961814652008343
+kind = "AAII"
+R_diagonal = [1.0525436413900374e-5, 4.773295062478347e-5, 4.093939950816625e-5]
+condition = 7.894921939828458
+firstpair = 1
+initial_scales = [1.0525436413900374e-5, 6.253827651647411e-5, 4.1054669674517395e-5]
+coefficients = [-0.24809073260041714, -0.011204791286789076, 0.03188850113183039]
+
+    [[AA.suffix_decisions]]
+    coefficients_finite = true
+    actual_affine_l1 = 1.4961814652008343
+    R_diagonal = [1.0525436413900374e-5, 4.773295062478347e-5, 4.093939950816625e-5]
+    condition_measured = true
+    affine_coefficients = [-0.24809073260041714, 0.23688594131362806, 0.043093292418619464, 0.9681114988681696]
+    coefficients = [-0.24809073260041714, -0.011204791286789076, 0.03188850113183039]
+    condition = 7.894921939828458
+    reason = "accepted"
+    affine_l1_limit = 4096.0
+    initial_scales = [1.0525436413900374e-5, 6.253827651647411e-5, 4.1054669674517395e-5]
+    differences = 3
+    normalized_rank = 3
+    firstpair = 1
+    coefficients_measured = true

@@ -1,0 +1,156 @@
+residual_definition = "RAW Phi-Gamma; raw Phi norm denominator; handoff trigger and best score"
+seconds = 7.107118129730225
+minimum_Dyson_scale = 1.466766349046494
+fermi_pair_sum_error = 2.220446049250313e-16
+maximum_Dyson_condition = 1280.6156645715157
+raw_phi_hermitization_absolute = 2.8435904558909317e-15
+trigger = false
+roundoff = 3.490833296174683e-16
+call = 43
+absolute_E0_eV = 0.1
+green_pair_A_identity_absolute = 7.124206648623767e-13
+
+[AA_working_residual]
+scale = 17.311496963139916
+weighted_relative = 5.642936715850754e-6
+weighted_absolute = 9.186494373783817e-7
+weighted_scale = 0.16279633879251862
+absolute = 0.00011753030856225232
+relative = 6.789147629029475e-6
+
+[map_cone]
+block_frobenius_scale = 2.615868884999495e-39
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 2.919561281289245e-16
+minimum_eigenvalue = 1.0285483044831593e-40
+energy_index = 382
+k_index = 11
+
+[residual]
+scale = 17.311496963139916
+weighted_relative = 5.642936715850725e-6
+weighted_absolute = 9.186494373783771e-7
+weighted_scale = 0.16279633879251862
+absolute = 0.0001175303085622525
+relative = 6.789147629029485e-6
+
+[representation_conversion]
+scale = 17.311496963139916
+weighted_relative = 1.5656170790006872e-16
+weighted_absolute = 2.5487672841234926e-17
+weighted_scale = 0.16279633879251862
+absolute = 2.8435904558909317e-15
+relative = 1.6426022902268808e-16
+
+[channel_Gamma_norms]
+alloy = 0.16770415131273897
+IFR = 1.079097240446485
+acoustic = 0.328587231357954
+LO = 16.513564198189663
+impurity = 1.312886785875064
+
+[A_cone]
+block_frobenius_scale = 9.305236395181988e-41
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 4.26604212086318e-13
+minimum_eigenvalue = 2.516319238402232e-42
+energy_index = 382
+k_index = 11
+
+[mu]
+number_relative_error = -1.3877787807814454e-13
+number = 0.04499999999999376
+iterations = 46
+derivative = 0.6469061120923653
+capacity = 28.64331527113383
+mu_condition = 0.06956187174434195
+bracket_width = 5.125067037425879e-13
+mu = 0.08459612314832278
+target = 0.045000000000000005
+
+[input_cone]
+block_frobenius_scale = 2.614785946604757e-39
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = 1.0281518557528582e-40
+energy_index = 382
+k_index = 11
+
+[spectral_operator_ledger]
+operator = "native_covariance_exact_plan_hlocal_all9"
+covariance_arithmetic = "generic F64 congruence, not certified Gram factor arithmetic"
+roundoff = 3.490833296174683e-16
+maximum_GR_magnitude = 88.31300232050154
+native_exit_h_scope = "original raw-h Context; reduced hH policy is not a native gate override"
+
+    [spectral_operator_ledger.h_correction]
+    scale = 16.48036513826891
+    absolute = 1.6335753826937261e-15
+    relative = 9.912252362057291e-17
+
+    [spectral_operator_ledger.Lambda_projection]
+    scale = 8.42773432062181
+    weighted_relative = 2.5179079959403645e-16
+    weighted_absolute = 1.995910637164814e-17
+    weighted_scale = 0.07926860871734911
+    absolute = 2.110928327366143e-15
+    relative = 2.5047400013558993e-16
+
+    [spectral_operator_ledger.q_cov]
+    minimum_index = 382
+    negative_count = 0
+    negative_over_target = -0.0
+    all_finite = true
+    minimum = 1.3268425586298008e-43
+    negative_absolute_mass = -0.0
+    capacity = 28.64331527113383
+
+    [spectral_operator_ledger.effective_vs_physical_source]
+    scale = 2774.2060333302124
+    weighted_relative = 3.579527865750843e-13
+    weighted_absolute = 1.0555219318416386e-11
+    weighted_scale = 29.487741719821255
+    absolute = 9.762710924842724e-10
+    relative = 3.519100891408332e-13
+
+    [spectral_operator_ledger.A_sub_cone]
+    block_frobenius_scale = 3.856451279407485e-12
+    admissible = true
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 6.819027525558901e-14
+    measured = true
+    hermiticity_absolute = 0.0
+    minimum_eigenvalue = -2.863998320421011e-15
+    energy_index = 8037
+    k_index = 1
+
+    [spectral_operator_ledger.same_GR_spectral_difference]
+    scale = 7899.073032490124
+    weighted_relative = 9.81606671494073e-16
+    weighted_absolute = 7.380852901522545e-14
+    weighted_scale = 75.19155193075837
+    absolute = 8.904907755058567e-12
+    relative = 1.1273357922418601e-15
+
+    [spectral_operator_ledger.q_sub]
+    minimum_index = 390
+    negative_count = 58
+    negative_over_target = 1.318170431790419e-35
+    all_finite = true
+    minimum = -3.7601841358419103e-38
+    negative_absolute_mass = 5.931766943056886e-37
+    capacity = 28.643315271133826
+
+    [spectral_operator_ledger.A_cov_cone]
+    block_frobenius_scale = 9.305236395181988e-41
+    admissible = true
+    backward_error = 7.105427357601002e-14
+    minimum_margin = 7.105427357601002e-14
+    measured = true
+    hermiticity_absolute = 4.26604212086318e-13
+    minimum_eigenvalue = 2.516319238402232e-42
+    energy_index = 382
+    k_index = 11

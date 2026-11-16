@@ -1,0 +1,23 @@
+identity = "stableA-cont64-frozen-lastGamma-full-vs-stream-R-A-only-v1"
+runtime_authorized = true
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+memory_max_bytes = 13019119616
+memory_high_bytes = 12348030976
+swap_max_bytes = 0
+soft_seconds = 290.0
+external_seconds = 300
+single_file_max_bytes = 33554432
+data_max_bytes = 33554432
+workers = 4
+BLAS_threads = 1
+responses_max = 2
+Phi_max = 0
+
+[source_sha256]
+"Gamma-last.h5" = "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55"
+"model.h5" = "700ae17684d9ae52623ca6cfb7e07432ab1f43eb5151748061da53681b686540"
+"input.toml" = "8d5c1eb56b4cf88edf4b986cbc93ce05aede8ef1c4b12f8de8eac107402d5d49"
+"identity.toml" = "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b"
+"map-064.toml" = "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88"
+"summary.toml" = "760c3828b6fe861b5ae67e86342c9613bff1f7c4fd6bb8ead43f4911e3f9894e"

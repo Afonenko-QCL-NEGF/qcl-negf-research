@@ -1,0 +1,66 @@
+identity = "campaign133-S01-m939-Gamma-stableA-hH-AA4096-AAtrialPSD-GammaLast16-emptyAA-projected64"
+expected_julia_version = "1.13.3"
+# Accepted integrated Core; no silent fallback to a different retarded closure.
+expected_core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+expected_core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+runtime_authorized = true
+NE = 30704
+energy_min_eV = -0.3
+energy_max_eV = 0.9000001064962726
+Nz = 96
+Nb = 5
+basis_periods = 3
+Nk = 11
+kmax_per_nm = 0.6
+Nphi = 32
+Nqz = 81
+qzmax_per_nm = 10.0
+temperature_K = 70.0
+trust_margin_meV = 80.0
+seed_halfwidth_meV = 1.25
+workers = 4
+memory_max_bytes = 13019119616
+memory_high_bytes = 12348030976
+heap_hint = "8G"
+cpu_quota = "400%"
+swap_max_bytes = 0
+pi_calls_total = 64
+precheck_actual_calls = 6
+precheck_seconds = 180.0
+pilot_seconds = 900.0
+native_max_maps = 32
+native_seconds = 900.0
+overall_seconds = 2100.0
+single_file_max_bytes = 5368709120
+data_max_bytes = 8589934592
+history_differences = 3
+aa_beta = 1.0
+linear_alpha = 0.2
+qr_condition_max = 1.0e8
+affine_l1_max = 4096.0
+trigger_relative = 1.0e-9
+trigger_passes = 3
+arithmetic_relative = 1.0e-10
+# No absolute convergence floor. Absolute residuals in scaled E0 and physical eV
+# are recorded; relative zero/zero=0, nonzero/zero=Inf. Zero Gamma is infeasible.
+checkpoint_call = 8
+
+initialization = "Gamma_checkpoint_emptyAA"
+
+retarded_real_symmetry = "hermitian_projection"
+spectral_operator = "native_covariance_exact_plan_hlocal_all9"
+project_AA_trial = true
+qualifier_summary_path = "../positive-source-preflight/attempt01/summary.toml"
+qualifier_summary_sha256 = "06d6fa46c058187a8368663c9d19ef3f3edf3ab3582a5cf629286a2b9e231367"
+
+parent_directory = "../equilibrium-gamma-stableA16/attempt01"
+parent_call = 16
+parent_input_sha256 = "803b26b82a06687e2c983f89fbe7f426e41eca27af05d2af33cc158788977b18"
+parent_identity_sha256 = "99391578f7bcc0f986f8c51d9cc44fb8a6b703dde09aa7a3603f16cebacebd3f"
+parent_checkpoint_sha256 = "ab44aa53604374d722b9f0179985baf38bfc112148e8fd6d57e1d343d19912e9"
+parent_terminal_sha256 = "3eb13b49e2dd876b95634b38696879fdfe24f234ad922c57008b9f1e7997c3dd"
+parent_map_sha256 = "f33b8c4ad33e541bb0ae0754ac439cbfb5aadaf4a4576b739980155ab8e2b400"
+parent_operator_sha256 = "ffde0384a99887669ccaa729428e0eb1f885155925c6db465dcc36f8ca5b6a74"
+parent_spectral_sha256 = "eeca1f29710d9bb60bf6ce70ce0ebd1620fb86d4c77314b4bd8ffa9a5bcd5aa5"
+target_model_path = "../equilibrium-gamma-stableA16/attempt01/model.h5"
+target_model_sha256 = "6c5d6c6640520d26bde9f48250d2002b00cf08ee22008f483f7e8bca0e5b4255"

@@ -1,0 +1,43 @@
+identity = "campaign133-GammaLast64-unprojected-exact-dyadic-PD-v1"
+runtime_authorized = true
+expected_julia_version = "1.13.3"
+# Root creates a separately hashed input-run. Benchmark is NOT a global pass.
+mode = "all"
+max_seconds = 270.0
+chunk_energy = 512
+output_cap_bytes = 33554432
+shape = [30704, 11, 5, 5]
+source_call = 64
+source_identity = "campaign133-S01-m939-Gamma-stableA-hH-AA4096-GammaLast16-emptyAA-cont64"
+source_spectral_operator = "native_covariance_exact_plan_hlocal_all9"
+# Optional tiny fixture mode imports ONLY these 44 previously qualified blocks.
+fixture_path = "../positive-source-preflight/attempt01/selected.h5"
+fixture_sha256 = "a74dd7cb0afdfdca6f37af61f0ba1b43201306249816f3acc87fb080f1c8079a"
+
+[bindings.gamma]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/Gamma-last.h5"
+sha256 = "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55"
+[bindings.model]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/model.h5"
+sha256 = "700ae17684d9ae52623ca6cfb7e07432ab1f43eb5151748061da53681b686540"
+[bindings.input]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/input.toml"
+sha256 = "8d5c1eb56b4cf88edf4b986cbc93ce05aede8ef1c4b12f8de8eac107402d5d49"
+[bindings.identity]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/identity.toml"
+sha256 = "973d4b4be957c2644b5496e0fd968d54690ad8254b2392ea8086d392acac625b"
+[bindings.map]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/map-064.toml"
+sha256 = "073d25f1943b0a5ebdaa153eb5b49ce56c91d385f79cc8ba4326e477eae86e88"
+[bindings.operator]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/gamma_functions.jl"
+sha256 = "50bcfaaeb3c399baaaa2a4b9b9e023167e97b4d87c6af95d83353cb453072211"
+[bindings.spectral]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/stable_spectral.jl"
+sha256 = "eeca1f29710d9bb60bf6ce70ce0ebd1620fb86d4c77314b4bd8ffa9a5bcd5aa5"
+[bindings.ledger]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/spectral-ledger-064.toml"
+sha256 = "4dffb4b1ff2730c4f40a6ebb0005d0a5453e85aae933309e5851b45df475db1c"
+[bindings.summary]
+path = "../equilibrium-gamma-stableA-cont64/attempt01/summary.toml"
+sha256 = "760c3828b6fe861b5ae67e86342c9613bff1f7c4fd6bb8ead43f4911e3f9894e"

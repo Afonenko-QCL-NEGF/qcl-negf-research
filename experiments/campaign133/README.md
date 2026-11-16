@@ -71,3 +71,7 @@ Builder, IFR и warm-failure summaries являются помеченными �
 ## Snapshot5: ограниченные positive-source проверки
 
 Включены завершённые positive-source preflight, stableA16, trial-cone Rayleigh и selected-big с соответствующими исходниками и review; источники и SHA приведены в COPY-MANIFEST. StableA16 не является опытом ускорения; native validation не выполнялась, научная приёмка не установлена. Selected-big охватывает 44 выбранных узла, а не всю сетку; выводы методов условны и не устанавливают сходимость SCBA. Планы spectral-edge и fine-grid — невыполненная теория. Активный cont64, исходные массивы, приватные identity и logs не включены.
+
+## Snapshot6: завершённые ограниченные данные
+
+Stable-A cont64 завершён по cap, не по сходимости; native validation не измерялась, scientific acceptance — false. Frozen refinement исходно остановился после карт, а recovery восстановил диагностику без новых карт; fine-μ — decomposition, не повторное решение. Streaming spectral qualifier и его независимый result review проверяют только operator equivalence и не являются научной приёмкой. Три summary опубликованы как помеченные проекции без приватных путей; SHA оригиналов приведены в заголовках и локальном плане публикации. Полные массивы и identity не включены. Projected64 и global Γ ALL включены после независимых result reviews: сравнение projected64 ограничено 64 начатыми Π (контроль: 62 завершённые карты и 2 отказа), native acceptance и точный PSD projected F64 не установлены. Global exact-PD относится только к сохранённому Γ64 и не принимает SCBA.

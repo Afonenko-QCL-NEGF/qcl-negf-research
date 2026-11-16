@@ -1,0 +1,23 @@
+identity = "cont128-uniform2x-completed-maps-stream-recovery-v1"
+runtime_authorized = true
+source_attempt = "attempt01"
+source_summary_sha256 = "3135bba16e5867d2d89cb3f8112d7c2191fdc767f5665d1aa64377e3949c1a4f"
+model = "../equilibrium-gamma-hermitian-cont128/attempt01/model.h5"
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+memory_max_bytes = 3221225472
+external_seconds = 180
+soft_seconds = 170.0
+output_cap_bytes = 67108864
+chunk_rows = 1024
+anchor_indices = [9785]
+E0_eV = 0.1
+replay_relative = 1.0e-10
+
+[expected_sha256]
+# ROOT may replace these with precomputed hashes before authorizing runtime.
+# Otherwise the recovery records whole-file hashes BEFORE numerical dataset reads,
+# explicitly labeling them runtime hashes rather than historical provenance matches.
+"coarse.h5" = "27cefe8bed437b2afbfc4e0df4f2998565230516db11e20a17878ffc72d49a8a"
+"fine-input.h5" = "7917b12d55f49f066f70c21f91295832094b0258f96897bb71f172c11f18ef72"
+"fine.h5" = "87ad129508f6d4f468cec01abb2f2c892d9226f83bea2358073aac6548df8173"
+"model.h5" = "47682acc1b60483e96d67de2c24dbdf4927b7f14dd6cbf25f6e93f002a7c614e"

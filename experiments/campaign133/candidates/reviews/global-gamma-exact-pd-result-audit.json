@@ -1,0 +1,33 @@
+{
+  "status": "ALL_certificate_metadata_and_two_exact_witnesses_pass",
+  "summary_sha256": "a703ec4c3e2feda1ae9571ab3d1d20b69dd9de48898f3d620ada008da2583335",
+  "input_sha256": "27da5a97ab61e9f290f5f8c7a2979d5873ec55e81f45e6b336fba99c495711d4",
+  "math_sha256": "c6b14339d05720f4d55152b35edd9d43dca910507bfd16c8e750a41cdf02b6a9",
+  "script_sha256": "d2395572bd724f9493be4d5c5cfb92fe9859e609719cafa0bced68f7de02934f",
+  "source_Gamma_sha256": "cab81029eff5cfccf8a71eea41d1571c16902b6a22a7bc81fb08a0e700e8db55",
+  "checked_blocks": 337744,
+  "component_divrem_checks": 20264640,
+  "proofs": [
+    {
+      "e": 1,
+      "k": 1,
+      "exact_Hermitian": true,
+      "positive_LDL_pivots": 5,
+      "all_five_published_minors_match": true,
+      "exact_25entry_reconstruction": true,
+      "determinant_log10_approx": -140.05335310097985
+    },
+    {
+      "e": 382,
+      "k": 11,
+      "exact_Hermitian": true,
+      "positive_LDL_pivots": 5,
+      "all_five_published_minors_match": true,
+      "exact_25entry_reconstruction": true,
+      "determinant_log10_approx": -196.61639674957289
+    }
+  ],
+  "benchmark_excluded_from_ALL_count": true,
+  "no_source_HDF5_or_Julia": true,
+  "scope": "full-count fixed-code exact certificate; independent rational reconstruction only two saved matrices, not a second whole-source scan"
+}

@@ -1,0 +1,27 @@
+identity = "cont128-refinement-fine-mu-LO-attribution-v1"
+runtime_authorized = true
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+memory_max_bytes = 13019119616
+memory_high_bytes = 12348030976
+swap_max_bytes = 0
+soft_seconds = 290.0
+external_seconds = 300
+single_file_max_bytes = 33554432
+data_max_bytes = 67108864
+workers = 1
+BLAS_threads = 1
+retarded_cap = 1
+LO_cap = 2
+Pi_cap = 0
+anchor_indices = [9785]
+
+# ROOT supplies WHOLE immutable source digests in a separate runtime input.
+# The driver rejects UNSET before opening any source HDF5.
+[source_sha256]
+"coarse.h5" = "27cefe8bed437b2afbfc4e0df4f2998565230516db11e20a17878ffc72d49a8a"
+"fine-input.h5" = "7917b12d55f49f066f70c21f91295832094b0258f96897bb71f172c11f18ef72"
+"fine.h5" = "87ad129508f6d4f468cec01abb2f2c892d9226f83bea2358073aac6548df8173"
+"summary.toml" = "3135bba16e5867d2d89cb3f8112d7c2191fdc767f5665d1aa64377e3949c1a4f"
+"model.h5" = "47682acc1b60483e96d67de2c24dbdf4927b7f14dd6cbf25f6e93f002a7c614e"
+"parent-input.toml" = "fddde931d6f13c5a76ee8f84e12da77c606844c5ee189c3140ea3ae55e41b812"
+"parent-identity.toml" = "c63682ba6ba338342f4cfdf4e59f5e0d2b7ca33bea22e44f4164673152c7a860"
