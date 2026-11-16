@@ -1,0 +1,112 @@
+elapsed_seconds = 2.0405399799346924
+scope = "selected exact-rational Rayleigh signs only; no Pi/solver/acceptance"
+units = "source scaled Gamma energy units; no spin or quadrature weights in a local matrix Rayleigh quotient"
+started_utc = "2026-11-16T00:05:04.766"
+input_sha256 = "cea63f7c122a9eb6c0f41c7e4a67088ab49191efdbde9bf5e9e5ad04c746826f"
+tiny_checks = "pass"
+execution = "complete"
+script_sha256 = "68a790ec66d1c5ba65d3e3742395069c23d239100085166b97e5683883b71392"
+
+[blocks.trial16_e9771_k1]
+declared_float_eigenvalue = -3.34160541854173e-11
+AA_l1 = 2906.3753553295946
+source_call = 16
+eigenpair_residual_scale = 7.271521058409245e-11
+attempt_sha256 = "8c1c86da213b621764ae415e0500c6d1d63069ff519d9d50dde4e42a85ce5a4d"
+raw_Frobenius_scale = 3.929915639867522e-11
+float_Rayleigh = -3.3416054185417293e-11
+energy_index = 9771
+raw_antiHermitian_F = 0.0
+guard_allowance = 7.105427357601002e-14
+eigenpair_residual_absolute = 6.334981262318301e-26
+float_min_eigenvalue = -3.3416054185417235e-11
+eigenpair_residual_relative = 8.712044167144547e-16
+guard_allowance_formula = "64*n*eps(Float64)*max(Frobenius(X),1), accepted Core e171 metricv3"
+source_sha256 = "34ef61d7c6921271cc2e04823fac2c13e21241a4fefaa62169ccb8e52e9ee6b9"
+eigenvector_norm = 1.0
+k_index = 1
+
+    [blocks.trial16_e9771_k1.matrix_averaging_difference_on_vector]
+    vector_norm2_numerator = "5444517870735015802090493393919225901213"
+    decimal256 = "0.0"
+    vector_norm2_denominator = "5444517870735015415413993718908291383296"
+    numerator = "0"
+    below_negative_declared_allowance = false
+    denominator = "1"
+    sign = 0
+    claim = "exact sign of this rational quadratic form; no eigenvalue enclosure or whole-Pi accuracy certificate"
+    Float64_display = 0.0
+
+    [blocks.trial16_e9771_k1.exact_Hermitian_part_raw_entries]
+    vector_norm2_numerator = "5444517870735015802090493393919225901213"
+    decimal256 = "-3.34160541854173023478860394365709252020089927026058474581048096716297078076619e-11"
+    vector_norm2_denominator = "5444517870735015415413993718908291383296"
+    numerator = "-900895038665466451961792146994314125094080977256167387357"
+    below_negative_declared_allowance = true
+    denominator = "26959946667150641709396299880685108180926569757791252717883357134848"
+    sign = -1
+    claim = "exact sign of this rational quadratic form; no eigenvalue enclosure or whole-Pi accuracy certificate"
+    Float64_display = -3.34160541854173e-11
+
+    [blocks.trial16_e9771_k1.exact_guard_averaged_matrix]
+    vector_norm2_numerator = "5444517870735015802090493393919225901213"
+    decimal256 = "-3.34160541854173023478860394365709252020089927026058474581048096716297078076619e-11"
+    vector_norm2_denominator = "5444517870735015415413993718908291383296"
+    numerator = "-900895038665466451961792146994314125094080977256167387357"
+    below_negative_declared_allowance = true
+    denominator = "26959946667150641709396299880685108180926569757791252717883357134848"
+    sign = -1
+    claim = "exact sign of this rational quadratic form; no eigenvalue enclosure or whole-Pi accuracy certificate"
+    Float64_display = -3.34160541854173e-11
+
+[blocks.trial5_e5090_k1]
+declared_float_eigenvalue = -3.0556627832999564e-13
+AA_l1 = 2389.171854216751
+source_call = 5
+eigenpair_residual_scale = 6.819537982510835e-13
+attempt_sha256 = "1906e63de47e1d7260aafdf256502d9f268452ed98a4810b4be3d441f1cc9fbe"
+raw_Frobenius_scale = 3.76387519921088e-13
+float_Rayleigh = -3.0556627832999564e-13
+energy_index = 5090
+raw_antiHermitian_F = 0.0
+guard_allowance = 7.105427357601002e-14
+eigenpair_residual_absolute = 9.137640976325098e-29
+float_min_eigenvalue = -3.055662783299956e-13
+eigenpair_residual_relative = 1.3399208274459639e-16
+guard_allowance_formula = "64*n*eps(Float64)*max(Frobenius(X),1), accepted Core e171 metricv3"
+source_sha256 = "f84fb7ef842dbddc88019c7df494e5b2191ec0abe5a18491fce0dab3b33204d4"
+eigenvector_norm = 0.9999999999999998
+k_index = 1
+
+    [blocks.trial5_e5090_k1.matrix_averaging_difference_on_vector]
+    vector_norm2_numerator = "5444517870735014175006400019183385609257"
+    decimal256 = "0.0"
+    vector_norm2_denominator = "5444517870735015415413993718908291383296"
+    numerator = "0"
+    below_negative_declared_allowance = false
+    denominator = "1"
+    sign = 0
+    claim = "exact sign of this rational quadratic form; no eigenvalue enclosure or whole-Pi accuracy certificate"
+    Float64_display = 0.0
+
+    [blocks.trial5_e5090_k1.exact_Hermitian_part_raw_entries]
+    vector_norm2_numerator = "5444517870735014175006400019183385609257"
+    decimal256 = "-3.055662783299956643148841148564750410457966897095707945994726712828028338604823e-13"
+    vector_norm2_denominator = "5444517870735015415413993718908291383296"
+    numerator = "-4217881890332871424433067650945038633070975476137142065435"
+    below_negative_declared_allowance = true
+    denominator = "13803492693581124430062650362334092181986178651591201374277565115531264"
+    sign = -1
+    claim = "exact sign of this rational quadratic form; no eigenvalue enclosure or whole-Pi accuracy certificate"
+    Float64_display = -3.0556627832999564e-13
+
+    [blocks.trial5_e5090_k1.exact_guard_averaged_matrix]
+    vector_norm2_numerator = "5444517870735014175006400019183385609257"
+    decimal256 = "-3.055662783299956643148841148564750410457966897095707945994726712828028338604823e-13"
+    vector_norm2_denominator = "5444517870735015415413993718908291383296"
+    numerator = "-4217881890332871424433067650945038633070975476137142065435"
+    below_negative_declared_allowance = true
+    denominator = "13803492693581124430062650362334092181986178651591201374277565115531264"
+    sign = -1
+    claim = "exact sign of this rational quadratic form; no eigenvalue enclosure or whole-Pi accuracy certificate"
+    Float64_display = -3.0556627832999564e-13

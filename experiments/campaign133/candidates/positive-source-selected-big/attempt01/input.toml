@@ -1,0 +1,14 @@
+identity = "campaign133-positive-source-selected-intended-split-Big192-LDL-v1"
+runtime_authorized = true
+expected_julia_version = "1.13.3"
+precision_bits = 192
+repeat_bits = 384
+selected_path = "../positive-source-preflight/attempt01/selected.h5"
+selected_sha256 = "a74dd7cb0afdfdca6f37af61f0ba1b43201306249816f3acc87fb080f1c8079a"
+source_input_path = "../positive-source-preflight/attempt01/input.toml"
+source_input_sha256 = "de3ef182dd039cffb46a1cedf918a87ba2dfec212e98c703a7619952206c1d18"
+source_summary_path = "../positive-source-preflight/attempt01/summary.toml"
+source_summary_sha256 = "06d6fa46c058187a8368663c9d19ef3f3edf3ab3582a5cf629286a2b9e231367"
+source_script_path = "../positive-source-preflight/attempt01/preflight.jl"
+source_script_sha256 = "a34b1da110293ba289a78a437354436970ed8362a184779eb99e1f87690ade18"
+expected_selected_energy_indices = [7893, 8038, 30696, 30704]

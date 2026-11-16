@@ -1,0 +1,272 @@
+scope = "operator-only; new arithmetic identity, no AA/projector/solver/native acceptance"
+maximum_Dyson_condition = 1275.3744543951136
+maximum_GR_magnitude = 92.25251761283775
+PI_roundoff = 3.4934751395431113e-16
+same_A_number_check = -2.0805579481475434e-13
+input_sha256 = "de3ef182dd039cffb46a1cedf918a87ba2dfec212e98c703a7619952206c1d18"
+maps_completed = 3
+maps_started = 3
+elapsed_seconds = 26.84921884536743
+execution = "complete"
+source_sha256 = "a34b1da110293ba289a78a437354436970ed8362a184779eb99e1f87690ade18"
+tiny_checks = "pass"
+
+[h_correction]
+scale = 16.48036513826891
+absolute = 1.6335753826937261e-15
+side_repeat_defect = 0.0
+relative = 9.912252362057291e-17
+
+[q_cov]
+minimum_index = 30704
+negative_count = 0
+all_finite = true
+negative_over_target = -0.0
+absolute_mass = 28.643906747707575
+minimum = 4.58669789570931e-32
+negative_absolute_mass = -0.0
+capacity = 28.643906747707575
+
+[native_comparability]
+original_kinetic_KMS_target = 1.0e-10
+scope = "same supplied stable-A Green; native kinetic map comparison, NOT unconstrained native fixed-point acceptance"
+maximum_kinetic_KMS_relative = 5.686914566367418e-16
+kinetic_KMS_control_pass = true
+roundoff = 3.5296633207460864e-16
+
+    [native_comparability.per_channel.alloy]
+    kms_relative = 7.577017085186317e-17
+    scale = 0.1678029528719448
+    weighted_relative = 2.9562386575630777e-16
+    weighted_absolute = 5.004829679949518e-19
+    weighted_scale = 0.0016929721378026899
+    absolute = 4.9606557613276905e-17
+    relative = 2.9562386575600416e-16
+
+        [native_comparability.per_channel.alloy.KMS]
+        maximum_block_relative = 5.399599501565833e-16
+        scale = 0.1677976130355332
+        weighted_absolute = 1.2827270609655926e-19
+        weighted_scale = 0.00169291826393451
+        measure = "full-domain joint lesser/greater Frobenius; weighted uses wE*wk; absolute fields in scaled self-energy E0"
+        scope = "initial seed-spectrum consumer control at current mu, not a uniform KMS certificate over future Gamma/mu"
+        energy_index = 12854
+        relative = 7.577017085186317e-17
+        weighted_relative = 7.577017085186427e-17
+        scale_at_maximum_block = 0.00172614700053822
+        maximum_block_absolute = 3.040417655408379e-19
+        absolute = 1.2714053808237174e-17
+        k_index = 1
+
+    [native_comparability.per_channel.IFR]
+    kms_relative = 8.891732253900798e-17
+    scale = 1.0798641502790254
+    weighted_relative = 5.041543619669037e-16
+    weighted_absolute = 4.8355152265512884e-18
+    weighted_scale = 0.009591338667954887
+    absolute = 6.1410951659197645e-16
+    relative = 5.686914566367418e-16
+
+        [native_comparability.per_channel.IFR.KMS]
+        maximum_block_relative = 1.0021531254077977e-15
+        scale = 1.079535115294725
+        weighted_absolute = 8.020059500154272e-19
+        weighted_scale = 0.009590125119637121
+        measure = "full-domain joint lesser/greater Frobenius; weighted uses wE*wk; absolute fields in scaled self-energy E0"
+        scope = "initial seed-spectrum consumer control at current mu, not a uniform KMS certificate over future Gamma/mu"
+        energy_index = 11919
+        relative = 8.891732253900798e-17
+        weighted_relative = 8.36283093296883e-17
+        scale_at_maximum_block = 0.017542564917318346
+        maximum_block_absolute = 2.7747951271915522e-18
+        absolute = 9.598937203884622e-17
+        k_index = 1
+
+    [native_comparability.per_channel.LO]
+    kms_relative = 8.133942565465743e-17
+    scale = 16.533059600982
+    weighted_relative = 0.0
+    weighted_absolute = 0.0
+    weighted_scale = 0.15481901778563062
+    absolute = 0.0
+    relative = 0.0
+
+        [native_comparability.per_channel.LO.KMS]
+        maximum_block_relative = 8.735300379168431e-15
+        scale = 16.532887509696742
+        weighted_absolute = 1.229140360305874e-17
+        weighted_scale = 0.15481803746747402
+        measure = "full-domain joint lesser/greater Frobenius; weighted uses wE*wk; absolute fields in scaled self-energy E0"
+        scope = "initial seed-spectrum consumer control at current mu, not a uniform KMS certificate over future Gamma/mu"
+        energy_index = 10915
+        relative = 8.133942565465743e-17
+        weighted_relative = 7.93925811496032e-17
+        scale_at_maximum_block = 0.23911505239784325
+        maximum_block_absolute = 3.778378491026972e-17
+        absolute = 1.3447755744517927e-15
+        k_index = 1
+
+    [native_comparability.per_channel.acoustic]
+    kms_relative = 8.390081174425203e-17
+    scale = 0.3289228611042629
+    weighted_relative = 2.951032835477911e-16
+    weighted_absolute = 9.79305768956518e-19
+    weighted_scale = 0.0033185187137977825
+    absolute = 9.706621634577599e-17
+    relative = 2.9510328354771206e-16
+
+        [native_comparability.per_channel.acoustic.KMS]
+        maximum_block_relative = 4.81033790657669e-16
+        scale = 0.3287140454170723
+        weighted_absolute = 2.782496557062868e-19
+        weighted_scale = 0.0033164119621923497
+        measure = "full-domain joint lesser/greater Frobenius; weighted uses wE*wk; absolute fields in scaled self-energy E0"
+        scope = "initial seed-spectrum consumer control at current mu, not a uniform KMS certificate over future Gamma/mu"
+        energy_index = 12022
+        relative = 8.390081174425203e-17
+        weighted_relative = 8.390081174425233e-17
+        scale_at_maximum_block = 0.0033930758853229688
+        maximum_block_absolute = 6.73088020872594e-19
+        absolute = 2.7579375242229292e-17
+        k_index = 1
+
+    [native_comparability.per_channel.impurity]
+    kms_relative = 9.763681833774887e-17
+    scale = 1.3148087635945553
+    weighted_relative = 5.061641165723804e-16
+    weighted_absolute = 6.215110539799272e-18
+    weighted_scale = 0.012278844620370327
+    absolute = 7.054570036894212e-16
+    relative = 5.365472327403511e-16
+
+        [native_comparability.per_channel.impurity.KMS]
+        maximum_block_relative = 1.0051283468960096e-15
+        scale = 1.295099545245117
+        weighted_absolute = 1.1045934301715836e-18
+        weighted_scale = 0.012223894834426197
+        measure = "full-domain joint lesser/greater Frobenius; weighted uses wE*wk; absolute fields in scaled self-energy E0"
+        scope = "initial seed-spectrum consumer control at current mu, not a uniform KMS certificate over future Gamma/mu"
+        energy_index = 8133
+        relative = 9.763681833774887e-17
+        weighted_relative = 9.036345985738631e-17
+        scale_at_maximum_block = 0.02074708528516362
+        maximum_block_absolute = 7.346591326496534e-18
+        absolute = 1.2644939902839868e-16
+        k_index = 1
+
+    [native_comparability.retarded_sum_vs_HermPi]
+    scale = 12.094548289724182
+    weighted_relative = 2.7410996571923884e-16
+    weighted_absolute = 3.117832237527372e-17
+    weighted_scale = 0.11374384836196937
+    absolute = 3.3400888672871054e-15
+    relative = 2.7616482958069006e-16
+
+[mu_cov]
+number_relative_error = -1.1611082465871428e-13
+number = 0.04499999999999478
+iterations = 44
+derivative = 0.6469263708868231
+capacity = 28.643906747707575
+mu_condition = 0.06955969338259138
+bracket_width = 2.0500129371825437e-12
+mu = 0.08464025621945251
+target = 0.045000000000000005
+
+[Phi_cov_cone]
+block_frobenius_scale = 1.0164548972538926e-30
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601002e-14
+hermiticity_absolute = 3.3434848559457435e-16
+minimum_eigenvalue = 2.4945639148079967e-31
+energy_index = 30696
+k_index = 11
+
+[mu_sub]
+number_relative_error = -1.1611082465871428e-13
+number = 0.04499999999999478
+iterations = 44
+derivative = 0.6469263708868234
+capacity = 28.643906747707575
+mu_condition = 0.06955969338259135
+bracket_width = 2.0500129371825437e-12
+mu = 0.08464025621945251
+target = 0.045000000000000005
+
+[Lambda_projection]
+scale = 8.414363232764352
+weighted_relative = 2.5072152586232977e-16
+weighted_absolute = 1.9843139247941355e-17
+weighted_scale = 0.07914413881972443
+absolute = 2.109713738755405e-15
+relative = 2.5072767604570185e-16
+
+[matched_Phi_difference]
+scale = 17.33045617514017
+weighted_relative = 8.610093731486573e-16
+weighted_absolute = 1.4031927685093603e-16
+weighted_scale = 0.1629706728253111
+absolute = 1.5477284002132437e-14
+relative = 8.930684712347022e-16
+
+[Phi_sub_cone]
+block_frobenius_scale = 1.0238656919646223e-19
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105420739526247e-14
+hermiticity_absolute = 1.1794371047131877e-16
+minimum_eigenvalue = -6.618074755048272e-20
+energy_index = 4279
+k_index = 1
+
+[raw_Gamma_residual]
+scale = 17.33045617514017
+weighted_relative = 0.008837248111200954
+weighted_absolute = 0.001440212270606629
+weighted_scale = 0.1629706728253111
+absolute = 0.1542394612989787
+relative = 0.00889990775431687
+
+[A_sub_cone]
+block_frobenius_scale = 4.834827794899935e-12
+backward_error = 7.105427357601002e-14
+minimum_margin = 6.958941751071687e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = -1.464856065293139e-15
+energy_index = 8038
+k_index = 1
+
+[same_GR_spectral_difference]
+scale = 7911.222558123459
+weighted_relative = 1.0103575566389184e-15
+weighted_absolute = 7.607774292378587e-14
+weighted_scale = 75.29784126806362
+absolute = 9.13351089566056e-12
+relative = 1.1545005627836904e-15
+
+[q_sub]
+minimum_index = 30704
+negative_count = 0
+all_finite = true
+negative_over_target = -0.0
+absolute_mass = 28.643906747707575
+minimum = 4.586695634332631e-32
+negative_absolute_mass = -0.0
+capacity = 28.643906747707575
+
+[A_cov_cone]
+block_frobenius_scale = 1.1038649042286532e-28
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601004e-14
+hermiticity_absolute = 4.799799872233981e-13
+minimum_eigenvalue = 2.594955708925161e-29
+energy_index = 30704
+k_index = 1
+
+[input_Gamma_cone]
+block_frobenius_scale = 3.6286535485849075e-27
+backward_error = 7.105427357601002e-14
+minimum_margin = 7.105427357601128e-14
+hermiticity_absolute = 0.0
+minimum_eigenvalue = 1.2585285812028018e-27
+energy_index = 30704
+k_index = 11
