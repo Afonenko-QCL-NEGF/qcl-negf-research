@@ -1,0 +1,289 @@
+represented_capacity = 28.645209115465775
+linewidth_max_blocks = 64
+fresh_map_status = "available"
+seed_number_ratio = nan
+equilibrium_status = "available"
+seed_mu_eV = nan
+lo_shift_over_dE = 734.0
+fdt_raw = 0.00013663686271912112
+lo_boundary_spectral_fraction = 1.4314158474747458e-21
+delta_energy_eV = 5.0e-5
+relative_mode_weight_floor = 1.0e-10
+equilibrium_applicable = true
+measured_iteration = 128
+linewidth_status = "available"
+field_boundary_spectral_fraction = 0.0
+equilibrium_mu_eV = 0.008449720551970321
+empty_fraction_c = 0.0
+linewidth_sampling_method = "spectral_midpoint_quantiles_A_eigenmodes_v1"
+relative_correction_Gn = 0.0004732097811453352
+marker_cadence = 8
+relative_correction_Gp = 9.806365110593862e-6
+field_shift_over_dE = 0.0
+sampled_gamma_over_dE_q50 = 78.00418164779911
+fdt_normalized_seed_mu = nan
+field_boundary_occupied_fraction = 0.0
+sampled_spectral_weight_underresolved = 2.6222541339902343e-8
+raw_hole_charge = 28.600187810944135
+sampled_gamma_over_dE_q10 = 40.37544182358276
+fdt_normalized = 0.00014870907313541896
+linewidth_sampled_blocks = 64
+fdt_raw_seed_mu = nan
+occupied_fraction_a = 0.9995267902193021
+lo_boundary_occupied_fraction = 1.1965422311268668e-20
+equilibrium_abs_current_A_m2 = 1684.9125906115055
+sampled_gamma_over_dE_q90 = 267.8754927189126
+
+[[channels]]
+residual_scale = 10.204002572602585
+component = "retarded"
+residual_relative = 0.0011854205409443897
+residual_absolute = 0.012096034249412514
+channel = "LO"
+[[channels]]
+residual_scale = 0.22834418763796757
+component = "lesser"
+residual_relative = 0.006143184214121281
+residual_absolute = 0.0014027604088839715
+channel = "LO"
+[[channels]]
+residual_scale = 14.597815019096723
+component = "greater"
+residual_relative = 0.0013430791101060387
+residual_absolute = 0.01960602040534101
+channel = "LO"
+[[channels]]
+residual_scale = 0.2025422147595498
+component = "retarded"
+residual_relative = 0.0008044604873284627
+residual_absolute = 0.00016293720879006164
+channel = "acoustic"
+[[channels]]
+residual_scale = 0.002260094968059961
+component = "lesser"
+residual_relative = 0.006045157138704014
+residual_absolute = 1.3662629230377145e-5
+channel = "acoustic"
+[[channels]]
+residual_scale = 0.29031631611655345
+component = "greater"
+residual_relative = 0.0008562002402254223
+residual_absolute = 0.0002485688996003613
+channel = "acoustic"
+[[channels]]
+residual_scale = 0.8163392488015502
+component = "retarded"
+residual_relative = 0.0024101397626179757
+residual_absolute = 0.001967491683322329
+channel = "impurity"
+[[channels]]
+residual_scale = 0.055136439611367036
+component = "lesser"
+residual_relative = 0.006438227393502973
+residual_absolute = 0.00035498093588619
+channel = "impurity"
+[[channels]]
+residual_scale = 1.1420671352710072
+component = "greater"
+residual_relative = 0.0027392923361302876
+residual_absolute = 0.00312845575099417
+channel = "impurity"
+[[channels]]
+residual_scale = 0.6643412694354823
+component = "retarded"
+residual_relative = 0.000571988545438028
+residual_absolute = 0.0003799955963788603
+channel = "IFR"
+[[channels]]
+residual_scale = 0.0042365609240068965
+component = "lesser"
+residual_relative = 0.006303221153541458
+residual_absolute = 2.6703980434530445e-5
+channel = "IFR"
+[[channels]]
+residual_scale = 0.9537677250928789
+component = "greater"
+residual_relative = 0.000502120579629441
+residual_absolute = 0.00047890640295549474
+channel = "IFR"
+[[channels]]
+residual_scale = 0.1027936557789376
+component = "retarded"
+residual_relative = 0.00026649667791640977
+residual_absolute = 2.7394167775972496e-5
+channel = "alloy"
+[[channels]]
+residual_scale = 0.00019628472129001458
+component = "lesser"
+residual_relative = 0.006128602803350312
+residual_absolute = 1.202951093214104e-6
+channel = "alloy"
+[[channels]]
+residual_scale = 0.14827284008843175
+component = "greater"
+residual_relative = 0.000249262159346502
+residual_absolute = 3.6958808292883574e-5
+channel = "alloy"
+[[channels]]
+residual_scale = 1735.5216803972905
+component = "retarded"
+residual_relative = 0.00011081781534392556
+residual_absolute = 0.19232672110364635
+channel = "embedding"
+[[channels]]
+residual_scale = 1.0893820619904586
+component = "lesser"
+residual_relative = 0.015042803541195925
+residual_absolute = 0.01638736033982554
+channel = "embedding"
+[[channels]]
+residual_scale = 2524.6391448015156
+component = "greater"
+residual_relative = 0.00012626017437172322
+residual_absolute = 0.31876137864831755
+channel = "embedding"
+[[channels]]
+residual_scale = 1109.8186645960543
+component = "retarded"
+residual_relative = 8.859482305259304e-5
+residual_absolute = 0.09832418821035253
+channel = "embedding_plus"
+[[channels]]
+residual_scale = 0.15889306933379116
+component = "lesser"
+residual_relative = 0.015346101131919913
+residual_absolute = 0.002438389111157675
+channel = "embedding_plus"
+[[channels]]
+residual_scale = 1573.0843519054933
+component = "greater"
+residual_relative = 7.75194289148475e-5
+residual_absolute = 0.12194460059459684
+channel = "embedding_plus"
+[[channels]]
+residual_scale = 1322.426136879838
+component = "retarded"
+residual_relative = 0.00012428353629017935
+residual_absolute = 0.164355796773987
+channel = "embedding_minus"
+[[channels]]
+residual_scale = 1.0772588637162739
+component = "lesser"
+residual_relative = 0.014968532510398239
+residual_absolute = 0.01612498432365186
+channel = "embedding_minus"
+[[channels]]
+residual_scale = 1955.9068769817277
+component = "greater"
+residual_relative = 0.00014987091928347855
+residual_absolute = 0.29313356168612914
+channel = "embedding_minus"
+[[channels]]
+residual_scale = 1735.8141988594684
+component = "retarded"
+residual_relative = 0.0001110202741802782
+residual_absolute = 0.19271056828339814
+channel = "total"
+[[channels]]
+residual_scale = 1.1153526002545457
+component = "lesser"
+residual_relative = 0.014753238151567047
+residual_absolute = 0.01645506253452502
+channel = "total"
+[[channels]]
+residual_scale = 2525.080964953339
+component = "greater"
+residual_relative = 0.00012647549779396867
+residual_absolute = 0.3193608720125483
+channel = "total"
+
+[[collisions]]
+energy_signed = -3.191295855091304e-8
+energy_absolute = 2.7331835485841143e-6
+energy_imaginary = 3.5441743193600504e-24
+particle_signed = 2.5023614406950702e-8
+channel = "LO"
+state_kind = "mixed"
+particle_absolute = 5.6196803878309985e-6
+particle_imaginary = 8.677825825590711e-24
+[[collisions]]
+energy_signed = -6.217023470037963e-8
+energy_absolute = 2.7034763816949594e-6
+energy_imaginary = 1.0680407229730183e-24
+particle_signed = -1.9306576376919218e-22
+channel = "LO"
+state_kind = "fresh"
+particle_absolute = 5.595735079458235e-6
+particle_imaginary = 5.341563519334592e-26
+[[collisions]]
+energy_signed = 5.865172812522021e-9
+energy_absolute = 7.988816143001978e-6
+energy_imaginary = 6.94810036105294e-24
+particle_signed = 9.077563339924769e-9
+channel = "acoustic"
+state_kind = "mixed"
+particle_absolute = 3.006123270240496e-5
+particle_imaginary = 4.4362172731479247e-23
+[[collisions]]
+energy_signed = 2.6897939631078e-23
+energy_absolute = 7.983560671181179e-6
+energy_imaginary = -3.014100200011969e-28
+particle_signed = 9.005955432384602e-23
+channel = "acoustic"
+state_kind = "fresh"
+particle_absolute = 3.005541999644714e-5
+particle_imaginary = -8.434639402114567e-28
+[[collisions]]
+energy_signed = 1.018242739913565e-7
+energy_absolute = 0.0003216026444185805
+energy_imaginary = 3.7614185942730147e-22
+particle_signed = 3.4373168881409105e-7
+channel = "impurity"
+state_kind = "mixed"
+particle_absolute = 0.0013873784193075764
+particle_imaginary = 2.03680256179319e-21
+[[collisions]]
+energy_signed = -4.0292224793026175e-21
+energy_absolute = 0.0003215404086925789
+energy_imaginary = -2.0221035113606478e-27
+particle_signed = -2.0458178702446744e-20
+channel = "impurity"
+state_kind = "fresh"
+particle_absolute = 0.0013872449743018288
+particle_imaginary = 1.4767726045386684e-27
+[[collisions]]
+energy_signed = 1.0524646635788136e-8
+energy_absolute = 5.161305113043157e-6
+energy_imaginary = -2.673106533022076e-23
+particle_signed = 7.060202593329974e-9
+channel = "IFR"
+state_kind = "mixed"
+particle_absolute = 1.5558247196067844e-5
+particle_imaginary = -4.5525286437347455e-23
+[[collisions]]
+energy_signed = 1.9817470606605493e-22
+energy_absolute = 5.151052027166014e-6
+energy_imaginary = 3.0839036256997653e-28
+particle_signed = 7.314497631798469e-22
+channel = "IFR"
+state_kind = "fresh"
+particle_absolute = 1.5552581864150123e-5
+particle_imaginary = 1.693582460483892e-27
+[[collisions]]
+energy_signed = 1.3178540003080216e-9
+energy_absolute = 1.7215652955457154e-7
+energy_imaginary = -7.735682315993466e-25
+particle_signed = 7.253455984608824e-10
+channel = "alloy"
+state_kind = "mixed"
+particle_absolute = 4.36772320483249e-7
+particle_imaginary = -1.5596886810631213e-24
+[[collisions]]
+energy_signed = 2.0038610321746375e-25
+energy_absolute = 1.7084427328703122e-7
+energy_imaginary = -1.149870100417373e-28
+particle_signed = 3.5469331896198606e-24
+channel = "alloy"
+state_kind = "fresh"
+particle_absolute = 4.360770470602316e-7
+particle_imaginary = 1.1163332004957827e-28

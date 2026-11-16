@@ -1,0 +1,30 @@
+measure = "gs*wE*wk/(2pi), mixed internal+embedding signed sum; scaled rate; no hbar conversion, diagnostic not acceptance"
+power_scale_W_m2 = 3686.373170575746
+power_balance_abs_W_m2 = 2132.76430633491
+particle_scale = 0.0015238307082657276
+power_relative_diagnostic = 0.5785535559336252
+particle_relative = 0.0002674957145367908
+Pfield_W_m2 = -0.0
+particle_signed = 4.076181841406448e-7
+J_unit = "SCBAIteration.J A/m^2"
+Psc_W_m2 = 2132.76430633491
+
+[minus]
+energy_signed = 6.055932779682779e-9
+energy_absolute = 2.0471870533013308e-5
+energy_imaginary = -1.1561415811424105e-22
+particle_signed = 1.5077750995263045e-8
+channel = "embedding_minus"
+state_kind = "mixed"
+particle_absolute = 6.320740439745212e-5
+particle_imaginary = -6.6517437379535e-22
+
+[plus]
+energy_signed = 2.8843015582465475e-9
+energy_absolute = 1.3809916121610008e-5
+energy_imaginary = 7.614497785185964e-23
+particle_signed = 6.922018392624352e-9
+channel = "embedding_plus"
+state_kind = "mixed"
+particle_absolute = 2.1568951953911892e-5
+particle_imaginary = 2.868913727874935e-22
