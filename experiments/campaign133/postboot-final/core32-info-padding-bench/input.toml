@@ -1,0 +1,40 @@
+identity = "campaign133-core32-info-layout-saved-case0-sum8-surrogate-suite-only-v1"
+runtime_authorized = false
+script_sha256 = "1c64732edd7f6d23312ccb2c842feee2cc565aa12b00490b2dfa392ac1edae9a"
+core = "../core-accepted-science"
+core_head = "e171caa60cce676c6c4238dd671e7c527f2bd977"
+core_tree = "742ed5a6fe82f1e5c63fc1a2290ed77f89ca6da8"
+julia_version = "1.13.4"
+project_sha256 = "791aec47f34e0884b8bd36af07f514934cc08c418940650d464920d6a2aeb067"
+manifest_sha256 = "da0780fbe150c0e16e9fedf3566a1971095642f14f57f32524b52f430a4adb65"
+parent = "../native-bias1mV-warm128-max26/attempt01/case0"
+helper_directory = "../../equilibrium-gamma-stableA-cont64/attempt01"
+compute_soft_seconds = 180.0
+external_wall_seconds = 300
+memory_max_bytes = 6442450944
+swap_max_bytes = 0
+output_max_bytes = 33554432
+workers = [4, 26]
+workspace_capacity = 26
+chunk_size = 64
+baseline_info_length = 1
+padding_info_length = 8
+triplet_repetitions_per_width = 2
+warmup_calls = 2
+timed_calls = 12
+Phi_calls = 0
+SCBA_maps = 0
+
+[helper_sha256]
+"gamma_functions.jl" = "50bcfaaeb3c399baaaa2a4b9b9e023167e97b4d87c6af95d83353cb453072211"
+"warm_seed.jl" = "68fd8582334a1ed3f257efcc0b1096a429361dd73aa5be3be415dd79ddcbc157"
+"stable_spectral.jl" = "eeca1f29710d9bb60bf6ce70ce0ebd1620fb86d4c77314b4bd8ffa9a5bcd5aa5"
+"gamma_restart.jl" = "2a805be29aeef33d7a31356850b7fdaa80da7e68506d8f96b980a8108bd56a00"
+
+[source_sha256]
+"state.h5" = "e4fc9b91fe33e65d71a3475898efc615a554efa88c3ccca9c63e819da448fcc6"
+"model.h5" = "3de1f7fc933082439d10ccac56c1c3e33c8d93b65ac5aa2c3e7006e5bab9d6dc"
+"input.toml" = "ac30054f7debc44867882fefb7d64aa1113317ced89c8cdf83a637bba0c7b8fe"
+"identity.toml" = "b0aab87c971aa3bcab85e795d818dad288cc9a1356bbc7cb1722d079e6731688"
+"summary.toml" = "aa2ead8c2ccc1fc0a8b51983483644837d3c652c94548eac0616617ce29cd0b8"
+"run_native.jl" = "3d83a82205e8dd203f5b89a7ae689821d914d0a07ec5791f0f711e0c78c11935"

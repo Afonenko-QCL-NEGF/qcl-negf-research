@@ -1,0 +1,31 @@
+initialization = "ONE-TIME global FD L/G seed with unchanged retainedR/A; native full R/L/G maps thereafter, no FD projection"
+scientific_acceptance = false
+EE = "none"
+maps_completed = 128
+quality = "unresolved"
+elapsed_seconds = 659.3911709785461
+model_sha256 = "7da78445292f88795c174fa283680c6360abac1cb72b93f6fd70b01b607c8041"
+state_sha256 = "b175f676c28f80b330a43c162ee18acdcb68ec5c30c45e92b618b961c47530a9"
+converged = false
+execution = "complete"
+data_bytes = 3425505146
+status = "max_iterations"
+
+[last_row]
+r_K = 0.009354297632248173
+"r_λ" = 0.00047343381465725365
+lambda_change = 2.0979836240941907e-5
+J = -1684.9125906115055
+"ν" = 128
+r_PSD = 0.0
+r_A = 7.976920947111354e-15
+r_caus = 1.221353754104841e-16
+r_roundoff = 3.178520849517474e-16
+raw_charge = 0.04502130452165958
+"r_Σ" = 0.015346101131919839
+"λ" = 1.0004734338146573
+normalized_charge = 0.045000000000000526
+r_population = 5.266603812695001e-6
+r_Jchange = 0.02812298411603917
+target_charge = 0.045000000000000005
+r_D = 4.672839717044172e-16
