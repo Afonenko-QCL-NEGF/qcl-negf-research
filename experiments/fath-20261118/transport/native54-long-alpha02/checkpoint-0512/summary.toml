@@ -1,0 +1,29 @@
+fresh_maps_completed = 512
+mode = "fixed"
+model_identity = "62a8ec2b6be97cc7eac8ac0c9335de3765663f58bffd4a2ace1344efb83e238b"
+model_sha256 = "8a6f6c7462f7890d706eb2d987d8babf08fcf7c272c66b5d686f8274e40406ba"
+quality = "unresolved"
+scientific_acceptance = false
+source_case = "native54-long-alpha02"
+state_sha256 = "35208e4b5ddfdda6dadf5eb0349a58b2b94c7d5ed248cd4a3ce7261657f7f7c1"
+status = "aligned_intermediate_checkpoint"
+voltage_mV = 54.0
+
+[last_row]
+J = 1.3121493171945992e6
+lambda_change = 3.568755920779765e-7
+normalized_charge = 0.030000000000000304
+r_A = 9.512749638110436e-15
+r_D = 2.4524838442631494e-16
+r_Jchange = 0.0002267426543595301
+r_K = 0.0039147889648784165
+r_PSD = 0.0
+r_caus = 1.0668031746375052e-16
+r_population = 0.00010121043509574783
+r_roundoff = 3.181484699776665e-16
+"r_Σ" = 0.022087729467829633
+"r_λ" = 7.731554481649194e-5
+raw_charge = 0.029997680533655507
+target_charge = 0.030000000000000002
+"λ" = 0.9999226844551835
+"ν" = 512
