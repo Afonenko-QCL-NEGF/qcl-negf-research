@@ -1,3 +1,5 @@
+> **Переход QCL NEGF.** В приложении `qcl-negf` доступен раздел [Опыты, отчёты и литература](https://github.com/Afonenko-QCL-NEGF/qcl-negf/tree/main/studies/). Этот репозиторий хранит историю. [Исходная редакция README](https://github.com/Afonenko-QCL-NEGF/qcl-negf-research/blob/76926d0035eeddf7c59a8c4357ab98f4e3bc9eba/README.md).
+
 # QCL-NEGF Research
 
 Versioned scientific inputs and literature provenance for quantum cascade laser
